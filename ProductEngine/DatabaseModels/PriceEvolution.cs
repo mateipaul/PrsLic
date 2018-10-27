@@ -8,5 +8,10 @@ namespace DatabaseModels
 {
     class PriceEvolution
     {
+        public Guid Id { get; set; }
+        public string Price { get; set; }
+        public Guid ProductId { get; set; }
+        public DateTime UpdatedDate { get; set; }
+
     }
 }

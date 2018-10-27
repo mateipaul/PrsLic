@@ -11,6 +11,11 @@ namespace ProductBackgroundEngine
     {
         static void Main(string[] args)
         {
+
+            GenericLogger.Info("Application Started");
+
+
+
            
         }
     }

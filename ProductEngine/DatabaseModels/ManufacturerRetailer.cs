@@ -8,5 +8,9 @@ namespace DatabaseModels
 {
     class ManufacturerRetailer
     {
+        public Guid ManufacturerId { get; set; }
+        public Guid RetailerId { get; set; }
+        public bool Deleted { get; set; }
+        
     }
 }
