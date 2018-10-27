@@ -1,0 +1,10 @@
+2018-09-11 11:40:16.9154|INFO|GenericLogger|this is an introduction
+2018-09-11 11:40:16.9663|INFO|GenericLogger|this is an introduction
+2018-09-11 11:40:16.9663|INFO|GenericLogger|this is an introduction
+2018-09-11 11:40:16.9663|INFO|GenericLogger|this is an introduction
+2018-09-11 11:40:16.9823|INFO|GenericLogger|this is an introduction
+2018-09-11 11:40:16.9823|INFO|GenericLogger|this is an introduction
+2018-09-11 11:40:16.9823|INFO|GenericLogger|this is an introduction
+2018-09-11 11:40:16.9973|INFO|GenericLogger|this is an introduction
+2018-09-11 11:40:16.9973|INFO|GenericLogger|this is an introduction
+2018-09-11 11:40:16.9973|INFO|GenericLogger|this is an introduction

@@ -1,0 +1,55 @@
+﻿.product {
+	display: inline-block;
+	border: 2px solid ;
+	border-color:aqua;
+	border-radius: 10px;
+	margin:2px 3px 2px 3px;
+}
+
+.price {
+	text-align: center;
+	font-size:18px;
+	font-weight:bold;
+}
+
+.image {
+	width: auto;
+	height: auto;
+	max-width: 200px;
+	max-height: 150px;
+}
+
+.product-title > h3 {
+	text-align: center;
+}
+
+#products-wrapper {
+	overflow-y: scroll;
+	height: 500px;
+}
+
+#retailer-wrapper {
+	overflow-y: scroll;
+	height: 400px;
+}
+.retailer {
+	display: inline-block;
+	border: 2px solid;
+	border-color: aqua;
+	border-radius: 10px;
+	margin: 2px 3px 2px 3px;
+	height:190px;
+	width:190px;
+}
+h3[class="retaler-name"] {
+	text-align: center;
+}
+.image-wrapper {
+	text-align:center;
+}
+.retailer-logo {
+	width: auto;
+	height: auto;
+	max-width: 150px;
+	max-height: 90px;
+}

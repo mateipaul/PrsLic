@@ -1,0 +1,30 @@
+﻿@model IEnumerable<MvcMusicStore.Models.ProductModel>
+@{
+	ViewBag.Title = "My Products";
+}
+<h3>My products</h3>
+</br>
+<div id="products-wrapper">
+
+	@foreach (var item in Model)
+	{
+		<div class="product">
+			<div class="product-title">
+				<h3>@item.Name</h3>
+				<span class="image-wrapper">
+					<img src="http://www.austria.ro/blog/wp-content/themes/Ciola/library/images/thumbnail-600x350.png" alt="Alternate Text" class="image" />
+				</span>
+			</div>
+			<div class="product-details">
+				<div class="price">
+					@item.Price
+				</div>
+				<br />
+				<span class="price-evolution">
+					<img src="@Url.Action("LineChart", "MyProducts", new { productID = item.ID })" alt="Chart" />
+				</span>
+			</div>
+		</div>
+
+	}
+</div>
