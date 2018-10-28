@@ -30,17 +30,18 @@ namespace MiscUtilities
             }
         }
 
-        public static void DownloadBlob(string fileName, string container)
+        public void DownloadBlob(string fileName, string container)
         {
-
+            string path = Path.Combine(Environment.CurrentDirectory, "BlobFiles");
             try
             {
                 CloudBlobClient blobClient = storageAccount.CreateCloudBlobClient();
                 CloudBlobContainer containerRef = blobClient.GetContainerReference(container);
                 CloudBlockBlob blockBlob = containerRef.GetBlockBlobReference(fileName);
 
+                Directory.CreateDirectory(path);
 
-                blockBlob.DownloadToFile(Path.Combine(Environment.CurrentDirectory, "BlobFiles", fileName), FileMode.Create);
+                blockBlob.DownloadToFile(Path.Combine(path,fileName), FileMode.Create);
 
 
 

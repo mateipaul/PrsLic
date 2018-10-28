@@ -1,0 +1,24 @@
+{
+	"Retailers":[
+		{
+			"RetailerName":"eMag",
+			"CrawlingTags":[
+				{
+					"UrlTag":"//urlTag",
+					"ProductTag":"//productTag",
+					"ProductNameTag":"//productNameTag"
+				}
+			]
+		},
+		{
+			"RetailerName":"Cel",
+			"CrawlingTags":[
+				{
+					"UrlTag":"//urlTag",
+					"ProductTag":"//productTag",
+					"ProductNameTag":"//productNameTag"
+				}
+			]
+		}
+	]
+}

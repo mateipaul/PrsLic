@@ -1,0 +1,5 @@
+2018-10-28 17:31:59.0426|INFO|GenericLogger|Application Started
+2018-10-28 17:38:34.6052|INFO|GenericLogger|Application Started
+2018-10-28 17:38:39.6247|INFO|GenericLogger|Crawl Settings loaded successfully 
+2018-10-28 17:40:52.6284|INFO|GenericLogger|Application Started
+2018-10-28 17:41:21.0052|INFO|GenericLogger|Crawl Settings loaded successfully 
