@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace DatabaseModels
 {
-    class ManufacturerRetailer
+    public class ManufacturerRetailer
     {
         public Guid ManufacturerId { get; set; }
         public Guid RetailerId { get; set; }

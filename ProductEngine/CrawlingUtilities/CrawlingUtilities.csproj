@@ -40,13 +40,22 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="CrawlDownloader.cs" />
     <Compile Include="MainCrawlStarter.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\DatabaseModels\DatabaseModels.csproj">
+      <Project>{010D9C41-5B64-4861-B909-E42855976E9E}</Project>
+      <Name>DatabaseModels</Name>
+    </ProjectReference>
     <ProjectReference Include="..\Logger\Logger.csproj">
       <Project>{B59B462B-E0FC-4617-A2C2-420D56DA6409}</Project>
       <Name>Logger</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\MiscUtilities\MiscUtilities.csproj">
+      <Project>{117E7D0A-621A-4F92-9F71-74FA64144AC9}</Project>
+      <Name>MiscUtilities</Name>
     </ProjectReference>
     <ProjectReference Include="..\UtilitiesModels\UtilitiesModels.csproj">
       <Project>{12FC29D1-B1C2-46B2-8695-F1E50DA34DBB}</Project>

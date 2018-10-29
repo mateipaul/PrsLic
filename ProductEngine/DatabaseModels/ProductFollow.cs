@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace DatabaseModels
 {
-    class ProductFollow
+    public class ProductFollow
     {
     }
 }

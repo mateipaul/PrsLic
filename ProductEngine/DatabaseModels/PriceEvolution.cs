@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace DatabaseModels
 {
-    class PriceEvolution
+    public class PriceEvolution
     {
         public Guid Id { get; set; }
         public string Price { get; set; }
