@@ -68,7 +68,7 @@ namespace CrawlingUtilities
                                             _productUrls.Add(tempURL);
                                     });
 
-                } while (HasNextPage(doc));
+                } while (HasNextPage(ref doc));
 
 
             }
@@ -87,9 +87,9 @@ namespace CrawlingUtilities
             return HttpUtils.GetHttpRequestResponse(url);
         }
 
-        private bool HasNextPage(HtmlDocument doc)
+        private bool HasNextPage( ref HtmlDocument doc)
         {
-            string nextPageUrl = HtmlDocumentUtilities.ExtractNodeValue(doc, RetailerConfig.CrawlingTags.NextProductPageTag, node => node.GetAttributeValue("href", string.Empty));
+            string nextPageUrl = retailerHost + HtmlDocumentUtilities.ExtractNodeValue(doc, RetailerConfig.CrawlingTags.NextProductPageTag, node => node.GetAttributeValue("href", string.Empty));
 
             if (string.IsNullOrEmpty(nextPageUrl))
             {

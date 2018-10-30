@@ -1352,3 +1352,95 @@ Parameter name: requestUri
    at MiscUtilities.HttpUtils.GetHttpRequestResponse(String url) in D:\Matei\PrsLic\ProductEngine\MiscUtilities\HttpUtils.cs:line 20
 2018-10-30 12:24:13.1570|INFO|GenericLogger|Application Started
 2018-10-30 12:24:13.8926|INFO|GenericLogger|Crawl Settings loaded successfully 
+2018-10-30 14:14:42.7853|INFO|GenericLogger|Application Started
+2018-10-30 14:14:43.4150|INFO|GenericLogger|Crawl Settings loaded successfully 
+2018-10-30 14:14:55.6284|FATAL|GenericLogger|Error occured Only 'http' and 'https' schemes are allowed.
+Parameter name: requestUri 
+ Generic exception Popped in GetHttpRequestResponse(string url) 
+    at System.Net.Http.HttpRequestMessage.InitializeValues(HttpMethod method, Uri requestUri)
+   at System.Net.Http.HttpRequestMessage..ctor(HttpMethod method, Uri requestUri)
+   at System.Net.Http.HttpClient.GetAsync(Uri requestUri, HttpCompletionOption completionOption, CancellationToken cancellationToken)
+   at System.Net.Http.HttpClient.GetContentAsync[T](Uri requestUri, HttpCompletionOption completionOption, T defaultValue, Func`2 readAs)
+   at System.Net.Http.HttpClient.GetStringAsync(Uri requestUri)
+   at System.Net.Http.HttpClient.GetStringAsync(String requestUri)
+   at MiscUtilities.HttpUtils.GetHttpRequestResponse(String url) in D:\Matei\PrsLic\ProductEngine\MiscUtilities\HttpUtils.cs:line 20
+2018-10-30 14:14:57.1388|FATAL|GenericLogger|Error occured Only 'http' and 'https' schemes are allowed.
+Parameter name: requestUri 
+ Generic exception Popped in GetHttpRequestResponse(string url) 
+    at System.Net.Http.HttpRequestMessage.InitializeValues(HttpMethod method, Uri requestUri)
+   at System.Net.Http.HttpRequestMessage..ctor(HttpMethod method, Uri requestUri)
+   at System.Net.Http.HttpClient.GetAsync(Uri requestUri, HttpCompletionOption completionOption, CancellationToken cancellationToken)
+   at System.Net.Http.HttpClient.GetContentAsync[T](Uri requestUri, HttpCompletionOption completionOption, T defaultValue, Func`2 readAs)
+   at System.Net.Http.HttpClient.GetStringAsync(Uri requestUri)
+   at System.Net.Http.HttpClient.GetStringAsync(String requestUri)
+   at MiscUtilities.HttpUtils.GetHttpRequestResponse(String url) in D:\Matei\PrsLic\ProductEngine\MiscUtilities\HttpUtils.cs:line 20
+2018-10-30 14:17:19.4001|INFO|GenericLogger|Application Started
+2018-10-30 14:17:19.9967|INFO|GenericLogger|Crawl Settings loaded successfully 
+2018-10-30 14:19:15.3568|INFO|GenericLogger|Application Started
+2018-10-30 14:19:16.0523|INFO|GenericLogger|Crawl Settings loaded successfully 
+2018-10-30 14:22:06.2043|INFO|GenericLogger|Application Started
+2018-10-30 14:22:07.0788|INFO|GenericLogger|Crawl Settings loaded successfully 
+2018-10-30 14:22:37.3778|INFO|GenericLogger|Application Started
+2018-10-30 14:22:38.1034|INFO|GenericLogger|Crawl Settings loaded successfully 
+2018-10-30 14:24:11.3544|INFO|GenericLogger|Application Started
+2018-10-30 14:24:12.0460|INFO|GenericLogger|Crawl Settings loaded successfully 
+2018-10-30 14:24:58.3827|FATAL|GenericLogger|Error occured One or more errors occurred. 
+ Generic exception Popped in GetHttpRequestResponse(string url) 
+    at System.Threading.Tasks.Task.ThrowIfExceptional(Boolean includeTaskCanceledExceptions)
+   at System.Threading.Tasks.Task`1.GetResultCore(Boolean waitCompletionNotification)
+   at System.Threading.Tasks.Task`1.get_Result()
+   at MiscUtilities.HttpUtils.GetHttpRequestResponse(String url) in D:\Matei\PrsLic\ProductEngine\MiscUtilities\HttpUtils.cs:line 20
+2018-10-30 14:24:58.4082|FATAL|GenericLogger|Error occured Product Document Null Exception 
+ Exception popped when trying to extract product information for https://www.emag.ro/televizor-led-philips-108-cm-full-hd-43pft4112-12/pd/DHTBMNBBM/ 
+    at CrawlingUtilities.CrawlProductParser.CreateProductDocument() in D:\Matei\PrsLic\ProductEngine\CrawlingUtilities\CrawlProductParser.cs:line 61
+   at CrawlingUtilities.CrawlProductParser.DownloadProduct() in D:\Matei\PrsLic\ProductEngine\CrawlingUtilities\CrawlProductParser.cs:line 29
+2018-10-30 14:27:11.5296|FATAL|GenericLogger|Error occured One or more errors occurred. 
+ Generic exception Popped in GetHttpRequestResponse(string url) 
+    at System.Threading.Tasks.Task.ThrowIfExceptional(Boolean includeTaskCanceledExceptions)
+   at System.Threading.Tasks.Task`1.GetResultCore(Boolean waitCompletionNotification)
+   at System.Threading.Tasks.Task`1.get_Result()
+   at MiscUtilities.HttpUtils.GetHttpRequestResponse(String url) in D:\Matei\PrsLic\ProductEngine\MiscUtilities\HttpUtils.cs:line 20
+2018-10-30 14:27:12.8554|FATAL|GenericLogger|Error occured One or more errors occurred. 
+ Generic exception Popped in GetHttpRequestResponse(string url) 
+    at System.Threading.Tasks.Task.ThrowIfExceptional(Boolean includeTaskCanceledExceptions)
+   at System.Threading.Tasks.Task`1.GetResultCore(Boolean waitCompletionNotification)
+   at System.Threading.Tasks.Task`1.get_Result()
+   at MiscUtilities.HttpUtils.GetHttpRequestResponse(String url) in D:\Matei\PrsLic\ProductEngine\MiscUtilities\HttpUtils.cs:line 20
+2018-10-30 14:27:17.4161|FATAL|GenericLogger|Error occured One or more errors occurred. 
+ Generic exception Popped in GetHttpRequestResponse(string url) 
+    at System.Threading.Tasks.Task.ThrowIfExceptional(Boolean includeTaskCanceledExceptions)
+   at System.Threading.Tasks.Task`1.GetResultCore(Boolean waitCompletionNotification)
+   at System.Threading.Tasks.Task`1.get_Result()
+   at MiscUtilities.HttpUtils.GetHttpRequestResponse(String url) in D:\Matei\PrsLic\ProductEngine\MiscUtilities\HttpUtils.cs:line 20
+2018-10-30 14:27:17.4161|FATAL|GenericLogger|Error occured Product Document Null Exception 
+ Exception popped when trying to extract product information for https://www.emag.ro/televizor-led-smart-philips-108-cm-4k-ultra-hd-43pus6503-12/pd/DDTM6JBBM/ 
+    at CrawlingUtilities.CrawlProductParser.CreateProductDocument()
+   at CrawlingUtilities.CrawlProductParser.DownloadProduct()
+2018-10-30 14:27:20.3798|FATAL|GenericLogger|Error occured Product Document Null Exception 
+ Exception popped when trying to extract product information for https://www.emag.ro/televizor-led-philips-80-cm-full-hd-32pfs4132-12/pd/DPTBMNBBM/ 
+    at CrawlingUtilities.CrawlProductParser.CreateProductDocument()
+   at CrawlingUtilities.CrawlProductParser.DownloadProduct()
+2018-10-30 14:27:20.3798|FATAL|GenericLogger|Error occured Product Document Null Exception 
+ Exception popped when trying to extract product information for https://www.emag.ro/televizor-smart-android-philips-108-cm-4k-ultra-hd-43pus7303-12/pd/D9G2ZFBBM/ 
+    at CrawlingUtilities.CrawlProductParser.CreateProductDocument()
+   at CrawlingUtilities.CrawlProductParser.DownloadProduct()
+2018-10-30 14:28:50.8009|FATAL|GenericLogger|Error occured One or more errors occurred. 
+ Generic exception Popped in GetHttpRequestResponse(string url) 
+    at System.Threading.Tasks.Task.ThrowIfExceptional(Boolean includeTaskCanceledExceptions)
+   at System.Threading.Tasks.Task`1.GetResultCore(Boolean waitCompletionNotification)
+   at System.Threading.Tasks.Task`1.get_Result()
+   at MiscUtilities.HttpUtils.GetHttpRequestResponse(String url) in D:\Matei\PrsLic\ProductEngine\MiscUtilities\HttpUtils.cs:line 20
+2018-10-30 14:28:50.8968|FATAL|GenericLogger|Error occured Product Document Null Exception 
+ Exception popped when trying to extract product information for https://www.emag.ro/epilator-ipl-philips-lumea-prestige-senzor-smartskin-utilizare-cu-sau-fara-fir-250-000-impusuri-accesoriu-fata-corp-axila-si-inghinal-auriu-alb-bri956-00/pd/DR9987BBM/ 
+    at CrawlingUtilities.CrawlProductParser.CreateProductDocument()
+   at CrawlingUtilities.CrawlProductParser.DownloadProduct()
+2018-10-30 14:31:04.1252|FATAL|GenericLogger|Error occured One or more errors occurred. 
+ Generic exception Popped in GetHttpRequestResponse(string url) 
+    at System.Threading.Tasks.Task.ThrowIfExceptional(Boolean includeTaskCanceledExceptions)
+   at System.Threading.Tasks.Task`1.GetResultCore(Boolean waitCompletionNotification)
+   at System.Threading.Tasks.Task`1.get_Result()
+   at MiscUtilities.HttpUtils.GetHttpRequestResponse(String url) in D:\Matei\PrsLic\ProductEngine\MiscUtilities\HttpUtils.cs:line 20
+2018-10-30 14:31:04.1472|FATAL|GenericLogger|Error occured Product Document Null Exception 
+ Exception popped when trying to extract product information for https://www.emag.ro/televizor-oled-smart-android-philips-139-cm-4k-ultra-hd-55pos9002-12/pd/DLF1MJBBM/ 
+    at CrawlingUtilities.CrawlProductParser.CreateProductDocument()
+   at CrawlingUtilities.CrawlProductParser.DownloadProduct()
