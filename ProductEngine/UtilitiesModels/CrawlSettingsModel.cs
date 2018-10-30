@@ -13,10 +13,12 @@ namespace UtilitiesModels
         public string SearchUrlFormat { get; set; }
         public string ProductCellTag { get; set; }
         public string UrlTag { get; set; }
-        public string ProductNameTag { get; set; }
+        public string NextProductPageTag { get; set; }
+
+        public string ProductName { get; set; }
         public string ProductPrice { get; set; }
         public string ProductStock { get; set; }
-        public string NextProductPage { get; set; }
+        public string ProductImage { get; set; }
 
     }
 

@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Text.RegularExpressions;
 using DatabaseModels;
 using HtmlAgilityPack;
 using Logger;
@@ -42,7 +43,10 @@ namespace CrawlingUtilities
 
         private void ExtractNeededInformation()
         {
-            
+            Product.SetDescription(HtmlDocumentUtilities.ExtractNodeValue(_document, RetailerConfig.CrawlingTags.ProductName, m => m.InnerText));
+            Product.SetPrice(HtmlDocumentUtilities.ExtractNodeValue(_document, RetailerConfig.CrawlingTags.ProductPrice, m => Regex.Match(m.InnerText,@"\d+.\d+(.\d+)?").Value));
+            Product.SetStock(HtmlDocumentUtilities.ExtractNodeValue(_document, RetailerConfig.CrawlingTags.ProductStock, m => string.IsNullOrEmpty(m.InnerText)?"OutOfStock":"InStock"));
+            Product.SetImageUrl(HtmlDocumentUtilities.ExtractNodeValue(_document, RetailerConfig.CrawlingTags.ProductImage, m => m.GetAttributeValue("scr",string.Empty)));
         }
 
 

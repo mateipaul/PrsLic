@@ -89,7 +89,7 @@ namespace CrawlingUtilities
 
         private bool HasNextPage(HtmlDocument doc)
         {
-            string nextPageUrl = HtmlDocumentUtilities.ExtractNodeValue(doc, RetailerConfig.CrawlingTags.NextProductPage, node => node.GetAttributeValue("href", string.Empty));
+            string nextPageUrl = HtmlDocumentUtilities.ExtractNodeValue(doc, RetailerConfig.CrawlingTags.NextProductPageTag, node => node.GetAttributeValue("href", string.Empty));
 
             if (string.IsNullOrEmpty(nextPageUrl))
             {
