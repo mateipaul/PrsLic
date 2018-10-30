@@ -1,4 +1,5 @@
-﻿using Logger;
+﻿using CrawlingUtilities;
+using Logger;
 using MiscUtilities;
 using System;
 using System.Collections.Generic;
@@ -17,9 +18,9 @@ namespace ProductBackgroundEngine
 
             GenericLogger.Info("Application Started");
 
-            CrawlSettingsHelper.LoadCrawlSettings();
+            var model = CrawlSettingsHelper.LoadCrawlSettings();
 
-
+            MainCrawlStarter.CrawlStart(model);
            
         }
 

@@ -1,0 +1,31 @@
+{
+	"Retailers":[
+		{
+			"RetailerName":"eMag",
+			"CrawlingTags":
+				{
+					"SearchUrlFormat":"https://www.emag.ro/search/{0}?ref=effective_search",
+					"ProductCellTag":"//div[contains(@class,'js-product-data')]",
+					"UrlTag":"//h2[contains(@class,'product-title-zone')]/a",
+					"ProductNameTag":"//h1[@class='page-title']",
+					"ProductPrice":"//p[@class='product-new-price']",
+					"ProductStock":"//span[contains(@class,'label-in_stock')]"
+				}
+			
+		},
+		{
+			"RetailerName":"Cel",
+			"CrawlingTags":{
+				
+					"SearchUrlFormat":"https://www.emag.ro/search/{0}?ref=effective_search",
+					"ProductCellTag":"//div[contains(@class,'js-product-data')]",
+					"UrlTag":"//h2[contains(@class,'product-title-zone')]/a",
+					"ProductNameTag":"//h1[@class='page-title']",
+					"ProductPrice":"//p[@class='product-new-price']",
+					"ProductStock":"//span[contains(@class,'label-in_stock')]"
+			}
+				
+			
+		}
+	]
+}

@@ -13,8 +13,10 @@ namespace MiscUtilities
     {
         static CrawlSettingsModel model = new CrawlSettingsModel();
 
-        public static void LoadCrawlSettings()
+        public static CrawlSettingsModel LoadCrawlSettings()
         {
+           
+
             AzureBlobUtils.Instance.DownloadBlob("CrawlingTags.json", "crawlsettings");
 
             try
@@ -34,6 +36,7 @@ namespace MiscUtilities
             {
                 GenericLogger.Error($"Exception {ex.Message} popped when trying to parse crawling Settings",ex);
             }
+            return model;
         }
 
     }

@@ -8,7 +8,7 @@ namespace UtilitiesModels
 {
 
 
-    public class CrawlingTag
+    public class CrawlingTags
     {
         public string SearchUrlFormat { get; set; }
         public string ProductCellTag { get; set; }
@@ -16,12 +16,14 @@ namespace UtilitiesModels
         public string ProductNameTag { get; set; }
         public string ProductPrice { get; set; }
         public string ProductStock { get; set; }
+        public string NextProductPage { get; set; }
+
     }
 
     public class RetailerConfiguration
     {
         public string RetailerName { get; set; }
-        public List<CrawlingTag> CrawlingTags { get; set; }
+        public CrawlingTags CrawlingTags { get; set; }
     }
 
     public class CrawlSettingsModel

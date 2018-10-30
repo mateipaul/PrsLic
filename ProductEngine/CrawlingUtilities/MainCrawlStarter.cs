@@ -8,10 +8,10 @@ using UtilitiesModels;
 
 namespace CrawlingUtilities
 {
-    public class MainCrawlStarter
+    public static class MainCrawlStarter
     {
 
-        public MainCrawlStarter (CrawlSettingsModel model)
+        public static void CrawlStart (CrawlSettingsModel model)
         {
             try
             {
@@ -28,19 +28,10 @@ namespace CrawlingUtilities
             
         }
 
-        private void StartCrawling(RetailerConfiguration retailer)
+        private static void StartCrawling(RetailerConfiguration retailer)
         {
-            try
-            {
-                CrawlDownloader downloader = new CrawlDownloader(retailer);
-
-                downloader.StartCrawling();
-            }
-            catch (Exception ex)
-            {
-                GenericLogger.Error($"Exception popped at StartCrawling for {retailer.RetailerName}", ex);
-            }
-            
+            CrawlManager manager = new CrawlManager(retailer);
+            manager.StartCrawling();
         }
     }
 }

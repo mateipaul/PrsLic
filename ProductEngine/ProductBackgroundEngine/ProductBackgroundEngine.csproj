@@ -50,6 +50,10 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\CrawlingUtilities\CrawlingUtilities.csproj">
+      <Project>{22CE7430-0B2D-4C27-82A4-EE8DDBB269E1}</Project>
+      <Name>CrawlingUtilities</Name>
+    </ProjectReference>
     <ProjectReference Include="..\DatabaseModels\DatabaseModels.csproj">
       <Project>{010D9C41-5B64-4861-B909-E42855976E9E}</Project>
       <Name>DatabaseModels</Name>

@@ -7,24 +7,25 @@ using System.Threading.Tasks;
 
 namespace MiscUtilities
 {
-    public  class HtmlDocumentUtilities
+    public static class HtmlDocumentUtilities
     {
-        private HtmlDocument doc;
+       
 
-        public HtmlDocument GetHtmlDocument(string htmlSourceString)
+        public static HtmlDocument GetHtmlDocument(string htmlSourceString)
         {
+             HtmlDocument doc = new HtmlDocument();
+
             if (string.IsNullOrEmpty(htmlSourceString))
             {
                 return null;
             }
-            doc = new HtmlDocument();
 
             doc.LoadHtml(htmlSourceString);
 
             return doc;
         }
 
-        private string ExtractNodeValue(string xPath, Func<HtmlNode, string> func)
+        public static string ExtractNodeValue(HtmlDocument doc,string xPath, Func<HtmlNode, string> func)
         {
             try
             {

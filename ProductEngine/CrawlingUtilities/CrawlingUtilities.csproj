@@ -30,6 +30,9 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="HtmlAgilityPack, Version=1.8.0.0, Culture=neutral, PublicKeyToken=bd319b19eaf3b43a, processorArchitecture=MSIL">
+      <HintPath>..\packages\HtmlAgilityPack.1.8.0\lib\Net45\HtmlAgilityPack.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="System.Xml.Linq" />
@@ -41,6 +44,8 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="CrawlDownloader.cs" />
+    <Compile Include="CrawlManager.cs" />
+    <Compile Include="CrawlProductParser.cs" />
     <Compile Include="MainCrawlStarter.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
@@ -48,6 +53,10 @@
     <ProjectReference Include="..\DatabaseModels\DatabaseModels.csproj">
       <Project>{010D9C41-5B64-4861-B909-E42855976E9E}</Project>
       <Name>DatabaseModels</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\DatabaseUtilities\DatabaseUtilities.csproj">
+      <Project>{27CE74E0-4164-4B67-88CA-26FA1A5EAB98}</Project>
+      <Name>DatabaseUtilities</Name>
     </ProjectReference>
     <ProjectReference Include="..\Logger\Logger.csproj">
       <Project>{B59B462B-E0FC-4617-A2C2-420D56DA6409}</Project>
@@ -61,6 +70,9 @@
       <Project>{12FC29D1-B1C2-46B2-8695-F1E50DA34DBB}</Project>
       <Name>UtilitiesModels</Name>
     </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="packages.config" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

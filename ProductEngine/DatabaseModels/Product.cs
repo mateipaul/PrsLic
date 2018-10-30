@@ -8,13 +8,37 @@ namespace DatabaseModels
 {
     public class Product
     {
-        public Guid Id { get; set; }
-        public string Url { get; set; }
-        public string Descriprion { get; set; }
+        private Guid Id { get; set; }
+        private bool Deleted { get; set; }
+
+        public string Url { get; private set; }
+        public string Descriprion { get; private set; }
         public string Price { get; set; }
         public string Stock { get; set; }
         public string ImageUrl { get; set; }
-        public bool Deleted { get; set; }
 
+
+
+        public Product(string url)
+        {
+            this.Id = new Guid();
+            this.Url = url;
+            this.Deleted = false;
+        }
+
+        public override bool Equals(object obj)
+        {
+            var toCompare = obj as Product;
+            return this.Url.Equals(toCompare.Url);
+        }
+        public override int GetHashCode()
+        {
+            return this.Url.GetHashCode();
+        }
+
+        public void SetDescription(string description)
+        {
+            Descriprion = description;
+        }
     }
 }

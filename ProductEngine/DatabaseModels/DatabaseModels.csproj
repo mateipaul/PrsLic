@@ -50,14 +50,10 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="CrawlProductCollection.cs" />
     <Compile Include="Manufacturer.cs" />
-    <Compile Include="ManufacturerRetailer.cs" />
-    <Compile Include="PriceEvolution.cs" />
     <Compile Include="Product.cs" />
-    <Compile Include="ProductFollow.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Retailer.cs" />
-    <Compile Include="User.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />

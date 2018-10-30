@@ -1,0 +1,1354 @@
+2018-10-30 12:23:10.9956|INFO|GenericLogger|Application Started
+2018-10-30 12:23:12.0469|INFO|GenericLogger|Crawl Settings loaded successfully 
+2018-10-30 12:23:46.6286|FATAL|GenericLogger|Error occured Only 'http' and 'https' schemes are allowed.
+Parameter name: requestUri 
+ Generic exception Popped in GetHttpRequestResponse(string url) 
+    at System.Net.Http.HttpRequestMessage.InitializeValues(HttpMethod method, Uri requestUri)
+   at System.Net.Http.HttpRequestMessage..ctor(HttpMethod method, Uri requestUri)
+   at System.Net.Http.HttpClient.GetAsync(Uri requestUri, HttpCompletionOption completionOption, CancellationToken cancellationToken)
+   at System.Net.Http.HttpClient.GetContentAsync[T](Uri requestUri, HttpCompletionOption completionOption, T defaultValue, Func`2 readAs)
+   at System.Net.Http.HttpClient.GetStringAsync(Uri requestUri)
+   at System.Net.Http.HttpClient.GetStringAsync(String requestUri)
+   at MiscUtilities.HttpUtils.GetHttpRequestResponse(String url) in D:\Matei\PrsLic\ProductEngine\MiscUtilities\HttpUtils.cs:line 20
+2018-10-30 12:23:46.6666|FATAL|GenericLogger|Error occured Only 'http' and 'https' schemes are allowed.
+Parameter name: requestUri 
+ Generic exception Popped in GetHttpRequestResponse(string url) 
+    at System.Net.Http.HttpRequestMessage.InitializeValues(HttpMethod method, Uri requestUri)
+   at System.Net.Http.HttpRequestMessage..ctor(HttpMethod method, Uri requestUri)
+   at System.Net.Http.HttpClient.GetAsync(Uri requestUri, HttpCompletionOption completionOption, CancellationToken cancellationToken)
+   at System.Net.Http.HttpClient.GetContentAsync[T](Uri requestUri, HttpCompletionOption completionOption, T defaultValue, Func`2 readAs)
+   at System.Net.Http.HttpClient.GetStringAsync(Uri requestUri)
+   at System.Net.Http.HttpClient.GetStringAsync(String requestUri)
+   at MiscUtilities.HttpUtils.GetHttpRequestResponse(String url) in D:\Matei\PrsLic\ProductEngine\MiscUtilities\HttpUtils.cs:line 20
+2018-10-30 12:23:46.6895|FATAL|GenericLogger|Error occured Only 'http' and 'https' schemes are allowed.
+Parameter name: requestUri 
+ Generic exception Popped in GetHttpRequestResponse(string url) 
+    at System.Net.Http.HttpRequestMessage.InitializeValues(HttpMethod method, Uri requestUri)
+   at System.Net.Http.HttpRequestMessage..ctor(HttpMethod method, Uri requestUri)
+   at System.Net.Http.HttpClient.GetAsync(Uri requestUri, HttpCompletionOption completionOption, CancellationToken cancellationToken)
+   at System.Net.Http.HttpClient.GetContentAsync[T](Uri requestUri, HttpCompletionOption completionOption, T defaultValue, Func`2 readAs)
+   at System.Net.Http.HttpClient.GetStringAsync(Uri requestUri)
+   at System.Net.Http.HttpClient.GetStringAsync(String requestUri)
+   at MiscUtilities.HttpUtils.GetHttpRequestResponse(String url) in D:\Matei\PrsLic\ProductEngine\MiscUtilities\HttpUtils.cs:line 20
+2018-10-30 12:23:46.7205|FATAL|GenericLogger|Error occured Only 'http' and 'https' schemes are allowed.
+Parameter name: requestUri 
+ Generic exception Popped in GetHttpRequestResponse(string url) 
+    at System.Net.Http.HttpRequestMessage.InitializeValues(HttpMethod method, Uri requestUri)
+   at System.Net.Http.HttpRequestMessage..ctor(HttpMethod method, Uri requestUri)
+   at System.Net.Http.HttpClient.GetAsync(Uri requestUri, HttpCompletionOption completionOption, CancellationToken cancellationToken)
+   at System.Net.Http.HttpClient.GetContentAsync[T](Uri requestUri, HttpCompletionOption completionOption, T defaultValue, Func`2 readAs)
+   at System.Net.Http.HttpClient.GetStringAsync(Uri requestUri)
+   at System.Net.Http.HttpClient.GetStringAsync(String requestUri)
+   at MiscUtilities.HttpUtils.GetHttpRequestResponse(String url) in D:\Matei\PrsLic\ProductEngine\MiscUtilities\HttpUtils.cs:line 20
+2018-10-30 12:23:46.7535|FATAL|GenericLogger|Error occured Only 'http' and 'https' schemes are allowed.
+Parameter name: requestUri 
+ Generic exception Popped in GetHttpRequestResponse(string url) 
+    at System.Net.Http.HttpRequestMessage.InitializeValues(HttpMethod method, Uri requestUri)
+   at System.Net.Http.HttpRequestMessage..ctor(HttpMethod method, Uri requestUri)
+   at System.Net.Http.HttpClient.GetAsync(Uri requestUri, HttpCompletionOption completionOption, CancellationToken cancellationToken)
+   at System.Net.Http.HttpClient.GetContentAsync[T](Uri requestUri, HttpCompletionOption completionOption, T defaultValue, Func`2 readAs)
+   at System.Net.Http.HttpClient.GetStringAsync(Uri requestUri)
+   at System.Net.Http.HttpClient.GetStringAsync(String requestUri)
+   at MiscUtilities.HttpUtils.GetHttpRequestResponse(String url) in D:\Matei\PrsLic\ProductEngine\MiscUtilities\HttpUtils.cs:line 20
+2018-10-30 12:23:46.7805|FATAL|GenericLogger|Error occured Only 'http' and 'https' schemes are allowed.
+Parameter name: requestUri 
+ Generic exception Popped in GetHttpRequestResponse(string url) 
+    at System.Net.Http.HttpRequestMessage.InitializeValues(HttpMethod method, Uri requestUri)
+   at System.Net.Http.HttpRequestMessage..ctor(HttpMethod method, Uri requestUri)
+   at System.Net.Http.HttpClient.GetAsync(Uri requestUri, HttpCompletionOption completionOption, CancellationToken cancellationToken)
+   at System.Net.Http.HttpClient.GetContentAsync[T](Uri requestUri, HttpCompletionOption completionOption, T defaultValue, Func`2 readAs)
+   at System.Net.Http.HttpClient.GetStringAsync(Uri requestUri)
+   at System.Net.Http.HttpClient.GetStringAsync(String requestUri)
+   at MiscUtilities.HttpUtils.GetHttpRequestResponse(String url) in D:\Matei\PrsLic\ProductEngine\MiscUtilities\HttpUtils.cs:line 20
+2018-10-30 12:23:46.8055|FATAL|GenericLogger|Error occured Only 'http' and 'https' schemes are allowed.
+Parameter name: requestUri 
+ Generic exception Popped in GetHttpRequestResponse(string url) 
+    at System.Net.Http.HttpRequestMessage.InitializeValues(HttpMethod method, Uri requestUri)
+   at System.Net.Http.HttpRequestMessage..ctor(HttpMethod method, Uri requestUri)
+   at System.Net.Http.HttpClient.GetAsync(Uri requestUri, HttpCompletionOption completionOption, CancellationToken cancellationToken)
+   at System.Net.Http.HttpClient.GetContentAsync[T](Uri requestUri, HttpCompletionOption completionOption, T defaultValue, Func`2 readAs)
+   at System.Net.Http.HttpClient.GetStringAsync(Uri requestUri)
+   at System.Net.Http.HttpClient.GetStringAsync(String requestUri)
+   at MiscUtilities.HttpUtils.GetHttpRequestResponse(String url) in D:\Matei\PrsLic\ProductEngine\MiscUtilities\HttpUtils.cs:line 20
+2018-10-30 12:23:46.8325|FATAL|GenericLogger|Error occured Only 'http' and 'https' schemes are allowed.
+Parameter name: requestUri 
+ Generic exception Popped in GetHttpRequestResponse(string url) 
+    at System.Net.Http.HttpRequestMessage.InitializeValues(HttpMethod method, Uri requestUri)
+   at System.Net.Http.HttpRequestMessage..ctor(HttpMethod method, Uri requestUri)
+   at System.Net.Http.HttpClient.GetAsync(Uri requestUri, HttpCompletionOption completionOption, CancellationToken cancellationToken)
+   at System.Net.Http.HttpClient.GetContentAsync[T](Uri requestUri, HttpCompletionOption completionOption, T defaultValue, Func`2 readAs)
+   at System.Net.Http.HttpClient.GetStringAsync(Uri requestUri)
+   at System.Net.Http.HttpClient.GetStringAsync(String requestUri)
+   at MiscUtilities.HttpUtils.GetHttpRequestResponse(String url) in D:\Matei\PrsLic\ProductEngine\MiscUtilities\HttpUtils.cs:line 20
+2018-10-30 12:23:46.8634|FATAL|GenericLogger|Error occured Only 'http' and 'https' schemes are allowed.
+Parameter name: requestUri 
+ Generic exception Popped in GetHttpRequestResponse(string url) 
+    at System.Net.Http.HttpRequestMessage.InitializeValues(HttpMethod method, Uri requestUri)
+   at System.Net.Http.HttpRequestMessage..ctor(HttpMethod method, Uri requestUri)
+   at System.Net.Http.HttpClient.GetAsync(Uri requestUri, HttpCompletionOption completionOption, CancellationToken cancellationToken)
+   at System.Net.Http.HttpClient.GetContentAsync[T](Uri requestUri, HttpCompletionOption completionOption, T defaultValue, Func`2 readAs)
+   at System.Net.Http.HttpClient.GetStringAsync(Uri requestUri)
+   at System.Net.Http.HttpClient.GetStringAsync(String requestUri)
+   at MiscUtilities.HttpUtils.GetHttpRequestResponse(String url) in D:\Matei\PrsLic\ProductEngine\MiscUtilities\HttpUtils.cs:line 20
+2018-10-30 12:23:46.8894|FATAL|GenericLogger|Error occured Only 'http' and 'https' schemes are allowed.
+Parameter name: requestUri 
+ Generic exception Popped in GetHttpRequestResponse(string url) 
+    at System.Net.Http.HttpRequestMessage.InitializeValues(HttpMethod method, Uri requestUri)
+   at System.Net.Http.HttpRequestMessage..ctor(HttpMethod method, Uri requestUri)
+   at System.Net.Http.HttpClient.GetAsync(Uri requestUri, HttpCompletionOption completionOption, CancellationToken cancellationToken)
+   at System.Net.Http.HttpClient.GetContentAsync[T](Uri requestUri, HttpCompletionOption completionOption, T defaultValue, Func`2 readAs)
+   at System.Net.Http.HttpClient.GetStringAsync(Uri requestUri)
+   at System.Net.Http.HttpClient.GetStringAsync(String requestUri)
+   at MiscUtilities.HttpUtils.GetHttpRequestResponse(String url) in D:\Matei\PrsLic\ProductEngine\MiscUtilities\HttpUtils.cs:line 20
+2018-10-30 12:23:46.9184|FATAL|GenericLogger|Error occured Only 'http' and 'https' schemes are allowed.
+Parameter name: requestUri 
+ Generic exception Popped in GetHttpRequestResponse(string url) 
+    at System.Net.Http.HttpRequestMessage.InitializeValues(HttpMethod method, Uri requestUri)
+   at System.Net.Http.HttpRequestMessage..ctor(HttpMethod method, Uri requestUri)
+   at System.Net.Http.HttpClient.GetAsync(Uri requestUri, HttpCompletionOption completionOption, CancellationToken cancellationToken)
+   at System.Net.Http.HttpClient.GetContentAsync[T](Uri requestUri, HttpCompletionOption completionOption, T defaultValue, Func`2 readAs)
+   at System.Net.Http.HttpClient.GetStringAsync(Uri requestUri)
+   at System.Net.Http.HttpClient.GetStringAsync(String requestUri)
+   at MiscUtilities.HttpUtils.GetHttpRequestResponse(String url) in D:\Matei\PrsLic\ProductEngine\MiscUtilities\HttpUtils.cs:line 20
+2018-10-30 12:23:46.9444|FATAL|GenericLogger|Error occured Only 'http' and 'https' schemes are allowed.
+Parameter name: requestUri 
+ Generic exception Popped in GetHttpRequestResponse(string url) 
+    at System.Net.Http.HttpRequestMessage.InitializeValues(HttpMethod method, Uri requestUri)
+   at System.Net.Http.HttpRequestMessage..ctor(HttpMethod method, Uri requestUri)
+   at System.Net.Http.HttpClient.GetAsync(Uri requestUri, HttpCompletionOption completionOption, CancellationToken cancellationToken)
+   at System.Net.Http.HttpClient.GetContentAsync[T](Uri requestUri, HttpCompletionOption completionOption, T defaultValue, Func`2 readAs)
+   at System.Net.Http.HttpClient.GetStringAsync(Uri requestUri)
+   at System.Net.Http.HttpClient.GetStringAsync(String requestUri)
+   at MiscUtilities.HttpUtils.GetHttpRequestResponse(String url) in D:\Matei\PrsLic\ProductEngine\MiscUtilities\HttpUtils.cs:line 20
+2018-10-30 12:23:46.9714|FATAL|GenericLogger|Error occured Only 'http' and 'https' schemes are allowed.
+Parameter name: requestUri 
+ Generic exception Popped in GetHttpRequestResponse(string url) 
+    at System.Net.Http.HttpRequestMessage.InitializeValues(HttpMethod method, Uri requestUri)
+   at System.Net.Http.HttpRequestMessage..ctor(HttpMethod method, Uri requestUri)
+   at System.Net.Http.HttpClient.GetAsync(Uri requestUri, HttpCompletionOption completionOption, CancellationToken cancellationToken)
+   at System.Net.Http.HttpClient.GetContentAsync[T](Uri requestUri, HttpCompletionOption completionOption, T defaultValue, Func`2 readAs)
+   at System.Net.Http.HttpClient.GetStringAsync(Uri requestUri)
+   at System.Net.Http.HttpClient.GetStringAsync(String requestUri)
+   at MiscUtilities.HttpUtils.GetHttpRequestResponse(String url) in D:\Matei\PrsLic\ProductEngine\MiscUtilities\HttpUtils.cs:line 20
+2018-10-30 12:23:47.0154|FATAL|GenericLogger|Error occured Only 'http' and 'https' schemes are allowed.
+Parameter name: requestUri 
+ Generic exception Popped in GetHttpRequestResponse(string url) 
+    at System.Net.Http.HttpRequestMessage.InitializeValues(HttpMethod method, Uri requestUri)
+   at System.Net.Http.HttpRequestMessage..ctor(HttpMethod method, Uri requestUri)
+   at System.Net.Http.HttpClient.GetAsync(Uri requestUri, HttpCompletionOption completionOption, CancellationToken cancellationToken)
+   at System.Net.Http.HttpClient.GetContentAsync[T](Uri requestUri, HttpCompletionOption completionOption, T defaultValue, Func`2 readAs)
+   at System.Net.Http.HttpClient.GetStringAsync(Uri requestUri)
+   at System.Net.Http.HttpClient.GetStringAsync(String requestUri)
+   at MiscUtilities.HttpUtils.GetHttpRequestResponse(String url) in D:\Matei\PrsLic\ProductEngine\MiscUtilities\HttpUtils.cs:line 20
+2018-10-30 12:23:47.0413|FATAL|GenericLogger|Error occured Only 'http' and 'https' schemes are allowed.
+Parameter name: requestUri 
+ Generic exception Popped in GetHttpRequestResponse(string url) 
+    at System.Net.Http.HttpRequestMessage.InitializeValues(HttpMethod method, Uri requestUri)
+   at System.Net.Http.HttpRequestMessage..ctor(HttpMethod method, Uri requestUri)
+   at System.Net.Http.HttpClient.GetAsync(Uri requestUri, HttpCompletionOption completionOption, CancellationToken cancellationToken)
+   at System.Net.Http.HttpClient.GetContentAsync[T](Uri requestUri, HttpCompletionOption completionOption, T defaultValue, Func`2 readAs)
+   at System.Net.Http.HttpClient.GetStringAsync(Uri requestUri)
+   at System.Net.Http.HttpClient.GetStringAsync(String requestUri)
+   at MiscUtilities.HttpUtils.GetHttpRequestResponse(String url) in D:\Matei\PrsLic\ProductEngine\MiscUtilities\HttpUtils.cs:line 20
+2018-10-30 12:23:47.0663|FATAL|GenericLogger|Error occured Only 'http' and 'https' schemes are allowed.
+Parameter name: requestUri 
+ Generic exception Popped in GetHttpRequestResponse(string url) 
+    at System.Net.Http.HttpRequestMessage.InitializeValues(HttpMethod method, Uri requestUri)
+   at System.Net.Http.HttpRequestMessage..ctor(HttpMethod method, Uri requestUri)
+   at System.Net.Http.HttpClient.GetAsync(Uri requestUri, HttpCompletionOption completionOption, CancellationToken cancellationToken)
+   at System.Net.Http.HttpClient.GetContentAsync[T](Uri requestUri, HttpCompletionOption completionOption, T defaultValue, Func`2 readAs)
+   at System.Net.Http.HttpClient.GetStringAsync(Uri requestUri)
+   at System.Net.Http.HttpClient.GetStringAsync(String requestUri)
+   at MiscUtilities.HttpUtils.GetHttpRequestResponse(String url) in D:\Matei\PrsLic\ProductEngine\MiscUtilities\HttpUtils.cs:line 20
+2018-10-30 12:23:47.0913|FATAL|GenericLogger|Error occured Only 'http' and 'https' schemes are allowed.
+Parameter name: requestUri 
+ Generic exception Popped in GetHttpRequestResponse(string url) 
+    at System.Net.Http.HttpRequestMessage.InitializeValues(HttpMethod method, Uri requestUri)
+   at System.Net.Http.HttpRequestMessage..ctor(HttpMethod method, Uri requestUri)
+   at System.Net.Http.HttpClient.GetAsync(Uri requestUri, HttpCompletionOption completionOption, CancellationToken cancellationToken)
+   at System.Net.Http.HttpClient.GetContentAsync[T](Uri requestUri, HttpCompletionOption completionOption, T defaultValue, Func`2 readAs)
+   at System.Net.Http.HttpClient.GetStringAsync(Uri requestUri)
+   at System.Net.Http.HttpClient.GetStringAsync(String requestUri)
+   at MiscUtilities.HttpUtils.GetHttpRequestResponse(String url) in D:\Matei\PrsLic\ProductEngine\MiscUtilities\HttpUtils.cs:line 20
+2018-10-30 12:23:47.1173|FATAL|GenericLogger|Error occured Only 'http' and 'https' schemes are allowed.
+Parameter name: requestUri 
+ Generic exception Popped in GetHttpRequestResponse(string url) 
+    at System.Net.Http.HttpRequestMessage.InitializeValues(HttpMethod method, Uri requestUri)
+   at System.Net.Http.HttpRequestMessage..ctor(HttpMethod method, Uri requestUri)
+   at System.Net.Http.HttpClient.GetAsync(Uri requestUri, HttpCompletionOption completionOption, CancellationToken cancellationToken)
+   at System.Net.Http.HttpClient.GetContentAsync[T](Uri requestUri, HttpCompletionOption completionOption, T defaultValue, Func`2 readAs)
+   at System.Net.Http.HttpClient.GetStringAsync(Uri requestUri)
+   at System.Net.Http.HttpClient.GetStringAsync(String requestUri)
+   at MiscUtilities.HttpUtils.GetHttpRequestResponse(String url) in D:\Matei\PrsLic\ProductEngine\MiscUtilities\HttpUtils.cs:line 20
+2018-10-30 12:23:47.1423|FATAL|GenericLogger|Error occured Only 'http' and 'https' schemes are allowed.
+Parameter name: requestUri 
+ Generic exception Popped in GetHttpRequestResponse(string url) 
+    at System.Net.Http.HttpRequestMessage.InitializeValues(HttpMethod method, Uri requestUri)
+   at System.Net.Http.HttpRequestMessage..ctor(HttpMethod method, Uri requestUri)
+   at System.Net.Http.HttpClient.GetAsync(Uri requestUri, HttpCompletionOption completionOption, CancellationToken cancellationToken)
+   at System.Net.Http.HttpClient.GetContentAsync[T](Uri requestUri, HttpCompletionOption completionOption, T defaultValue, Func`2 readAs)
+   at System.Net.Http.HttpClient.GetStringAsync(Uri requestUri)
+   at System.Net.Http.HttpClient.GetStringAsync(String requestUri)
+   at MiscUtilities.HttpUtils.GetHttpRequestResponse(String url) in D:\Matei\PrsLic\ProductEngine\MiscUtilities\HttpUtils.cs:line 20
+2018-10-30 12:23:47.1783|FATAL|GenericLogger|Error occured Only 'http' and 'https' schemes are allowed.
+Parameter name: requestUri 
+ Generic exception Popped in GetHttpRequestResponse(string url) 
+    at System.Net.Http.HttpRequestMessage.InitializeValues(HttpMethod method, Uri requestUri)
+   at System.Net.Http.HttpRequestMessage..ctor(HttpMethod method, Uri requestUri)
+   at System.Net.Http.HttpClient.GetAsync(Uri requestUri, HttpCompletionOption completionOption, CancellationToken cancellationToken)
+   at System.Net.Http.HttpClient.GetContentAsync[T](Uri requestUri, HttpCompletionOption completionOption, T defaultValue, Func`2 readAs)
+   at System.Net.Http.HttpClient.GetStringAsync(Uri requestUri)
+   at System.Net.Http.HttpClient.GetStringAsync(String requestUri)
+   at MiscUtilities.HttpUtils.GetHttpRequestResponse(String url) in D:\Matei\PrsLic\ProductEngine\MiscUtilities\HttpUtils.cs:line 20
+2018-10-30 12:23:47.2032|FATAL|GenericLogger|Error occured Only 'http' and 'https' schemes are allowed.
+Parameter name: requestUri 
+ Generic exception Popped in GetHttpRequestResponse(string url) 
+    at System.Net.Http.HttpRequestMessage.InitializeValues(HttpMethod method, Uri requestUri)
+   at System.Net.Http.HttpRequestMessage..ctor(HttpMethod method, Uri requestUri)
+   at System.Net.Http.HttpClient.GetAsync(Uri requestUri, HttpCompletionOption completionOption, CancellationToken cancellationToken)
+   at System.Net.Http.HttpClient.GetContentAsync[T](Uri requestUri, HttpCompletionOption completionOption, T defaultValue, Func`2 readAs)
+   at System.Net.Http.HttpClient.GetStringAsync(Uri requestUri)
+   at System.Net.Http.HttpClient.GetStringAsync(String requestUri)
+   at MiscUtilities.HttpUtils.GetHttpRequestResponse(String url) in D:\Matei\PrsLic\ProductEngine\MiscUtilities\HttpUtils.cs:line 20
+2018-10-30 12:23:47.2282|FATAL|GenericLogger|Error occured Only 'http' and 'https' schemes are allowed.
+Parameter name: requestUri 
+ Generic exception Popped in GetHttpRequestResponse(string url) 
+    at System.Net.Http.HttpRequestMessage.InitializeValues(HttpMethod method, Uri requestUri)
+   at System.Net.Http.HttpRequestMessage..ctor(HttpMethod method, Uri requestUri)
+   at System.Net.Http.HttpClient.GetAsync(Uri requestUri, HttpCompletionOption completionOption, CancellationToken cancellationToken)
+   at System.Net.Http.HttpClient.GetContentAsync[T](Uri requestUri, HttpCompletionOption completionOption, T defaultValue, Func`2 readAs)
+   at System.Net.Http.HttpClient.GetStringAsync(Uri requestUri)
+   at System.Net.Http.HttpClient.GetStringAsync(String requestUri)
+   at MiscUtilities.HttpUtils.GetHttpRequestResponse(String url) in D:\Matei\PrsLic\ProductEngine\MiscUtilities\HttpUtils.cs:line 20
+2018-10-30 12:23:47.2582|FATAL|GenericLogger|Error occured Only 'http' and 'https' schemes are allowed.
+Parameter name: requestUri 
+ Generic exception Popped in GetHttpRequestResponse(string url) 
+    at System.Net.Http.HttpRequestMessage.InitializeValues(HttpMethod method, Uri requestUri)
+   at System.Net.Http.HttpRequestMessage..ctor(HttpMethod method, Uri requestUri)
+   at System.Net.Http.HttpClient.GetAsync(Uri requestUri, HttpCompletionOption completionOption, CancellationToken cancellationToken)
+   at System.Net.Http.HttpClient.GetContentAsync[T](Uri requestUri, HttpCompletionOption completionOption, T defaultValue, Func`2 readAs)
+   at System.Net.Http.HttpClient.GetStringAsync(Uri requestUri)
+   at System.Net.Http.HttpClient.GetStringAsync(String requestUri)
+   at MiscUtilities.HttpUtils.GetHttpRequestResponse(String url) in D:\Matei\PrsLic\ProductEngine\MiscUtilities\HttpUtils.cs:line 20
+2018-10-30 12:23:47.2842|FATAL|GenericLogger|Error occured Only 'http' and 'https' schemes are allowed.
+Parameter name: requestUri 
+ Generic exception Popped in GetHttpRequestResponse(string url) 
+    at System.Net.Http.HttpRequestMessage.InitializeValues(HttpMethod method, Uri requestUri)
+   at System.Net.Http.HttpRequestMessage..ctor(HttpMethod method, Uri requestUri)
+   at System.Net.Http.HttpClient.GetAsync(Uri requestUri, HttpCompletionOption completionOption, CancellationToken cancellationToken)
+   at System.Net.Http.HttpClient.GetContentAsync[T](Uri requestUri, HttpCompletionOption completionOption, T defaultValue, Func`2 readAs)
+   at System.Net.Http.HttpClient.GetStringAsync(Uri requestUri)
+   at System.Net.Http.HttpClient.GetStringAsync(String requestUri)
+   at MiscUtilities.HttpUtils.GetHttpRequestResponse(String url) in D:\Matei\PrsLic\ProductEngine\MiscUtilities\HttpUtils.cs:line 20
+2018-10-30 12:23:47.3092|FATAL|GenericLogger|Error occured Only 'http' and 'https' schemes are allowed.
+Parameter name: requestUri 
+ Generic exception Popped in GetHttpRequestResponse(string url) 
+    at System.Net.Http.HttpRequestMessage.InitializeValues(HttpMethod method, Uri requestUri)
+   at System.Net.Http.HttpRequestMessage..ctor(HttpMethod method, Uri requestUri)
+   at System.Net.Http.HttpClient.GetAsync(Uri requestUri, HttpCompletionOption completionOption, CancellationToken cancellationToken)
+   at System.Net.Http.HttpClient.GetContentAsync[T](Uri requestUri, HttpCompletionOption completionOption, T defaultValue, Func`2 readAs)
+   at System.Net.Http.HttpClient.GetStringAsync(Uri requestUri)
+   at System.Net.Http.HttpClient.GetStringAsync(String requestUri)
+   at MiscUtilities.HttpUtils.GetHttpRequestResponse(String url) in D:\Matei\PrsLic\ProductEngine\MiscUtilities\HttpUtils.cs:line 20
+2018-10-30 12:23:47.3352|FATAL|GenericLogger|Error occured Only 'http' and 'https' schemes are allowed.
+Parameter name: requestUri 
+ Generic exception Popped in GetHttpRequestResponse(string url) 
+    at System.Net.Http.HttpRequestMessage.InitializeValues(HttpMethod method, Uri requestUri)
+   at System.Net.Http.HttpRequestMessage..ctor(HttpMethod method, Uri requestUri)
+   at System.Net.Http.HttpClient.GetAsync(Uri requestUri, HttpCompletionOption completionOption, CancellationToken cancellationToken)
+   at System.Net.Http.HttpClient.GetContentAsync[T](Uri requestUri, HttpCompletionOption completionOption, T defaultValue, Func`2 readAs)
+   at System.Net.Http.HttpClient.GetStringAsync(Uri requestUri)
+   at System.Net.Http.HttpClient.GetStringAsync(String requestUri)
+   at MiscUtilities.HttpUtils.GetHttpRequestResponse(String url) in D:\Matei\PrsLic\ProductEngine\MiscUtilities\HttpUtils.cs:line 20
+2018-10-30 12:23:47.3591|FATAL|GenericLogger|Error occured Only 'http' and 'https' schemes are allowed.
+Parameter name: requestUri 
+ Generic exception Popped in GetHttpRequestResponse(string url) 
+    at System.Net.Http.HttpRequestMessage.InitializeValues(HttpMethod method, Uri requestUri)
+   at System.Net.Http.HttpRequestMessage..ctor(HttpMethod method, Uri requestUri)
+   at System.Net.Http.HttpClient.GetAsync(Uri requestUri, HttpCompletionOption completionOption, CancellationToken cancellationToken)
+   at System.Net.Http.HttpClient.GetContentAsync[T](Uri requestUri, HttpCompletionOption completionOption, T defaultValue, Func`2 readAs)
+   at System.Net.Http.HttpClient.GetStringAsync(Uri requestUri)
+   at System.Net.Http.HttpClient.GetStringAsync(String requestUri)
+   at MiscUtilities.HttpUtils.GetHttpRequestResponse(String url) in D:\Matei\PrsLic\ProductEngine\MiscUtilities\HttpUtils.cs:line 20
+2018-10-30 12:23:47.3851|FATAL|GenericLogger|Error occured Only 'http' and 'https' schemes are allowed.
+Parameter name: requestUri 
+ Generic exception Popped in GetHttpRequestResponse(string url) 
+    at System.Net.Http.HttpRequestMessage.InitializeValues(HttpMethod method, Uri requestUri)
+   at System.Net.Http.HttpRequestMessage..ctor(HttpMethod method, Uri requestUri)
+   at System.Net.Http.HttpClient.GetAsync(Uri requestUri, HttpCompletionOption completionOption, CancellationToken cancellationToken)
+   at System.Net.Http.HttpClient.GetContentAsync[T](Uri requestUri, HttpCompletionOption completionOption, T defaultValue, Func`2 readAs)
+   at System.Net.Http.HttpClient.GetStringAsync(Uri requestUri)
+   at System.Net.Http.HttpClient.GetStringAsync(String requestUri)
+   at MiscUtilities.HttpUtils.GetHttpRequestResponse(String url) in D:\Matei\PrsLic\ProductEngine\MiscUtilities\HttpUtils.cs:line 20
+2018-10-30 12:23:47.4141|FATAL|GenericLogger|Error occured Only 'http' and 'https' schemes are allowed.
+Parameter name: requestUri 
+ Generic exception Popped in GetHttpRequestResponse(string url) 
+    at System.Net.Http.HttpRequestMessage.InitializeValues(HttpMethod method, Uri requestUri)
+   at System.Net.Http.HttpRequestMessage..ctor(HttpMethod method, Uri requestUri)
+   at System.Net.Http.HttpClient.GetAsync(Uri requestUri, HttpCompletionOption completionOption, CancellationToken cancellationToken)
+   at System.Net.Http.HttpClient.GetContentAsync[T](Uri requestUri, HttpCompletionOption completionOption, T defaultValue, Func`2 readAs)
+   at System.Net.Http.HttpClient.GetStringAsync(Uri requestUri)
+   at System.Net.Http.HttpClient.GetStringAsync(String requestUri)
+   at MiscUtilities.HttpUtils.GetHttpRequestResponse(String url) in D:\Matei\PrsLic\ProductEngine\MiscUtilities\HttpUtils.cs:line 20
+2018-10-30 12:23:47.4391|FATAL|GenericLogger|Error occured Only 'http' and 'https' schemes are allowed.
+Parameter name: requestUri 
+ Generic exception Popped in GetHttpRequestResponse(string url) 
+    at System.Net.Http.HttpRequestMessage.InitializeValues(HttpMethod method, Uri requestUri)
+   at System.Net.Http.HttpRequestMessage..ctor(HttpMethod method, Uri requestUri)
+   at System.Net.Http.HttpClient.GetAsync(Uri requestUri, HttpCompletionOption completionOption, CancellationToken cancellationToken)
+   at System.Net.Http.HttpClient.GetContentAsync[T](Uri requestUri, HttpCompletionOption completionOption, T defaultValue, Func`2 readAs)
+   at System.Net.Http.HttpClient.GetStringAsync(Uri requestUri)
+   at System.Net.Http.HttpClient.GetStringAsync(String requestUri)
+   at MiscUtilities.HttpUtils.GetHttpRequestResponse(String url) in D:\Matei\PrsLic\ProductEngine\MiscUtilities\HttpUtils.cs:line 20
+2018-10-30 12:23:47.4681|FATAL|GenericLogger|Error occured Only 'http' and 'https' schemes are allowed.
+Parameter name: requestUri 
+ Generic exception Popped in GetHttpRequestResponse(string url) 
+    at System.Net.Http.HttpRequestMessage.InitializeValues(HttpMethod method, Uri requestUri)
+   at System.Net.Http.HttpRequestMessage..ctor(HttpMethod method, Uri requestUri)
+   at System.Net.Http.HttpClient.GetAsync(Uri requestUri, HttpCompletionOption completionOption, CancellationToken cancellationToken)
+   at System.Net.Http.HttpClient.GetContentAsync[T](Uri requestUri, HttpCompletionOption completionOption, T defaultValue, Func`2 readAs)
+   at System.Net.Http.HttpClient.GetStringAsync(Uri requestUri)
+   at System.Net.Http.HttpClient.GetStringAsync(String requestUri)
+   at MiscUtilities.HttpUtils.GetHttpRequestResponse(String url) in D:\Matei\PrsLic\ProductEngine\MiscUtilities\HttpUtils.cs:line 20
+2018-10-30 12:23:47.4951|FATAL|GenericLogger|Error occured Only 'http' and 'https' schemes are allowed.
+Parameter name: requestUri 
+ Generic exception Popped in GetHttpRequestResponse(string url) 
+    at System.Net.Http.HttpRequestMessage.InitializeValues(HttpMethod method, Uri requestUri)
+   at System.Net.Http.HttpRequestMessage..ctor(HttpMethod method, Uri requestUri)
+   at System.Net.Http.HttpClient.GetAsync(Uri requestUri, HttpCompletionOption completionOption, CancellationToken cancellationToken)
+   at System.Net.Http.HttpClient.GetContentAsync[T](Uri requestUri, HttpCompletionOption completionOption, T defaultValue, Func`2 readAs)
+   at System.Net.Http.HttpClient.GetStringAsync(Uri requestUri)
+   at System.Net.Http.HttpClient.GetStringAsync(String requestUri)
+   at MiscUtilities.HttpUtils.GetHttpRequestResponse(String url) in D:\Matei\PrsLic\ProductEngine\MiscUtilities\HttpUtils.cs:line 20
+2018-10-30 12:23:47.5220|FATAL|GenericLogger|Error occured Only 'http' and 'https' schemes are allowed.
+Parameter name: requestUri 
+ Generic exception Popped in GetHttpRequestResponse(string url) 
+    at System.Net.Http.HttpRequestMessage.InitializeValues(HttpMethod method, Uri requestUri)
+   at System.Net.Http.HttpRequestMessage..ctor(HttpMethod method, Uri requestUri)
+   at System.Net.Http.HttpClient.GetAsync(Uri requestUri, HttpCompletionOption completionOption, CancellationToken cancellationToken)
+   at System.Net.Http.HttpClient.GetContentAsync[T](Uri requestUri, HttpCompletionOption completionOption, T defaultValue, Func`2 readAs)
+   at System.Net.Http.HttpClient.GetStringAsync(Uri requestUri)
+   at System.Net.Http.HttpClient.GetStringAsync(String requestUri)
+   at MiscUtilities.HttpUtils.GetHttpRequestResponse(String url) in D:\Matei\PrsLic\ProductEngine\MiscUtilities\HttpUtils.cs:line 20
+2018-10-30 12:23:47.5490|FATAL|GenericLogger|Error occured Only 'http' and 'https' schemes are allowed.
+Parameter name: requestUri 
+ Generic exception Popped in GetHttpRequestResponse(string url) 
+    at System.Net.Http.HttpRequestMessage.InitializeValues(HttpMethod method, Uri requestUri)
+   at System.Net.Http.HttpRequestMessage..ctor(HttpMethod method, Uri requestUri)
+   at System.Net.Http.HttpClient.GetAsync(Uri requestUri, HttpCompletionOption completionOption, CancellationToken cancellationToken)
+   at System.Net.Http.HttpClient.GetContentAsync[T](Uri requestUri, HttpCompletionOption completionOption, T defaultValue, Func`2 readAs)
+   at System.Net.Http.HttpClient.GetStringAsync(Uri requestUri)
+   at System.Net.Http.HttpClient.GetStringAsync(String requestUri)
+   at MiscUtilities.HttpUtils.GetHttpRequestResponse(String url) in D:\Matei\PrsLic\ProductEngine\MiscUtilities\HttpUtils.cs:line 20
+2018-10-30 12:23:47.6130|FATAL|GenericLogger|Error occured Only 'http' and 'https' schemes are allowed.
+Parameter name: requestUri 
+ Generic exception Popped in GetHttpRequestResponse(string url) 
+    at System.Net.Http.HttpRequestMessage.InitializeValues(HttpMethod method, Uri requestUri)
+   at System.Net.Http.HttpRequestMessage..ctor(HttpMethod method, Uri requestUri)
+   at System.Net.Http.HttpClient.GetAsync(Uri requestUri, HttpCompletionOption completionOption, CancellationToken cancellationToken)
+   at System.Net.Http.HttpClient.GetContentAsync[T](Uri requestUri, HttpCompletionOption completionOption, T defaultValue, Func`2 readAs)
+   at System.Net.Http.HttpClient.GetStringAsync(Uri requestUri)
+   at System.Net.Http.HttpClient.GetStringAsync(String requestUri)
+   at MiscUtilities.HttpUtils.GetHttpRequestResponse(String url) in D:\Matei\PrsLic\ProductEngine\MiscUtilities\HttpUtils.cs:line 20
+2018-10-30 12:23:47.6430|FATAL|GenericLogger|Error occured Only 'http' and 'https' schemes are allowed.
+Parameter name: requestUri 
+ Generic exception Popped in GetHttpRequestResponse(string url) 
+    at System.Net.Http.HttpRequestMessage.InitializeValues(HttpMethod method, Uri requestUri)
+   at System.Net.Http.HttpRequestMessage..ctor(HttpMethod method, Uri requestUri)
+   at System.Net.Http.HttpClient.GetAsync(Uri requestUri, HttpCompletionOption completionOption, CancellationToken cancellationToken)
+   at System.Net.Http.HttpClient.GetContentAsync[T](Uri requestUri, HttpCompletionOption completionOption, T defaultValue, Func`2 readAs)
+   at System.Net.Http.HttpClient.GetStringAsync(Uri requestUri)
+   at System.Net.Http.HttpClient.GetStringAsync(String requestUri)
+   at MiscUtilities.HttpUtils.GetHttpRequestResponse(String url) in D:\Matei\PrsLic\ProductEngine\MiscUtilities\HttpUtils.cs:line 20
+2018-10-30 12:23:47.6899|FATAL|GenericLogger|Error occured Only 'http' and 'https' schemes are allowed.
+Parameter name: requestUri 
+ Generic exception Popped in GetHttpRequestResponse(string url) 
+    at System.Net.Http.HttpRequestMessage.InitializeValues(HttpMethod method, Uri requestUri)
+   at System.Net.Http.HttpRequestMessage..ctor(HttpMethod method, Uri requestUri)
+   at System.Net.Http.HttpClient.GetAsync(Uri requestUri, HttpCompletionOption completionOption, CancellationToken cancellationToken)
+   at System.Net.Http.HttpClient.GetContentAsync[T](Uri requestUri, HttpCompletionOption completionOption, T defaultValue, Func`2 readAs)
+   at System.Net.Http.HttpClient.GetStringAsync(Uri requestUri)
+   at System.Net.Http.HttpClient.GetStringAsync(String requestUri)
+   at MiscUtilities.HttpUtils.GetHttpRequestResponse(String url) in D:\Matei\PrsLic\ProductEngine\MiscUtilities\HttpUtils.cs:line 20
+2018-10-30 12:23:47.7319|FATAL|GenericLogger|Error occured Only 'http' and 'https' schemes are allowed.
+Parameter name: requestUri 
+ Generic exception Popped in GetHttpRequestResponse(string url) 
+    at System.Net.Http.HttpRequestMessage.InitializeValues(HttpMethod method, Uri requestUri)
+   at System.Net.Http.HttpRequestMessage..ctor(HttpMethod method, Uri requestUri)
+   at System.Net.Http.HttpClient.GetAsync(Uri requestUri, HttpCompletionOption completionOption, CancellationToken cancellationToken)
+   at System.Net.Http.HttpClient.GetContentAsync[T](Uri requestUri, HttpCompletionOption completionOption, T defaultValue, Func`2 readAs)
+   at System.Net.Http.HttpClient.GetStringAsync(Uri requestUri)
+   at System.Net.Http.HttpClient.GetStringAsync(String requestUri)
+   at MiscUtilities.HttpUtils.GetHttpRequestResponse(String url) in D:\Matei\PrsLic\ProductEngine\MiscUtilities\HttpUtils.cs:line 20
+2018-10-30 12:23:47.7699|FATAL|GenericLogger|Error occured Only 'http' and 'https' schemes are allowed.
+Parameter name: requestUri 
+ Generic exception Popped in GetHttpRequestResponse(string url) 
+    at System.Net.Http.HttpRequestMessage.InitializeValues(HttpMethod method, Uri requestUri)
+   at System.Net.Http.HttpRequestMessage..ctor(HttpMethod method, Uri requestUri)
+   at System.Net.Http.HttpClient.GetAsync(Uri requestUri, HttpCompletionOption completionOption, CancellationToken cancellationToken)
+   at System.Net.Http.HttpClient.GetContentAsync[T](Uri requestUri, HttpCompletionOption completionOption, T defaultValue, Func`2 readAs)
+   at System.Net.Http.HttpClient.GetStringAsync(Uri requestUri)
+   at System.Net.Http.HttpClient.GetStringAsync(String requestUri)
+   at MiscUtilities.HttpUtils.GetHttpRequestResponse(String url) in D:\Matei\PrsLic\ProductEngine\MiscUtilities\HttpUtils.cs:line 20
+2018-10-30 12:23:47.8079|FATAL|GenericLogger|Error occured Only 'http' and 'https' schemes are allowed.
+Parameter name: requestUri 
+ Generic exception Popped in GetHttpRequestResponse(string url) 
+    at System.Net.Http.HttpRequestMessage.InitializeValues(HttpMethod method, Uri requestUri)
+   at System.Net.Http.HttpRequestMessage..ctor(HttpMethod method, Uri requestUri)
+   at System.Net.Http.HttpClient.GetAsync(Uri requestUri, HttpCompletionOption completionOption, CancellationToken cancellationToken)
+   at System.Net.Http.HttpClient.GetContentAsync[T](Uri requestUri, HttpCompletionOption completionOption, T defaultValue, Func`2 readAs)
+   at System.Net.Http.HttpClient.GetStringAsync(Uri requestUri)
+   at System.Net.Http.HttpClient.GetStringAsync(String requestUri)
+   at MiscUtilities.HttpUtils.GetHttpRequestResponse(String url) in D:\Matei\PrsLic\ProductEngine\MiscUtilities\HttpUtils.cs:line 20
+2018-10-30 12:23:47.8368|FATAL|GenericLogger|Error occured Only 'http' and 'https' schemes are allowed.
+Parameter name: requestUri 
+ Generic exception Popped in GetHttpRequestResponse(string url) 
+    at System.Net.Http.HttpRequestMessage.InitializeValues(HttpMethod method, Uri requestUri)
+   at System.Net.Http.HttpRequestMessage..ctor(HttpMethod method, Uri requestUri)
+   at System.Net.Http.HttpClient.GetAsync(Uri requestUri, HttpCompletionOption completionOption, CancellationToken cancellationToken)
+   at System.Net.Http.HttpClient.GetContentAsync[T](Uri requestUri, HttpCompletionOption completionOption, T defaultValue, Func`2 readAs)
+   at System.Net.Http.HttpClient.GetStringAsync(Uri requestUri)
+   at System.Net.Http.HttpClient.GetStringAsync(String requestUri)
+   at MiscUtilities.HttpUtils.GetHttpRequestResponse(String url) in D:\Matei\PrsLic\ProductEngine\MiscUtilities\HttpUtils.cs:line 20
+2018-10-30 12:23:47.8638|FATAL|GenericLogger|Error occured Only 'http' and 'https' schemes are allowed.
+Parameter name: requestUri 
+ Generic exception Popped in GetHttpRequestResponse(string url) 
+    at System.Net.Http.HttpRequestMessage.InitializeValues(HttpMethod method, Uri requestUri)
+   at System.Net.Http.HttpRequestMessage..ctor(HttpMethod method, Uri requestUri)
+   at System.Net.Http.HttpClient.GetAsync(Uri requestUri, HttpCompletionOption completionOption, CancellationToken cancellationToken)
+   at System.Net.Http.HttpClient.GetContentAsync[T](Uri requestUri, HttpCompletionOption completionOption, T defaultValue, Func`2 readAs)
+   at System.Net.Http.HttpClient.GetStringAsync(Uri requestUri)
+   at System.Net.Http.HttpClient.GetStringAsync(String requestUri)
+   at MiscUtilities.HttpUtils.GetHttpRequestResponse(String url) in D:\Matei\PrsLic\ProductEngine\MiscUtilities\HttpUtils.cs:line 20
+2018-10-30 12:23:47.8948|FATAL|GenericLogger|Error occured Only 'http' and 'https' schemes are allowed.
+Parameter name: requestUri 
+ Generic exception Popped in GetHttpRequestResponse(string url) 
+    at System.Net.Http.HttpRequestMessage.InitializeValues(HttpMethod method, Uri requestUri)
+   at System.Net.Http.HttpRequestMessage..ctor(HttpMethod method, Uri requestUri)
+   at System.Net.Http.HttpClient.GetAsync(Uri requestUri, HttpCompletionOption completionOption, CancellationToken cancellationToken)
+   at System.Net.Http.HttpClient.GetContentAsync[T](Uri requestUri, HttpCompletionOption completionOption, T defaultValue, Func`2 readAs)
+   at System.Net.Http.HttpClient.GetStringAsync(Uri requestUri)
+   at System.Net.Http.HttpClient.GetStringAsync(String requestUri)
+   at MiscUtilities.HttpUtils.GetHttpRequestResponse(String url) in D:\Matei\PrsLic\ProductEngine\MiscUtilities\HttpUtils.cs:line 20
+2018-10-30 12:23:47.9388|FATAL|GenericLogger|Error occured Only 'http' and 'https' schemes are allowed.
+Parameter name: requestUri 
+ Generic exception Popped in GetHttpRequestResponse(string url) 
+    at System.Net.Http.HttpRequestMessage.InitializeValues(HttpMethod method, Uri requestUri)
+   at System.Net.Http.HttpRequestMessage..ctor(HttpMethod method, Uri requestUri)
+   at System.Net.Http.HttpClient.GetAsync(Uri requestUri, HttpCompletionOption completionOption, CancellationToken cancellationToken)
+   at System.Net.Http.HttpClient.GetContentAsync[T](Uri requestUri, HttpCompletionOption completionOption, T defaultValue, Func`2 readAs)
+   at System.Net.Http.HttpClient.GetStringAsync(Uri requestUri)
+   at System.Net.Http.HttpClient.GetStringAsync(String requestUri)
+   at MiscUtilities.HttpUtils.GetHttpRequestResponse(String url) in D:\Matei\PrsLic\ProductEngine\MiscUtilities\HttpUtils.cs:line 20
+2018-10-30 12:23:47.9788|FATAL|GenericLogger|Error occured Only 'http' and 'https' schemes are allowed.
+Parameter name: requestUri 
+ Generic exception Popped in GetHttpRequestResponse(string url) 
+    at System.Net.Http.HttpRequestMessage.InitializeValues(HttpMethod method, Uri requestUri)
+   at System.Net.Http.HttpRequestMessage..ctor(HttpMethod method, Uri requestUri)
+   at System.Net.Http.HttpClient.GetAsync(Uri requestUri, HttpCompletionOption completionOption, CancellationToken cancellationToken)
+   at System.Net.Http.HttpClient.GetContentAsync[T](Uri requestUri, HttpCompletionOption completionOption, T defaultValue, Func`2 readAs)
+   at System.Net.Http.HttpClient.GetStringAsync(Uri requestUri)
+   at System.Net.Http.HttpClient.GetStringAsync(String requestUri)
+   at MiscUtilities.HttpUtils.GetHttpRequestResponse(String url) in D:\Matei\PrsLic\ProductEngine\MiscUtilities\HttpUtils.cs:line 20
+2018-10-30 12:23:48.0297|FATAL|GenericLogger|Error occured Only 'http' and 'https' schemes are allowed.
+Parameter name: requestUri 
+ Generic exception Popped in GetHttpRequestResponse(string url) 
+    at System.Net.Http.HttpRequestMessage.InitializeValues(HttpMethod method, Uri requestUri)
+   at System.Net.Http.HttpRequestMessage..ctor(HttpMethod method, Uri requestUri)
+   at System.Net.Http.HttpClient.GetAsync(Uri requestUri, HttpCompletionOption completionOption, CancellationToken cancellationToken)
+   at System.Net.Http.HttpClient.GetContentAsync[T](Uri requestUri, HttpCompletionOption completionOption, T defaultValue, Func`2 readAs)
+   at System.Net.Http.HttpClient.GetStringAsync(Uri requestUri)
+   at System.Net.Http.HttpClient.GetStringAsync(String requestUri)
+   at MiscUtilities.HttpUtils.GetHttpRequestResponse(String url) in D:\Matei\PrsLic\ProductEngine\MiscUtilities\HttpUtils.cs:line 20
+2018-10-30 12:23:48.0587|FATAL|GenericLogger|Error occured Only 'http' and 'https' schemes are allowed.
+Parameter name: requestUri 
+ Generic exception Popped in GetHttpRequestResponse(string url) 
+    at System.Net.Http.HttpRequestMessage.InitializeValues(HttpMethod method, Uri requestUri)
+   at System.Net.Http.HttpRequestMessage..ctor(HttpMethod method, Uri requestUri)
+   at System.Net.Http.HttpClient.GetAsync(Uri requestUri, HttpCompletionOption completionOption, CancellationToken cancellationToken)
+   at System.Net.Http.HttpClient.GetContentAsync[T](Uri requestUri, HttpCompletionOption completionOption, T defaultValue, Func`2 readAs)
+   at System.Net.Http.HttpClient.GetStringAsync(Uri requestUri)
+   at System.Net.Http.HttpClient.GetStringAsync(String requestUri)
+   at MiscUtilities.HttpUtils.GetHttpRequestResponse(String url) in D:\Matei\PrsLic\ProductEngine\MiscUtilities\HttpUtils.cs:line 20
+2018-10-30 12:23:48.1017|FATAL|GenericLogger|Error occured Only 'http' and 'https' schemes are allowed.
+Parameter name: requestUri 
+ Generic exception Popped in GetHttpRequestResponse(string url) 
+    at System.Net.Http.HttpRequestMessage.InitializeValues(HttpMethod method, Uri requestUri)
+   at System.Net.Http.HttpRequestMessage..ctor(HttpMethod method, Uri requestUri)
+   at System.Net.Http.HttpClient.GetAsync(Uri requestUri, HttpCompletionOption completionOption, CancellationToken cancellationToken)
+   at System.Net.Http.HttpClient.GetContentAsync[T](Uri requestUri, HttpCompletionOption completionOption, T defaultValue, Func`2 readAs)
+   at System.Net.Http.HttpClient.GetStringAsync(Uri requestUri)
+   at System.Net.Http.HttpClient.GetStringAsync(String requestUri)
+   at MiscUtilities.HttpUtils.GetHttpRequestResponse(String url) in D:\Matei\PrsLic\ProductEngine\MiscUtilities\HttpUtils.cs:line 20
+2018-10-30 12:23:48.1307|FATAL|GenericLogger|Error occured Only 'http' and 'https' schemes are allowed.
+Parameter name: requestUri 
+ Generic exception Popped in GetHttpRequestResponse(string url) 
+    at System.Net.Http.HttpRequestMessage.InitializeValues(HttpMethod method, Uri requestUri)
+   at System.Net.Http.HttpRequestMessage..ctor(HttpMethod method, Uri requestUri)
+   at System.Net.Http.HttpClient.GetAsync(Uri requestUri, HttpCompletionOption completionOption, CancellationToken cancellationToken)
+   at System.Net.Http.HttpClient.GetContentAsync[T](Uri requestUri, HttpCompletionOption completionOption, T defaultValue, Func`2 readAs)
+   at System.Net.Http.HttpClient.GetStringAsync(Uri requestUri)
+   at System.Net.Http.HttpClient.GetStringAsync(String requestUri)
+   at MiscUtilities.HttpUtils.GetHttpRequestResponse(String url) in D:\Matei\PrsLic\ProductEngine\MiscUtilities\HttpUtils.cs:line 20
+2018-10-30 12:23:48.1666|FATAL|GenericLogger|Error occured Only 'http' and 'https' schemes are allowed.
+Parameter name: requestUri 
+ Generic exception Popped in GetHttpRequestResponse(string url) 
+    at System.Net.Http.HttpRequestMessage.InitializeValues(HttpMethod method, Uri requestUri)
+   at System.Net.Http.HttpRequestMessage..ctor(HttpMethod method, Uri requestUri)
+   at System.Net.Http.HttpClient.GetAsync(Uri requestUri, HttpCompletionOption completionOption, CancellationToken cancellationToken)
+   at System.Net.Http.HttpClient.GetContentAsync[T](Uri requestUri, HttpCompletionOption completionOption, T defaultValue, Func`2 readAs)
+   at System.Net.Http.HttpClient.GetStringAsync(Uri requestUri)
+   at System.Net.Http.HttpClient.GetStringAsync(String requestUri)
+   at MiscUtilities.HttpUtils.GetHttpRequestResponse(String url) in D:\Matei\PrsLic\ProductEngine\MiscUtilities\HttpUtils.cs:line 20
+2018-10-30 12:23:48.1996|FATAL|GenericLogger|Error occured Only 'http' and 'https' schemes are allowed.
+Parameter name: requestUri 
+ Generic exception Popped in GetHttpRequestResponse(string url) 
+    at System.Net.Http.HttpRequestMessage.InitializeValues(HttpMethod method, Uri requestUri)
+   at System.Net.Http.HttpRequestMessage..ctor(HttpMethod method, Uri requestUri)
+   at System.Net.Http.HttpClient.GetAsync(Uri requestUri, HttpCompletionOption completionOption, CancellationToken cancellationToken)
+   at System.Net.Http.HttpClient.GetContentAsync[T](Uri requestUri, HttpCompletionOption completionOption, T defaultValue, Func`2 readAs)
+   at System.Net.Http.HttpClient.GetStringAsync(Uri requestUri)
+   at System.Net.Http.HttpClient.GetStringAsync(String requestUri)
+   at MiscUtilities.HttpUtils.GetHttpRequestResponse(String url) in D:\Matei\PrsLic\ProductEngine\MiscUtilities\HttpUtils.cs:line 20
+2018-10-30 12:23:48.2306|FATAL|GenericLogger|Error occured Only 'http' and 'https' schemes are allowed.
+Parameter name: requestUri 
+ Generic exception Popped in GetHttpRequestResponse(string url) 
+    at System.Net.Http.HttpRequestMessage.InitializeValues(HttpMethod method, Uri requestUri)
+   at System.Net.Http.HttpRequestMessage..ctor(HttpMethod method, Uri requestUri)
+   at System.Net.Http.HttpClient.GetAsync(Uri requestUri, HttpCompletionOption completionOption, CancellationToken cancellationToken)
+   at System.Net.Http.HttpClient.GetContentAsync[T](Uri requestUri, HttpCompletionOption completionOption, T defaultValue, Func`2 readAs)
+   at System.Net.Http.HttpClient.GetStringAsync(Uri requestUri)
+   at System.Net.Http.HttpClient.GetStringAsync(String requestUri)
+   at MiscUtilities.HttpUtils.GetHttpRequestResponse(String url) in D:\Matei\PrsLic\ProductEngine\MiscUtilities\HttpUtils.cs:line 20
+2018-10-30 12:23:48.2636|FATAL|GenericLogger|Error occured Only 'http' and 'https' schemes are allowed.
+Parameter name: requestUri 
+ Generic exception Popped in GetHttpRequestResponse(string url) 
+    at System.Net.Http.HttpRequestMessage.InitializeValues(HttpMethod method, Uri requestUri)
+   at System.Net.Http.HttpRequestMessage..ctor(HttpMethod method, Uri requestUri)
+   at System.Net.Http.HttpClient.GetAsync(Uri requestUri, HttpCompletionOption completionOption, CancellationToken cancellationToken)
+   at System.Net.Http.HttpClient.GetContentAsync[T](Uri requestUri, HttpCompletionOption completionOption, T defaultValue, Func`2 readAs)
+   at System.Net.Http.HttpClient.GetStringAsync(Uri requestUri)
+   at System.Net.Http.HttpClient.GetStringAsync(String requestUri)
+   at MiscUtilities.HttpUtils.GetHttpRequestResponse(String url) in D:\Matei\PrsLic\ProductEngine\MiscUtilities\HttpUtils.cs:line 20
+2018-10-30 12:23:48.2956|FATAL|GenericLogger|Error occured Only 'http' and 'https' schemes are allowed.
+Parameter name: requestUri 
+ Generic exception Popped in GetHttpRequestResponse(string url) 
+    at System.Net.Http.HttpRequestMessage.InitializeValues(HttpMethod method, Uri requestUri)
+   at System.Net.Http.HttpRequestMessage..ctor(HttpMethod method, Uri requestUri)
+   at System.Net.Http.HttpClient.GetAsync(Uri requestUri, HttpCompletionOption completionOption, CancellationToken cancellationToken)
+   at System.Net.Http.HttpClient.GetContentAsync[T](Uri requestUri, HttpCompletionOption completionOption, T defaultValue, Func`2 readAs)
+   at System.Net.Http.HttpClient.GetStringAsync(Uri requestUri)
+   at System.Net.Http.HttpClient.GetStringAsync(String requestUri)
+   at MiscUtilities.HttpUtils.GetHttpRequestResponse(String url) in D:\Matei\PrsLic\ProductEngine\MiscUtilities\HttpUtils.cs:line 20
+2018-10-30 12:23:48.3285|FATAL|GenericLogger|Error occured Only 'http' and 'https' schemes are allowed.
+Parameter name: requestUri 
+ Generic exception Popped in GetHttpRequestResponse(string url) 
+    at System.Net.Http.HttpRequestMessage.InitializeValues(HttpMethod method, Uri requestUri)
+   at System.Net.Http.HttpRequestMessage..ctor(HttpMethod method, Uri requestUri)
+   at System.Net.Http.HttpClient.GetAsync(Uri requestUri, HttpCompletionOption completionOption, CancellationToken cancellationToken)
+   at System.Net.Http.HttpClient.GetContentAsync[T](Uri requestUri, HttpCompletionOption completionOption, T defaultValue, Func`2 readAs)
+   at System.Net.Http.HttpClient.GetStringAsync(Uri requestUri)
+   at System.Net.Http.HttpClient.GetStringAsync(String requestUri)
+   at MiscUtilities.HttpUtils.GetHttpRequestResponse(String url) in D:\Matei\PrsLic\ProductEngine\MiscUtilities\HttpUtils.cs:line 20
+2018-10-30 12:23:48.3585|FATAL|GenericLogger|Error occured Only 'http' and 'https' schemes are allowed.
+Parameter name: requestUri 
+ Generic exception Popped in GetHttpRequestResponse(string url) 
+    at System.Net.Http.HttpRequestMessage.InitializeValues(HttpMethod method, Uri requestUri)
+   at System.Net.Http.HttpRequestMessage..ctor(HttpMethod method, Uri requestUri)
+   at System.Net.Http.HttpClient.GetAsync(Uri requestUri, HttpCompletionOption completionOption, CancellationToken cancellationToken)
+   at System.Net.Http.HttpClient.GetContentAsync[T](Uri requestUri, HttpCompletionOption completionOption, T defaultValue, Func`2 readAs)
+   at System.Net.Http.HttpClient.GetStringAsync(Uri requestUri)
+   at System.Net.Http.HttpClient.GetStringAsync(String requestUri)
+   at MiscUtilities.HttpUtils.GetHttpRequestResponse(String url) in D:\Matei\PrsLic\ProductEngine\MiscUtilities\HttpUtils.cs:line 20
+2018-10-30 12:23:48.3885|FATAL|GenericLogger|Error occured Only 'http' and 'https' schemes are allowed.
+Parameter name: requestUri 
+ Generic exception Popped in GetHttpRequestResponse(string url) 
+    at System.Net.Http.HttpRequestMessage.InitializeValues(HttpMethod method, Uri requestUri)
+   at System.Net.Http.HttpRequestMessage..ctor(HttpMethod method, Uri requestUri)
+   at System.Net.Http.HttpClient.GetAsync(Uri requestUri, HttpCompletionOption completionOption, CancellationToken cancellationToken)
+   at System.Net.Http.HttpClient.GetContentAsync[T](Uri requestUri, HttpCompletionOption completionOption, T defaultValue, Func`2 readAs)
+   at System.Net.Http.HttpClient.GetStringAsync(Uri requestUri)
+   at System.Net.Http.HttpClient.GetStringAsync(String requestUri)
+   at MiscUtilities.HttpUtils.GetHttpRequestResponse(String url) in D:\Matei\PrsLic\ProductEngine\MiscUtilities\HttpUtils.cs:line 20
+2018-10-30 12:23:48.4195|FATAL|GenericLogger|Error occured Only 'http' and 'https' schemes are allowed.
+Parameter name: requestUri 
+ Generic exception Popped in GetHttpRequestResponse(string url) 
+    at System.Net.Http.HttpRequestMessage.InitializeValues(HttpMethod method, Uri requestUri)
+   at System.Net.Http.HttpRequestMessage..ctor(HttpMethod method, Uri requestUri)
+   at System.Net.Http.HttpClient.GetAsync(Uri requestUri, HttpCompletionOption completionOption, CancellationToken cancellationToken)
+   at System.Net.Http.HttpClient.GetContentAsync[T](Uri requestUri, HttpCompletionOption completionOption, T defaultValue, Func`2 readAs)
+   at System.Net.Http.HttpClient.GetStringAsync(Uri requestUri)
+   at System.Net.Http.HttpClient.GetStringAsync(String requestUri)
+   at MiscUtilities.HttpUtils.GetHttpRequestResponse(String url) in D:\Matei\PrsLic\ProductEngine\MiscUtilities\HttpUtils.cs:line 20
+2018-10-30 12:23:48.4485|FATAL|GenericLogger|Error occured Only 'http' and 'https' schemes are allowed.
+Parameter name: requestUri 
+ Generic exception Popped in GetHttpRequestResponse(string url) 
+    at System.Net.Http.HttpRequestMessage.InitializeValues(HttpMethod method, Uri requestUri)
+   at System.Net.Http.HttpRequestMessage..ctor(HttpMethod method, Uri requestUri)
+   at System.Net.Http.HttpClient.GetAsync(Uri requestUri, HttpCompletionOption completionOption, CancellationToken cancellationToken)
+   at System.Net.Http.HttpClient.GetContentAsync[T](Uri requestUri, HttpCompletionOption completionOption, T defaultValue, Func`2 readAs)
+   at System.Net.Http.HttpClient.GetStringAsync(Uri requestUri)
+   at System.Net.Http.HttpClient.GetStringAsync(String requestUri)
+   at MiscUtilities.HttpUtils.GetHttpRequestResponse(String url) in D:\Matei\PrsLic\ProductEngine\MiscUtilities\HttpUtils.cs:line 20
+2018-10-30 12:23:48.4785|FATAL|GenericLogger|Error occured Only 'http' and 'https' schemes are allowed.
+Parameter name: requestUri 
+ Generic exception Popped in GetHttpRequestResponse(string url) 
+    at System.Net.Http.HttpRequestMessage.InitializeValues(HttpMethod method, Uri requestUri)
+   at System.Net.Http.HttpRequestMessage..ctor(HttpMethod method, Uri requestUri)
+   at System.Net.Http.HttpClient.GetAsync(Uri requestUri, HttpCompletionOption completionOption, CancellationToken cancellationToken)
+   at System.Net.Http.HttpClient.GetContentAsync[T](Uri requestUri, HttpCompletionOption completionOption, T defaultValue, Func`2 readAs)
+   at System.Net.Http.HttpClient.GetStringAsync(Uri requestUri)
+   at System.Net.Http.HttpClient.GetStringAsync(String requestUri)
+   at MiscUtilities.HttpUtils.GetHttpRequestResponse(String url) in D:\Matei\PrsLic\ProductEngine\MiscUtilities\HttpUtils.cs:line 20
+2018-10-30 12:23:48.5104|FATAL|GenericLogger|Error occured Only 'http' and 'https' schemes are allowed.
+Parameter name: requestUri 
+ Generic exception Popped in GetHttpRequestResponse(string url) 
+    at System.Net.Http.HttpRequestMessage.InitializeValues(HttpMethod method, Uri requestUri)
+   at System.Net.Http.HttpRequestMessage..ctor(HttpMethod method, Uri requestUri)
+   at System.Net.Http.HttpClient.GetAsync(Uri requestUri, HttpCompletionOption completionOption, CancellationToken cancellationToken)
+   at System.Net.Http.HttpClient.GetContentAsync[T](Uri requestUri, HttpCompletionOption completionOption, T defaultValue, Func`2 readAs)
+   at System.Net.Http.HttpClient.GetStringAsync(Uri requestUri)
+   at System.Net.Http.HttpClient.GetStringAsync(String requestUri)
+   at MiscUtilities.HttpUtils.GetHttpRequestResponse(String url) in D:\Matei\PrsLic\ProductEngine\MiscUtilities\HttpUtils.cs:line 20
+2018-10-30 12:23:48.5384|FATAL|GenericLogger|Error occured Only 'http' and 'https' schemes are allowed.
+Parameter name: requestUri 
+ Generic exception Popped in GetHttpRequestResponse(string url) 
+    at System.Net.Http.HttpRequestMessage.InitializeValues(HttpMethod method, Uri requestUri)
+   at System.Net.Http.HttpRequestMessage..ctor(HttpMethod method, Uri requestUri)
+   at System.Net.Http.HttpClient.GetAsync(Uri requestUri, HttpCompletionOption completionOption, CancellationToken cancellationToken)
+   at System.Net.Http.HttpClient.GetContentAsync[T](Uri requestUri, HttpCompletionOption completionOption, T defaultValue, Func`2 readAs)
+   at System.Net.Http.HttpClient.GetStringAsync(Uri requestUri)
+   at System.Net.Http.HttpClient.GetStringAsync(String requestUri)
+   at MiscUtilities.HttpUtils.GetHttpRequestResponse(String url) in D:\Matei\PrsLic\ProductEngine\MiscUtilities\HttpUtils.cs:line 20
+2018-10-30 12:23:48.5704|FATAL|GenericLogger|Error occured Only 'http' and 'https' schemes are allowed.
+Parameter name: requestUri 
+ Generic exception Popped in GetHttpRequestResponse(string url) 
+    at System.Net.Http.HttpRequestMessage.InitializeValues(HttpMethod method, Uri requestUri)
+   at System.Net.Http.HttpRequestMessage..ctor(HttpMethod method, Uri requestUri)
+   at System.Net.Http.HttpClient.GetAsync(Uri requestUri, HttpCompletionOption completionOption, CancellationToken cancellationToken)
+   at System.Net.Http.HttpClient.GetContentAsync[T](Uri requestUri, HttpCompletionOption completionOption, T defaultValue, Func`2 readAs)
+   at System.Net.Http.HttpClient.GetStringAsync(Uri requestUri)
+   at System.Net.Http.HttpClient.GetStringAsync(String requestUri)
+   at MiscUtilities.HttpUtils.GetHttpRequestResponse(String url) in D:\Matei\PrsLic\ProductEngine\MiscUtilities\HttpUtils.cs:line 20
+2018-10-30 12:23:48.5964|FATAL|GenericLogger|Error occured Only 'http' and 'https' schemes are allowed.
+Parameter name: requestUri 
+ Generic exception Popped in GetHttpRequestResponse(string url) 
+    at System.Net.Http.HttpRequestMessage.InitializeValues(HttpMethod method, Uri requestUri)
+   at System.Net.Http.HttpRequestMessage..ctor(HttpMethod method, Uri requestUri)
+   at System.Net.Http.HttpClient.GetAsync(Uri requestUri, HttpCompletionOption completionOption, CancellationToken cancellationToken)
+   at System.Net.Http.HttpClient.GetContentAsync[T](Uri requestUri, HttpCompletionOption completionOption, T defaultValue, Func`2 readAs)
+   at System.Net.Http.HttpClient.GetStringAsync(Uri requestUri)
+   at System.Net.Http.HttpClient.GetStringAsync(String requestUri)
+   at MiscUtilities.HttpUtils.GetHttpRequestResponse(String url) in D:\Matei\PrsLic\ProductEngine\MiscUtilities\HttpUtils.cs:line 20
+2018-10-30 12:23:48.6264|FATAL|GenericLogger|Error occured Only 'http' and 'https' schemes are allowed.
+Parameter name: requestUri 
+ Generic exception Popped in GetHttpRequestResponse(string url) 
+    at System.Net.Http.HttpRequestMessage.InitializeValues(HttpMethod method, Uri requestUri)
+   at System.Net.Http.HttpRequestMessage..ctor(HttpMethod method, Uri requestUri)
+   at System.Net.Http.HttpClient.GetAsync(Uri requestUri, HttpCompletionOption completionOption, CancellationToken cancellationToken)
+   at System.Net.Http.HttpClient.GetContentAsync[T](Uri requestUri, HttpCompletionOption completionOption, T defaultValue, Func`2 readAs)
+   at System.Net.Http.HttpClient.GetStringAsync(Uri requestUri)
+   at System.Net.Http.HttpClient.GetStringAsync(String requestUri)
+   at MiscUtilities.HttpUtils.GetHttpRequestResponse(String url) in D:\Matei\PrsLic\ProductEngine\MiscUtilities\HttpUtils.cs:line 20
+2018-10-30 12:23:48.6553|FATAL|GenericLogger|Error occured Only 'http' and 'https' schemes are allowed.
+Parameter name: requestUri 
+ Generic exception Popped in GetHttpRequestResponse(string url) 
+    at System.Net.Http.HttpRequestMessage.InitializeValues(HttpMethod method, Uri requestUri)
+   at System.Net.Http.HttpRequestMessage..ctor(HttpMethod method, Uri requestUri)
+   at System.Net.Http.HttpClient.GetAsync(Uri requestUri, HttpCompletionOption completionOption, CancellationToken cancellationToken)
+   at System.Net.Http.HttpClient.GetContentAsync[T](Uri requestUri, HttpCompletionOption completionOption, T defaultValue, Func`2 readAs)
+   at System.Net.Http.HttpClient.GetStringAsync(Uri requestUri)
+   at System.Net.Http.HttpClient.GetStringAsync(String requestUri)
+   at MiscUtilities.HttpUtils.GetHttpRequestResponse(String url) in D:\Matei\PrsLic\ProductEngine\MiscUtilities\HttpUtils.cs:line 20
+2018-10-30 12:23:48.6853|FATAL|GenericLogger|Error occured Only 'http' and 'https' schemes are allowed.
+Parameter name: requestUri 
+ Generic exception Popped in GetHttpRequestResponse(string url) 
+    at System.Net.Http.HttpRequestMessage.InitializeValues(HttpMethod method, Uri requestUri)
+   at System.Net.Http.HttpRequestMessage..ctor(HttpMethod method, Uri requestUri)
+   at System.Net.Http.HttpClient.GetAsync(Uri requestUri, HttpCompletionOption completionOption, CancellationToken cancellationToken)
+   at System.Net.Http.HttpClient.GetContentAsync[T](Uri requestUri, HttpCompletionOption completionOption, T defaultValue, Func`2 readAs)
+   at System.Net.Http.HttpClient.GetStringAsync(Uri requestUri)
+   at System.Net.Http.HttpClient.GetStringAsync(String requestUri)
+   at MiscUtilities.HttpUtils.GetHttpRequestResponse(String url) in D:\Matei\PrsLic\ProductEngine\MiscUtilities\HttpUtils.cs:line 20
+2018-10-30 12:23:48.7183|FATAL|GenericLogger|Error occured Only 'http' and 'https' schemes are allowed.
+Parameter name: requestUri 
+ Generic exception Popped in GetHttpRequestResponse(string url) 
+    at System.Net.Http.HttpRequestMessage.InitializeValues(HttpMethod method, Uri requestUri)
+   at System.Net.Http.HttpRequestMessage..ctor(HttpMethod method, Uri requestUri)
+   at System.Net.Http.HttpClient.GetAsync(Uri requestUri, HttpCompletionOption completionOption, CancellationToken cancellationToken)
+   at System.Net.Http.HttpClient.GetContentAsync[T](Uri requestUri, HttpCompletionOption completionOption, T defaultValue, Func`2 readAs)
+   at System.Net.Http.HttpClient.GetStringAsync(Uri requestUri)
+   at System.Net.Http.HttpClient.GetStringAsync(String requestUri)
+   at MiscUtilities.HttpUtils.GetHttpRequestResponse(String url) in D:\Matei\PrsLic\ProductEngine\MiscUtilities\HttpUtils.cs:line 20
+2018-10-30 12:23:48.7453|FATAL|GenericLogger|Error occured Only 'http' and 'https' schemes are allowed.
+Parameter name: requestUri 
+ Generic exception Popped in GetHttpRequestResponse(string url) 
+    at System.Net.Http.HttpRequestMessage.InitializeValues(HttpMethod method, Uri requestUri)
+   at System.Net.Http.HttpRequestMessage..ctor(HttpMethod method, Uri requestUri)
+   at System.Net.Http.HttpClient.GetAsync(Uri requestUri, HttpCompletionOption completionOption, CancellationToken cancellationToken)
+   at System.Net.Http.HttpClient.GetContentAsync[T](Uri requestUri, HttpCompletionOption completionOption, T defaultValue, Func`2 readAs)
+   at System.Net.Http.HttpClient.GetStringAsync(Uri requestUri)
+   at System.Net.Http.HttpClient.GetStringAsync(String requestUri)
+   at MiscUtilities.HttpUtils.GetHttpRequestResponse(String url) in D:\Matei\PrsLic\ProductEngine\MiscUtilities\HttpUtils.cs:line 20
+2018-10-30 12:23:48.7733|FATAL|GenericLogger|Error occured Only 'http' and 'https' schemes are allowed.
+Parameter name: requestUri 
+ Generic exception Popped in GetHttpRequestResponse(string url) 
+    at System.Net.Http.HttpRequestMessage.InitializeValues(HttpMethod method, Uri requestUri)
+   at System.Net.Http.HttpRequestMessage..ctor(HttpMethod method, Uri requestUri)
+   at System.Net.Http.HttpClient.GetAsync(Uri requestUri, HttpCompletionOption completionOption, CancellationToken cancellationToken)
+   at System.Net.Http.HttpClient.GetContentAsync[T](Uri requestUri, HttpCompletionOption completionOption, T defaultValue, Func`2 readAs)
+   at System.Net.Http.HttpClient.GetStringAsync(Uri requestUri)
+   at System.Net.Http.HttpClient.GetStringAsync(String requestUri)
+   at MiscUtilities.HttpUtils.GetHttpRequestResponse(String url) in D:\Matei\PrsLic\ProductEngine\MiscUtilities\HttpUtils.cs:line 20
+2018-10-30 12:23:48.7983|FATAL|GenericLogger|Error occured Only 'http' and 'https' schemes are allowed.
+Parameter name: requestUri 
+ Generic exception Popped in GetHttpRequestResponse(string url) 
+    at System.Net.Http.HttpRequestMessage.InitializeValues(HttpMethod method, Uri requestUri)
+   at System.Net.Http.HttpRequestMessage..ctor(HttpMethod method, Uri requestUri)
+   at System.Net.Http.HttpClient.GetAsync(Uri requestUri, HttpCompletionOption completionOption, CancellationToken cancellationToken)
+   at System.Net.Http.HttpClient.GetContentAsync[T](Uri requestUri, HttpCompletionOption completionOption, T defaultValue, Func`2 readAs)
+   at System.Net.Http.HttpClient.GetStringAsync(Uri requestUri)
+   at System.Net.Http.HttpClient.GetStringAsync(String requestUri)
+   at MiscUtilities.HttpUtils.GetHttpRequestResponse(String url) in D:\Matei\PrsLic\ProductEngine\MiscUtilities\HttpUtils.cs:line 20
+2018-10-30 12:23:48.8532|FATAL|GenericLogger|Error occured Only 'http' and 'https' schemes are allowed.
+Parameter name: requestUri 
+ Generic exception Popped in GetHttpRequestResponse(string url) 
+    at System.Net.Http.HttpRequestMessage.InitializeValues(HttpMethod method, Uri requestUri)
+   at System.Net.Http.HttpRequestMessage..ctor(HttpMethod method, Uri requestUri)
+   at System.Net.Http.HttpClient.GetAsync(Uri requestUri, HttpCompletionOption completionOption, CancellationToken cancellationToken)
+   at System.Net.Http.HttpClient.GetContentAsync[T](Uri requestUri, HttpCompletionOption completionOption, T defaultValue, Func`2 readAs)
+   at System.Net.Http.HttpClient.GetStringAsync(Uri requestUri)
+   at System.Net.Http.HttpClient.GetStringAsync(String requestUri)
+   at MiscUtilities.HttpUtils.GetHttpRequestResponse(String url) in D:\Matei\PrsLic\ProductEngine\MiscUtilities\HttpUtils.cs:line 20
+2018-10-30 12:23:48.8842|FATAL|GenericLogger|Error occured Only 'http' and 'https' schemes are allowed.
+Parameter name: requestUri 
+ Generic exception Popped in GetHttpRequestResponse(string url) 
+    at System.Net.Http.HttpRequestMessage.InitializeValues(HttpMethod method, Uri requestUri)
+   at System.Net.Http.HttpRequestMessage..ctor(HttpMethod method, Uri requestUri)
+   at System.Net.Http.HttpClient.GetAsync(Uri requestUri, HttpCompletionOption completionOption, CancellationToken cancellationToken)
+   at System.Net.Http.HttpClient.GetContentAsync[T](Uri requestUri, HttpCompletionOption completionOption, T defaultValue, Func`2 readAs)
+   at System.Net.Http.HttpClient.GetStringAsync(Uri requestUri)
+   at System.Net.Http.HttpClient.GetStringAsync(String requestUri)
+   at MiscUtilities.HttpUtils.GetHttpRequestResponse(String url) in D:\Matei\PrsLic\ProductEngine\MiscUtilities\HttpUtils.cs:line 20
+2018-10-30 12:23:48.9192|FATAL|GenericLogger|Error occured Only 'http' and 'https' schemes are allowed.
+Parameter name: requestUri 
+ Generic exception Popped in GetHttpRequestResponse(string url) 
+    at System.Net.Http.HttpRequestMessage.InitializeValues(HttpMethod method, Uri requestUri)
+   at System.Net.Http.HttpRequestMessage..ctor(HttpMethod method, Uri requestUri)
+   at System.Net.Http.HttpClient.GetAsync(Uri requestUri, HttpCompletionOption completionOption, CancellationToken cancellationToken)
+   at System.Net.Http.HttpClient.GetContentAsync[T](Uri requestUri, HttpCompletionOption completionOption, T defaultValue, Func`2 readAs)
+   at System.Net.Http.HttpClient.GetStringAsync(Uri requestUri)
+   at System.Net.Http.HttpClient.GetStringAsync(String requestUri)
+   at MiscUtilities.HttpUtils.GetHttpRequestResponse(String url) in D:\Matei\PrsLic\ProductEngine\MiscUtilities\HttpUtils.cs:line 20
+2018-10-30 12:23:48.9502|FATAL|GenericLogger|Error occured Only 'http' and 'https' schemes are allowed.
+Parameter name: requestUri 
+ Generic exception Popped in GetHttpRequestResponse(string url) 
+    at System.Net.Http.HttpRequestMessage.InitializeValues(HttpMethod method, Uri requestUri)
+   at System.Net.Http.HttpRequestMessage..ctor(HttpMethod method, Uri requestUri)
+   at System.Net.Http.HttpClient.GetAsync(Uri requestUri, HttpCompletionOption completionOption, CancellationToken cancellationToken)
+   at System.Net.Http.HttpClient.GetContentAsync[T](Uri requestUri, HttpCompletionOption completionOption, T defaultValue, Func`2 readAs)
+   at System.Net.Http.HttpClient.GetStringAsync(Uri requestUri)
+   at System.Net.Http.HttpClient.GetStringAsync(String requestUri)
+   at MiscUtilities.HttpUtils.GetHttpRequestResponse(String url) in D:\Matei\PrsLic\ProductEngine\MiscUtilities\HttpUtils.cs:line 20
+2018-10-30 12:23:48.9762|FATAL|GenericLogger|Error occured Only 'http' and 'https' schemes are allowed.
+Parameter name: requestUri 
+ Generic exception Popped in GetHttpRequestResponse(string url) 
+    at System.Net.Http.HttpRequestMessage.InitializeValues(HttpMethod method, Uri requestUri)
+   at System.Net.Http.HttpRequestMessage..ctor(HttpMethod method, Uri requestUri)
+   at System.Net.Http.HttpClient.GetAsync(Uri requestUri, HttpCompletionOption completionOption, CancellationToken cancellationToken)
+   at System.Net.Http.HttpClient.GetContentAsync[T](Uri requestUri, HttpCompletionOption completionOption, T defaultValue, Func`2 readAs)
+   at System.Net.Http.HttpClient.GetStringAsync(Uri requestUri)
+   at System.Net.Http.HttpClient.GetStringAsync(String requestUri)
+   at MiscUtilities.HttpUtils.GetHttpRequestResponse(String url) in D:\Matei\PrsLic\ProductEngine\MiscUtilities\HttpUtils.cs:line 20
+2018-10-30 12:23:49.0031|FATAL|GenericLogger|Error occured Only 'http' and 'https' schemes are allowed.
+Parameter name: requestUri 
+ Generic exception Popped in GetHttpRequestResponse(string url) 
+    at System.Net.Http.HttpRequestMessage.InitializeValues(HttpMethod method, Uri requestUri)
+   at System.Net.Http.HttpRequestMessage..ctor(HttpMethod method, Uri requestUri)
+   at System.Net.Http.HttpClient.GetAsync(Uri requestUri, HttpCompletionOption completionOption, CancellationToken cancellationToken)
+   at System.Net.Http.HttpClient.GetContentAsync[T](Uri requestUri, HttpCompletionOption completionOption, T defaultValue, Func`2 readAs)
+   at System.Net.Http.HttpClient.GetStringAsync(Uri requestUri)
+   at System.Net.Http.HttpClient.GetStringAsync(String requestUri)
+   at MiscUtilities.HttpUtils.GetHttpRequestResponse(String url) in D:\Matei\PrsLic\ProductEngine\MiscUtilities\HttpUtils.cs:line 20
+2018-10-30 12:23:49.0331|FATAL|GenericLogger|Error occured Only 'http' and 'https' schemes are allowed.
+Parameter name: requestUri 
+ Generic exception Popped in GetHttpRequestResponse(string url) 
+    at System.Net.Http.HttpRequestMessage.InitializeValues(HttpMethod method, Uri requestUri)
+   at System.Net.Http.HttpRequestMessage..ctor(HttpMethod method, Uri requestUri)
+   at System.Net.Http.HttpClient.GetAsync(Uri requestUri, HttpCompletionOption completionOption, CancellationToken cancellationToken)
+   at System.Net.Http.HttpClient.GetContentAsync[T](Uri requestUri, HttpCompletionOption completionOption, T defaultValue, Func`2 readAs)
+   at System.Net.Http.HttpClient.GetStringAsync(Uri requestUri)
+   at System.Net.Http.HttpClient.GetStringAsync(String requestUri)
+   at MiscUtilities.HttpUtils.GetHttpRequestResponse(String url) in D:\Matei\PrsLic\ProductEngine\MiscUtilities\HttpUtils.cs:line 20
+2018-10-30 12:23:49.0751|FATAL|GenericLogger|Error occured Only 'http' and 'https' schemes are allowed.
+Parameter name: requestUri 
+ Generic exception Popped in GetHttpRequestResponse(string url) 
+    at System.Net.Http.HttpRequestMessage.InitializeValues(HttpMethod method, Uri requestUri)
+   at System.Net.Http.HttpRequestMessage..ctor(HttpMethod method, Uri requestUri)
+   at System.Net.Http.HttpClient.GetAsync(Uri requestUri, HttpCompletionOption completionOption, CancellationToken cancellationToken)
+   at System.Net.Http.HttpClient.GetContentAsync[T](Uri requestUri, HttpCompletionOption completionOption, T defaultValue, Func`2 readAs)
+   at System.Net.Http.HttpClient.GetStringAsync(Uri requestUri)
+   at System.Net.Http.HttpClient.GetStringAsync(String requestUri)
+   at MiscUtilities.HttpUtils.GetHttpRequestResponse(String url) in D:\Matei\PrsLic\ProductEngine\MiscUtilities\HttpUtils.cs:line 20
+2018-10-30 12:23:49.1031|FATAL|GenericLogger|Error occured Only 'http' and 'https' schemes are allowed.
+Parameter name: requestUri 
+ Generic exception Popped in GetHttpRequestResponse(string url) 
+    at System.Net.Http.HttpRequestMessage.InitializeValues(HttpMethod method, Uri requestUri)
+   at System.Net.Http.HttpRequestMessage..ctor(HttpMethod method, Uri requestUri)
+   at System.Net.Http.HttpClient.GetAsync(Uri requestUri, HttpCompletionOption completionOption, CancellationToken cancellationToken)
+   at System.Net.Http.HttpClient.GetContentAsync[T](Uri requestUri, HttpCompletionOption completionOption, T defaultValue, Func`2 readAs)
+   at System.Net.Http.HttpClient.GetStringAsync(Uri requestUri)
+   at System.Net.Http.HttpClient.GetStringAsync(String requestUri)
+   at MiscUtilities.HttpUtils.GetHttpRequestResponse(String url) in D:\Matei\PrsLic\ProductEngine\MiscUtilities\HttpUtils.cs:line 20
+2018-10-30 12:23:49.1440|FATAL|GenericLogger|Error occured Only 'http' and 'https' schemes are allowed.
+Parameter name: requestUri 
+ Generic exception Popped in GetHttpRequestResponse(string url) 
+    at System.Net.Http.HttpRequestMessage.InitializeValues(HttpMethod method, Uri requestUri)
+   at System.Net.Http.HttpRequestMessage..ctor(HttpMethod method, Uri requestUri)
+   at System.Net.Http.HttpClient.GetAsync(Uri requestUri, HttpCompletionOption completionOption, CancellationToken cancellationToken)
+   at System.Net.Http.HttpClient.GetContentAsync[T](Uri requestUri, HttpCompletionOption completionOption, T defaultValue, Func`2 readAs)
+   at System.Net.Http.HttpClient.GetStringAsync(Uri requestUri)
+   at System.Net.Http.HttpClient.GetStringAsync(String requestUri)
+   at MiscUtilities.HttpUtils.GetHttpRequestResponse(String url) in D:\Matei\PrsLic\ProductEngine\MiscUtilities\HttpUtils.cs:line 20
+2018-10-30 12:23:49.1840|FATAL|GenericLogger|Error occured Only 'http' and 'https' schemes are allowed.
+Parameter name: requestUri 
+ Generic exception Popped in GetHttpRequestResponse(string url) 
+    at System.Net.Http.HttpRequestMessage.InitializeValues(HttpMethod method, Uri requestUri)
+   at System.Net.Http.HttpRequestMessage..ctor(HttpMethod method, Uri requestUri)
+   at System.Net.Http.HttpClient.GetAsync(Uri requestUri, HttpCompletionOption completionOption, CancellationToken cancellationToken)
+   at System.Net.Http.HttpClient.GetContentAsync[T](Uri requestUri, HttpCompletionOption completionOption, T defaultValue, Func`2 readAs)
+   at System.Net.Http.HttpClient.GetStringAsync(Uri requestUri)
+   at System.Net.Http.HttpClient.GetStringAsync(String requestUri)
+   at MiscUtilities.HttpUtils.GetHttpRequestResponse(String url) in D:\Matei\PrsLic\ProductEngine\MiscUtilities\HttpUtils.cs:line 20
+2018-10-30 12:23:49.2150|FATAL|GenericLogger|Error occured Only 'http' and 'https' schemes are allowed.
+Parameter name: requestUri 
+ Generic exception Popped in GetHttpRequestResponse(string url) 
+    at System.Net.Http.HttpRequestMessage.InitializeValues(HttpMethod method, Uri requestUri)
+   at System.Net.Http.HttpRequestMessage..ctor(HttpMethod method, Uri requestUri)
+   at System.Net.Http.HttpClient.GetAsync(Uri requestUri, HttpCompletionOption completionOption, CancellationToken cancellationToken)
+   at System.Net.Http.HttpClient.GetContentAsync[T](Uri requestUri, HttpCompletionOption completionOption, T defaultValue, Func`2 readAs)
+   at System.Net.Http.HttpClient.GetStringAsync(Uri requestUri)
+   at System.Net.Http.HttpClient.GetStringAsync(String requestUri)
+   at MiscUtilities.HttpUtils.GetHttpRequestResponse(String url) in D:\Matei\PrsLic\ProductEngine\MiscUtilities\HttpUtils.cs:line 20
+2018-10-30 12:23:49.2450|FATAL|GenericLogger|Error occured Only 'http' and 'https' schemes are allowed.
+Parameter name: requestUri 
+ Generic exception Popped in GetHttpRequestResponse(string url) 
+    at System.Net.Http.HttpRequestMessage.InitializeValues(HttpMethod method, Uri requestUri)
+   at System.Net.Http.HttpRequestMessage..ctor(HttpMethod method, Uri requestUri)
+   at System.Net.Http.HttpClient.GetAsync(Uri requestUri, HttpCompletionOption completionOption, CancellationToken cancellationToken)
+   at System.Net.Http.HttpClient.GetContentAsync[T](Uri requestUri, HttpCompletionOption completionOption, T defaultValue, Func`2 readAs)
+   at System.Net.Http.HttpClient.GetStringAsync(Uri requestUri)
+   at System.Net.Http.HttpClient.GetStringAsync(String requestUri)
+   at MiscUtilities.HttpUtils.GetHttpRequestResponse(String url) in D:\Matei\PrsLic\ProductEngine\MiscUtilities\HttpUtils.cs:line 20
+2018-10-30 12:23:49.2750|FATAL|GenericLogger|Error occured Only 'http' and 'https' schemes are allowed.
+Parameter name: requestUri 
+ Generic exception Popped in GetHttpRequestResponse(string url) 
+    at System.Net.Http.HttpRequestMessage.InitializeValues(HttpMethod method, Uri requestUri)
+   at System.Net.Http.HttpRequestMessage..ctor(HttpMethod method, Uri requestUri)
+   at System.Net.Http.HttpClient.GetAsync(Uri requestUri, HttpCompletionOption completionOption, CancellationToken cancellationToken)
+   at System.Net.Http.HttpClient.GetContentAsync[T](Uri requestUri, HttpCompletionOption completionOption, T defaultValue, Func`2 readAs)
+   at System.Net.Http.HttpClient.GetStringAsync(Uri requestUri)
+   at System.Net.Http.HttpClient.GetStringAsync(String requestUri)
+   at MiscUtilities.HttpUtils.GetHttpRequestResponse(String url) in D:\Matei\PrsLic\ProductEngine\MiscUtilities\HttpUtils.cs:line 20
+2018-10-30 12:23:49.3059|FATAL|GenericLogger|Error occured Only 'http' and 'https' schemes are allowed.
+Parameter name: requestUri 
+ Generic exception Popped in GetHttpRequestResponse(string url) 
+    at System.Net.Http.HttpRequestMessage.InitializeValues(HttpMethod method, Uri requestUri)
+   at System.Net.Http.HttpRequestMessage..ctor(HttpMethod method, Uri requestUri)
+   at System.Net.Http.HttpClient.GetAsync(Uri requestUri, HttpCompletionOption completionOption, CancellationToken cancellationToken)
+   at System.Net.Http.HttpClient.GetContentAsync[T](Uri requestUri, HttpCompletionOption completionOption, T defaultValue, Func`2 readAs)
+   at System.Net.Http.HttpClient.GetStringAsync(Uri requestUri)
+   at System.Net.Http.HttpClient.GetStringAsync(String requestUri)
+   at MiscUtilities.HttpUtils.GetHttpRequestResponse(String url) in D:\Matei\PrsLic\ProductEngine\MiscUtilities\HttpUtils.cs:line 20
+2018-10-30 12:23:49.3409|FATAL|GenericLogger|Error occured Only 'http' and 'https' schemes are allowed.
+Parameter name: requestUri 
+ Generic exception Popped in GetHttpRequestResponse(string url) 
+    at System.Net.Http.HttpRequestMessage.InitializeValues(HttpMethod method, Uri requestUri)
+   at System.Net.Http.HttpRequestMessage..ctor(HttpMethod method, Uri requestUri)
+   at System.Net.Http.HttpClient.GetAsync(Uri requestUri, HttpCompletionOption completionOption, CancellationToken cancellationToken)
+   at System.Net.Http.HttpClient.GetContentAsync[T](Uri requestUri, HttpCompletionOption completionOption, T defaultValue, Func`2 readAs)
+   at System.Net.Http.HttpClient.GetStringAsync(Uri requestUri)
+   at System.Net.Http.HttpClient.GetStringAsync(String requestUri)
+   at MiscUtilities.HttpUtils.GetHttpRequestResponse(String url) in D:\Matei\PrsLic\ProductEngine\MiscUtilities\HttpUtils.cs:line 20
+2018-10-30 12:23:49.3809|FATAL|GenericLogger|Error occured Only 'http' and 'https' schemes are allowed.
+Parameter name: requestUri 
+ Generic exception Popped in GetHttpRequestResponse(string url) 
+    at System.Net.Http.HttpRequestMessage.InitializeValues(HttpMethod method, Uri requestUri)
+   at System.Net.Http.HttpRequestMessage..ctor(HttpMethod method, Uri requestUri)
+   at System.Net.Http.HttpClient.GetAsync(Uri requestUri, HttpCompletionOption completionOption, CancellationToken cancellationToken)
+   at System.Net.Http.HttpClient.GetContentAsync[T](Uri requestUri, HttpCompletionOption completionOption, T defaultValue, Func`2 readAs)
+   at System.Net.Http.HttpClient.GetStringAsync(Uri requestUri)
+   at System.Net.Http.HttpClient.GetStringAsync(String requestUri)
+   at MiscUtilities.HttpUtils.GetHttpRequestResponse(String url) in D:\Matei\PrsLic\ProductEngine\MiscUtilities\HttpUtils.cs:line 20
+2018-10-30 12:23:49.4149|FATAL|GenericLogger|Error occured Only 'http' and 'https' schemes are allowed.
+Parameter name: requestUri 
+ Generic exception Popped in GetHttpRequestResponse(string url) 
+    at System.Net.Http.HttpRequestMessage.InitializeValues(HttpMethod method, Uri requestUri)
+   at System.Net.Http.HttpRequestMessage..ctor(HttpMethod method, Uri requestUri)
+   at System.Net.Http.HttpClient.GetAsync(Uri requestUri, HttpCompletionOption completionOption, CancellationToken cancellationToken)
+   at System.Net.Http.HttpClient.GetContentAsync[T](Uri requestUri, HttpCompletionOption completionOption, T defaultValue, Func`2 readAs)
+   at System.Net.Http.HttpClient.GetStringAsync(Uri requestUri)
+   at System.Net.Http.HttpClient.GetStringAsync(String requestUri)
+   at MiscUtilities.HttpUtils.GetHttpRequestResponse(String url) in D:\Matei\PrsLic\ProductEngine\MiscUtilities\HttpUtils.cs:line 20
+2018-10-30 12:23:49.4419|FATAL|GenericLogger|Error occured Only 'http' and 'https' schemes are allowed.
+Parameter name: requestUri 
+ Generic exception Popped in GetHttpRequestResponse(string url) 
+    at System.Net.Http.HttpRequestMessage.InitializeValues(HttpMethod method, Uri requestUri)
+   at System.Net.Http.HttpRequestMessage..ctor(HttpMethod method, Uri requestUri)
+   at System.Net.Http.HttpClient.GetAsync(Uri requestUri, HttpCompletionOption completionOption, CancellationToken cancellationToken)
+   at System.Net.Http.HttpClient.GetContentAsync[T](Uri requestUri, HttpCompletionOption completionOption, T defaultValue, Func`2 readAs)
+   at System.Net.Http.HttpClient.GetStringAsync(Uri requestUri)
+   at System.Net.Http.HttpClient.GetStringAsync(String requestUri)
+   at MiscUtilities.HttpUtils.GetHttpRequestResponse(String url) in D:\Matei\PrsLic\ProductEngine\MiscUtilities\HttpUtils.cs:line 20
+2018-10-30 12:23:49.4688|FATAL|GenericLogger|Error occured Only 'http' and 'https' schemes are allowed.
+Parameter name: requestUri 
+ Generic exception Popped in GetHttpRequestResponse(string url) 
+    at System.Net.Http.HttpRequestMessage.InitializeValues(HttpMethod method, Uri requestUri)
+   at System.Net.Http.HttpRequestMessage..ctor(HttpMethod method, Uri requestUri)
+   at System.Net.Http.HttpClient.GetAsync(Uri requestUri, HttpCompletionOption completionOption, CancellationToken cancellationToken)
+   at System.Net.Http.HttpClient.GetContentAsync[T](Uri requestUri, HttpCompletionOption completionOption, T defaultValue, Func`2 readAs)
+   at System.Net.Http.HttpClient.GetStringAsync(Uri requestUri)
+   at System.Net.Http.HttpClient.GetStringAsync(String requestUri)
+   at MiscUtilities.HttpUtils.GetHttpRequestResponse(String url) in D:\Matei\PrsLic\ProductEngine\MiscUtilities\HttpUtils.cs:line 20
+2018-10-30 12:23:49.4958|FATAL|GenericLogger|Error occured Only 'http' and 'https' schemes are allowed.
+Parameter name: requestUri 
+ Generic exception Popped in GetHttpRequestResponse(string url) 
+    at System.Net.Http.HttpRequestMessage.InitializeValues(HttpMethod method, Uri requestUri)
+   at System.Net.Http.HttpRequestMessage..ctor(HttpMethod method, Uri requestUri)
+   at System.Net.Http.HttpClient.GetAsync(Uri requestUri, HttpCompletionOption completionOption, CancellationToken cancellationToken)
+   at System.Net.Http.HttpClient.GetContentAsync[T](Uri requestUri, HttpCompletionOption completionOption, T defaultValue, Func`2 readAs)
+   at System.Net.Http.HttpClient.GetStringAsync(Uri requestUri)
+   at System.Net.Http.HttpClient.GetStringAsync(String requestUri)
+   at MiscUtilities.HttpUtils.GetHttpRequestResponse(String url) in D:\Matei\PrsLic\ProductEngine\MiscUtilities\HttpUtils.cs:line 20
+2018-10-30 12:23:49.5278|FATAL|GenericLogger|Error occured Only 'http' and 'https' schemes are allowed.
+Parameter name: requestUri 
+ Generic exception Popped in GetHttpRequestResponse(string url) 
+    at System.Net.Http.HttpRequestMessage.InitializeValues(HttpMethod method, Uri requestUri)
+   at System.Net.Http.HttpRequestMessage..ctor(HttpMethod method, Uri requestUri)
+   at System.Net.Http.HttpClient.GetAsync(Uri requestUri, HttpCompletionOption completionOption, CancellationToken cancellationToken)
+   at System.Net.Http.HttpClient.GetContentAsync[T](Uri requestUri, HttpCompletionOption completionOption, T defaultValue, Func`2 readAs)
+   at System.Net.Http.HttpClient.GetStringAsync(Uri requestUri)
+   at System.Net.Http.HttpClient.GetStringAsync(String requestUri)
+   at MiscUtilities.HttpUtils.GetHttpRequestResponse(String url) in D:\Matei\PrsLic\ProductEngine\MiscUtilities\HttpUtils.cs:line 20
+2018-10-30 12:23:49.5558|FATAL|GenericLogger|Error occured Only 'http' and 'https' schemes are allowed.
+Parameter name: requestUri 
+ Generic exception Popped in GetHttpRequestResponse(string url) 
+    at System.Net.Http.HttpRequestMessage.InitializeValues(HttpMethod method, Uri requestUri)
+   at System.Net.Http.HttpRequestMessage..ctor(HttpMethod method, Uri requestUri)
+   at System.Net.Http.HttpClient.GetAsync(Uri requestUri, HttpCompletionOption completionOption, CancellationToken cancellationToken)
+   at System.Net.Http.HttpClient.GetContentAsync[T](Uri requestUri, HttpCompletionOption completionOption, T defaultValue, Func`2 readAs)
+   at System.Net.Http.HttpClient.GetStringAsync(Uri requestUri)
+   at System.Net.Http.HttpClient.GetStringAsync(String requestUri)
+   at MiscUtilities.HttpUtils.GetHttpRequestResponse(String url) in D:\Matei\PrsLic\ProductEngine\MiscUtilities\HttpUtils.cs:line 20
+2018-10-30 12:23:49.5838|FATAL|GenericLogger|Error occured Only 'http' and 'https' schemes are allowed.
+Parameter name: requestUri 
+ Generic exception Popped in GetHttpRequestResponse(string url) 
+    at System.Net.Http.HttpRequestMessage.InitializeValues(HttpMethod method, Uri requestUri)
+   at System.Net.Http.HttpRequestMessage..ctor(HttpMethod method, Uri requestUri)
+   at System.Net.Http.HttpClient.GetAsync(Uri requestUri, HttpCompletionOption completionOption, CancellationToken cancellationToken)
+   at System.Net.Http.HttpClient.GetContentAsync[T](Uri requestUri, HttpCompletionOption completionOption, T defaultValue, Func`2 readAs)
+   at System.Net.Http.HttpClient.GetStringAsync(Uri requestUri)
+   at System.Net.Http.HttpClient.GetStringAsync(String requestUri)
+   at MiscUtilities.HttpUtils.GetHttpRequestResponse(String url) in D:\Matei\PrsLic\ProductEngine\MiscUtilities\HttpUtils.cs:line 20
+2018-10-30 12:23:49.6108|FATAL|GenericLogger|Error occured Only 'http' and 'https' schemes are allowed.
+Parameter name: requestUri 
+ Generic exception Popped in GetHttpRequestResponse(string url) 
+    at System.Net.Http.HttpRequestMessage.InitializeValues(HttpMethod method, Uri requestUri)
+   at System.Net.Http.HttpRequestMessage..ctor(HttpMethod method, Uri requestUri)
+   at System.Net.Http.HttpClient.GetAsync(Uri requestUri, HttpCompletionOption completionOption, CancellationToken cancellationToken)
+   at System.Net.Http.HttpClient.GetContentAsync[T](Uri requestUri, HttpCompletionOption completionOption, T defaultValue, Func`2 readAs)
+   at System.Net.Http.HttpClient.GetStringAsync(Uri requestUri)
+   at System.Net.Http.HttpClient.GetStringAsync(String requestUri)
+   at MiscUtilities.HttpUtils.GetHttpRequestResponse(String url) in D:\Matei\PrsLic\ProductEngine\MiscUtilities\HttpUtils.cs:line 20
+2018-10-30 12:23:49.6397|FATAL|GenericLogger|Error occured Only 'http' and 'https' schemes are allowed.
+Parameter name: requestUri 
+ Generic exception Popped in GetHttpRequestResponse(string url) 
+    at System.Net.Http.HttpRequestMessage.InitializeValues(HttpMethod method, Uri requestUri)
+   at System.Net.Http.HttpRequestMessage..ctor(HttpMethod method, Uri requestUri)
+   at System.Net.Http.HttpClient.GetAsync(Uri requestUri, HttpCompletionOption completionOption, CancellationToken cancellationToken)
+   at System.Net.Http.HttpClient.GetContentAsync[T](Uri requestUri, HttpCompletionOption completionOption, T defaultValue, Func`2 readAs)
+   at System.Net.Http.HttpClient.GetStringAsync(Uri requestUri)
+   at System.Net.Http.HttpClient.GetStringAsync(String requestUri)
+   at MiscUtilities.HttpUtils.GetHttpRequestResponse(String url) in D:\Matei\PrsLic\ProductEngine\MiscUtilities\HttpUtils.cs:line 20
+2018-10-30 12:23:49.6677|FATAL|GenericLogger|Error occured Only 'http' and 'https' schemes are allowed.
+Parameter name: requestUri 
+ Generic exception Popped in GetHttpRequestResponse(string url) 
+    at System.Net.Http.HttpRequestMessage.InitializeValues(HttpMethod method, Uri requestUri)
+   at System.Net.Http.HttpRequestMessage..ctor(HttpMethod method, Uri requestUri)
+   at System.Net.Http.HttpClient.GetAsync(Uri requestUri, HttpCompletionOption completionOption, CancellationToken cancellationToken)
+   at System.Net.Http.HttpClient.GetContentAsync[T](Uri requestUri, HttpCompletionOption completionOption, T defaultValue, Func`2 readAs)
+   at System.Net.Http.HttpClient.GetStringAsync(Uri requestUri)
+   at System.Net.Http.HttpClient.GetStringAsync(String requestUri)
+   at MiscUtilities.HttpUtils.GetHttpRequestResponse(String url) in D:\Matei\PrsLic\ProductEngine\MiscUtilities\HttpUtils.cs:line 20
+2018-10-30 12:23:49.6947|FATAL|GenericLogger|Error occured Only 'http' and 'https' schemes are allowed.
+Parameter name: requestUri 
+ Generic exception Popped in GetHttpRequestResponse(string url) 
+    at System.Net.Http.HttpRequestMessage.InitializeValues(HttpMethod method, Uri requestUri)
+   at System.Net.Http.HttpRequestMessage..ctor(HttpMethod method, Uri requestUri)
+   at System.Net.Http.HttpClient.GetAsync(Uri requestUri, HttpCompletionOption completionOption, CancellationToken cancellationToken)
+   at System.Net.Http.HttpClient.GetContentAsync[T](Uri requestUri, HttpCompletionOption completionOption, T defaultValue, Func`2 readAs)
+   at System.Net.Http.HttpClient.GetStringAsync(Uri requestUri)
+   at System.Net.Http.HttpClient.GetStringAsync(String requestUri)
+   at MiscUtilities.HttpUtils.GetHttpRequestResponse(String url) in D:\Matei\PrsLic\ProductEngine\MiscUtilities\HttpUtils.cs:line 20
+2018-10-30 12:23:49.7267|FATAL|GenericLogger|Error occured Only 'http' and 'https' schemes are allowed.
+Parameter name: requestUri 
+ Generic exception Popped in GetHttpRequestResponse(string url) 
+    at System.Net.Http.HttpRequestMessage.InitializeValues(HttpMethod method, Uri requestUri)
+   at System.Net.Http.HttpRequestMessage..ctor(HttpMethod method, Uri requestUri)
+   at System.Net.Http.HttpClient.GetAsync(Uri requestUri, HttpCompletionOption completionOption, CancellationToken cancellationToken)
+   at System.Net.Http.HttpClient.GetContentAsync[T](Uri requestUri, HttpCompletionOption completionOption, T defaultValue, Func`2 readAs)
+   at System.Net.Http.HttpClient.GetStringAsync(Uri requestUri)
+   at System.Net.Http.HttpClient.GetStringAsync(String requestUri)
+   at MiscUtilities.HttpUtils.GetHttpRequestResponse(String url) in D:\Matei\PrsLic\ProductEngine\MiscUtilities\HttpUtils.cs:line 20
+2018-10-30 12:23:49.7567|FATAL|GenericLogger|Error occured Only 'http' and 'https' schemes are allowed.
+Parameter name: requestUri 
+ Generic exception Popped in GetHttpRequestResponse(string url) 
+    at System.Net.Http.HttpRequestMessage.InitializeValues(HttpMethod method, Uri requestUri)
+   at System.Net.Http.HttpRequestMessage..ctor(HttpMethod method, Uri requestUri)
+   at System.Net.Http.HttpClient.GetAsync(Uri requestUri, HttpCompletionOption completionOption, CancellationToken cancellationToken)
+   at System.Net.Http.HttpClient.GetContentAsync[T](Uri requestUri, HttpCompletionOption completionOption, T defaultValue, Func`2 readAs)
+   at System.Net.Http.HttpClient.GetStringAsync(Uri requestUri)
+   at System.Net.Http.HttpClient.GetStringAsync(String requestUri)
+   at MiscUtilities.HttpUtils.GetHttpRequestResponse(String url) in D:\Matei\PrsLic\ProductEngine\MiscUtilities\HttpUtils.cs:line 20
+2018-10-30 12:23:49.7827|FATAL|GenericLogger|Error occured Only 'http' and 'https' schemes are allowed.
+Parameter name: requestUri 
+ Generic exception Popped in GetHttpRequestResponse(string url) 
+    at System.Net.Http.HttpRequestMessage.InitializeValues(HttpMethod method, Uri requestUri)
+   at System.Net.Http.HttpRequestMessage..ctor(HttpMethod method, Uri requestUri)
+   at System.Net.Http.HttpClient.GetAsync(Uri requestUri, HttpCompletionOption completionOption, CancellationToken cancellationToken)
+   at System.Net.Http.HttpClient.GetContentAsync[T](Uri requestUri, HttpCompletionOption completionOption, T defaultValue, Func`2 readAs)
+   at System.Net.Http.HttpClient.GetStringAsync(Uri requestUri)
+   at System.Net.Http.HttpClient.GetStringAsync(String requestUri)
+   at MiscUtilities.HttpUtils.GetHttpRequestResponse(String url) in D:\Matei\PrsLic\ProductEngine\MiscUtilities\HttpUtils.cs:line 20
+2018-10-30 12:23:49.8097|FATAL|GenericLogger|Error occured Only 'http' and 'https' schemes are allowed.
+Parameter name: requestUri 
+ Generic exception Popped in GetHttpRequestResponse(string url) 
+    at System.Net.Http.HttpRequestMessage.InitializeValues(HttpMethod method, Uri requestUri)
+   at System.Net.Http.HttpRequestMessage..ctor(HttpMethod method, Uri requestUri)
+   at System.Net.Http.HttpClient.GetAsync(Uri requestUri, HttpCompletionOption completionOption, CancellationToken cancellationToken)
+   at System.Net.Http.HttpClient.GetContentAsync[T](Uri requestUri, HttpCompletionOption completionOption, T defaultValue, Func`2 readAs)
+   at System.Net.Http.HttpClient.GetStringAsync(Uri requestUri)
+   at System.Net.Http.HttpClient.GetStringAsync(String requestUri)
+   at MiscUtilities.HttpUtils.GetHttpRequestResponse(String url) in D:\Matei\PrsLic\ProductEngine\MiscUtilities\HttpUtils.cs:line 20
+2018-10-30 12:23:49.8377|FATAL|GenericLogger|Error occured Only 'http' and 'https' schemes are allowed.
+Parameter name: requestUri 
+ Generic exception Popped in GetHttpRequestResponse(string url) 
+    at System.Net.Http.HttpRequestMessage.InitializeValues(HttpMethod method, Uri requestUri)
+   at System.Net.Http.HttpRequestMessage..ctor(HttpMethod method, Uri requestUri)
+   at System.Net.Http.HttpClient.GetAsync(Uri requestUri, HttpCompletionOption completionOption, CancellationToken cancellationToken)
+   at System.Net.Http.HttpClient.GetContentAsync[T](Uri requestUri, HttpCompletionOption completionOption, T defaultValue, Func`2 readAs)
+   at System.Net.Http.HttpClient.GetStringAsync(Uri requestUri)
+   at System.Net.Http.HttpClient.GetStringAsync(String requestUri)
+   at MiscUtilities.HttpUtils.GetHttpRequestResponse(String url) in D:\Matei\PrsLic\ProductEngine\MiscUtilities\HttpUtils.cs:line 20
+2018-10-30 12:23:49.8636|FATAL|GenericLogger|Error occured Only 'http' and 'https' schemes are allowed.
+Parameter name: requestUri 
+ Generic exception Popped in GetHttpRequestResponse(string url) 
+    at System.Net.Http.HttpRequestMessage.InitializeValues(HttpMethod method, Uri requestUri)
+   at System.Net.Http.HttpRequestMessage..ctor(HttpMethod method, Uri requestUri)
+   at System.Net.Http.HttpClient.GetAsync(Uri requestUri, HttpCompletionOption completionOption, CancellationToken cancellationToken)
+   at System.Net.Http.HttpClient.GetContentAsync[T](Uri requestUri, HttpCompletionOption completionOption, T defaultValue, Func`2 readAs)
+   at System.Net.Http.HttpClient.GetStringAsync(Uri requestUri)
+   at System.Net.Http.HttpClient.GetStringAsync(String requestUri)
+   at MiscUtilities.HttpUtils.GetHttpRequestResponse(String url) in D:\Matei\PrsLic\ProductEngine\MiscUtilities\HttpUtils.cs:line 20
+2018-10-30 12:23:49.8926|FATAL|GenericLogger|Error occured Only 'http' and 'https' schemes are allowed.
+Parameter name: requestUri 
+ Generic exception Popped in GetHttpRequestResponse(string url) 
+    at System.Net.Http.HttpRequestMessage.InitializeValues(HttpMethod method, Uri requestUri)
+   at System.Net.Http.HttpRequestMessage..ctor(HttpMethod method, Uri requestUri)
+   at System.Net.Http.HttpClient.GetAsync(Uri requestUri, HttpCompletionOption completionOption, CancellationToken cancellationToken)
+   at System.Net.Http.HttpClient.GetContentAsync[T](Uri requestUri, HttpCompletionOption completionOption, T defaultValue, Func`2 readAs)
+   at System.Net.Http.HttpClient.GetStringAsync(Uri requestUri)
+   at System.Net.Http.HttpClient.GetStringAsync(String requestUri)
+   at MiscUtilities.HttpUtils.GetHttpRequestResponse(String url) in D:\Matei\PrsLic\ProductEngine\MiscUtilities\HttpUtils.cs:line 20
+2018-10-30 12:23:49.9236|FATAL|GenericLogger|Error occured Only 'http' and 'https' schemes are allowed.
+Parameter name: requestUri 
+ Generic exception Popped in GetHttpRequestResponse(string url) 
+    at System.Net.Http.HttpRequestMessage.InitializeValues(HttpMethod method, Uri requestUri)
+   at System.Net.Http.HttpRequestMessage..ctor(HttpMethod method, Uri requestUri)
+   at System.Net.Http.HttpClient.GetAsync(Uri requestUri, HttpCompletionOption completionOption, CancellationToken cancellationToken)
+   at System.Net.Http.HttpClient.GetContentAsync[T](Uri requestUri, HttpCompletionOption completionOption, T defaultValue, Func`2 readAs)
+   at System.Net.Http.HttpClient.GetStringAsync(Uri requestUri)
+   at System.Net.Http.HttpClient.GetStringAsync(String requestUri)
+   at MiscUtilities.HttpUtils.GetHttpRequestResponse(String url) in D:\Matei\PrsLic\ProductEngine\MiscUtilities\HttpUtils.cs:line 20
+2018-10-30 12:23:49.9606|FATAL|GenericLogger|Error occured Only 'http' and 'https' schemes are allowed.
+Parameter name: requestUri 
+ Generic exception Popped in GetHttpRequestResponse(string url) 
+    at System.Net.Http.HttpRequestMessage.InitializeValues(HttpMethod method, Uri requestUri)
+   at System.Net.Http.HttpRequestMessage..ctor(HttpMethod method, Uri requestUri)
+   at System.Net.Http.HttpClient.GetAsync(Uri requestUri, HttpCompletionOption completionOption, CancellationToken cancellationToken)
+   at System.Net.Http.HttpClient.GetContentAsync[T](Uri requestUri, HttpCompletionOption completionOption, T defaultValue, Func`2 readAs)
+   at System.Net.Http.HttpClient.GetStringAsync(Uri requestUri)
+   at System.Net.Http.HttpClient.GetStringAsync(String requestUri)
+   at MiscUtilities.HttpUtils.GetHttpRequestResponse(String url) in D:\Matei\PrsLic\ProductEngine\MiscUtilities\HttpUtils.cs:line 20
+2018-10-30 12:23:49.9876|FATAL|GenericLogger|Error occured Only 'http' and 'https' schemes are allowed.
+Parameter name: requestUri 
+ Generic exception Popped in GetHttpRequestResponse(string url) 
+    at System.Net.Http.HttpRequestMessage.InitializeValues(HttpMethod method, Uri requestUri)
+   at System.Net.Http.HttpRequestMessage..ctor(HttpMethod method, Uri requestUri)
+   at System.Net.Http.HttpClient.GetAsync(Uri requestUri, HttpCompletionOption completionOption, CancellationToken cancellationToken)
+   at System.Net.Http.HttpClient.GetContentAsync[T](Uri requestUri, HttpCompletionOption completionOption, T defaultValue, Func`2 readAs)
+   at System.Net.Http.HttpClient.GetStringAsync(Uri requestUri)
+   at System.Net.Http.HttpClient.GetStringAsync(String requestUri)
+   at MiscUtilities.HttpUtils.GetHttpRequestResponse(String url) in D:\Matei\PrsLic\ProductEngine\MiscUtilities\HttpUtils.cs:line 20
+2018-10-30 12:23:50.0236|FATAL|GenericLogger|Error occured Only 'http' and 'https' schemes are allowed.
+Parameter name: requestUri 
+ Generic exception Popped in GetHttpRequestResponse(string url) 
+    at System.Net.Http.HttpRequestMessage.InitializeValues(HttpMethod method, Uri requestUri)
+   at System.Net.Http.HttpRequestMessage..ctor(HttpMethod method, Uri requestUri)
+   at System.Net.Http.HttpClient.GetAsync(Uri requestUri, HttpCompletionOption completionOption, CancellationToken cancellationToken)
+   at System.Net.Http.HttpClient.GetContentAsync[T](Uri requestUri, HttpCompletionOption completionOption, T defaultValue, Func`2 readAs)
+   at System.Net.Http.HttpClient.GetStringAsync(Uri requestUri)
+   at System.Net.Http.HttpClient.GetStringAsync(String requestUri)
+   at MiscUtilities.HttpUtils.GetHttpRequestResponse(String url) in D:\Matei\PrsLic\ProductEngine\MiscUtilities\HttpUtils.cs:line 20
+2018-10-30 12:23:50.0495|FATAL|GenericLogger|Error occured Only 'http' and 'https' schemes are allowed.
+Parameter name: requestUri 
+ Generic exception Popped in GetHttpRequestResponse(string url) 
+    at System.Net.Http.HttpRequestMessage.InitializeValues(HttpMethod method, Uri requestUri)
+   at System.Net.Http.HttpRequestMessage..ctor(HttpMethod method, Uri requestUri)
+   at System.Net.Http.HttpClient.GetAsync(Uri requestUri, HttpCompletionOption completionOption, CancellationToken cancellationToken)
+   at System.Net.Http.HttpClient.GetContentAsync[T](Uri requestUri, HttpCompletionOption completionOption, T defaultValue, Func`2 readAs)
+   at System.Net.Http.HttpClient.GetStringAsync(Uri requestUri)
+   at System.Net.Http.HttpClient.GetStringAsync(String requestUri)
+   at MiscUtilities.HttpUtils.GetHttpRequestResponse(String url) in D:\Matei\PrsLic\ProductEngine\MiscUtilities\HttpUtils.cs:line 20
+2018-10-30 12:23:50.0785|FATAL|GenericLogger|Error occured Only 'http' and 'https' schemes are allowed.
+Parameter name: requestUri 
+ Generic exception Popped in GetHttpRequestResponse(string url) 
+    at System.Net.Http.HttpRequestMessage.InitializeValues(HttpMethod method, Uri requestUri)
+   at System.Net.Http.HttpRequestMessage..ctor(HttpMethod method, Uri requestUri)
+   at System.Net.Http.HttpClient.GetAsync(Uri requestUri, HttpCompletionOption completionOption, CancellationToken cancellationToken)
+   at System.Net.Http.HttpClient.GetContentAsync[T](Uri requestUri, HttpCompletionOption completionOption, T defaultValue, Func`2 readAs)
+   at System.Net.Http.HttpClient.GetStringAsync(Uri requestUri)
+   at System.Net.Http.HttpClient.GetStringAsync(String requestUri)
+   at MiscUtilities.HttpUtils.GetHttpRequestResponse(String url) in D:\Matei\PrsLic\ProductEngine\MiscUtilities\HttpUtils.cs:line 20
+2018-10-30 12:23:50.1055|FATAL|GenericLogger|Error occured Only 'http' and 'https' schemes are allowed.
+Parameter name: requestUri 
+ Generic exception Popped in GetHttpRequestResponse(string url) 
+    at System.Net.Http.HttpRequestMessage.InitializeValues(HttpMethod method, Uri requestUri)
+   at System.Net.Http.HttpRequestMessage..ctor(HttpMethod method, Uri requestUri)
+   at System.Net.Http.HttpClient.GetAsync(Uri requestUri, HttpCompletionOption completionOption, CancellationToken cancellationToken)
+   at System.Net.Http.HttpClient.GetContentAsync[T](Uri requestUri, HttpCompletionOption completionOption, T defaultValue, Func`2 readAs)
+   at System.Net.Http.HttpClient.GetStringAsync(Uri requestUri)
+   at System.Net.Http.HttpClient.GetStringAsync(String requestUri)
+   at MiscUtilities.HttpUtils.GetHttpRequestResponse(String url) in D:\Matei\PrsLic\ProductEngine\MiscUtilities\HttpUtils.cs:line 20
+2018-10-30 12:23:50.1355|FATAL|GenericLogger|Error occured Only 'http' and 'https' schemes are allowed.
+Parameter name: requestUri 
+ Generic exception Popped in GetHttpRequestResponse(string url) 
+    at System.Net.Http.HttpRequestMessage.InitializeValues(HttpMethod method, Uri requestUri)
+   at System.Net.Http.HttpRequestMessage..ctor(HttpMethod method, Uri requestUri)
+   at System.Net.Http.HttpClient.GetAsync(Uri requestUri, HttpCompletionOption completionOption, CancellationToken cancellationToken)
+   at System.Net.Http.HttpClient.GetContentAsync[T](Uri requestUri, HttpCompletionOption completionOption, T defaultValue, Func`2 readAs)
+   at System.Net.Http.HttpClient.GetStringAsync(Uri requestUri)
+   at System.Net.Http.HttpClient.GetStringAsync(String requestUri)
+   at MiscUtilities.HttpUtils.GetHttpRequestResponse(String url) in D:\Matei\PrsLic\ProductEngine\MiscUtilities\HttpUtils.cs:line 20
+2018-10-30 12:23:50.1755|FATAL|GenericLogger|Error occured Only 'http' and 'https' schemes are allowed.
+Parameter name: requestUri 
+ Generic exception Popped in GetHttpRequestResponse(string url) 
+    at System.Net.Http.HttpRequestMessage.InitializeValues(HttpMethod method, Uri requestUri)
+   at System.Net.Http.HttpRequestMessage..ctor(HttpMethod method, Uri requestUri)
+   at System.Net.Http.HttpClient.GetAsync(Uri requestUri, HttpCompletionOption completionOption, CancellationToken cancellationToken)
+   at System.Net.Http.HttpClient.GetContentAsync[T](Uri requestUri, HttpCompletionOption completionOption, T defaultValue, Func`2 readAs)
+   at System.Net.Http.HttpClient.GetStringAsync(Uri requestUri)
+   at System.Net.Http.HttpClient.GetStringAsync(String requestUri)
+   at MiscUtilities.HttpUtils.GetHttpRequestResponse(String url) in D:\Matei\PrsLic\ProductEngine\MiscUtilities\HttpUtils.cs:line 20
+2018-10-30 12:23:50.2044|FATAL|GenericLogger|Error occured Only 'http' and 'https' schemes are allowed.
+Parameter name: requestUri 
+ Generic exception Popped in GetHttpRequestResponse(string url) 
+    at System.Net.Http.HttpRequestMessage.InitializeValues(HttpMethod method, Uri requestUri)
+   at System.Net.Http.HttpRequestMessage..ctor(HttpMethod method, Uri requestUri)
+   at System.Net.Http.HttpClient.GetAsync(Uri requestUri, HttpCompletionOption completionOption, CancellationToken cancellationToken)
+   at System.Net.Http.HttpClient.GetContentAsync[T](Uri requestUri, HttpCompletionOption completionOption, T defaultValue, Func`2 readAs)
+   at System.Net.Http.HttpClient.GetStringAsync(Uri requestUri)
+   at System.Net.Http.HttpClient.GetStringAsync(String requestUri)
+   at MiscUtilities.HttpUtils.GetHttpRequestResponse(String url) in D:\Matei\PrsLic\ProductEngine\MiscUtilities\HttpUtils.cs:line 20
+2018-10-30 12:23:50.2304|FATAL|GenericLogger|Error occured Only 'http' and 'https' schemes are allowed.
+Parameter name: requestUri 
+ Generic exception Popped in GetHttpRequestResponse(string url) 
+    at System.Net.Http.HttpRequestMessage.InitializeValues(HttpMethod method, Uri requestUri)
+   at System.Net.Http.HttpRequestMessage..ctor(HttpMethod method, Uri requestUri)
+   at System.Net.Http.HttpClient.GetAsync(Uri requestUri, HttpCompletionOption completionOption, CancellationToken cancellationToken)
+   at System.Net.Http.HttpClient.GetContentAsync[T](Uri requestUri, HttpCompletionOption completionOption, T defaultValue, Func`2 readAs)
+   at System.Net.Http.HttpClient.GetStringAsync(Uri requestUri)
+   at System.Net.Http.HttpClient.GetStringAsync(String requestUri)
+   at MiscUtilities.HttpUtils.GetHttpRequestResponse(String url) in D:\Matei\PrsLic\ProductEngine\MiscUtilities\HttpUtils.cs:line 20
+2018-10-30 12:23:50.2574|FATAL|GenericLogger|Error occured Only 'http' and 'https' schemes are allowed.
+Parameter name: requestUri 
+ Generic exception Popped in GetHttpRequestResponse(string url) 
+    at System.Net.Http.HttpRequestMessage.InitializeValues(HttpMethod method, Uri requestUri)
+   at System.Net.Http.HttpRequestMessage..ctor(HttpMethod method, Uri requestUri)
+   at System.Net.Http.HttpClient.GetAsync(Uri requestUri, HttpCompletionOption completionOption, CancellationToken cancellationToken)
+   at System.Net.Http.HttpClient.GetContentAsync[T](Uri requestUri, HttpCompletionOption completionOption, T defaultValue, Func`2 readAs)
+   at System.Net.Http.HttpClient.GetStringAsync(Uri requestUri)
+   at System.Net.Http.HttpClient.GetStringAsync(String requestUri)
+   at MiscUtilities.HttpUtils.GetHttpRequestResponse(String url) in D:\Matei\PrsLic\ProductEngine\MiscUtilities\HttpUtils.cs:line 20
+2018-10-30 12:23:50.2834|FATAL|GenericLogger|Error occured Only 'http' and 'https' schemes are allowed.
+Parameter name: requestUri 
+ Generic exception Popped in GetHttpRequestResponse(string url) 
+    at System.Net.Http.HttpRequestMessage.InitializeValues(HttpMethod method, Uri requestUri)
+   at System.Net.Http.HttpRequestMessage..ctor(HttpMethod method, Uri requestUri)
+   at System.Net.Http.HttpClient.GetAsync(Uri requestUri, HttpCompletionOption completionOption, CancellationToken cancellationToken)
+   at System.Net.Http.HttpClient.GetContentAsync[T](Uri requestUri, HttpCompletionOption completionOption, T defaultValue, Func`2 readAs)
+   at System.Net.Http.HttpClient.GetStringAsync(Uri requestUri)
+   at System.Net.Http.HttpClient.GetStringAsync(String requestUri)
+   at MiscUtilities.HttpUtils.GetHttpRequestResponse(String url) in D:\Matei\PrsLic\ProductEngine\MiscUtilities\HttpUtils.cs:line 20
+2018-10-30 12:23:50.3104|FATAL|GenericLogger|Error occured Only 'http' and 'https' schemes are allowed.
+Parameter name: requestUri 
+ Generic exception Popped in GetHttpRequestResponse(string url) 
+    at System.Net.Http.HttpRequestMessage.InitializeValues(HttpMethod method, Uri requestUri)
+   at System.Net.Http.HttpRequestMessage..ctor(HttpMethod method, Uri requestUri)
+   at System.Net.Http.HttpClient.GetAsync(Uri requestUri, HttpCompletionOption completionOption, CancellationToken cancellationToken)
+   at System.Net.Http.HttpClient.GetContentAsync[T](Uri requestUri, HttpCompletionOption completionOption, T defaultValue, Func`2 readAs)
+   at System.Net.Http.HttpClient.GetStringAsync(Uri requestUri)
+   at System.Net.Http.HttpClient.GetStringAsync(String requestUri)
+   at MiscUtilities.HttpUtils.GetHttpRequestResponse(String url) in D:\Matei\PrsLic\ProductEngine\MiscUtilities\HttpUtils.cs:line 20
+2018-10-30 12:23:50.3384|FATAL|GenericLogger|Error occured Only 'http' and 'https' schemes are allowed.
+Parameter name: requestUri 
+ Generic exception Popped in GetHttpRequestResponse(string url) 
+    at System.Net.Http.HttpRequestMessage.InitializeValues(HttpMethod method, Uri requestUri)
+   at System.Net.Http.HttpRequestMessage..ctor(HttpMethod method, Uri requestUri)
+   at System.Net.Http.HttpClient.GetAsync(Uri requestUri, HttpCompletionOption completionOption, CancellationToken cancellationToken)
+   at System.Net.Http.HttpClient.GetContentAsync[T](Uri requestUri, HttpCompletionOption completionOption, T defaultValue, Func`2 readAs)
+   at System.Net.Http.HttpClient.GetStringAsync(Uri requestUri)
+   at System.Net.Http.HttpClient.GetStringAsync(String requestUri)
+   at MiscUtilities.HttpUtils.GetHttpRequestResponse(String url) in D:\Matei\PrsLic\ProductEngine\MiscUtilities\HttpUtils.cs:line 20
+2018-10-30 12:23:50.3703|FATAL|GenericLogger|Error occured Only 'http' and 'https' schemes are allowed.
+Parameter name: requestUri 
+ Generic exception Popped in GetHttpRequestResponse(string url) 
+    at System.Net.Http.HttpRequestMessage.InitializeValues(HttpMethod method, Uri requestUri)
+   at System.Net.Http.HttpRequestMessage..ctor(HttpMethod method, Uri requestUri)
+   at System.Net.Http.HttpClient.GetAsync(Uri requestUri, HttpCompletionOption completionOption, CancellationToken cancellationToken)
+   at System.Net.Http.HttpClient.GetContentAsync[T](Uri requestUri, HttpCompletionOption completionOption, T defaultValue, Func`2 readAs)
+   at System.Net.Http.HttpClient.GetStringAsync(Uri requestUri)
+   at System.Net.Http.HttpClient.GetStringAsync(String requestUri)
+   at MiscUtilities.HttpUtils.GetHttpRequestResponse(String url) in D:\Matei\PrsLic\ProductEngine\MiscUtilities\HttpUtils.cs:line 20
+2018-10-30 12:23:50.4083|FATAL|GenericLogger|Error occured Only 'http' and 'https' schemes are allowed.
+Parameter name: requestUri 
+ Generic exception Popped in GetHttpRequestResponse(string url) 
+    at System.Net.Http.HttpRequestMessage.InitializeValues(HttpMethod method, Uri requestUri)
+   at System.Net.Http.HttpRequestMessage..ctor(HttpMethod method, Uri requestUri)
+   at System.Net.Http.HttpClient.GetAsync(Uri requestUri, HttpCompletionOption completionOption, CancellationToken cancellationToken)
+   at System.Net.Http.HttpClient.GetContentAsync[T](Uri requestUri, HttpCompletionOption completionOption, T defaultValue, Func`2 readAs)
+   at System.Net.Http.HttpClient.GetStringAsync(Uri requestUri)
+   at System.Net.Http.HttpClient.GetStringAsync(String requestUri)
+   at MiscUtilities.HttpUtils.GetHttpRequestResponse(String url) in D:\Matei\PrsLic\ProductEngine\MiscUtilities\HttpUtils.cs:line 20
+2018-10-30 12:23:50.4403|FATAL|GenericLogger|Error occured Only 'http' and 'https' schemes are allowed.
+Parameter name: requestUri 
+ Generic exception Popped in GetHttpRequestResponse(string url) 
+    at System.Net.Http.HttpRequestMessage.InitializeValues(HttpMethod method, Uri requestUri)
+   at System.Net.Http.HttpRequestMessage..ctor(HttpMethod method, Uri requestUri)
+   at System.Net.Http.HttpClient.GetAsync(Uri requestUri, HttpCompletionOption completionOption, CancellationToken cancellationToken)
+   at System.Net.Http.HttpClient.GetContentAsync[T](Uri requestUri, HttpCompletionOption completionOption, T defaultValue, Func`2 readAs)
+   at System.Net.Http.HttpClient.GetStringAsync(Uri requestUri)
+   at System.Net.Http.HttpClient.GetStringAsync(String requestUri)
+   at MiscUtilities.HttpUtils.GetHttpRequestResponse(String url) in D:\Matei\PrsLic\ProductEngine\MiscUtilities\HttpUtils.cs:line 20
+2018-10-30 12:23:50.4683|FATAL|GenericLogger|Error occured Only 'http' and 'https' schemes are allowed.
+Parameter name: requestUri 
+ Generic exception Popped in GetHttpRequestResponse(string url) 
+    at System.Net.Http.HttpRequestMessage.InitializeValues(HttpMethod method, Uri requestUri)
+   at System.Net.Http.HttpRequestMessage..ctor(HttpMethod method, Uri requestUri)
+   at System.Net.Http.HttpClient.GetAsync(Uri requestUri, HttpCompletionOption completionOption, CancellationToken cancellationToken)
+   at System.Net.Http.HttpClient.GetContentAsync[T](Uri requestUri, HttpCompletionOption completionOption, T defaultValue, Func`2 readAs)
+   at System.Net.Http.HttpClient.GetStringAsync(Uri requestUri)
+   at System.Net.Http.HttpClient.GetStringAsync(String requestUri)
+   at MiscUtilities.HttpUtils.GetHttpRequestResponse(String url) in D:\Matei\PrsLic\ProductEngine\MiscUtilities\HttpUtils.cs:line 20
+2018-10-30 12:23:50.4953|FATAL|GenericLogger|Error occured Only 'http' and 'https' schemes are allowed.
+Parameter name: requestUri 
+ Generic exception Popped in GetHttpRequestResponse(string url) 
+    at System.Net.Http.HttpRequestMessage.InitializeValues(HttpMethod method, Uri requestUri)
+   at System.Net.Http.HttpRequestMessage..ctor(HttpMethod method, Uri requestUri)
+   at System.Net.Http.HttpClient.GetAsync(Uri requestUri, HttpCompletionOption completionOption, CancellationToken cancellationToken)
+   at System.Net.Http.HttpClient.GetContentAsync[T](Uri requestUri, HttpCompletionOption completionOption, T defaultValue, Func`2 readAs)
+   at System.Net.Http.HttpClient.GetStringAsync(Uri requestUri)
+   at System.Net.Http.HttpClient.GetStringAsync(String requestUri)
+   at MiscUtilities.HttpUtils.GetHttpRequestResponse(String url) in D:\Matei\PrsLic\ProductEngine\MiscUtilities\HttpUtils.cs:line 20
+2018-10-30 12:23:50.5222|FATAL|GenericLogger|Error occured Only 'http' and 'https' schemes are allowed.
+Parameter name: requestUri 
+ Generic exception Popped in GetHttpRequestResponse(string url) 
+    at System.Net.Http.HttpRequestMessage.InitializeValues(HttpMethod method, Uri requestUri)
+   at System.Net.Http.HttpRequestMessage..ctor(HttpMethod method, Uri requestUri)
+   at System.Net.Http.HttpClient.GetAsync(Uri requestUri, HttpCompletionOption completionOption, CancellationToken cancellationToken)
+   at System.Net.Http.HttpClient.GetContentAsync[T](Uri requestUri, HttpCompletionOption completionOption, T defaultValue, Func`2 readAs)
+   at System.Net.Http.HttpClient.GetStringAsync(Uri requestUri)
+   at System.Net.Http.HttpClient.GetStringAsync(String requestUri)
+   at MiscUtilities.HttpUtils.GetHttpRequestResponse(String url) in D:\Matei\PrsLic\ProductEngine\MiscUtilities\HttpUtils.cs:line 20
+2018-10-30 12:23:50.5542|FATAL|GenericLogger|Error occured Only 'http' and 'https' schemes are allowed.
+Parameter name: requestUri 
+ Generic exception Popped in GetHttpRequestResponse(string url) 
+    at System.Net.Http.HttpRequestMessage.InitializeValues(HttpMethod method, Uri requestUri)
+   at System.Net.Http.HttpRequestMessage..ctor(HttpMethod method, Uri requestUri)
+   at System.Net.Http.HttpClient.GetAsync(Uri requestUri, HttpCompletionOption completionOption, CancellationToken cancellationToken)
+   at System.Net.Http.HttpClient.GetContentAsync[T](Uri requestUri, HttpCompletionOption completionOption, T defaultValue, Func`2 readAs)
+   at System.Net.Http.HttpClient.GetStringAsync(Uri requestUri)
+   at System.Net.Http.HttpClient.GetStringAsync(String requestUri)
+   at MiscUtilities.HttpUtils.GetHttpRequestResponse(String url) in D:\Matei\PrsLic\ProductEngine\MiscUtilities\HttpUtils.cs:line 20
+2018-10-30 12:23:50.5832|FATAL|GenericLogger|Error occured Only 'http' and 'https' schemes are allowed.
+Parameter name: requestUri 
+ Generic exception Popped in GetHttpRequestResponse(string url) 
+    at System.Net.Http.HttpRequestMessage.InitializeValues(HttpMethod method, Uri requestUri)
+   at System.Net.Http.HttpRequestMessage..ctor(HttpMethod method, Uri requestUri)
+   at System.Net.Http.HttpClient.GetAsync(Uri requestUri, HttpCompletionOption completionOption, CancellationToken cancellationToken)
+   at System.Net.Http.HttpClient.GetContentAsync[T](Uri requestUri, HttpCompletionOption completionOption, T defaultValue, Func`2 readAs)
+   at System.Net.Http.HttpClient.GetStringAsync(Uri requestUri)
+   at System.Net.Http.HttpClient.GetStringAsync(String requestUri)
+   at MiscUtilities.HttpUtils.GetHttpRequestResponse(String url) in D:\Matei\PrsLic\ProductEngine\MiscUtilities\HttpUtils.cs:line 20
+2018-10-30 12:23:50.6132|FATAL|GenericLogger|Error occured Only 'http' and 'https' schemes are allowed.
+Parameter name: requestUri 
+ Generic exception Popped in GetHttpRequestResponse(string url) 
+    at System.Net.Http.HttpRequestMessage.InitializeValues(HttpMethod method, Uri requestUri)
+   at System.Net.Http.HttpRequestMessage..ctor(HttpMethod method, Uri requestUri)
+   at System.Net.Http.HttpClient.GetAsync(Uri requestUri, HttpCompletionOption completionOption, CancellationToken cancellationToken)
+   at System.Net.Http.HttpClient.GetContentAsync[T](Uri requestUri, HttpCompletionOption completionOption, T defaultValue, Func`2 readAs)
+   at System.Net.Http.HttpClient.GetStringAsync(Uri requestUri)
+   at System.Net.Http.HttpClient.GetStringAsync(String requestUri)
+   at MiscUtilities.HttpUtils.GetHttpRequestResponse(String url) in D:\Matei\PrsLic\ProductEngine\MiscUtilities\HttpUtils.cs:line 20
+2018-10-30 12:23:50.6432|FATAL|GenericLogger|Error occured Only 'http' and 'https' schemes are allowed.
+Parameter name: requestUri 
+ Generic exception Popped in GetHttpRequestResponse(string url) 
+    at System.Net.Http.HttpRequestMessage.InitializeValues(HttpMethod method, Uri requestUri)
+   at System.Net.Http.HttpRequestMessage..ctor(HttpMethod method, Uri requestUri)
+   at System.Net.Http.HttpClient.GetAsync(Uri requestUri, HttpCompletionOption completionOption, CancellationToken cancellationToken)
+   at System.Net.Http.HttpClient.GetContentAsync[T](Uri requestUri, HttpCompletionOption completionOption, T defaultValue, Func`2 readAs)
+   at System.Net.Http.HttpClient.GetStringAsync(Uri requestUri)
+   at System.Net.Http.HttpClient.GetStringAsync(String requestUri)
+   at MiscUtilities.HttpUtils.GetHttpRequestResponse(String url) in D:\Matei\PrsLic\ProductEngine\MiscUtilities\HttpUtils.cs:line 20
+2018-10-30 12:23:50.6712|FATAL|GenericLogger|Error occured Only 'http' and 'https' schemes are allowed.
+Parameter name: requestUri 
+ Generic exception Popped in GetHttpRequestResponse(string url) 
+    at System.Net.Http.HttpRequestMessage.InitializeValues(HttpMethod method, Uri requestUri)
+   at System.Net.Http.HttpRequestMessage..ctor(HttpMethod method, Uri requestUri)
+   at System.Net.Http.HttpClient.GetAsync(Uri requestUri, HttpCompletionOption completionOption, CancellationToken cancellationToken)
+   at System.Net.Http.HttpClient.GetContentAsync[T](Uri requestUri, HttpCompletionOption completionOption, T defaultValue, Func`2 readAs)
+   at System.Net.Http.HttpClient.GetStringAsync(Uri requestUri)
+   at System.Net.Http.HttpClient.GetStringAsync(String requestUri)
+   at MiscUtilities.HttpUtils.GetHttpRequestResponse(String url) in D:\Matei\PrsLic\ProductEngine\MiscUtilities\HttpUtils.cs:line 20
+2018-10-30 12:23:50.6991|FATAL|GenericLogger|Error occured Only 'http' and 'https' schemes are allowed.
+Parameter name: requestUri 
+ Generic exception Popped in GetHttpRequestResponse(string url) 
+    at System.Net.Http.HttpRequestMessage.InitializeValues(HttpMethod method, Uri requestUri)
+   at System.Net.Http.HttpRequestMessage..ctor(HttpMethod method, Uri requestUri)
+   at System.Net.Http.HttpClient.GetAsync(Uri requestUri, HttpCompletionOption completionOption, CancellationToken cancellationToken)
+   at System.Net.Http.HttpClient.GetContentAsync[T](Uri requestUri, HttpCompletionOption completionOption, T defaultValue, Func`2 readAs)
+   at System.Net.Http.HttpClient.GetStringAsync(Uri requestUri)
+   at System.Net.Http.HttpClient.GetStringAsync(String requestUri)
+   at MiscUtilities.HttpUtils.GetHttpRequestResponse(String url) in D:\Matei\PrsLic\ProductEngine\MiscUtilities\HttpUtils.cs:line 20
+2018-10-30 12:23:50.7261|FATAL|GenericLogger|Error occured Only 'http' and 'https' schemes are allowed.
+Parameter name: requestUri 
+ Generic exception Popped in GetHttpRequestResponse(string url) 
+    at System.Net.Http.HttpRequestMessage.InitializeValues(HttpMethod method, Uri requestUri)
+   at System.Net.Http.HttpRequestMessage..ctor(HttpMethod method, Uri requestUri)
+   at System.Net.Http.HttpClient.GetAsync(Uri requestUri, HttpCompletionOption completionOption, CancellationToken cancellationToken)
+   at System.Net.Http.HttpClient.GetContentAsync[T](Uri requestUri, HttpCompletionOption completionOption, T defaultValue, Func`2 readAs)
+   at System.Net.Http.HttpClient.GetStringAsync(Uri requestUri)
+   at System.Net.Http.HttpClient.GetStringAsync(String requestUri)
+   at MiscUtilities.HttpUtils.GetHttpRequestResponse(String url) in D:\Matei\PrsLic\ProductEngine\MiscUtilities\HttpUtils.cs:line 20
+2018-10-30 12:23:50.7541|FATAL|GenericLogger|Error occured Only 'http' and 'https' schemes are allowed.
+Parameter name: requestUri 
+ Generic exception Popped in GetHttpRequestResponse(string url) 
+    at System.Net.Http.HttpRequestMessage.InitializeValues(HttpMethod method, Uri requestUri)
+   at System.Net.Http.HttpRequestMessage..ctor(HttpMethod method, Uri requestUri)
+   at System.Net.Http.HttpClient.GetAsync(Uri requestUri, HttpCompletionOption completionOption, CancellationToken cancellationToken)
+   at System.Net.Http.HttpClient.GetContentAsync[T](Uri requestUri, HttpCompletionOption completionOption, T defaultValue, Func`2 readAs)
+   at System.Net.Http.HttpClient.GetStringAsync(Uri requestUri)
+   at System.Net.Http.HttpClient.GetStringAsync(String requestUri)
+   at MiscUtilities.HttpUtils.GetHttpRequestResponse(String url) in D:\Matei\PrsLic\ProductEngine\MiscUtilities\HttpUtils.cs:line 20
+2018-10-30 12:24:13.1570|INFO|GenericLogger|Application Started
+2018-10-30 12:24:13.8926|INFO|GenericLogger|Crawl Settings loaded successfully 
