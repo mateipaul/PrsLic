@@ -122,7 +122,7 @@ namespace CrawlingUtilities
         {
 
             Parallel.ForEach(_productUrls
-                            , new ParallelOptions() { MaxDegreeOfParallelism = 4 }
+                            , new ParallelOptions() { MaxDegreeOfParallelism = 1 }
                             , url => crawlProducts.Add(ExtractProductFrom(url)));
 
         }

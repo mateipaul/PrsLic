@@ -4,7 +4,7 @@
 			"RetailerName":"eMag",
 			"CrawlingTags":
 				{
-					"SearchUrlFormat":"https://www.emag.ro/search/{0}?ref=effective_search",
+					"SearchUrlFormat":"https://www.emag.ro/search/{0}",
 					"NextProductPageTag":"(//ul[@id='listing-paginator']/li/a[@aria-label='Next'])[last()]",
 					"ProductCellTag":"//div[contains(@class,'js-product-data')]",
 					"UrlTag":"//h2[contains(@class,'product-title-zone')]/a",

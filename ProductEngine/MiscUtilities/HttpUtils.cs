@@ -4,6 +4,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Net.Http;
 using System.Text;
+using System.Threading;
 using System.Threading.Tasks;
 
 namespace MiscUtilities
@@ -14,6 +15,7 @@ namespace MiscUtilities
 
         public static string GetHttpRequestResponse(string url)
         {
+            Thread.Sleep(2000);
             string html = string.Empty;
             try
             {

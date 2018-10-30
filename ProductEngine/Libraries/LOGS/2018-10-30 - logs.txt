@@ -1444,3 +1444,461 @@ Parameter name: requestUri
  Exception popped when trying to extract product information for https://www.emag.ro/televizor-oled-smart-android-philips-139-cm-4k-ultra-hd-55pos9002-12/pd/DLF1MJBBM/ 
     at CrawlingUtilities.CrawlProductParser.CreateProductDocument()
    at CrawlingUtilities.CrawlProductParser.DownloadProduct()
+2018-10-30 15:09:03.6052|INFO|GenericLogger|Application Started
+2018-10-30 15:09:04.9044|INFO|GenericLogger|Crawl Settings loaded successfully 
+2018-10-30 15:12:37.1735|INFO|GenericLogger|Application Started
+2018-10-30 15:12:38.0099|INFO|GenericLogger|Crawl Settings loaded successfully 
+2018-10-30 15:14:30.0610|INFO|GenericLogger|Application Started
+2018-10-30 15:14:30.7966|INFO|GenericLogger|Crawl Settings loaded successfully 
+2018-10-30 15:14:56.1753|FATAL|GenericLogger|Error occured One or more errors occurred. 
+ Generic exception Popped in GetHttpRequestResponse(string url) 
+    at System.Threading.Tasks.Task.ThrowIfExceptional(Boolean includeTaskCanceledExceptions)
+   at System.Threading.Tasks.Task`1.GetResultCore(Boolean waitCompletionNotification)
+   at System.Threading.Tasks.Task`1.get_Result()
+   at MiscUtilities.HttpUtils.GetHttpRequestResponse(String url) in D:\Matei\PrsLic\ProductEngine\MiscUtilities\HttpUtils.cs:line 20
+2018-10-30 15:14:56.2033|FATAL|GenericLogger|Error occured Product Document Null Exception 
+ Exception popped when trying to extract product information for https://www.emag.ro/automat-cafea-philips-1850w-negru-hd8827-09/pd/DRF5KDBBM/ 
+    at CrawlingUtilities.CrawlProductParser.CreateProductDocument() in D:\Matei\PrsLic\ProductEngine\CrawlingUtilities\CrawlProductParser.cs:line 61
+   at CrawlingUtilities.CrawlProductParser.DownloadProduct() in D:\Matei\PrsLic\ProductEngine\CrawlingUtilities\CrawlProductParser.cs:line 29
+2018-10-30 15:14:56.5072|FATAL|GenericLogger|Error occured One or more errors occurred. 
+ Generic exception Popped in GetHttpRequestResponse(string url) 
+    at System.Threading.Tasks.Task.ThrowIfExceptional(Boolean includeTaskCanceledExceptions)
+   at System.Threading.Tasks.Task`1.GetResultCore(Boolean waitCompletionNotification)
+   at System.Threading.Tasks.Task`1.get_Result()
+   at MiscUtilities.HttpUtils.GetHttpRequestResponse(String url) in D:\Matei\PrsLic\ProductEngine\MiscUtilities\HttpUtils.cs:line 20
+2018-10-30 15:14:56.5382|FATAL|GenericLogger|Error occured Product Document Null Exception 
+ Exception popped when trying to extract product information for https://www.emag.ro/espressor-super-automat-philips-sistem-filtrare-aquaclean-tehnologie-coffeeswitch-carafa-de-lapte-integrata-5-setari-intensitate-optiune-cafea-macinata-8-bauturi-gri-ep4050-10/pd/D4D7YDBBM/ 
+    at CrawlingUtilities.CrawlProductParser.CreateProductDocument() in D:\Matei\PrsLic\ProductEngine\CrawlingUtilities\CrawlProductParser.cs:line 61
+   at CrawlingUtilities.CrawlProductParser.DownloadProduct() in D:\Matei\PrsLic\ProductEngine\CrawlingUtilities\CrawlProductParser.cs:line 29
+2018-10-30 15:14:56.8262|FATAL|GenericLogger|Error occured One or more errors occurred. 
+ Generic exception Popped in GetHttpRequestResponse(string url) 
+    at System.Threading.Tasks.Task.ThrowIfExceptional(Boolean includeTaskCanceledExceptions)
+   at System.Threading.Tasks.Task`1.GetResultCore(Boolean waitCompletionNotification)
+   at System.Threading.Tasks.Task`1.get_Result()
+   at MiscUtilities.HttpUtils.GetHttpRequestResponse(String url) in D:\Matei\PrsLic\ProductEngine\MiscUtilities\HttpUtils.cs:line 20
+2018-10-30 15:14:56.8582|FATAL|GenericLogger|Error occured Product Document Null Exception 
+ Exception popped when trying to extract product information for https://www.emag.ro/aspirator-cu-sac-philips-performer-active-airflowmax-technology-triactive-negru-fc8578-09/pd/DT7XC3BBM/ 
+    at CrawlingUtilities.CrawlProductParser.CreateProductDocument() in D:\Matei\PrsLic\ProductEngine\CrawlingUtilities\CrawlProductParser.cs:line 61
+   at CrawlingUtilities.CrawlProductParser.DownloadProduct() in D:\Matei\PrsLic\ProductEngine\CrawlingUtilities\CrawlProductParser.cs:line 29
+2018-10-30 15:14:57.1582|FATAL|GenericLogger|Error occured One or more errors occurred. 
+ Generic exception Popped in GetHttpRequestResponse(string url) 
+    at System.Threading.Tasks.Task.ThrowIfExceptional(Boolean includeTaskCanceledExceptions)
+   at System.Threading.Tasks.Task`1.GetResultCore(Boolean waitCompletionNotification)
+   at System.Threading.Tasks.Task`1.get_Result()
+   at MiscUtilities.HttpUtils.GetHttpRequestResponse(String url) in D:\Matei\PrsLic\ProductEngine\MiscUtilities\HttpUtils.cs:line 20
+2018-10-30 15:14:57.1862|FATAL|GenericLogger|Error occured Product Document Null Exception 
+ Exception popped when trying to extract product information for https://www.emag.ro/aparat-de-calcat-cu-abur-philips-steam-go-1200-w-0-06-l-24-g-min-alb-mov-gc320-55/pd/DVGYYMBBM/ 
+    at CrawlingUtilities.CrawlProductParser.CreateProductDocument() in D:\Matei\PrsLic\ProductEngine\CrawlingUtilities\CrawlProductParser.cs:line 61
+   at CrawlingUtilities.CrawlProductParser.DownloadProduct() in D:\Matei\PrsLic\ProductEngine\CrawlingUtilities\CrawlProductParser.cs:line 29
+2018-10-30 15:14:57.4941|FATAL|GenericLogger|Error occured One or more errors occurred. 
+ Generic exception Popped in GetHttpRequestResponse(string url) 
+    at System.Threading.Tasks.Task.ThrowIfExceptional(Boolean includeTaskCanceledExceptions)
+   at System.Threading.Tasks.Task`1.GetResultCore(Boolean waitCompletionNotification)
+   at System.Threading.Tasks.Task`1.get_Result()
+   at MiscUtilities.HttpUtils.GetHttpRequestResponse(String url) in D:\Matei\PrsLic\ProductEngine\MiscUtilities\HttpUtils.cs:line 20
+2018-10-30 15:14:57.5210|FATAL|GenericLogger|Error occured Product Document Null Exception 
+ Exception popped when trying to extract product information for https://www.emag.ro/aparat-de-tuns-philips-acumulator-0-5-23-mm-13-trepte-lame-lavabile-negru-rosu-hc3420-15/pd/D4Z2CBBBM/ 
+    at CrawlingUtilities.CrawlProductParser.CreateProductDocument() in D:\Matei\PrsLic\ProductEngine\CrawlingUtilities\CrawlProductParser.cs:line 61
+   at CrawlingUtilities.CrawlProductParser.DownloadProduct() in D:\Matei\PrsLic\ProductEngine\CrawlingUtilities\CrawlProductParser.cs:line 29
+2018-10-30 15:14:57.8421|FATAL|GenericLogger|Error occured One or more errors occurred. 
+ Generic exception Popped in GetHttpRequestResponse(string url) 
+    at System.Threading.Tasks.Task.ThrowIfExceptional(Boolean includeTaskCanceledExceptions)
+   at System.Threading.Tasks.Task`1.GetResultCore(Boolean waitCompletionNotification)
+   at System.Threading.Tasks.Task`1.get_Result()
+   at MiscUtilities.HttpUtils.GetHttpRequestResponse(String url) in D:\Matei\PrsLic\ProductEngine\MiscUtilities\HttpUtils.cs:line 20
+2018-10-30 15:14:57.8840|FATAL|GenericLogger|Error occured Product Document Null Exception 
+ Exception popped when trying to extract product information for https://www.emag.ro/aspirator-fara-sac-philips-powerpro-compact-powercyclone-5-perii-triactive-turbobrush-parchet-filtru-anti-alergic-ecarf-verde-fc9334-09/pd/D73KYDBBM/ 
+    at CrawlingUtilities.CrawlProductParser.CreateProductDocument() in D:\Matei\PrsLic\ProductEngine\CrawlingUtilities\CrawlProductParser.cs:line 61
+   at CrawlingUtilities.CrawlProductParser.DownloadProduct() in D:\Matei\PrsLic\ProductEngine\CrawlingUtilities\CrawlProductParser.cs:line 29
+2018-10-30 15:14:58.1609|FATAL|GenericLogger|Error occured One or more errors occurred. 
+ Generic exception Popped in GetHttpRequestResponse(string url) 
+    at System.Threading.Tasks.Task.ThrowIfExceptional(Boolean includeTaskCanceledExceptions)
+   at System.Threading.Tasks.Task`1.GetResultCore(Boolean waitCompletionNotification)
+   at System.Threading.Tasks.Task`1.get_Result()
+   at MiscUtilities.HttpUtils.GetHttpRequestResponse(String url) in D:\Matei\PrsLic\ProductEngine\MiscUtilities\HttpUtils.cs:line 20
+2018-10-30 15:14:58.1848|FATAL|GenericLogger|Error occured Product Document Null Exception 
+ Exception popped when trying to extract product information for https://www.emag.ro/aspirator-vertical-2-in-1-philips-powerpro-duo-0-6-l-18-v-tehnologie-powercyclone-gri-fc6168-01/pd/DWJPLBBBM/ 
+    at CrawlingUtilities.CrawlProductParser.CreateProductDocument() in D:\Matei\PrsLic\ProductEngine\CrawlingUtilities\CrawlProductParser.cs:line 61
+   at CrawlingUtilities.CrawlProductParser.DownloadProduct() in D:\Matei\PrsLic\ProductEngine\CrawlingUtilities\CrawlProductParser.cs:line 29
+2018-10-30 15:14:58.5068|FATAL|GenericLogger|Error occured One or more errors occurred. 
+ Generic exception Popped in GetHttpRequestResponse(string url) 
+    at System.Threading.Tasks.Task.ThrowIfExceptional(Boolean includeTaskCanceledExceptions)
+   at System.Threading.Tasks.Task`1.GetResultCore(Boolean waitCompletionNotification)
+   at System.Threading.Tasks.Task`1.get_Result()
+   at MiscUtilities.HttpUtils.GetHttpRequestResponse(String url) in D:\Matei\PrsLic\ProductEngine\MiscUtilities\HttpUtils.cs:line 20
+2018-10-30 15:14:58.5458|FATAL|GenericLogger|Error occured Product Document Null Exception 
+ Exception popped when trying to extract product information for https://www.emag.ro/fier-de-calcat-philips-azur-performer-talpa-steamglide-plus-2400-w-0-3-l-160-g-min-alb-negru-gc3821-80/pd/D2WS8YBBM/ 
+    at CrawlingUtilities.CrawlProductParser.CreateProductDocument() in D:\Matei\PrsLic\ProductEngine\CrawlingUtilities\CrawlProductParser.cs:line 61
+   at CrawlingUtilities.CrawlProductParser.DownloadProduct() in D:\Matei\PrsLic\ProductEngine\CrawlingUtilities\CrawlProductParser.cs:line 29
+2018-10-30 15:14:58.8246|FATAL|GenericLogger|Error occured One or more errors occurred. 
+ Generic exception Popped in GetHttpRequestResponse(string url) 
+    at System.Threading.Tasks.Task.ThrowIfExceptional(Boolean includeTaskCanceledExceptions)
+   at System.Threading.Tasks.Task`1.GetResultCore(Boolean waitCompletionNotification)
+   at System.Threading.Tasks.Task`1.get_Result()
+   at MiscUtilities.HttpUtils.GetHttpRequestResponse(String url) in D:\Matei\PrsLic\ProductEngine\MiscUtilities\HttpUtils.cs:line 20
+2018-10-30 15:14:58.8496|FATAL|GenericLogger|Error occured Product Document Null Exception 
+ Exception popped when trying to extract product information for https://www.emag.ro/blender-philips-viva-collection-problend-5-600-w-1-5-l-2-viteze-functie-impuls-negru-hr2162-90/pd/D4CRLMBBM/ 
+    at CrawlingUtilities.CrawlProductParser.CreateProductDocument() in D:\Matei\PrsLic\ProductEngine\CrawlingUtilities\CrawlProductParser.cs:line 61
+   at CrawlingUtilities.CrawlProductParser.DownloadProduct() in D:\Matei\PrsLic\ProductEngine\CrawlingUtilities\CrawlProductParser.cs:line 29
+2018-10-30 15:14:59.1944|FATAL|GenericLogger|Error occured One or more errors occurred. 
+ Generic exception Popped in GetHttpRequestResponse(string url) 
+    at System.Threading.Tasks.Task.ThrowIfExceptional(Boolean includeTaskCanceledExceptions)
+   at System.Threading.Tasks.Task`1.GetResultCore(Boolean waitCompletionNotification)
+   at System.Threading.Tasks.Task`1.get_Result()
+   at MiscUtilities.HttpUtils.GetHttpRequestResponse(String url) in D:\Matei\PrsLic\ProductEngine\MiscUtilities\HttpUtils.cs:line 20
+2018-10-30 15:14:59.2433|FATAL|GenericLogger|Error occured Product Document Null Exception 
+ Exception popped when trying to extract product information for https://www.emag.ro/epilator-ipl-philips-lumea-senzor-smartskin-utilizare-cu-sau-fara-fir-250-000-impusuri-accesoriu-corp-fata-si-precizie-gri-alb-bri953-00/pd/DWX987BBM/ 
+    at CrawlingUtilities.CrawlProductParser.CreateProductDocument() in D:\Matei\PrsLic\ProductEngine\CrawlingUtilities\CrawlProductParser.cs:line 61
+   at CrawlingUtilities.CrawlProductParser.DownloadProduct() in D:\Matei\PrsLic\ProductEngine\CrawlingUtilities\CrawlProductParser.cs:line 29
+2018-10-30 15:14:59.4932|FATAL|GenericLogger|Error occured One or more errors occurred. 
+ Generic exception Popped in GetHttpRequestResponse(string url) 
+    at System.Threading.Tasks.Task.ThrowIfExceptional(Boolean includeTaskCanceledExceptions)
+   at System.Threading.Tasks.Task`1.GetResultCore(Boolean waitCompletionNotification)
+   at System.Threading.Tasks.Task`1.get_Result()
+   at MiscUtilities.HttpUtils.GetHttpRequestResponse(String url) in D:\Matei\PrsLic\ProductEngine\MiscUtilities\HttpUtils.cs:line 20
+2018-10-30 15:14:59.5262|FATAL|GenericLogger|Error occured Product Document Null Exception 
+ Exception popped when trying to extract product information for https://www.emag.ro/espressor-automat-philips-15-bari-1-8-l-sistem-aquaclean-sistem-spumare-a-laptelui-5-setari-intensitate-optiune-cafea-macinata-negru-ep3510-00/pd/DJ3KYDBBM/ 
+    at CrawlingUtilities.CrawlProductParser.CreateProductDocument() in D:\Matei\PrsLic\ProductEngine\CrawlingUtilities\CrawlProductParser.cs:line 61
+   at CrawlingUtilities.CrawlProductParser.DownloadProduct() in D:\Matei\PrsLic\ProductEngine\CrawlingUtilities\CrawlProductParser.cs:line 29
+2018-10-30 15:14:59.8560|FATAL|GenericLogger|Error occured One or more errors occurred. 
+ Generic exception Popped in GetHttpRequestResponse(string url) 
+    at System.Threading.Tasks.Task.ThrowIfExceptional(Boolean includeTaskCanceledExceptions)
+   at System.Threading.Tasks.Task`1.GetResultCore(Boolean waitCompletionNotification)
+   at System.Threading.Tasks.Task`1.get_Result()
+   at MiscUtilities.HttpUtils.GetHttpRequestResponse(String url) in D:\Matei\PrsLic\ProductEngine\MiscUtilities\HttpUtils.cs:line 20
+2018-10-30 15:14:59.8820|FATAL|GenericLogger|Error occured Product Document Null Exception 
+ Exception popped when trying to extract product information for https://www.emag.ro/robot-de-bucatarie-philips-avance-collection-1300-w-bol-3-4-l-blender-2-2-l-storcator-de-fructe-si-legume-12-viteze-pulse-inox-hr7778-00/pd/ESJPKBBBM/ 
+    at CrawlingUtilities.CrawlProductParser.CreateProductDocument() in D:\Matei\PrsLic\ProductEngine\CrawlingUtilities\CrawlProductParser.cs:line 61
+   at CrawlingUtilities.CrawlProductParser.DownloadProduct() in D:\Matei\PrsLic\ProductEngine\CrawlingUtilities\CrawlProductParser.cs:line 29
+2018-10-30 15:15:00.1628|FATAL|GenericLogger|Error occured One or more errors occurred. 
+ Generic exception Popped in GetHttpRequestResponse(string url) 
+    at System.Threading.Tasks.Task.ThrowIfExceptional(Boolean includeTaskCanceledExceptions)
+   at System.Threading.Tasks.Task`1.GetResultCore(Boolean waitCompletionNotification)
+   at System.Threading.Tasks.Task`1.get_Result()
+   at MiscUtilities.HttpUtils.GetHttpRequestResponse(String url) in D:\Matei\PrsLic\ProductEngine\MiscUtilities\HttpUtils.cs:line 20
+2018-10-30 15:15:00.1938|FATAL|GenericLogger|Error occured Product Document Null Exception 
+ Exception popped when trying to extract product information for https://www.emag.ro/masina-de-tuns-barba-philips-acumulatori-lame-din-otel-0-4-7-mm-17-trepte-argintiu-bt5205-16/pd/D55JXYBBM/ 
+    at CrawlingUtilities.CrawlProductParser.CreateProductDocument() in D:\Matei\PrsLic\ProductEngine\CrawlingUtilities\CrawlProductParser.cs:line 61
+   at CrawlingUtilities.CrawlProductParser.DownloadProduct() in D:\Matei\PrsLic\ProductEngine\CrawlingUtilities\CrawlProductParser.cs:line 29
+2018-10-30 15:15:00.5020|FATAL|GenericLogger|Error occured One or more errors occurred. 
+ Generic exception Popped in GetHttpRequestResponse(string url) 
+    at System.Threading.Tasks.Task.ThrowIfExceptional(Boolean includeTaskCanceledExceptions)
+   at System.Threading.Tasks.Task`1.GetResultCore(Boolean waitCompletionNotification)
+   at System.Threading.Tasks.Task`1.get_Result()
+   at MiscUtilities.HttpUtils.GetHttpRequestResponse(String url) in D:\Matei\PrsLic\ProductEngine\MiscUtilities\HttpUtils.cs:line 20
+2018-10-30 15:15:00.5400|FATAL|GenericLogger|Error occured Product Document Null Exception 
+ Exception popped when trying to extract product information for https://www.emag.ro/epilator-philips-lumea-ipl-250000-pulsatii-alb-sc1995-00/pd/DF5GJYBBM/ 
+    at CrawlingUtilities.CrawlProductParser.CreateProductDocument() in D:\Matei\PrsLic\ProductEngine\CrawlingUtilities\CrawlProductParser.cs:line 61
+   at CrawlingUtilities.CrawlProductParser.DownloadProduct() in D:\Matei\PrsLic\ProductEngine\CrawlingUtilities\CrawlProductParser.cs:line 29
+2018-10-30 15:15:00.8258|FATAL|GenericLogger|Error occured One or more errors occurred. 
+ Generic exception Popped in GetHttpRequestResponse(string url) 
+    at System.Threading.Tasks.Task.ThrowIfExceptional(Boolean includeTaskCanceledExceptions)
+   at System.Threading.Tasks.Task`1.GetResultCore(Boolean waitCompletionNotification)
+   at System.Threading.Tasks.Task`1.get_Result()
+   at MiscUtilities.HttpUtils.GetHttpRequestResponse(String url) in D:\Matei\PrsLic\ProductEngine\MiscUtilities\HttpUtils.cs:line 20
+2018-10-30 15:15:00.8578|FATAL|GenericLogger|Error occured Product Document Null Exception 
+ Exception popped when trying to extract product information for https://www.emag.ro/aparat-de-gatit-cu-aburi-philips-900-w-9-l-negru-hd9126-00/pd/EDSLNBBBM/ 
+    at CrawlingUtilities.CrawlProductParser.CreateProductDocument() in D:\Matei\PrsLic\ProductEngine\CrawlingUtilities\CrawlProductParser.cs:line 61
+   at CrawlingUtilities.CrawlProductParser.DownloadProduct() in D:\Matei\PrsLic\ProductEngine\CrawlingUtilities\CrawlProductParser.cs:line 29
+2018-10-30 15:15:01.1616|FATAL|GenericLogger|Error occured One or more errors occurred. 
+ Generic exception Popped in GetHttpRequestResponse(string url) 
+    at System.Threading.Tasks.Task.ThrowIfExceptional(Boolean includeTaskCanceledExceptions)
+   at System.Threading.Tasks.Task`1.GetResultCore(Boolean waitCompletionNotification)
+   at System.Threading.Tasks.Task`1.get_Result()
+   at MiscUtilities.HttpUtils.GetHttpRequestResponse(String url) in D:\Matei\PrsLic\ProductEngine\MiscUtilities\HttpUtils.cs:line 20
+2018-10-30 15:15:01.1906|FATAL|GenericLogger|Error occured Product Document Null Exception 
+ Exception popped when trying to extract product information for https://www.emag.ro/aspirator-vertical-philips-powerpro-aqua-18-v-li-ion-0-2-l-autonomie-40-minute-negru-fc6401-01/pd/D5GS8YBBM/ 
+    at CrawlingUtilities.CrawlProductParser.CreateProductDocument() in D:\Matei\PrsLic\ProductEngine\CrawlingUtilities\CrawlProductParser.cs:line 61
+   at CrawlingUtilities.CrawlProductParser.DownloadProduct() in D:\Matei\PrsLic\ProductEngine\CrawlingUtilities\CrawlProductParser.cs:line 29
+2018-10-30 15:15:01.4954|FATAL|GenericLogger|Error occured One or more errors occurred. 
+ Generic exception Popped in GetHttpRequestResponse(string url) 
+    at System.Threading.Tasks.Task.ThrowIfExceptional(Boolean includeTaskCanceledExceptions)
+   at System.Threading.Tasks.Task`1.GetResultCore(Boolean waitCompletionNotification)
+   at System.Threading.Tasks.Task`1.get_Result()
+   at MiscUtilities.HttpUtils.GetHttpRequestResponse(String url) in D:\Matei\PrsLic\ProductEngine\MiscUtilities\HttpUtils.cs:line 20
+2018-10-30 15:15:01.5234|FATAL|GenericLogger|Error occured Product Document Null Exception 
+ Exception popped when trying to extract product information for https://www.emag.ro/epilator-philips-satinelle-wet-dry-discuri-ceramice-cu-micro-striatii-17-discuri-acumulator-capac-pentru-masaj-si-radere-opti-light-2-viteze-alb-bre620-00/pd/D3R4P3BBM/ 
+    at CrawlingUtilities.CrawlProductParser.CreateProductDocument() in D:\Matei\PrsLic\ProductEngine\CrawlingUtilities\CrawlProductParser.cs:line 61
+   at CrawlingUtilities.CrawlProductParser.DownloadProduct() in D:\Matei\PrsLic\ProductEngine\CrawlingUtilities\CrawlProductParser.cs:line 29
+2018-10-30 15:15:01.8452|FATAL|GenericLogger|Error occured One or more errors occurred. 
+ Generic exception Popped in GetHttpRequestResponse(string url) 
+    at System.Threading.Tasks.Task.ThrowIfExceptional(Boolean includeTaskCanceledExceptions)
+   at System.Threading.Tasks.Task`1.GetResultCore(Boolean waitCompletionNotification)
+   at System.Threading.Tasks.Task`1.get_Result()
+   at MiscUtilities.HttpUtils.GetHttpRequestResponse(String url) in D:\Matei\PrsLic\ProductEngine\MiscUtilities\HttpUtils.cs:line 20
+2018-10-30 15:15:01.8871|FATAL|GenericLogger|Error occured Product Document Null Exception 
+ Exception popped when trying to extract product information for https://www.emag.ro/multicooker-philips-980-w-5-l-programe-automate-timer-alb-argintiu-hd3037-70/pd/DQS3JBBBM/ 
+    at CrawlingUtilities.CrawlProductParser.CreateProductDocument() in D:\Matei\PrsLic\ProductEngine\CrawlingUtilities\CrawlProductParser.cs:line 61
+   at CrawlingUtilities.CrawlProductParser.DownloadProduct() in D:\Matei\PrsLic\ProductEngine\CrawlingUtilities\CrawlProductParser.cs:line 29
+2018-10-30 15:15:02.1590|FATAL|GenericLogger|Error occured One or more errors occurred. 
+ Generic exception Popped in GetHttpRequestResponse(string url) 
+    at System.Threading.Tasks.Task.ThrowIfExceptional(Boolean includeTaskCanceledExceptions)
+   at System.Threading.Tasks.Task`1.GetResultCore(Boolean waitCompletionNotification)
+   at System.Threading.Tasks.Task`1.get_Result()
+   at MiscUtilities.HttpUtils.GetHttpRequestResponse(String url) in D:\Matei\PrsLic\ProductEngine\MiscUtilities\HttpUtils.cs:line 20
+2018-10-30 15:15:02.1840|FATAL|GenericLogger|Error occured Product Document Null Exception 
+ Exception popped when trying to extract product information for https://www.emag.ro/fier-de-calcat-philips-easyspeed-plus-talpa-antiaderenta-2100-w-0-27-l-30-g-min-100-g-min-alb-albastru-gc2040-70/pd/DHG2JBBBM/ 
+    at CrawlingUtilities.CrawlProductParser.CreateProductDocument() in D:\Matei\PrsLic\ProductEngine\CrawlingUtilities\CrawlProductParser.cs:line 61
+   at CrawlingUtilities.CrawlProductParser.DownloadProduct() in D:\Matei\PrsLic\ProductEngine\CrawlingUtilities\CrawlProductParser.cs:line 29
+2018-10-30 15:15:02.4937|FATAL|GenericLogger|Error occured One or more errors occurred. 
+ Generic exception Popped in GetHttpRequestResponse(string url) 
+    at System.Threading.Tasks.Task.ThrowIfExceptional(Boolean includeTaskCanceledExceptions)
+   at System.Threading.Tasks.Task`1.GetResultCore(Boolean waitCompletionNotification)
+   at System.Threading.Tasks.Task`1.get_Result()
+   at MiscUtilities.HttpUtils.GetHttpRequestResponse(String url) in D:\Matei\PrsLic\ProductEngine\MiscUtilities\HttpUtils.cs:line 20
+2018-10-30 15:15:02.5200|FATAL|GenericLogger|Error occured Product Document Null Exception 
+ Exception popped when trying to extract product information for https://www.emag.ro/aspirator-vertical-powerpro-aqua-3-in-1-philips-25-2-v-0-6-l-li-ion-argintiu-fc6408-01/pd/DC254FBBM/ 
+    at CrawlingUtilities.CrawlProductParser.CreateProductDocument() in D:\Matei\PrsLic\ProductEngine\CrawlingUtilities\CrawlProductParser.cs:line 61
+   at CrawlingUtilities.CrawlProductParser.DownloadProduct() in D:\Matei\PrsLic\ProductEngine\CrawlingUtilities\CrawlProductParser.cs:line 29
+2018-10-30 15:15:02.8254|FATAL|GenericLogger|Error occured One or more errors occurred. 
+ Generic exception Popped in GetHttpRequestResponse(string url) 
+    at System.Threading.Tasks.Task.ThrowIfExceptional(Boolean includeTaskCanceledExceptions)
+   at System.Threading.Tasks.Task`1.GetResultCore(Boolean waitCompletionNotification)
+   at System.Threading.Tasks.Task`1.get_Result()
+   at MiscUtilities.HttpUtils.GetHttpRequestResponse(String url) in D:\Matei\PrsLic\ProductEngine\MiscUtilities\HttpUtils.cs:line 20
+2018-10-30 15:15:02.8583|FATAL|GenericLogger|Error occured Product Document Null Exception 
+ Exception popped when trying to extract product information for https://www.emag.ro/masina-de-paine-philips-550-w-1000-g-12-programe-alb-hd9015-30/pd/ER58NBBBM/ 
+    at CrawlingUtilities.CrawlProductParser.CreateProductDocument() in D:\Matei\PrsLic\ProductEngine\CrawlingUtilities\CrawlProductParser.cs:line 61
+   at CrawlingUtilities.CrawlProductParser.DownloadProduct() in D:\Matei\PrsLic\ProductEngine\CrawlingUtilities\CrawlProductParser.cs:line 29
+2018-10-30 15:15:03.1821|FATAL|GenericLogger|Error occured One or more errors occurred. 
+ Generic exception Popped in GetHttpRequestResponse(string url) 
+    at System.Threading.Tasks.Task.ThrowIfExceptional(Boolean includeTaskCanceledExceptions)
+   at System.Threading.Tasks.Task`1.GetResultCore(Boolean waitCompletionNotification)
+   at System.Threading.Tasks.Task`1.get_Result()
+   at MiscUtilities.HttpUtils.GetHttpRequestResponse(String url) in D:\Matei\PrsLic\ProductEngine\MiscUtilities\HttpUtils.cs:line 20
+2018-10-30 15:15:03.2201|FATAL|GenericLogger|Error occured Product Document Null Exception 
+ Exception popped when trying to extract product information for https://www.emag.ro/robot-de-bucatarie-philips-viva-collection-750-w-bol-1-5-l-blender-1-l-2-viteze-pulse-alb-hr7761-00/pd/EV0NTBBBM/ 
+    at CrawlingUtilities.CrawlProductParser.CreateProductDocument() in D:\Matei\PrsLic\ProductEngine\CrawlingUtilities\CrawlProductParser.cs:line 61
+   at CrawlingUtilities.CrawlProductParser.DownloadProduct() in D:\Matei\PrsLic\ProductEngine\CrawlingUtilities\CrawlProductParser.cs:line 29
+2018-10-30 15:15:03.4979|FATAL|GenericLogger|Error occured One or more errors occurred. 
+ Generic exception Popped in GetHttpRequestResponse(string url) 
+    at System.Threading.Tasks.Task.ThrowIfExceptional(Boolean includeTaskCanceledExceptions)
+   at System.Threading.Tasks.Task`1.GetResultCore(Boolean waitCompletionNotification)
+   at System.Threading.Tasks.Task`1.get_Result()
+   at MiscUtilities.HttpUtils.GetHttpRequestResponse(String url) in D:\Matei\PrsLic\ProductEngine\MiscUtilities\HttpUtils.cs:line 20
+2018-10-30 15:15:03.5289|FATAL|GenericLogger|Error occured Product Document Null Exception 
+ Exception popped when trying to extract product information for https://www.emag.ro/aparat-de-calcat-vertical-cu-abur-philips-clear-touch-2000-w-1-2-l-40-g-min-alb-mov-gc536-35/pd/DG537MBBM/ 
+    at CrawlingUtilities.CrawlProductParser.CreateProductDocument() in D:\Matei\PrsLic\ProductEngine\CrawlingUtilities\CrawlProductParser.cs:line 61
+   at CrawlingUtilities.CrawlProductParser.DownloadProduct() in D:\Matei\PrsLic\ProductEngine\CrawlingUtilities\CrawlProductParser.cs:line 29
+2018-10-30 15:15:03.8250|FATAL|GenericLogger|Error occured One or more errors occurred. 
+ Generic exception Popped in GetHttpRequestResponse(string url) 
+    at System.Threading.Tasks.Task.ThrowIfExceptional(Boolean includeTaskCanceledExceptions)
+   at System.Threading.Tasks.Task`1.GetResultCore(Boolean waitCompletionNotification)
+   at System.Threading.Tasks.Task`1.get_Result()
+   at MiscUtilities.HttpUtils.GetHttpRequestResponse(String url) in D:\Matei\PrsLic\ProductEngine\MiscUtilities\HttpUtils.cs:line 20
+2018-10-30 15:15:03.8530|FATAL|GenericLogger|Error occured Product Document Null Exception 
+ Exception popped when trying to extract product information for https://www.emag.ro/set-epilator-philips-satinelle-essential-1-viteza-20-puncte-de-prindere-retea-alb-mov-hp6549-01/pd/DFPK32BBM/ 
+    at CrawlingUtilities.CrawlProductParser.CreateProductDocument() in D:\Matei\PrsLic\ProductEngine\CrawlingUtilities\CrawlProductParser.cs:line 61
+   at CrawlingUtilities.CrawlProductParser.DownloadProduct() in D:\Matei\PrsLic\ProductEngine\CrawlingUtilities\CrawlProductParser.cs:line 29
+2018-10-30 15:15:04.1618|FATAL|GenericLogger|Error occured One or more errors occurred. 
+ Generic exception Popped in GetHttpRequestResponse(string url) 
+    at System.Threading.Tasks.Task.ThrowIfExceptional(Boolean includeTaskCanceledExceptions)
+   at System.Threading.Tasks.Task`1.GetResultCore(Boolean waitCompletionNotification)
+   at System.Threading.Tasks.Task`1.get_Result()
+   at MiscUtilities.HttpUtils.GetHttpRequestResponse(String url) in D:\Matei\PrsLic\ProductEngine\MiscUtilities\HttpUtils.cs:line 20
+2018-10-30 15:15:04.1877|FATAL|GenericLogger|Error occured Product Document Null Exception 
+ Exception popped when trying to extract product information for https://www.emag.ro/robot-de-bucatarie-philips-viva-collection-750-w-bol-1-5-l-blender-1-l-2-viteze-pulse-alb-crem-hr7762-00/pd/EDHNTBBBM/ 
+    at CrawlingUtilities.CrawlProductParser.CreateProductDocument() in D:\Matei\PrsLic\ProductEngine\CrawlingUtilities\CrawlProductParser.cs:line 61
+   at CrawlingUtilities.CrawlProductParser.DownloadProduct() in D:\Matei\PrsLic\ProductEngine\CrawlingUtilities\CrawlProductParser.cs:line 29
+2018-10-30 15:15:04.5326|FATAL|GenericLogger|Error occured One or more errors occurred. 
+ Generic exception Popped in GetHttpRequestResponse(string url) 
+    at System.Threading.Tasks.Task.ThrowIfExceptional(Boolean includeTaskCanceledExceptions)
+   at System.Threading.Tasks.Task`1.GetResultCore(Boolean waitCompletionNotification)
+   at System.Threading.Tasks.Task`1.get_Result()
+   at MiscUtilities.HttpUtils.GetHttpRequestResponse(String url) in D:\Matei\PrsLic\ProductEngine\MiscUtilities\HttpUtils.cs:line 20
+2018-10-30 15:15:04.5725|FATAL|GenericLogger|Error occured Product Document Null Exception 
+ Exception popped when trying to extract product information for https://www.emag.ro/statie-de-calcat-philips-perfectcare-compact-optimaltemp-talpa-steamglide-2400-w-1-5-l-280-g-min-detartrare-automata-mov-gc7808-40/pd/DRHNYDBBM/ 
+    at CrawlingUtilities.CrawlProductParser.CreateProductDocument() in D:\Matei\PrsLic\ProductEngine\CrawlingUtilities\CrawlProductParser.cs:line 61
+   at CrawlingUtilities.CrawlProductParser.DownloadProduct() in D:\Matei\PrsLic\ProductEngine\CrawlingUtilities\CrawlProductParser.cs:line 29
+2018-10-30 15:15:04.8263|FATAL|GenericLogger|Error occured One or more errors occurred. 
+ Generic exception Popped in GetHttpRequestResponse(string url) 
+    at System.Threading.Tasks.Task.ThrowIfExceptional(Boolean includeTaskCanceledExceptions)
+   at System.Threading.Tasks.Task`1.GetResultCore(Boolean waitCompletionNotification)
+   at System.Threading.Tasks.Task`1.get_Result()
+   at MiscUtilities.HttpUtils.GetHttpRequestResponse(String url) in D:\Matei\PrsLic\ProductEngine\MiscUtilities\HttpUtils.cs:line 20
+2018-10-30 15:15:04.8563|FATAL|GenericLogger|Error occured Product Document Null Exception 
+ Exception popped when trying to extract product information for https://www.emag.ro/epilator-philips-satinelle-advanced-wet-dry-32-puncte-de-prindere-2-viteze-acumulator-alb-bre650-00/pd/DBY0T2BBM/ 
+    at CrawlingUtilities.CrawlProductParser.CreateProductDocument() in D:\Matei\PrsLic\ProductEngine\CrawlingUtilities\CrawlProductParser.cs:line 61
+   at CrawlingUtilities.CrawlProductParser.DownloadProduct() in D:\Matei\PrsLic\ProductEngine\CrawlingUtilities\CrawlProductParser.cs:line 29
+2018-10-30 15:15:05.1861|FATAL|GenericLogger|Error occured One or more errors occurred. 
+ Generic exception Popped in GetHttpRequestResponse(string url) 
+    at System.Threading.Tasks.Task.ThrowIfExceptional(Boolean includeTaskCanceledExceptions)
+   at System.Threading.Tasks.Task`1.GetResultCore(Boolean waitCompletionNotification)
+   at System.Threading.Tasks.Task`1.get_Result()
+   at MiscUtilities.HttpUtils.GetHttpRequestResponse(String url) in D:\Matei\PrsLic\ProductEngine\MiscUtilities\HttpUtils.cs:line 20
+2018-10-30 15:15:05.2151|FATAL|GenericLogger|Error occured Product Document Null Exception 
+ Exception popped when trying to extract product information for https://www.emag.ro/banda-led-inteligenta-philips-hue-lightstrip-wi-fi-lumina-rgb-extensie-8718696129555/pd/D725S2BBM/ 
+    at CrawlingUtilities.CrawlProductParser.CreateProductDocument() in D:\Matei\PrsLic\ProductEngine\CrawlingUtilities\CrawlProductParser.cs:line 61
+   at CrawlingUtilities.CrawlProductParser.DownloadProduct() in D:\Matei\PrsLic\ProductEngine\CrawlingUtilities\CrawlProductParser.cs:line 29
+2018-10-30 15:15:05.4969|FATAL|GenericLogger|Error occured One or more errors occurred. 
+ Generic exception Popped in GetHttpRequestResponse(string url) 
+    at System.Threading.Tasks.Task.ThrowIfExceptional(Boolean includeTaskCanceledExceptions)
+   at System.Threading.Tasks.Task`1.GetResultCore(Boolean waitCompletionNotification)
+   at System.Threading.Tasks.Task`1.get_Result()
+   at MiscUtilities.HttpUtils.GetHttpRequestResponse(String url) in D:\Matei\PrsLic\ProductEngine\MiscUtilities\HttpUtils.cs:line 20
+2018-10-30 15:15:05.5238|FATAL|GenericLogger|Error occured Product Document Null Exception 
+ Exception popped when trying to extract product information for https://www.emag.ro/epilator-philips-satinelle-discuri-metalice-20-puncte-de-prindere-2-viteze-alb-roz-hp6420-00/pd/E9KSNBBBM/ 
+    at CrawlingUtilities.CrawlProductParser.CreateProductDocument() in D:\Matei\PrsLic\ProductEngine\CrawlingUtilities\CrawlProductParser.cs:line 61
+   at CrawlingUtilities.CrawlProductParser.DownloadProduct() in D:\Matei\PrsLic\ProductEngine\CrawlingUtilities\CrawlProductParser.cs:line 29
+2018-10-30 15:15:05.8357|FATAL|GenericLogger|Error occured One or more errors occurred. 
+ Generic exception Popped in GetHttpRequestResponse(string url) 
+    at System.Threading.Tasks.Task.ThrowIfExceptional(Boolean includeTaskCanceledExceptions)
+   at System.Threading.Tasks.Task`1.GetResultCore(Boolean waitCompletionNotification)
+   at System.Threading.Tasks.Task`1.get_Result()
+   at MiscUtilities.HttpUtils.GetHttpRequestResponse(String url) in D:\Matei\PrsLic\ProductEngine\MiscUtilities\HttpUtils.cs:line 20
+2018-10-30 15:15:05.8766|FATAL|GenericLogger|Error occured Product Document Null Exception 
+ Exception popped when trying to extract product information for https://www.emag.ro/uscator-de-par-philips-2200-w-cool-shot-concentrator-alb-hp8232-00/pd/EGB5NBBBM/ 
+    at CrawlingUtilities.CrawlProductParser.CreateProductDocument() in D:\Matei\PrsLic\ProductEngine\CrawlingUtilities\CrawlProductParser.cs:line 61
+   at CrawlingUtilities.CrawlProductParser.DownloadProduct() in D:\Matei\PrsLic\ProductEngine\CrawlingUtilities\CrawlProductParser.cs:line 29
+2018-10-30 15:15:06.1645|FATAL|GenericLogger|Error occured One or more errors occurred. 
+ Generic exception Popped in GetHttpRequestResponse(string url) 
+    at System.Threading.Tasks.Task.ThrowIfExceptional(Boolean includeTaskCanceledExceptions)
+   at System.Threading.Tasks.Task`1.GetResultCore(Boolean waitCompletionNotification)
+   at System.Threading.Tasks.Task`1.get_Result()
+   at MiscUtilities.HttpUtils.GetHttpRequestResponse(String url) in D:\Matei\PrsLic\ProductEngine\MiscUtilities\HttpUtils.cs:line 20
+2018-10-30 15:15:06.1955|FATAL|GenericLogger|Error occured Product Document Null Exception 
+ Exception popped when trying to extract product information for https://www.emag.ro/aparat-hibrid-de-barbierit-si-tuns-barba-philips-oneblade-3-piepteni-2-rezerve-acumulatori-negru-verde-qp2520-30/pd/D401KVBBM/ 
+    at CrawlingUtilities.CrawlProductParser.CreateProductDocument() in D:\Matei\PrsLic\ProductEngine\CrawlingUtilities\CrawlProductParser.cs:line 61
+   at CrawlingUtilities.CrawlProductParser.DownloadProduct() in D:\Matei\PrsLic\ProductEngine\CrawlingUtilities\CrawlProductParser.cs:line 29
+2018-10-30 15:15:06.4913|FATAL|GenericLogger|Error occured One or more errors occurred. 
+ Generic exception Popped in GetHttpRequestResponse(string url) 
+    at System.Threading.Tasks.Task.ThrowIfExceptional(Boolean includeTaskCanceledExceptions)
+   at System.Threading.Tasks.Task`1.GetResultCore(Boolean waitCompletionNotification)
+   at System.Threading.Tasks.Task`1.get_Result()
+   at MiscUtilities.HttpUtils.GetHttpRequestResponse(String url) in D:\Matei\PrsLic\ProductEngine\MiscUtilities\HttpUtils.cs:line 20
+2018-10-30 15:15:06.5183|FATAL|GenericLogger|Error occured Product Document Null Exception 
+ Exception popped when trying to extract product information for https://www.emag.ro/friteuza-philips-airfryer-xl-tehnologie-rapidair-210-grade-c-cronometru-lcd-touchscreen-functie-gatit-presetata-2100-w-2-2-l-negru-hd9240-90/pd/DYC94YBBM/ 
+    at CrawlingUtilities.CrawlProductParser.CreateProductDocument() in D:\Matei\PrsLic\ProductEngine\CrawlingUtilities\CrawlProductParser.cs:line 61
+   at CrawlingUtilities.CrawlProductParser.DownloadProduct() in D:\Matei\PrsLic\ProductEngine\CrawlingUtilities\CrawlProductParser.cs:line 29
+2018-10-30 15:15:06.8261|FATAL|GenericLogger|Error occured One or more errors occurred. 
+ Generic exception Popped in GetHttpRequestResponse(string url) 
+    at System.Threading.Tasks.Task.ThrowIfExceptional(Boolean includeTaskCanceledExceptions)
+   at System.Threading.Tasks.Task`1.GetResultCore(Boolean waitCompletionNotification)
+   at System.Threading.Tasks.Task`1.get_Result()
+   at MiscUtilities.HttpUtils.GetHttpRequestResponse(String url) in D:\Matei\PrsLic\ProductEngine\MiscUtilities\HttpUtils.cs:line 20
+2018-10-30 15:15:06.8591|FATAL|GenericLogger|Error occured Product Document Null Exception 
+ Exception popped when trying to extract product information for https://www.emag.ro/multicooker-philips-1070-w-5-l-22-programe-automate-negru-hd4749-70/pd/D0B0H2BBM/ 
+    at CrawlingUtilities.CrawlProductParser.CreateProductDocument() in D:\Matei\PrsLic\ProductEngine\CrawlingUtilities\CrawlProductParser.cs:line 61
+   at CrawlingUtilities.CrawlProductParser.DownloadProduct() in D:\Matei\PrsLic\ProductEngine\CrawlingUtilities\CrawlProductParser.cs:line 29
+2018-10-30 15:15:07.1699|FATAL|GenericLogger|Error occured One or more errors occurred. 
+ Generic exception Popped in GetHttpRequestResponse(string url) 
+    at System.Threading.Tasks.Task.ThrowIfExceptional(Boolean includeTaskCanceledExceptions)
+   at System.Threading.Tasks.Task`1.GetResultCore(Boolean waitCompletionNotification)
+   at System.Threading.Tasks.Task`1.get_Result()
+   at MiscUtilities.HttpUtils.GetHttpRequestResponse(String url) in D:\Matei\PrsLic\ProductEngine\MiscUtilities\HttpUtils.cs:line 20
+2018-10-30 15:15:07.2119|FATAL|GenericLogger|Error occured Product Document Null Exception 
+ Exception popped when trying to extract product information for https://www.emag.ro/masina-de-paine-philips-1000-g-14-programe-negru-hd9046-90/pd/E6B5NBBBM/ 
+    at CrawlingUtilities.CrawlProductParser.CreateProductDocument() in D:\Matei\PrsLic\ProductEngine\CrawlingUtilities\CrawlProductParser.cs:line 61
+   at CrawlingUtilities.CrawlProductParser.DownloadProduct() in D:\Matei\PrsLic\ProductEngine\CrawlingUtilities\CrawlProductParser.cs:line 29
+2018-10-30 15:15:07.4912|FATAL|GenericLogger|Error occured One or more errors occurred. 
+ Generic exception Popped in GetHttpRequestResponse(string url) 
+    at System.Threading.Tasks.Task.ThrowIfExceptional(Boolean includeTaskCanceledExceptions)
+   at System.Threading.Tasks.Task`1.GetResultCore(Boolean waitCompletionNotification)
+   at System.Threading.Tasks.Task`1.get_Result()
+   at MiscUtilities.HttpUtils.GetHttpRequestResponse(String url) in D:\Matei\PrsLic\ProductEngine\MiscUtilities\HttpUtils.cs:line 20
+2018-10-30 15:15:07.5162|FATAL|GenericLogger|Error occured Product Document Null Exception 
+ Exception popped when trying to extract product information for https://www.emag.ro/banda-led-inteligenta-philips-hue-lightstrip-7190155ph-wi-fi-lumina-rgb-1600-lm-2m-baza-8718696129388/pd/D225S2BBM/ 
+    at CrawlingUtilities.CrawlProductParser.CreateProductDocument() in D:\Matei\PrsLic\ProductEngine\CrawlingUtilities\CrawlProductParser.cs:line 61
+   at CrawlingUtilities.CrawlProductParser.DownloadProduct() in D:\Matei\PrsLic\ProductEngine\CrawlingUtilities\CrawlProductParser.cs:line 29
+2018-10-30 15:15:07.8308|FATAL|GenericLogger|Error occured One or more errors occurred. 
+ Generic exception Popped in GetHttpRequestResponse(string url) 
+    at System.Threading.Tasks.Task.ThrowIfExceptional(Boolean includeTaskCanceledExceptions)
+   at System.Threading.Tasks.Task`1.GetResultCore(Boolean waitCompletionNotification)
+   at System.Threading.Tasks.Task`1.get_Result()
+   at MiscUtilities.HttpUtils.GetHttpRequestResponse(String url) in D:\Matei\PrsLic\ProductEngine\MiscUtilities\HttpUtils.cs:line 20
+2018-10-30 15:15:07.8598|FATAL|GenericLogger|Error occured Product Document Null Exception 
+ Exception popped when trying to extract product information for https://www.emag.ro/statie-de-calcat-philips-perfectcare-expert-2400-w-1-8-l-490-g-min-optimaltemp-talpa-steamglide-alb-auriu-gc9642-60/pd/DB5RLMBBM/ 
+    at CrawlingUtilities.CrawlProductParser.CreateProductDocument() in D:\Matei\PrsLic\ProductEngine\CrawlingUtilities\CrawlProductParser.cs:line 61
+   at CrawlingUtilities.CrawlProductParser.DownloadProduct() in D:\Matei\PrsLic\ProductEngine\CrawlingUtilities\CrawlProductParser.cs:line 29
+2018-10-30 15:15:08.1571|FATAL|GenericLogger|Error occured One or more errors occurred. 
+ Generic exception Popped in GetHttpRequestResponse(string url) 
+    at System.Threading.Tasks.Task.ThrowIfExceptional(Boolean includeTaskCanceledExceptions)
+   at System.Threading.Tasks.Task`1.GetResultCore(Boolean waitCompletionNotification)
+   at System.Threading.Tasks.Task`1.get_Result()
+   at MiscUtilities.HttpUtils.GetHttpRequestResponse(String url) in D:\Matei\PrsLic\ProductEngine\MiscUtilities\HttpUtils.cs:line 20
+2018-10-30 15:15:08.1841|FATAL|GenericLogger|Error occured Product Document Null Exception 
+ Exception popped when trying to extract product information for https://www.emag.ro/fier-de-calcat-philips-azur-performer-plus-3000-w-0-35-l-230-g-min-compartiment-anti-calc-talpa-t-ionicglide-mov-gc4887-30/pd/DJPL97BBM/ 
+    at CrawlingUtilities.CrawlProductParser.CreateProductDocument() in D:\Matei\PrsLic\ProductEngine\CrawlingUtilities\CrawlProductParser.cs:line 61
+   at CrawlingUtilities.CrawlProductParser.DownloadProduct() in D:\Matei\PrsLic\ProductEngine\CrawlingUtilities\CrawlProductParser.cs:line 29
+2018-10-30 15:15:08.5019|FATAL|GenericLogger|Error occured One or more errors occurred. 
+ Generic exception Popped in GetHttpRequestResponse(string url) 
+    at System.Threading.Tasks.Task.ThrowIfExceptional(Boolean includeTaskCanceledExceptions)
+   at System.Threading.Tasks.Task`1.GetResultCore(Boolean waitCompletionNotification)
+   at System.Threading.Tasks.Task`1.get_Result()
+   at MiscUtilities.HttpUtils.GetHttpRequestResponse(String url) in D:\Matei\PrsLic\ProductEngine\MiscUtilities\HttpUtils.cs:line 20
+2018-10-30 15:15:21.9914|FATAL|GenericLogger|Error occured Product Document Null Exception 
+ Exception popped when trying to extract product information for https://www.emag.ro/statie-de-calcat-philips-fastcare-compact-2400-w-talpa-ceramica-110-g-min-alb-albastru-gc6709-20/pd/DB3ZCNBBM/ 
+    at CrawlingUtilities.CrawlProductParser.CreateProductDocument() in D:\Matei\PrsLic\ProductEngine\CrawlingUtilities\CrawlProductParser.cs:line 61
+   at CrawlingUtilities.CrawlProductParser.DownloadProduct() in D:\Matei\PrsLic\ProductEngine\CrawlingUtilities\CrawlProductParser.cs:line 29
+2018-10-30 15:15:21.9984|FATAL|GenericLogger|Error occured One or more errors occurred. 
+ Generic exception Popped in GetHttpRequestResponse(string url) 
+    at System.Threading.Tasks.Task.ThrowIfExceptional(Boolean includeTaskCanceledExceptions)
+   at System.Threading.Tasks.Task`1.GetResultCore(Boolean waitCompletionNotification)
+   at System.Threading.Tasks.Task`1.get_Result()
+   at MiscUtilities.HttpUtils.GetHttpRequestResponse(String url) in D:\Matei\PrsLic\ProductEngine\MiscUtilities\HttpUtils.cs:line 20
+2018-10-30 15:15:22.0194|FATAL|GenericLogger|Error occured One or more errors occurred. 
+ Generic exception Popped in GetHttpRequestResponse(string url) 
+    at System.Threading.Tasks.Task.ThrowIfExceptional(Boolean includeTaskCanceledExceptions)
+   at System.Threading.Tasks.Task`1.GetResultCore(Boolean waitCompletionNotification)
+   at System.Threading.Tasks.Task`1.get_Result()
+   at MiscUtilities.HttpUtils.GetHttpRequestResponse(String url) in D:\Matei\PrsLic\ProductEngine\MiscUtilities\HttpUtils.cs:line 20
+2018-10-30 15:15:22.0194|FATAL|GenericLogger|Error occured One or more errors occurred. 
+ Generic exception Popped in GetHttpRequestResponse(string url) 
+    at System.Threading.Tasks.Task.ThrowIfExceptional(Boolean includeTaskCanceledExceptions)
+   at System.Threading.Tasks.Task`1.GetResultCore(Boolean waitCompletionNotification)
+   at System.Threading.Tasks.Task`1.get_Result()
+   at MiscUtilities.HttpUtils.GetHttpRequestResponse(String url) in D:\Matei\PrsLic\ProductEngine\MiscUtilities\HttpUtils.cs:line 20
+2018-10-30 15:15:29.1335|FATAL|GenericLogger|Error occured Product Document Null Exception 
+ Exception popped when trying to extract product information for https://www.emag.ro/monitor-led-philips-18-5-wide-negru-193v5lsb2-10/pd/E1ZB0BBBM/ 
+    at CrawlingUtilities.CrawlProductParser.CreateProductDocument() in D:\Matei\PrsLic\ProductEngine\CrawlingUtilities\CrawlProductParser.cs:line 61
+   at CrawlingUtilities.CrawlProductParser.DownloadProduct() in D:\Matei\PrsLic\ProductEngine\CrawlingUtilities\CrawlProductParser.cs:line 29
+2018-10-30 15:15:29.1655|FATAL|GenericLogger|Error occured Product Document Null Exception 
+ Exception popped when trying to extract product information for https://www.emag.ro/aparat-hibrid-de-barbierit-si-tuns-barba-philips-oneblade-pro-pieptene-de-precizie-cu-12-lungimi-stand-husa-acumulatori-negru-qp6520-20/pd/DJ6XVDBBM/ 
+    at CrawlingUtilities.CrawlProductParser.CreateProductDocument() in D:\Matei\PrsLic\ProductEngine\CrawlingUtilities\CrawlProductParser.cs:line 61
+   at CrawlingUtilities.CrawlProductParser.DownloadProduct() in D:\Matei\PrsLic\ProductEngine\CrawlingUtilities\CrawlProductParser.cs:line 29
+2018-10-30 15:15:58.3218|INFO|GenericLogger|Application Started
+2018-10-30 15:15:59.1044|INFO|GenericLogger|Crawl Settings loaded successfully 
+2018-10-30 15:15:59.9828|FATAL|GenericLogger|Error occured One or more errors occurred. 
+ Generic exception Popped in GetHttpRequestResponse(string url) 
+    at System.Threading.Tasks.Task.ThrowIfExceptional(Boolean includeTaskCanceledExceptions)
+   at System.Threading.Tasks.Task`1.GetResultCore(Boolean waitCompletionNotification)
+   at System.Threading.Tasks.Task`1.get_Result()
+   at MiscUtilities.HttpUtils.GetHttpRequestResponse(String url) in D:\Matei\PrsLic\ProductEngine\MiscUtilities\HttpUtils.cs:line 20
+2018-10-30 15:17:39.1066|INFO|GenericLogger|Application Started
+2018-10-30 15:17:39.8192|INFO|GenericLogger|Crawl Settings loaded successfully 
+2018-10-30 15:17:40.6632|FATAL|GenericLogger|Error occured One or more errors occurred. 
+ Generic exception Popped in GetHttpRequestResponse(string url) 
+    at System.Threading.Tasks.Task.ThrowIfExceptional(Boolean includeTaskCanceledExceptions)
+   at System.Threading.Tasks.Task`1.GetResultCore(Boolean waitCompletionNotification)
+   at System.Threading.Tasks.Task`1.get_Result()
+   at MiscUtilities.HttpUtils.GetHttpRequestResponse(String url) in D:\Matei\PrsLic\ProductEngine\MiscUtilities\HttpUtils.cs:line 20
+2018-10-30 15:18:08.9211|FATAL|GenericLogger|Error occured One or more errors occurred. 
+ Exception thrown at MainCrawlStarter 
+    at System.Threading.Tasks.Task.ThrowIfExceptional(Boolean includeTaskCanceledExceptions)
+   at System.Threading.Tasks.Task.Wait(Int32 millisecondsTimeout, CancellationToken cancellationToken)
+   at System.Threading.Tasks.Task.Wait()
+   at System.Threading.Tasks.Parallel.ForWorker[TLocal](Int32 fromInclusive, Int32 toExclusive, ParallelOptions parallelOptions, Action`1 body, Action`2 bodyWithState, Func`4 bodyWithLocal, Func`1 localInit, Action`1 localFinally)
+   at System.Threading.Tasks.Parallel.ForEachWorker[TSource,TLocal](IList`1 list, ParallelOptions parallelOptions, Action`1 body, Action`2 bodyWithState, Action`3 bodyWithStateAndIndex, Func`4 bodyWithStateAndLocal, Func`5 bodyWithEverything, Func`1 localInit, Action`1 localFinally)
+   at System.Threading.Tasks.Parallel.ForEachWorker[TSource,TLocal](IEnumerable`1 source, ParallelOptions parallelOptions, Action`1 body, Action`2 bodyWithState, Action`3 bodyWithStateAndIndex, Func`4 bodyWithStateAndLocal, Func`5 bodyWithEverything, Func`1 localInit, Action`1 localFinally)
+   at System.Threading.Tasks.Parallel.ForEach[TSource](IEnumerable`1 source, ParallelOptions parallelOptions, Action`1 body)
+   at CrawlingUtilities.MainCrawlStarter.CrawlStart(CrawlSettingsModel model) in D:\Matei\PrsLic\ProductEngine\CrawlingUtilities\MainCrawlStarter.cs:line 18
+2018-10-30 15:18:21.3845|INFO|GenericLogger|Application Started
+2018-10-30 15:18:22.5189|INFO|GenericLogger|Crawl Settings loaded successfully 
+2018-10-30 15:18:43.9364|FATAL|GenericLogger|Error occured One or more errors occurred. 
+ Generic exception Popped in GetHttpRequestResponse(string url) 
+    at System.Threading.Tasks.Task.ThrowIfExceptional(Boolean includeTaskCanceledExceptions)
+   at System.Threading.Tasks.Task`1.GetResultCore(Boolean waitCompletionNotification)
+   at System.Threading.Tasks.Task`1.get_Result()
+   at MiscUtilities.HttpUtils.GetHttpRequestResponse(String url) in D:\Matei\PrsLic\ProductEngine\MiscUtilities\HttpUtils.cs:line 20
+2018-10-30 15:19:15.7180|INFO|GenericLogger|Application Started
+2018-10-30 15:19:16.5875|INFO|GenericLogger|Crawl Settings loaded successfully 
+2018-10-30 15:19:19.9048|FATAL|GenericLogger|Error occured One or more errors occurred. 
+ Generic exception Popped in GetHttpRequestResponse(string url) 
+    at System.Threading.Tasks.Task.ThrowIfExceptional(Boolean includeTaskCanceledExceptions)
+   at System.Threading.Tasks.Task`1.GetResultCore(Boolean waitCompletionNotification)
+   at System.Threading.Tasks.Task`1.get_Result()
+   at MiscUtilities.HttpUtils.GetHttpRequestResponse(String url) in D:\Matei\PrsLic\ProductEngine\MiscUtilities\HttpUtils.cs:line 20
+2018-10-30 15:21:58.4668|INFO|GenericLogger|Application Started
+2018-10-30 15:21:59.4342|INFO|GenericLogger|Crawl Settings loaded successfully 
+2018-10-30 15:22:55.7950|INFO|GenericLogger|Application Started
+2018-10-30 15:22:56.5875|INFO|GenericLogger|Crawl Settings loaded successfully 
