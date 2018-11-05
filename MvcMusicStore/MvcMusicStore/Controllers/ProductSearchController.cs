@@ -21,7 +21,6 @@ namespace MvcMusicStore.Controllers
         {
             var tempRetailerList = new List<Retailer>();
 
-            tempRetailerList.Add(new Retailer() { RetailerName = "eMag", Url = "https://www.emag.ro", Logo = "../Images/eMag.png" });
             tempRetailerList.Add(new Retailer() { RetailerName = "Cel.ro", Url = "https://www.cel.ro", Logo = "../Images/cel.png" });
             tempRetailerList.Add(new Retailer() { RetailerName = "Media Galaxy", Url = "https://www.mediagalaxy.ro", Logo = "../Images/MediaGalaxy.png" });
 
