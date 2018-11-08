@@ -11,7 +11,7 @@
 					
 					"ProductName":"//h2[@itemprop='name']",
 					"ProductPrice":"//span[@itemprop='price']",
-					"ProductStock":"//span[@id='into_stoc']/b[contains(@class,'in_stock_furnizor')]",
+					"ProductStock":"//button[contains(@class,'btn-buy')]",
 					"ProductImage":"//div[@class='bigImage']/a/img"
 				}
 		}
