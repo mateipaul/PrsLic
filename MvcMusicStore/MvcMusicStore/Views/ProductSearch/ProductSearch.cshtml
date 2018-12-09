@@ -1,17 +1,8 @@
-﻿@model IEnumerable<MvcMusicStore.Models.Retailer>
-@{
-	ViewBag.Title = "Index";
-}
+﻿
 
 <h2>Index</h2>
-<div id="retailer-wrapper">
-	@foreach (var item in Model)
-	{
-		<div class="retailer">
-			<h3 class="retaler-name">@item.RetailerName</h3>
-			<div class="image-wrapper">
-				<img  class="retailer-logo" src="@item.Logo" />
-			</div>
-		</div>
-	}
-</div>
+
+@using (Html.BeginForm("SearchProduct", "ProductSearch", FormMethod.Get))
+{
+    @Html.TextBox("search")<input type="submit" name="submit" value="Search" />
+}

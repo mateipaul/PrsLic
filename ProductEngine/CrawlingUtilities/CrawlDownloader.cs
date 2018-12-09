@@ -19,7 +19,7 @@ namespace CrawlingUtilities
         private Manufacturer manufacturer;
         private HtmlDocument doc;
         private HashSet<string> _productUrls;
-        internal CrawlProductCollection crawlProducts;
+        internal List<Product> crawlProducts;
         private string retailerHost;
 
         public CrawlDownloader(RetailerConfiguration retailerConfiguration,Manufacturer currentManufacturer)
@@ -33,7 +33,7 @@ namespace CrawlingUtilities
         {
             doc = new HtmlDocument();
             _productUrls = new HashSet<string>();
-            crawlProducts = new CrawlProductCollection(RetailerConfig.RetailerName, manufacturer);
+            crawlProducts = new List<Product>();
             retailerHost = Regex.Match(RetailerConfig.CrawlingTags.SearchUrlFormat,@"https://www.[a-z]+.[a-z]+([a-z]+)?").Value;
         }
 

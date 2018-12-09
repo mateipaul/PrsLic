@@ -12,31 +12,22 @@ namespace DatabaseModels
     using System;
     using System.Collections.Generic;
     
-    public partial class Product
+    public partial class User
     {
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2214:DoNotCallOverridableMethodsInConstructors")]
-        public Product()
+        public User()
         {
-            this.PriceEvolutions = new HashSet<PriceEvolution>();
             this.ProductFollows = new HashSet<ProductFollow>();
         }
     
         public System.Guid Id { get; set; }
-        public string Url { get; set; }
-        public string Description { get; set; }
-        public string Price { get; set; }
-        public string Stock { get; set; }
-        public string ImageUrl { get; set; }
-        public Nullable<bool> Deleted { get; set; }
-        public Nullable<System.Guid> RetailerID { get; set; }
-        public string SKU { get; set; }
-        public string EAN { get; set; }
-        public Nullable<System.DateTime> Created { get; set; }
-        public string ProductDescriptionCode { get; set; }
+        public string UserName { get; set; }
+        public string Password { get; set; }
+        public string Email { get; set; }
+        public string PhoneNumber { get; set; }
+        public string NickName { get; set; }
+        public string Role { get; set; }
     
-        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
-        public virtual ICollection<PriceEvolution> PriceEvolutions { get; set; }
-        public virtual Retailer Retailer { get; set; }
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
         public virtual ICollection<ProductFollow> ProductFollows { get; set; }
     }

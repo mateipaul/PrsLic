@@ -7,15 +7,19 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace DatabaseModels
+namespace MvcMusicStore.Utilities.DatabaseUtilities
 {
     using System;
     using System.Collections.Generic;
     
-    public partial class Manufacturer
+    public partial class ProductFollow
     {
         public System.Guid Id { get; set; }
-        public string Name { get; set; }
-        public Nullable<bool> Inactive { get; set; }
+        public System.Guid ProductId { get; set; }
+        public System.Guid UserId { get; set; }
+        public string PriceMargin { get; set; }
+    
+        public virtual Product Product { get; set; }
+        public virtual User User { get; set; }
     }
 }

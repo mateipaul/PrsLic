@@ -1,0 +1,33 @@
+﻿@model IEnumerable<MvcMusicStore.Utilities.DatabaseUtilities.Product>
+
+@using (Html.BeginForm("SearchProduct", "ProductSearch", FormMethod.Get))
+{
+    @Html.TextBox("search")<input type="submit" name="submit" value="Search" />
+}
+
+
+<div id="products-wrapper">
+
+    @foreach (var item in Model)
+    {
+        <div class="product">
+            <div class="product-title">
+                <h3>@item.Description</h3>
+                <span class="image-wrapper">
+                    <img src="http://www.austria.ro/blog/wp-content/themes/Ciola/library/images/thumbnail-600x350.png" alt="Alternate Text" class="image" />
+                </span>
+            </div>
+            <div class="product-details">
+                <div class="price">
+                    @item.Price
+                </div>
+                <br />
+                <span class="price-evolution">
+                    <img src="@Url.Action("LineChart", "MyProducts", new { productID = item.Id})" alt="Chart" />
+                </span>
+            </div>
+        </div>
+
+    }
+</div>
+

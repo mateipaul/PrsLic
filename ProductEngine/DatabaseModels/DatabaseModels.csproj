@@ -50,17 +50,69 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="CrawlProductCollection.cs" />
-    <Compile Include="Manufacturer.cs" />
-    <Compile Include="Product.cs" />
+    <Compile Include="DbModelContext.Context.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DbModelContext.Context.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DbModelContext.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DbModelContext.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DbModelContext.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DbModelContext.edmx</DependentUpon>
+    </Compile>
+    <Compile Include="Manufacturer.cs">
+      <DependentUpon>DbModelContext.tt</DependentUpon>
+    </Compile>
+    <Compile Include="PriceEvolution.cs">
+      <DependentUpon>DbModelContext.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Product.cs">
+      <DependentUpon>DbModelContext.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ProductFollow.cs">
+      <DependentUpon>DbModelContext.tt</DependentUpon>
+    </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Retailer.cs">
+      <DependentUpon>DbModelContext.tt</DependentUpon>
+    </Compile>
+    <Compile Include="SearchHistory.cs">
+      <DependentUpon>DbModelContext.tt</DependentUpon>
+    </Compile>
+    <Compile Include="User.cs">
+      <DependentUpon>DbModelContext.tt</DependentUpon>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+    <EntityDeploy Include="DbModelContext.edmx">
+      <Generator>EntityModelCodeGenerator</Generator>
+      <LastGenOutput>DbModelContext.Designer.cs</LastGenOutput>
+    </EntityDeploy>
+    <None Include="DbModelContext.edmx.diagram">
+      <DependentUpon>DbModelContext.edmx</DependentUpon>
+    </None>
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
     <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="DbModelContext.Context.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>DbModelContext.edmx</DependentUpon>
+      <LastGenOutput>DbModelContext.Context.cs</LastGenOutput>
+    </Content>
+    <Content Include="DbModelContext.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>DbModelContext.edmx</DependentUpon>
+      <LastGenOutput>DbModelContext.cs</LastGenOutput>
+    </Content>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

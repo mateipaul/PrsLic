@@ -1,4 +1,5 @@
-﻿using MvcMusicStore.Models;
+﻿
+using MvcMusicStore.Utilities.DatabaseUtilities;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -9,24 +10,18 @@ namespace MvcMusicStore.Controllers
 {
     public class ProductSearchController : Controller
     {
-        List<Retailer> retailerList;
-        // GET: ProductSearch
         public ActionResult ProductSearch()
         {
-            retailerList = GetRetailersList();
-            return View(retailerList);
+            return View();
         }
 
-        private List<Retailer> GetRetailersList()
+       
+
+        public ActionResult SearchProduct(string search)
         {
-            var tempRetailerList = new List<Retailer>();
+            var products = SearchDBUtilities.SearchProductsInDatabase(search.Replace(",",string.Empty));
 
-            tempRetailerList.Add(new Retailer() { RetailerName = "Cel.ro", Url = "https://www.cel.ro", Logo = "../Images/cel.png" });
-            tempRetailerList.Add(new Retailer() { RetailerName = "Media Galaxy", Url = "https://www.mediagalaxy.ro", Logo = "../Images/MediaGalaxy.png" });
-
-
-
-            return tempRetailerList;
+            return View(products);
         }
     }
 }

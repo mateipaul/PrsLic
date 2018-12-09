@@ -12,10 +12,13 @@ namespace DatabaseModels
     using System;
     using System.Collections.Generic;
     
-    public partial class Manufacturer
+    public partial class PriceEvolution
     {
         public System.Guid Id { get; set; }
-        public string Name { get; set; }
-        public Nullable<bool> Inactive { get; set; }
+        public string Price { get; set; }
+        public Nullable<System.Guid> ProductID { get; set; }
+        public Nullable<System.DateTime> UpdatedDate { get; set; }
+    
+        public virtual Product Product { get; set; }
     }
 }

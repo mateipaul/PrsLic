@@ -1,4 +1,4 @@
-﻿@model IEnumerable<MvcMusicStore.Models.ProductModel>
+﻿@model IEnumerable<MvcMusicStore.Utilities.DatabaseUtilities.Product>
 @{
 	ViewBag.Title = "My Products";
 }
@@ -10,7 +10,7 @@
 	{
 		<div class="product">
 			<div class="product-title">
-				<h3>@item.Name</h3>
+				<h3>@item.Description</h3>
 				<span class="image-wrapper">
 					<img src="http://www.austria.ro/blog/wp-content/themes/Ciola/library/images/thumbnail-600x350.png" alt="Alternate Text" class="image" />
 				</span>
@@ -21,7 +21,7 @@
 				</div>
 				<br />
 				<span class="price-evolution">
-					<img src="@Url.Action("LineChart", "MyProducts", new { productID = item.ID })" alt="Chart" />
+					<img src="@Url.Action("LineChart", "MyProducts", new { productID = item.Id})" alt="Chart" />
 				</span>
 			</div>
 		</div>

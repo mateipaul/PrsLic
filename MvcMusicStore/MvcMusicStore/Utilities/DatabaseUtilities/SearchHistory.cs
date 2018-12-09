@@ -7,15 +7,15 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace DatabaseModels
+namespace MvcMusicStore.Utilities.DatabaseUtilities
 {
     using System;
     using System.Collections.Generic;
     
-    public partial class Manufacturer
+    public partial class SearchHistory
     {
-        public System.Guid Id { get; set; }
-        public string Name { get; set; }
-        public Nullable<bool> Inactive { get; set; }
+        public string Value { get; set; }
+        public string Code { get; set; }
+        public System.Guid SearchID { get; set; }
     }
 }

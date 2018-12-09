@@ -7,7 +7,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace DatabaseModels
+namespace MvcMusicStore.Utilities.DatabaseUtilities
 {
     using System;
     using System.Collections.Generic;
