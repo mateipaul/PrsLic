@@ -1,5 +1,5 @@
 ﻿using DatabaseModels;
-using DatabaseUtilities;
+
 using System;
 using System.Collections.Generic;
 using System.Threading.Tasks;
@@ -21,11 +21,11 @@ namespace CrawlingUtilities
 
         public void StartCrawling()
         {
-            manufacturers = DatabaseUtils.Instance.GetManufacturersFor(RetailerConfig.RetailerName);
+            //manufacturers = DatabaseUtils.Instance.GetManufacturersFor(RetailerConfig.RetailerName);
 
-            Parallel.ForEach(manufacturers,
-                    new ParallelOptions() { MaxDegreeOfParallelism = 2 },
-                    manuf => GenerateDownloader(manuf));
+            //Parallel.ForEach(manufacturers,
+            //        new ParallelOptions() { MaxDegreeOfParallelism = 2 },
+            //        manuf => GenerateDownloader(manuf));
 
 
         }

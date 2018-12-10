@@ -43,10 +43,15 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="SearchMessageCrawler.cs" />
+    <Compile Include="SearchProductParser.cs" />
     <Compile Include="SearchUtilitiesStarter.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\DatabaseModels\DatabaseModels.csproj">
+      <Project>{010D9C41-5B64-4861-B909-E42855976E9E}</Project>
+      <Name>DatabaseModels</Name>
+    </ProjectReference>
     <ProjectReference Include="..\Logger\Logger.csproj">
       <Project>{B59B462B-E0FC-4617-A2C2-420D56DA6409}</Project>
       <Name>Logger</Name>

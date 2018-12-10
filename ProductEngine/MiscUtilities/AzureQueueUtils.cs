@@ -59,6 +59,7 @@ namespace MiscUtilities
             {
                 return message;
             }
+            
             return null;
         }
     }

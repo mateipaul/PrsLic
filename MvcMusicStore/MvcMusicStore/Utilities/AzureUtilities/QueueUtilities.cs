@@ -19,8 +19,8 @@ namespace MvcMusicStore.Utilities.AzureUtilities
             CloudQueue queue = client.GetQueueReference("search-queue");
 
             CloudQueueMessage message = new CloudQueueMessage(idiom);
-
-            queue.AddMessage(message);
+            
+            queue.AddMessage(message,TimeSpan.FromSeconds(10));
 
         }
 
