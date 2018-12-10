@@ -4,7 +4,7 @@
 			"RetailerName":"Cel",
 			"CrawlingTags":
 				{
-					"SearchUrlFormat":"http://www.cel.ro/cauta/{0}",
+					"SearchUrlFormat":"http://www.cel.ro/cauta/{0}/",
 					"NextProductPageTag":"//div[@class='pageresults']/span[@class='selectat']/following-sibling::a",
 					"ProductCellTag":"//div[contains(@class,'productListing-tot')]",
 					"UrlTag":"//h4[@class='productTitle']/a",

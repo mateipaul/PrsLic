@@ -1,0 +1,57 @@
+2018-12-10 10:26:47.4286|INFO|GenericLogger|Starting Search Utilities...
+2018-12-10 10:26:49.6645|INFO|GenericLogger|Crawl Settings loaded successfully 
+2018-12-10 11:50:05.7359|INFO|GenericLogger|Starting Search Utilities...
+2018-12-10 11:50:08.0921|INFO|GenericLogger|Crawl Settings loaded successfully 
+2018-12-10 11:50:15.7182|INFO|GenericLogger|Started searching for message Telefon mobil Razer Phone 64GB 4G Black
+2018-12-10 11:50:23.4868|FATAL|GenericLogger|Error occured One or more errors occurred. 
+ Generic exception Popped in GetHttpRequestResponse(string url) 
+    at System.Threading.Tasks.Task.ThrowIfExceptional(Boolean includeTaskCanceledExceptions)
+   at System.Threading.Tasks.Task`1.GetResultCore(Boolean waitCompletionNotification)
+   at System.Threading.Tasks.Task`1.get_Result()
+   at MiscUtilities.HttpUtils.GetHttpRequestResponse(String url) in D:\Matei\PrsLic\ProductEngine\MiscUtilities\HttpUtils.cs:line 22
+2018-12-10 11:50:33.3401|FATAL|GenericLogger|Error occured One or more errors occurred. 
+ Generic exception Popped in GetHttpRequestResponse(string url) 
+    at System.Threading.Tasks.Task.ThrowIfExceptional(Boolean includeTaskCanceledExceptions)
+   at System.Threading.Tasks.Task`1.GetResultCore(Boolean waitCompletionNotification)
+   at System.Threading.Tasks.Task`1.get_Result()
+   at MiscUtilities.HttpUtils.GetHttpRequestResponse(String url) in D:\Matei\PrsLic\ProductEngine\MiscUtilities\HttpUtils.cs:line 22
+2018-12-10 11:51:20.0697|FATAL|GenericLogger|Error occured One or more errors occurred. 
+ Generic exception Popped in GetHttpRequestResponse(string url) 
+    at System.Threading.Tasks.Task.ThrowIfExceptional(Boolean includeTaskCanceledExceptions)
+   at System.Threading.Tasks.Task`1.GetResultCore(Boolean waitCompletionNotification)
+   at System.Threading.Tasks.Task`1.get_Result()
+   at MiscUtilities.HttpUtils.GetHttpRequestResponse(String url) in D:\Matei\PrsLic\ProductEngine\MiscUtilities\HttpUtils.cs:line 22
+2018-12-10 11:52:30.8427|FATAL|GenericLogger|Error occured One or more errors occurred. 
+ Generic exception Popped in GetHttpRequestResponse(string url) 
+    at System.Threading.Tasks.Task.ThrowIfExceptional(Boolean includeTaskCanceledExceptions)
+   at System.Threading.Tasks.Task`1.GetResultCore(Boolean waitCompletionNotification)
+   at System.Threading.Tasks.Task`1.get_Result()
+   at MiscUtilities.HttpUtils.GetHttpRequestResponse(String url) in D:\Matei\PrsLic\ProductEngine\MiscUtilities\HttpUtils.cs:line 22
+2018-12-10 11:53:23.1000|FATAL|GenericLogger|Error occured One or more errors occurred. 
+ Generic exception Popped in GetHttpRequestResponse(string url) 
+    at System.Threading.Tasks.Task.ThrowIfExceptional(Boolean includeTaskCanceledExceptions)
+   at System.Threading.Tasks.Task`1.GetResultCore(Boolean waitCompletionNotification)
+   at System.Threading.Tasks.Task`1.get_Result()
+   at MiscUtilities.HttpUtils.GetHttpRequestResponse(String url)
+2018-12-10 12:03:38.6957|FATAL|GenericLogger|Error occured One or more errors occurred. 
+ Generic exception Popped in GetHttpRequestResponse(string url) 
+    at System.Threading.Tasks.Task.ThrowIfExceptional(Boolean includeTaskCanceledExceptions)
+   at System.Threading.Tasks.Task`1.GetResultCore(Boolean waitCompletionNotification)
+   at System.Threading.Tasks.Task`1.get_Result()
+   at MiscUtilities.HttpUtils.GetHttpRequestResponse(String url)
+2018-12-10 12:04:23.3857|INFO|GenericLogger|Started searching for message Telefon mobil Razer Phone 64GB 4G Black
+2018-12-10 12:05:03.0382|FATAL|GenericLogger|Error occured One or more errors occurred. 
+ Generic exception Popped in GetHttpRequestResponse(string url) 
+    at System.Threading.Tasks.Task.ThrowIfExceptional(Boolean includeTaskCanceledExceptions)
+   at System.Threading.Tasks.Task`1.GetResultCore(Boolean waitCompletionNotification)
+   at System.Threading.Tasks.Task`1.get_Result()
+   at MiscUtilities.HttpUtils.GetHttpRequestResponse(String url)
+2018-12-10 12:07:11.3878|INFO|GenericLogger|Starting Search Utilities...
+2018-12-10 12:07:12.1963|INFO|GenericLogger|Crawl Settings loaded successfully 
+2018-12-10 12:07:12.5051|INFO|GenericLogger|Started searching for message Telefon mobil Razer Phone 64GB 4G Black
+2018-12-10 12:08:27.5408|INFO|GenericLogger|Starting Search Utilities...
+2018-12-10 12:08:28.1114|INFO|GenericLogger|Crawl Settings loaded successfully 
+2018-12-10 12:08:28.5833|INFO|GenericLogger|Started searching for message Telefon mobil Razer Phone 64GB 4G Black
+2018-12-10 12:24:58.1173|INFO|GenericLogger|Starting Search Utilities...
+2018-12-10 12:24:58.7328|INFO|GenericLogger|Crawl Settings loaded successfully 
+2018-12-10 12:24:59.1779|INFO|GenericLogger|Started searching for message Telefon mobil Razer Phone 64GB 4G Black

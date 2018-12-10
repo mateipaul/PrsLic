@@ -13,10 +13,12 @@ namespace ProductBackgroundEngine
         static void Main(string[] args)
         {
 
-            var crawl = Task.Run(()=>StartMainCrawl());
+            Parallel.Invoke(
+                () => StartSearchUtilities()
+                //, () => StartMainCrawl()
+               );
 
-            var search = Task.Run(() => StartSearchUtilities());
-
+            
 
         }
 
@@ -27,7 +29,7 @@ namespace ProductBackgroundEngine
                 GenericLogger.Info("Starting Search Utilities...");
                 var model = CrawlSettingsHelper.LoadCrawlSettings();
 
-                SerachUtilitiesStarter.StartSearching(model);
+                SearchUtilitiesStarter.StartSearching(model);
 
 
 

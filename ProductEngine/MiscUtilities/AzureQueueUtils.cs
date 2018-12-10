@@ -26,7 +26,7 @@ namespace MiscUtilities
             {
                 return _instance ?? (_instance = new AzureQueueUtils());
             }
-        } 
+        }
 
         public bool QueueHasItems()
         {
@@ -36,14 +36,30 @@ namespace MiscUtilities
 
             CloudQueue queue = queueClient.GetQueueReference("search-queue");
 
-            var message = queue.GetMessage()
+            var message = queue.PeekMessage();
 
-            if(message != null)
+            if (message != null)
             {
-
+                hasItems = true;
             }
+
             return hasItems;
 
+        }
+        public CloudQueueMessage GetQueueItem()
+        {
+
+            CloudQueueClient queueClient = storageAccount.CreateCloudQueueClient();
+
+            CloudQueue queue = queueClient.GetQueueReference("search-queue");
+
+            var message = queue.GetMessage();
+
+            if (message != null)
+            {
+                return message;
+            }
+            return null;
         }
     }
 }
