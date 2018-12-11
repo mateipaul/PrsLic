@@ -17,14 +17,14 @@ namespace SearchUtilities
         private static string url;
         private static string givenMessage;
         private static RetailerConfiguration retConfig;
-        private static List<Product> products = new List<Product>();
+        private static RetailerCrawlProductCollection products;
 
         internal static void StartMessageCrawling(CloudQueueMessage message, RetailerConfiguration retailer)
         {
             url = string.Format(retailer.CrawlingTags.SearchUrlFormat, message.AsString.ToLowerInvariant().Replace(" ","+"));
             givenMessage = message.AsString;
             retConfig = retailer;
-
+            products = new RetailerCrawlProductCollection(retailer.RetailerName);
 
             NavigateLink();
         }
@@ -36,6 +36,8 @@ namespace SearchUtilities
             var htmlDocument = HtmlDocumentUtilities.GetHtmlDocument(htmlSting);
 
             ExtractProducts(htmlDocument);
+
+            products.SaveProducts();
         }
 
         private static void ExtractProducts(HtmlDocument htmlDocument)
@@ -62,7 +64,7 @@ namespace SearchUtilities
             foreach (var url in productUrls)
             {
                 SearchProductParser parser = new SearchProductParser(url, givenMessage,retConfig);
-                products.Add(parser.GetProduct());
+                products.AddProduct(parser.GetProduct());
             }
         }
     }

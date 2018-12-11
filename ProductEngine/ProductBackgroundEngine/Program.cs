@@ -31,7 +31,7 @@ namespace ProductBackgroundEngine
 
                 SearchUtilitiesStarter.StartSearching(model);
 
-
+                Thread.Sleep(3000);
 
             }
         }

@@ -60,6 +60,7 @@
     <Compile Include="HtmlDocumentUtilities.cs" />
     <Compile Include="HttpUtils.cs" />
     <Compile Include="JsonUtilities.cs" />
+    <Compile Include="ListUtils.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
