@@ -30,9 +30,9 @@ namespace MiscUtilities
             }
         }
 
-        public void DownloadBlob(string fileName, string container)
+        public void DownloadBlob(string fileName, string container,string usage)
         {
-            string path = Path.Combine(Environment.CurrentDirectory, "BlobFiles");
+            string path = Path.Combine(Environment.CurrentDirectory, "BlobFiles",usage);
             try
             {
                 CloudBlobClient blobClient = storageAccount.CreateCloudBlobClient();

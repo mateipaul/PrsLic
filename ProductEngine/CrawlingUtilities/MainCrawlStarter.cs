@@ -17,7 +17,7 @@ namespace CrawlingUtilities
             {
                 Parallel.ForEach
                 (model.Retailers,
-                new ParallelOptions() { MaxDegreeOfParallelism = 4 },
+                new ParallelOptions() { MaxDegreeOfParallelism = 1 },
                 m => StartCrawling(m)
                 );
             }

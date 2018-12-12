@@ -128,10 +128,11 @@ namespace CrawlingUtilities
 
         private Product ExtractProductFrom(string url)
         {
-            CrawlProductParser parser = new CrawlProductParser(url, RetailerConfig);
-            Product tempProd = parser.DownloadProduct();
+            //CrawlProductParser parser = new CrawlProductParser(url, RetailerConfig);
+            //Product tempProd = parser.DownloadProduct();
 
-            return tempProd;
+            //return tempProd;
+            return null;
         }
     }
 }

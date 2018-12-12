@@ -12,47 +12,50 @@ namespace CrawlingUtilities
     {
         private string Url;
         private RetailerConfiguration RetailerConfig;
-        private Product Product;
         private HtmlDocument _document;
 
-        public CrawlProductParser(string url, RetailerConfiguration retailerConfig)
+        public CrawlProductParser(RetailerConfiguration retailerConfig)
         {
-            Url = url;
             RetailerConfig = retailerConfig;
-            Product = new Product() { Url = url};
         }
 
-        internal Product DownloadProduct()
+        internal void DownloadProduct(ref Product product)
         {
             try
             {
-                CreateProductDocument();
+                CreateProductDocument(product);
 
-                ExtractNeededInformation();
+                ExtractNeededInformation(ref product);
 
-                return Product;
             }
             catch (Exception ex)
             {
                 GenericLogger.Error($"Exception popped when trying to extract product information for {Url}", ex);
-                return null;
             }
             
         }
 
 
-        private void ExtractNeededInformation()
+        private void ExtractNeededInformation(ref Product product)
         {
-            Product.Description = (HtmlDocumentUtilities.ExtractNodeValue(_document, RetailerConfig.CrawlingTags.ProductName, m => m.InnerText.Trim().Replace(",",string.Empty)));
-            Product.Price = (HtmlDocumentUtilities.ExtractNodeValue(_document, RetailerConfig.CrawlingTags.ProductPrice, m => Regex.Match(m.InnerText.Replace("&#46;", string.Empty), @"\d+.\d+(.\d+)?").Value.Trim()));
-            Product.Stock = (HtmlDocumentUtilities.ExtractNodeValue(_document, RetailerConfig.CrawlingTags.ProductStock, m => string.IsNullOrEmpty(m.InnerText)?"OutOfStock":"InStock"));
-            Product.ImageUrl = (HtmlDocumentUtilities.ExtractNodeValue(_document, RetailerConfig.CrawlingTags.ProductImage, m => m.GetAttributeValue("src",string.Empty)));
+            product.Description = (HtmlDocumentUtilities.ExtractNodeValue(_document, RetailerConfig.CrawlingTags.ProductName, m => m.InnerText.Trim().Replace(",",string.Empty)));
+            product.Price = (HtmlDocumentUtilities.ExtractNodeValue(_document, RetailerConfig.CrawlingTags.ProductPrice, m => Regex.Match(m.InnerText.Replace("&#46;", string.Empty), @"\d+.\d+(.\d+)?").Value.Trim()));
+            product.Stock = (HtmlDocumentUtilities.ExtractNodeValue(_document, RetailerConfig.CrawlingTags.ProductStock, m => string.IsNullOrEmpty(m.InnerText)?"OutOfStock":"InStock"));
+            product.ImageUrl = (HtmlDocumentUtilities.ExtractNodeValue(_document, RetailerConfig.CrawlingTags.ProductImage, m => m.GetAttributeValue("src",string.Empty)));
+
+            PriceEvolution priceEvolution = new PriceEvolution();
+            priceEvolution.Id = Guid.NewGuid();
+            priceEvolution.Price = product.Price;
+            priceEvolution.ProductID = product.Id;
+            priceEvolution.UpdatedDate = DateTime.UtcNow;
+
+            product.PriceEvolutions.Add(priceEvolution);
         }
 
 
-        private void CreateProductDocument()
+        private void CreateProductDocument(Product prd)
         {
-            string htmlProductPage = HttpUtils.GetHttpRequestResponse(Url);
+            string htmlProductPage = HttpUtils.GetWebRequestResponse(prd.Url);
 
             _document = HtmlDocumentUtilities.GetHtmlDocument(htmlProductPage);
 

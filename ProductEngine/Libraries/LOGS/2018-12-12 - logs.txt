@@ -1,0 +1,181 @@
+2018-12-12 12:33:32.9635|INFO|GenericLogger|Starting CrawlUtilities
+2018-12-12 12:33:34.9067|INFO|GenericLogger|Crawl Settings loaded successfully 
+2018-12-12 12:37:12.0489|INFO|GenericLogger|Starting CrawlUtilities
+2018-12-12 12:37:12.6971|INFO|GenericLogger|Crawl Settings loaded successfully 
+2018-12-12 12:39:48.5537|INFO|GenericLogger|Starting CrawlUtilities
+2018-12-12 12:39:49.3257|INFO|GenericLogger|Crawl Settings loaded successfully 
+2018-12-12 12:43:14.2207|FATAL|GenericLogger|Error occured One or more errors occurred. 
+ Generic exception Popped in GetHttpRequestResponse(string url) 
+    at System.Threading.Tasks.Task.ThrowIfExceptional(Boolean includeTaskCanceledExceptions)
+   at System.Threading.Tasks.Task`1.GetResultCore(Boolean waitCompletionNotification)
+   at System.Threading.Tasks.Task`1.get_Result()
+   at MiscUtilities.HttpUtils.GetHttpRequestResponse(String url)
+2018-12-12 12:45:40.4286|FATAL|GenericLogger|Error occured : Error when trying to save changes for updating process for http://www.cel.ro/laptop-laptopuri/laptop-gaming-asus-tuf-fx504ge-intel-core-coffee-lake--_40_-8th-gen-_41_--i7_8750h-1tbplus_256gb-ssd-8gb-nvidia-geforce-gtx-1050-ti-4g-pMCIwMjEpNg-l/, 
+ ex : An error occurred while updating the entries. See the inner exception for details. 
+    at System.Data.Entity.Internal.InternalContext.SaveChanges()
+   at System.Data.Entity.Internal.LazyInternalContext.SaveChanges()
+   at System.Data.Entity.DbContext.SaveChanges()
+   at CrawlingUtilities.CrawlManager.ParseProducts() 
+ Violation of PRIMARY KEY constraint 'PK_PriceEvolution'. Cannot insert duplicate key in object 'dbo.PriceEvolution'. The duplicate key value is (00000000-0000-0000-0000-000000000000).
+The statement has been terminated. 
+2018-12-12 12:45:42.8452|FATAL|GenericLogger|Error occured : Error when trying to save changes for updating process for http://www.cel.ro/laptop-laptopuri/laptop-gaming-asus-tuf-fx504ge-intel-core-coffee-lake--_40_-8th-gen-_41_--i7_8750h-1tb-8gb-nvidia-geforce-gtx-1050-ti-4gb-fullhd-pOSAzMzQr-l/, 
+ ex : An error occurred while updating the entries. See the inner exception for details. 
+    at System.Data.Entity.Internal.InternalContext.SaveChanges()
+   at System.Data.Entity.Internal.LazyInternalContext.SaveChanges()
+   at System.Data.Entity.DbContext.SaveChanges()
+   at CrawlingUtilities.CrawlManager.ParseProducts() 
+ Violation of PRIMARY KEY constraint 'PK_PriceEvolution'. Cannot insert duplicate key in object 'dbo.PriceEvolution'. The duplicate key value is (00000000-0000-0000-0000-000000000000).
+The statement has been terminated. 
+2018-12-12 12:46:44.4222|INFO|GenericLogger|Starting CrawlUtilities
+2018-12-12 12:46:45.2592|INFO|GenericLogger|Crawl Settings loaded successfully 
+2018-12-12 12:49:28.2093|INFO|GenericLogger|Starting CrawlUtilities
+2018-12-12 12:49:29.0388|INFO|GenericLogger|Crawl Settings loaded successfully 
+2018-12-12 12:49:44.9844|INFO|GenericLogger|Update process finished starting again in 12 hours
+2018-12-12 12:52:55.6236|INFO|GenericLogger|Starting CrawlUtilities
+2018-12-12 12:52:56.3002|INFO|GenericLogger|Crawl Settings loaded successfully 
+2018-12-12 12:53:04.8349|INFO|GenericLogger|Update process finished starting again in 12 hours
+2018-12-12 12:53:58.5210|INFO|GenericLogger|Starting CrawlUtilities
+2018-12-12 12:53:59.3635|INFO|GenericLogger|Crawl Settings loaded successfully 
+2018-12-12 12:54:07.8394|INFO|GenericLogger|Update process finished starting again in 12 hours
+2018-12-12 13:02:38.8027|INFO|GenericLogger|Starting CrawlUtilities
+2018-12-12 13:02:38.8057|INFO|GenericLogger|Starting Search Utilities...
+2018-12-12 13:02:39.1165|FATAL|GenericLogger|Error occured The process cannot access the file 'D:\Matei\PrsLic\ProductEngine\Libraries\BlobFiles\CrawlingTags.json' because it is being used by another process. 
+ Exception The process cannot access the file 'D:\Matei\PrsLic\ProductEngine\Libraries\BlobFiles\CrawlingTags.json' because it is being used by another process. popped when trying to get Blob : CrawlingTags.json from container : crawlsettings 
+    at System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
+   at System.IO.FileStream.Init(String path, FileMode mode, FileAccess access, Int32 rights, Boolean useRights, FileShare share, Int32 bufferSize, FileOptions options, SECURITY_ATTRIBUTES secAttrs, String msgPath, Boolean bFromProxy, Boolean useLongPath, Boolean checkHost)
+   at System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access, FileShare share)
+   at Microsoft.WindowsAzure.Storage.Blob.CloudBlob.DownloadToFile(String path, FileMode mode, AccessCondition accessCondition, BlobRequestOptions options, OperationContext operationContext) in c:\Program Files (x86)\Jenkins\workspace\release_dotnet_master\Lib\ClassLibraryCommon\Blob\CloudBlob.cs:line 612
+   at MiscUtilities.AzureBlobUtils.DownloadBlob(String fileName, String container) in D:\Matei\PrsLic\ProductEngine\MiscUtilities\AzureBlobUtils.cs:line 44
+2018-12-12 13:02:39.1405|FATAL|GenericLogger|Error occured The process cannot access the file 'D:\Matei\PrsLic\ProductEngine\Libraries\BlobFiles\CrawlingTags.json' because it is being used by another process. 
+ Exception The process cannot access the file 'D:\Matei\PrsLic\ProductEngine\Libraries\BlobFiles\CrawlingTags.json' because it is being used by another process. popped when trying to parse crawling Settings 
+    at System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
+   at System.IO.FileStream.Init(String path, FileMode mode, FileAccess access, Int32 rights, Boolean useRights, FileShare share, Int32 bufferSize, FileOptions options, SECURITY_ATTRIBUTES secAttrs, String msgPath, Boolean bFromProxy, Boolean useLongPath, Boolean checkHost)
+   at System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access, FileShare share, Int32 bufferSize, FileOptions options, String msgPath, Boolean bFromProxy, Boolean useLongPath, Boolean checkHost)
+   at System.IO.StreamReader..ctor(String path, Encoding encoding, Boolean detectEncodingFromByteOrderMarks, Int32 bufferSize, Boolean checkHost)
+   at System.IO.StreamReader..ctor(String path)
+   at MiscUtilities.CrawlSettingsHelper.LoadCrawlSettings() in D:\Matei\PrsLic\ProductEngine\MiscUtilities\CrawlSettingsHelper.cs:line 25
+2018-12-12 13:02:39.5854|INFO|GenericLogger|Queue Has NO items to be searched
+2018-12-12 13:02:39.6993|INFO|GenericLogger|Crawl Settings loaded successfully 
+2018-12-12 13:02:42.5972|INFO|GenericLogger|Starting Search Utilities...
+2018-12-12 13:02:42.6602|INFO|GenericLogger|Crawl Settings loaded successfully 
+2018-12-12 13:02:42.7231|INFO|GenericLogger|Queue Has NO items to be searched
+2018-12-12 13:02:42.9183|INFO|GenericLogger|Update process finished starting again in 12 hours
+2018-12-12 13:02:45.7341|INFO|GenericLogger|Starting Search Utilities...
+2018-12-12 13:02:45.8021|INFO|GenericLogger|Crawl Settings loaded successfully 
+2018-12-12 13:02:45.8610|INFO|GenericLogger|Queue Has NO items to be searched
+2018-12-12 13:02:48.8687|INFO|GenericLogger|Starting Search Utilities...
+2018-12-12 13:02:48.9360|INFO|GenericLogger|Crawl Settings loaded successfully 
+2018-12-12 13:02:48.9939|INFO|GenericLogger|Queue Has NO items to be searched
+2018-12-12 13:02:52.0038|INFO|GenericLogger|Starting Search Utilities...
+2018-12-12 13:02:52.0774|INFO|GenericLogger|Crawl Settings loaded successfully 
+2018-12-12 13:02:52.1343|INFO|GenericLogger|Queue Has NO items to be searched
+2018-12-12 13:02:55.1432|INFO|GenericLogger|Starting Search Utilities...
+2018-12-12 13:02:55.2131|INFO|GenericLogger|Crawl Settings loaded successfully 
+2018-12-12 13:02:55.2719|INFO|GenericLogger|Queue Has NO items to be searched
+2018-12-12 13:02:58.2792|INFO|GenericLogger|Starting Search Utilities...
+2018-12-12 13:02:58.3732|INFO|GenericLogger|Crawl Settings loaded successfully 
+2018-12-12 13:02:58.4301|INFO|GenericLogger|Queue Has NO items to be searched
+2018-12-12 13:03:01.4385|INFO|GenericLogger|Starting Search Utilities...
+2018-12-12 13:03:01.5004|INFO|GenericLogger|Crawl Settings loaded successfully 
+2018-12-12 13:03:01.5564|INFO|GenericLogger|Queue Has NO items to be searched
+2018-12-12 13:03:04.5665|INFO|GenericLogger|Starting Search Utilities...
+2018-12-12 13:03:04.6287|INFO|GenericLogger|Crawl Settings loaded successfully 
+2018-12-12 13:03:04.6857|INFO|GenericLogger|Queue Has NO items to be searched
+2018-12-12 13:03:07.6935|INFO|GenericLogger|Starting Search Utilities...
+2018-12-12 13:03:07.7624|INFO|GenericLogger|Crawl Settings loaded successfully 
+2018-12-12 13:03:07.8210|INFO|GenericLogger|Queue Has NO items to be searched
+2018-12-12 13:03:10.8287|INFO|GenericLogger|Starting Search Utilities...
+2018-12-12 13:03:10.8966|INFO|GenericLogger|Crawl Settings loaded successfully 
+2018-12-12 13:03:10.9546|INFO|GenericLogger|Queue Has NO items to be searched
+2018-12-12 13:03:13.9631|INFO|GenericLogger|Starting Search Utilities...
+2018-12-12 13:03:14.0371|INFO|GenericLogger|Crawl Settings loaded successfully 
+2018-12-12 13:03:14.0973|INFO|GenericLogger|Queue Has NO items to be searched
+2018-12-12 13:03:17.1054|INFO|GenericLogger|Starting Search Utilities...
+2018-12-12 13:03:17.1693|INFO|GenericLogger|Crawl Settings loaded successfully 
+2018-12-12 13:03:17.2283|INFO|GenericLogger|Queue Has NO items to be searched
+2018-12-12 13:09:57.5711|INFO|GenericLogger|Starting Search Utilities...
+2018-12-12 13:09:57.5991|INFO|GenericLogger|Starting CrawlUtilities
+2018-12-12 13:10:56.3460|INFO|GenericLogger|Starting CrawlUtilities
+2018-12-12 13:10:56.3570|INFO|GenericLogger|Starting Search Utilities...
+2018-12-12 13:11:35.3849|INFO|GenericLogger|Crawl Settings loaded successfully 
+2018-12-12 13:11:35.3849|INFO|GenericLogger|Crawl Settings loaded successfully 
+2018-12-12 13:11:35.7555|INFO|GenericLogger|Queue Has NO items to be searched
+2018-12-12 13:11:37.8465|INFO|GenericLogger|Update process finished starting again in 12 hours
+2018-12-12 13:11:38.7645|INFO|GenericLogger|Starting Search Utilities...
+2018-12-12 13:11:47.2598|INFO|GenericLogger|Crawl Settings loaded successfully 
+2018-12-12 13:11:48.7145|INFO|GenericLogger|Queue Has NO items to be searched
+2018-12-12 13:12:01.8774|INFO|GenericLogger|Starting Search Utilities...
+2018-12-12 13:12:01.8914|INFO|GenericLogger|Starting CrawlUtilities
+2018-12-12 13:12:04.9667|INFO|GenericLogger|Crawl Settings loaded successfully 
+2018-12-12 13:12:04.9667|INFO|GenericLogger|Crawl Settings loaded successfully 
+2018-12-12 13:12:05.2076|INFO|GenericLogger|Queue Has NO items to be searched
+2018-12-12 13:12:07.3490|INFO|GenericLogger|Update process finished starting again in 12 hours
+2018-12-12 13:12:08.2158|INFO|GenericLogger|Starting Search Utilities...
+2018-12-12 13:12:08.2796|INFO|GenericLogger|Crawl Settings loaded successfully 
+2018-12-12 13:12:08.3403|INFO|GenericLogger|Queue Has NO items to be searched
+2018-12-12 13:12:11.3469|INFO|GenericLogger|Starting Search Utilities...
+2018-12-12 13:12:11.4129|INFO|GenericLogger|Crawl Settings loaded successfully 
+2018-12-12 13:12:11.4688|INFO|GenericLogger|Queue Has NO items to be searched
+2018-12-12 13:12:14.4753|INFO|GenericLogger|Starting Search Utilities...
+2018-12-12 13:12:14.5343|INFO|GenericLogger|Crawl Settings loaded successfully 
+2018-12-12 13:12:14.5962|INFO|GenericLogger|Queue Has NO items to be searched
+2018-12-12 13:12:17.6098|INFO|GenericLogger|Starting Search Utilities...
+2018-12-12 13:12:17.6877|INFO|GenericLogger|Crawl Settings loaded successfully 
+2018-12-12 13:12:17.7447|INFO|GenericLogger|Queue Has NO items to be searched
+2018-12-12 13:12:20.7886|INFO|GenericLogger|Starting Search Utilities...
+2018-12-12 13:12:20.8997|INFO|GenericLogger|Crawl Settings loaded successfully 
+2018-12-12 13:12:20.9577|INFO|GenericLogger|Queue Has NO items to be searched
+2018-12-12 13:12:23.9650|INFO|GenericLogger|Starting Search Utilities...
+2018-12-12 13:12:24.0599|INFO|GenericLogger|Crawl Settings loaded successfully 
+2018-12-12 13:12:24.1189|INFO|GenericLogger|Queue Has NO items to be searched
+2018-12-12 13:12:27.1278|INFO|GenericLogger|Starting Search Utilities...
+2018-12-12 13:12:27.1887|INFO|GenericLogger|Crawl Settings loaded successfully 
+2018-12-12 13:12:27.2547|INFO|GenericLogger|Queue Has NO items to be searched
+2018-12-12 13:12:30.2634|INFO|GenericLogger|Starting Search Utilities...
+2018-12-12 13:12:30.3333|INFO|GenericLogger|Crawl Settings loaded successfully 
+2018-12-12 13:12:30.3953|INFO|GenericLogger|Queue Has NO items to be searched
+2018-12-12 13:12:33.4042|INFO|GenericLogger|Starting Search Utilities...
+2018-12-12 13:12:33.4661|INFO|GenericLogger|Crawl Settings loaded successfully 
+2018-12-12 13:12:33.5261|INFO|GenericLogger|Queue Has NO items to be searched
+2018-12-12 13:12:36.5349|INFO|GenericLogger|Starting Search Utilities...
+2018-12-12 13:12:36.5967|INFO|GenericLogger|Crawl Settings loaded successfully 
+2018-12-12 13:12:36.6580|INFO|GenericLogger|Queue Has NO items to be searched
+2018-12-12 13:12:39.6676|INFO|GenericLogger|Starting Search Utilities...
+2018-12-12 13:12:39.7354|INFO|GenericLogger|Crawl Settings loaded successfully 
+2018-12-12 13:12:39.8018|INFO|GenericLogger|Queue Has NO items to be searched
+2018-12-12 13:12:42.8140|INFO|GenericLogger|Starting Search Utilities...
+2018-12-12 13:12:42.8789|INFO|GenericLogger|Crawl Settings loaded successfully 
+2018-12-12 13:12:42.9389|INFO|GenericLogger|Queue Has NO items to be searched
+2018-12-12 13:12:45.9502|INFO|GenericLogger|Starting Search Utilities...
+2018-12-12 13:12:46.0161|INFO|GenericLogger|Crawl Settings loaded successfully 
+2018-12-12 13:12:46.0811|INFO|GenericLogger|Queue Has NO items to be searched
+2018-12-12 13:12:49.0894|INFO|GenericLogger|Starting Search Utilities...
+2018-12-12 13:12:49.1554|INFO|GenericLogger|Crawl Settings loaded successfully 
+2018-12-12 13:12:49.2664|INFO|GenericLogger|Queue Has NO items to be searched
+2018-12-12 13:13:26.4473|INFO|GenericLogger|Starting CrawlUtilities
+2018-12-12 13:13:26.4473|INFO|GenericLogger|Starting Search Utilities...
+2018-12-12 13:13:27.2937|INFO|GenericLogger|Search Settings loaded successfully 
+2018-12-12 13:13:27.2937|INFO|GenericLogger|Update Settings loaded successfully 
+2018-12-12 13:13:27.6975|INFO|GenericLogger|Queue Has NO items to be searched
+2018-12-12 13:13:29.5238|INFO|GenericLogger|Update process finished starting again in 12 hours
+2018-12-12 13:13:30.7066|INFO|GenericLogger|Starting Search Utilities...
+2018-12-12 13:13:30.7646|INFO|GenericLogger|Search Settings loaded successfully 
+2018-12-12 13:13:30.8216|INFO|GenericLogger|Queue Has NO items to be searched
+2018-12-12 13:13:33.8302|INFO|GenericLogger|Starting Search Utilities...
+2018-12-12 13:13:33.8972|INFO|GenericLogger|Search Settings loaded successfully 
+2018-12-12 13:13:33.9571|INFO|GenericLogger|Queue Has NO items to be searched
+2018-12-12 13:13:36.9653|INFO|GenericLogger|Starting Search Utilities...
+2018-12-12 13:13:37.0327|INFO|GenericLogger|Search Settings loaded successfully 
+2018-12-12 13:13:37.0957|INFO|GenericLogger|Queue Has NO items to be searched
+2018-12-12 13:13:40.1033|INFO|GenericLogger|Starting Search Utilities...
+2018-12-12 13:13:40.1653|INFO|GenericLogger|Search Settings loaded successfully 
+2018-12-12 13:13:40.2242|INFO|GenericLogger|Queue Has NO items to be searched
+2018-12-12 13:13:43.2326|INFO|GenericLogger|Starting Search Utilities...
+2018-12-12 13:13:43.3265|INFO|GenericLogger|Search Settings loaded successfully 
+2018-12-12 13:13:43.3833|INFO|GenericLogger|Queue Has NO items to be searched
+2018-12-12 13:13:46.3913|INFO|GenericLogger|Starting Search Utilities...
+2018-12-12 13:13:46.5632|INFO|GenericLogger|Search Settings loaded successfully 
+2018-12-12 13:13:46.6192|INFO|GenericLogger|Queue Has NO items to be searched
+2018-12-12 13:13:49.6271|INFO|GenericLogger|Starting Search Utilities...
+2018-12-12 13:13:49.6851|INFO|GenericLogger|Search Settings loaded successfully 
+2018-12-12 13:13:49.7471|INFO|GenericLogger|Queue Has NO items to be searched

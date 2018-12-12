@@ -14,8 +14,8 @@ namespace ProductBackgroundEngine
         {
 
             Parallel.Invoke(
-                () => StartSearchUtilities()
-                //, () => StartMainCrawl()
+                 () => StartSearchUtilities(),
+                 () => StartMainCrawl()
                );
 
             
@@ -27,7 +27,7 @@ namespace ProductBackgroundEngine
             while (true)
             {
                 GenericLogger.Info("Starting Search Utilities...");
-                var model = CrawlSettingsHelper.LoadCrawlSettings();
+                var model = CrawlSettingsHelper.LoadCrawlSettings("Search");
 
                 SearchUtilitiesStarter.StartSearching(model);
 
@@ -44,9 +44,11 @@ namespace ProductBackgroundEngine
 
                 GenericLogger.Info("Starting CrawlUtilities");
 
-                var model = CrawlSettingsHelper.LoadCrawlSettings();
+                var model = CrawlSettingsHelper.LoadCrawlSettings("Update");
 
                 MainCrawlStarter.CrawlStart(model);
+
+                GenericLogger.Info($"Update process finished starting again in 12 hours");
 
                 Thread.Sleep(1000 * 60 * 60 * 12);
             }

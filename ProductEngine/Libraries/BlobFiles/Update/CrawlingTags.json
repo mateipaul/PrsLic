@@ -1,0 +1,19 @@
+{
+	"Retailers":[
+		{
+			"RetailerName":"Cel",
+			"CrawlingTags":
+				{
+					"SearchUrlFormat":"http://www.cel.ro/cauta/{0}/",
+					"NextProductPageTag":"//div[@class='pageresults']/span[@class='selectat']/following-sibling::a",
+					"ProductCellTag":"//div[contains(@class,'productListing-tot')]",
+					"UrlTag":"//h4[@class='productTitle']/a",
+					
+					"ProductName":"//h2[@itemprop='name']",
+					"ProductPrice":"//span[@itemprop='price']",
+					"ProductStock":"//button[contains(@class,'btn-buy')]",
+					"ProductImage":"//div[@class='bigImage']/a/img"
+				}
+		}
+	]
+}

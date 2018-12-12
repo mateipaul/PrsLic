@@ -13,23 +13,23 @@ namespace MiscUtilities
     {
         static CrawlSettingsModel model = new CrawlSettingsModel();
 
-        public static CrawlSettingsModel LoadCrawlSettings()
+        public static CrawlSettingsModel LoadCrawlSettings(string usage)
         {
            
 
-            AzureBlobUtils.Instance.DownloadBlob("CrawlingTags.json", "crawlsettings");
+            AzureBlobUtils.Instance.DownloadBlob("CrawlingTags.json", "crawlsettings",usage);
 
             try
             {
                 string text = string.Empty;
-                using (StreamReader reader =  new StreamReader(Path.Combine(Environment.CurrentDirectory,"BlobFiles","CrawlingTags.json")))
+                using (StreamReader reader =  new StreamReader(Path.Combine(Environment.CurrentDirectory,"BlobFiles",usage,"CrawlingTags.json")))
                 {
                     text = reader.ReadToEnd();
                 }
 
                 model = JsonUtilities.Instance.DeserializeJson<CrawlSettingsModel>(text);
 
-                GenericLogger.Info("Crawl Settings loaded successfully ");
+                GenericLogger.Info($"{usage} Settings loaded successfully ");
                 
             }
             catch (Exception ex)
