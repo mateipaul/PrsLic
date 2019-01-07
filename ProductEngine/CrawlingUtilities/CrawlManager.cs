@@ -34,11 +34,11 @@ namespace CrawlingUtilities
         {
             dbContext = new DbModelContext();
 
-            retailerId = dbContext.Retailers.Where(m => m.Name.Equals(RetailerConfig.RetailerName)).Select(m => m.Id).FirstOrDefault();
+            retailerId = dbContext.Vanzator.Where(m => m.Nume.Equals(RetailerConfig.RetailerName)).Select(m => m.Id).FirstOrDefault();
 
             products = new RetailerCrawlProductCollection(RetailerConfig.RetailerName);
 
-            var prods = dbContext.Products.Where(m => m.RetailerID == retailerId);
+            var prods = dbContext.Produs.Where(m => m.Id_Vanzator == retailerId);
 
             products.AddRange(prods);
 
@@ -50,19 +50,22 @@ namespace CrawlingUtilities
             do
             {
                 CrawlProductParser parser = new CrawlProductParser(RetailerConfig);
-                var currentProduct = products[counter];
-                parser.DownloadProduct(ref currentProduct);
-                counter++;
 
-                try
+                if (products.Count > 0)
                 {
-                    dbContext.SaveChanges();
-                }
-                catch (Exception ex)
-                {
-                    GenericLogger.Error($"Error when trying to save changes for updating process for {currentProduct.Url}, \n ex : {ex.Message} \n {ex.StackTrace} \n {ex.InnerException.InnerException.Message}");
-                }
+                    var currentProduct = products[counter];
+                    parser.DownloadProduct(ref currentProduct);
+                    counter++;
 
+                    try
+                    {
+                        dbContext.SaveChanges();
+                    }
+                    catch (Exception ex)
+                    {
+                        GenericLogger.Error($"Error when trying to save changes for updating process for {currentProduct.Url}, \n ex : {ex.Message} \n {ex.StackTrace} \n {ex.InnerException.InnerException.Message}");
+                    }
+                }
             } while (counter < products.Count);
         }
     }

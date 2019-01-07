@@ -11,9 +11,9 @@ namespace MvcMusicStore.Controllers
 {
     public class MyProductsController : Controller
     {
-        private List<Product> products = new List<Product>();
+        private List<Produs> products = new List<Produs>();
 
-        DbConnectionString dbContext = new DbConnectionString();
+        DbModelContext dbContext = new DbModelContext();
 
         // GET: MyProducts
         public ActionResult MyProducts()
@@ -28,9 +28,9 @@ namespace MvcMusicStore.Controllers
             return null;
         }
 
-        private List<Product> GetProducts()
+        private List<Produs> GetProducts()
         {
-            return new List<Product>();
+            return new List<Produs>();
         }
     }
 }

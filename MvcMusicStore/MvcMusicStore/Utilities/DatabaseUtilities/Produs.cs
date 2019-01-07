@@ -7,37 +7,37 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace DatabaseModels
+namespace MvcMusicStore.Utilities.DatabaseUtilities
 {
     using System;
     using System.Collections.Generic;
     
-    public partial class Product
+    public partial class Produs
     {
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2214:DoNotCallOverridableMethodsInConstructors")]
-        public Product()
+        public Produs()
         {
-            this.PriceEvolutions = new HashSet<PriceEvolution>();
-            this.ProductFollows = new HashSet<ProductFollow>();
+            this.EvolutiaPretului = new HashSet<EvolutiaPretului>();
+            this.UrmarireProdus = new HashSet<UrmarireProdus>();
         }
     
         public System.Guid Id { get; set; }
         public string Url { get; set; }
-        public string Description { get; set; }
-        public string Price { get; set; }
+        public string Denumire { get; set; }
+        public string Pret { get; set; }
         public string Stock { get; set; }
-        public string ImageUrl { get; set; }
-        public Nullable<bool> Deleted { get; set; }
-        public Nullable<System.Guid> RetailerID { get; set; }
+        public string Url_Imagine { get; set; }
+        public Nullable<System.Guid> Id_Vanzator { get; set; }
         public string SKU { get; set; }
         public string EAN { get; set; }
-        public Nullable<System.DateTime> Created { get; set; }
-        public string ProductDescriptionCode { get; set; }
+        public Nullable<System.DateTime> Data_Creat { get; set; }
+        public string Cod_Denumire_Produs { get; set; }
+        public Nullable<bool> Sters { get; set; }
     
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
-        public virtual ICollection<PriceEvolution> PriceEvolutions { get; set; }
-        public virtual Retailer Retailer { get; set; }
+        public virtual ICollection<EvolutiaPretului> EvolutiaPretului { get; set; }
+        public virtual Vanzator Vanzator { get; set; }
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
-        public virtual ICollection<ProductFollow> ProductFollows { get; set; }
+        public virtual ICollection<UrmarireProdus> UrmarireProdus { get; set; }
     }
 }

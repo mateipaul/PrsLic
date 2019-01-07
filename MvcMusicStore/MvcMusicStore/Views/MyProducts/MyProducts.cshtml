@@ -1,4 +1,4 @@
-﻿@model IEnumerable<MvcMusicStore.Utilities.DatabaseUtilities.Product>
+﻿@model IEnumerable<MvcMusicStore.Utilities.DatabaseUtilities.Produs>
 @{
 	ViewBag.Title = "My Products";
 }
@@ -10,14 +10,14 @@
 	{
 		<div class="product">
 			<div class="product-title">
-				<h3>@item.Description</h3>
+				<h3>@item.Denumire</h3>
 				<span class="image-wrapper">
 					<img src="http://www.austria.ro/blog/wp-content/themes/Ciola/library/images/thumbnail-600x350.png" alt="Alternate Text" class="image" />
 				</span>
 			</div>
 			<div class="product-details">
 				<div class="price">
-					@item.Price
+					@item.Pret
 				</div>
 				<br />
 				<span class="price-evolution">

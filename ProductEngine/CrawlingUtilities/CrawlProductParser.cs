@@ -19,7 +19,7 @@ namespace CrawlingUtilities
             RetailerConfig = retailerConfig;
         }
 
-        internal void DownloadProduct(ref Product product)
+        internal void DownloadProduct(ref Produs product)
         {
             try
             {
@@ -36,24 +36,24 @@ namespace CrawlingUtilities
         }
 
 
-        private void ExtractNeededInformation(ref Product product)
+        private void ExtractNeededInformation(ref Produs product)
         {
-            product.Description = (HtmlDocumentUtilities.ExtractNodeValue(_document, RetailerConfig.CrawlingTags.ProductName, m => m.InnerText.Trim().Replace(",",string.Empty)));
-            product.Price = (HtmlDocumentUtilities.ExtractNodeValue(_document, RetailerConfig.CrawlingTags.ProductPrice, m => Regex.Match(m.InnerText.Replace("&#46;", string.Empty), @"\d+.\d+(.\d+)?").Value.Trim()));
+            product.Denumire = (HtmlDocumentUtilities.ExtractNodeValue(_document, RetailerConfig.CrawlingTags.ProductName, m => m.InnerText.Trim().Replace(",",string.Empty)));
+            product.Pret = (HtmlDocumentUtilities.ExtractNodeValue(_document, RetailerConfig.CrawlingTags.ProductPrice, m => Regex.Match(m.InnerText.Replace("&#46;", string.Empty), @"\d+.\d+(.\d+)?").Value.Trim()));
             product.Stock = (HtmlDocumentUtilities.ExtractNodeValue(_document, RetailerConfig.CrawlingTags.ProductStock, m => string.IsNullOrEmpty(m.InnerText)?"OutOfStock":"InStock"));
-            product.ImageUrl = (HtmlDocumentUtilities.ExtractNodeValue(_document, RetailerConfig.CrawlingTags.ProductImage, m => m.GetAttributeValue("src",string.Empty)));
+            product.Url_Imagine = (HtmlDocumentUtilities.ExtractNodeValue(_document, RetailerConfig.CrawlingTags.ProductImage, m => m.GetAttributeValue("src",string.Empty)));
 
-            PriceEvolution priceEvolution = new PriceEvolution();
+            EvolutiaPretului priceEvolution = new EvolutiaPretului();
             priceEvolution.Id = Guid.NewGuid();
-            priceEvolution.Price = product.Price;
-            priceEvolution.ProductID = product.Id;
-            priceEvolution.UpdatedDate = DateTime.UtcNow;
+            priceEvolution.Pret = product.Pret;
+            priceEvolution.Id_Produs = product.Id;
+            priceEvolution.Data_Actualizare = DateTime.UtcNow;
 
-            product.PriceEvolutions.Add(priceEvolution);
+            product.EvolutiaPretului.Add(priceEvolution);
         }
 
 
-        private void CreateProductDocument(Product prd)
+        private void CreateProductDocument(Produs prd)
         {
             string htmlProductPage = HttpUtils.GetWebRequestResponse(prd.Url);
 

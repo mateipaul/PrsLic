@@ -9,7 +9,7 @@ using System.Threading.Tasks;
 
 namespace DatabaseModels
 {
-    public class RetailerCrawlProductCollection : List<Product>
+    public class RetailerCrawlProductCollection : List<Produs>
     {
         public string RetailerName { get; set; }
         private Guid RetailerID;
@@ -24,27 +24,27 @@ namespace DatabaseModels
 
         private void GetRetailerID(string retailerName)
         {
-            RetailerID = dbContext.Retailers.Where(m => m.Name.Equals(retailerName, StringComparison.InvariantCultureIgnoreCase)).Select(m => m.Id).FirstOrDefault();
+            RetailerID = dbContext.Vanzator.Where(m => m.Nume.Equals(retailerName, StringComparison.InvariantCultureIgnoreCase)).Select(m => m.Id).FirstOrDefault();
         }
 
-        public void AddProduct(Product prd)
+        public void AddProduct(Produs prd)
         {
-            prd.RetailerID = RetailerID;
-            prd.ProductDescriptionCode = GetDescriptionCode(prd.Description);
+            prd.Id_Vanzator = RetailerID;
+            prd.Cod_Denumire_Produs = GetDescriptionCode(prd.Denumire);
             prd.Id = GetProductID(prd.Url);
-            prd.Deleted = false;
-            prd.PriceEvolutions.Add(GetNewPriceForEvolution(prd));
-            prd.Created = DateTime.UtcNow;
+            prd.Sters = false;
+            prd.EvolutiaPretului.Add(GetNewPriceForEvolution(prd));
+            prd.Data_Creat = DateTime.UtcNow;
             this.Add(prd);
         }
 
-        private PriceEvolution GetNewPriceForEvolution(Product product)
+        private EvolutiaPretului GetNewPriceForEvolution(Produs product)
         {
-            PriceEvolution evol = new PriceEvolution();
-            evol.ProductID = product.Id;
-            evol.Price = product.Price;
+            EvolutiaPretului evol = new EvolutiaPretului();
+            evol.Id_Produs = product.Id;
+            evol.Pret = product.Pret;
             evol.Id = Guid.NewGuid();
-            evol.UpdatedDate = DateTime.UtcNow;
+            evol.Data_Actualizare = DateTime.UtcNow;
             return evol;
         }
 
@@ -80,11 +80,11 @@ namespace DatabaseModels
             {
                 try
                 {
-                    if (dbContext.Products.Any(prd => prd.Id.Equals(item.Id)))
-                        dbContext.PriceEvolutions.Add(item.PriceEvolutions.First());
+                    if (dbContext.Produs.Any(prd => prd.Id.Equals(item.Id)))
+                        dbContext.EvolutiaPretului.Add(item.EvolutiaPretului.First());
                     else
                     {
-                        dbContext.Products.Add(item);
+                        dbContext.Produs.Add(item);
                     }
                     dbContext.SaveChanges();
                 }

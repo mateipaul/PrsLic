@@ -109,16 +109,6 @@
     <Content Include="Content\bootstrap.min.css" />
     <Content Include="Content\CustomCSS.css" />
     <Content Include="Content\Site.css" />
-    <Content Include="Utilities\DatabaseUtilities\DBModel.Context.tt">
-      <Generator>TextTemplatingFileGenerator</Generator>
-      <DependentUpon>DBModel.edmx</DependentUpon>
-      <LastGenOutput>DBModel.Context.cs</LastGenOutput>
-    </Content>
-    <Content Include="Utilities\DatabaseUtilities\DBModel.tt">
-      <Generator>TextTemplatingFileGenerator</Generator>
-      <DependentUpon>DBModel.edmx</DependentUpon>
-      <LastGenOutput>DBModel.cs</LastGenOutput>
-    </Content>
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="Global.asax" />
     <Content Include="Images\cel.png" />
@@ -126,17 +116,20 @@
     <Content Include="Images\MediaGalaxy.png" />
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
-    <EntityDeploy Include="Utilities\DatabaseUtilities\DBModel.edmx">
-      <Generator>EntityModelCodeGenerator</Generator>
-      <LastGenOutput>DBModel.Designer.cs</LastGenOutput>
-    </EntityDeploy>
-    <Content Include="Utilities\DatabaseUtilities\DBModel.edmx.diagram">
-      <DependentUpon>DBModel.edmx</DependentUpon>
-    </Content>
     <None Include="Scripts\jquery-1.10.2.intellisense.js" />
     <Content Include="Scripts\jquery-1.10.2.js" />
     <Content Include="Scripts\jquery-1.10.2.min.js" />
     <Content Include="Scripts\modernizr-2.6.2.js" />
+    <Content Include="Utilities\DatabaseUtilities\DbModelContext.Context.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>DbModelContext.edmx</DependentUpon>
+      <LastGenOutput>DbModelContext.Context.cs</LastGenOutput>
+    </Content>
+    <Content Include="Utilities\DatabaseUtilities\DbModelContext.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>DbModelContext.edmx</DependentUpon>
+      <LastGenOutput>DbModelContext.cs</LastGenOutput>
+    </Content>
     <Content Include="Web.config" />
     <Content Include="Views\Home\Index.cshtml" />
     <Content Include="Views\MyProducts\MyProducts.cshtml" />
@@ -148,46 +141,43 @@
     <Compile Include="Controllers\MyProductsController.cs" />
     <Compile Include="Controllers\ProductSearchController.cs" />
     <Compile Include="Utilities\AzureUtilities\QueueUtilities.cs" />
-    <Compile Include="Utilities\DatabaseUtilities\DBModel.Context.cs">
+    <Compile Include="Utilities\DatabaseUtilities\DbModelContext.Context.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
-      <DependentUpon>DBModel.Context.tt</DependentUpon>
+      <DependentUpon>DbModelContext.Context.tt</DependentUpon>
     </Compile>
-    <Compile Include="Utilities\DatabaseUtilities\DBModel.cs">
+    <Compile Include="Utilities\DatabaseUtilities\DbModelContext.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
-      <DependentUpon>DBModel.tt</DependentUpon>
+      <DependentUpon>DbModelContext.tt</DependentUpon>
     </Compile>
-    <Compile Include="Utilities\DatabaseUtilities\DBModel.Designer.cs">
+    <Compile Include="Utilities\DatabaseUtilities\DbModelContext.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
-      <DependentUpon>DBModel.edmx</DependentUpon>
+      <DependentUpon>DbModelContext.edmx</DependentUpon>
+    </Compile>
+    <Compile Include="Utilities\DatabaseUtilities\EvolutiaPretului.cs">
+      <DependentUpon>DbModelContext.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Utilities\DatabaseUtilities\IstoricCautari.cs">
+      <DependentUpon>DbModelContext.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Utilities\DatabaseUtilities\Produs.cs">
+      <DependentUpon>DbModelContext.tt</DependentUpon>
     </Compile>
     <Compile Include="Utilities\DatabaseUtilities\SearchDBUtilities.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
-    <Compile Include="Utilities\DatabaseUtilities\Manufacturer.cs">
-      <DependentUpon>DBModel.tt</DependentUpon>
-    </Compile>
-    <Compile Include="Utilities\DatabaseUtilities\PriceEvolution.cs">
-      <DependentUpon>DBModel.tt</DependentUpon>
-    </Compile>
-    <Compile Include="Utilities\DatabaseUtilities\Product.cs">
-      <DependentUpon>DBModel.tt</DependentUpon>
-    </Compile>
-    <Compile Include="Utilities\DatabaseUtilities\ProductFollow.cs">
-      <DependentUpon>DBModel.tt</DependentUpon>
-    </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Utilities\DatabaseUtilities\Retailer.cs">
-      <DependentUpon>DBModel.tt</DependentUpon>
+    <Compile Include="Utilities\DatabaseUtilities\UrmarireProdus.cs">
+      <DependentUpon>DbModelContext.tt</DependentUpon>
     </Compile>
-    <Compile Include="Utilities\DatabaseUtilities\SearchHistory.cs">
-      <DependentUpon>DBModel.tt</DependentUpon>
+    <Compile Include="Utilities\DatabaseUtilities\Utilizator.cs">
+      <DependentUpon>DbModelContext.tt</DependentUpon>
     </Compile>
-    <Compile Include="Utilities\DatabaseUtilities\User.cs">
-      <DependentUpon>DBModel.tt</DependentUpon>
+    <Compile Include="Utilities\DatabaseUtilities\Vanzator.cs">
+      <DependentUpon>DbModelContext.tt</DependentUpon>
     </Compile>
   </ItemGroup>
   <ItemGroup>
@@ -200,6 +190,13 @@
     <Content Include="Views\Shared\_Layout.cshtml" />
     <Content Include="Scripts\jquery-1.10.2.min.map" />
     <Content Include="Views\ProductSearch\SearchProduct.cshtml" />
+    <EntityDeploy Include="Utilities\DatabaseUtilities\DbModelContext.edmx">
+      <Generator>EntityModelCodeGenerator</Generator>
+      <LastGenOutput>DbModelContext.Designer.cs</LastGenOutput>
+    </EntityDeploy>
+    <Content Include="Utilities\DatabaseUtilities\DbModelContext.edmx.diagram">
+      <DependentUpon>DbModelContext.edmx</DependentUpon>
+    </Content>
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>

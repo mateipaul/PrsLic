@@ -12,23 +12,22 @@ namespace MvcMusicStore.Utilities.DatabaseUtilities
     using System;
     using System.Collections.Generic;
     
-    public partial class User
+    public partial class Vanzator
     {
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2214:DoNotCallOverridableMethodsInConstructors")]
-        public User()
+        public Vanzator()
         {
-            this.ProductFollows = new HashSet<ProductFollow>();
+            this.Produs = new HashSet<Produs>();
         }
     
         public System.Guid Id { get; set; }
-        public string UserName { get; set; }
-        public string Password { get; set; }
-        public string Email { get; set; }
-        public string PhoneNumber { get; set; }
-        public string NickName { get; set; }
-        public string Role { get; set; }
+        public string Nume { get; set; }
+        public string Site { get; set; }
+        public string Cod_Tara { get; set; }
+        public string Delimitator_Zecimala { get; set; }
+        public Nullable<bool> Sters { get; set; }
     
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
-        public virtual ICollection<ProductFollow> ProductFollows { get; set; }
+        public virtual ICollection<Produs> Produs { get; set; }
     }
 }

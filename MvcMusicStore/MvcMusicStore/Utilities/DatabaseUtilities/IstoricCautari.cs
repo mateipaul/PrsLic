@@ -7,18 +7,15 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace DatabaseModels
+namespace MvcMusicStore.Utilities.DatabaseUtilities
 {
     using System;
     using System.Collections.Generic;
     
-    public partial class PriceEvolution
+    public partial class IstoricCautari
     {
-        public System.Guid Id { get; set; }
-        public string Price { get; set; }
-        public Nullable<System.Guid> ProductID { get; set; }
-        public Nullable<System.DateTime> UpdatedDate { get; set; }
-    
-        public virtual Product Product { get; set; }
+        public System.Guid Id_Cautare { get; set; }
+        public string Valoare { get; set; }
+        public string Cod { get; set; }
     }
 }

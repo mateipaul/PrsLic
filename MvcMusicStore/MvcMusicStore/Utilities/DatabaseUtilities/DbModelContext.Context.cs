@@ -7,7 +7,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace DatabaseModels
+namespace MvcMusicStore.Utilities.DatabaseUtilities
 {
     using System;
     using System.Data.Entity;
@@ -25,12 +25,11 @@ namespace DatabaseModels
             throw new UnintentionalCodeFirstException();
         }
     
-        public virtual DbSet<Manufacturer> Manufacturers { get; set; }
-        public virtual DbSet<PriceEvolution> PriceEvolutions { get; set; }
-        public virtual DbSet<Product> Products { get; set; }
-        public virtual DbSet<Retailer> Retailers { get; set; }
-        public virtual DbSet<SearchHistory> SearchHistories { get; set; }
-        public virtual DbSet<User> Users { get; set; }
-        public virtual DbSet<ProductFollow> ProductFollows { get; set; }
+        public virtual DbSet<EvolutiaPretului> EvolutiaPretului { get; set; }
+        public virtual DbSet<IstoricCautari> IstoricCautari { get; set; }
+        public virtual DbSet<Produs> Produs { get; set; }
+        public virtual DbSet<UrmarireProdus> UrmarireProdus { get; set; }
+        public virtual DbSet<Utilizator> Utilizator { get; set; }
+        public virtual DbSet<Vanzator> Vanzator { get; set; }
     }
 }

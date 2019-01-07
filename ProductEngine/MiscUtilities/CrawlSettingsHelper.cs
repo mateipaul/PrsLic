@@ -28,8 +28,6 @@ namespace MiscUtilities
                 }
 
                 model = JsonUtilities.Instance.DeserializeJson<CrawlSettingsModel>(text);
-
-                GenericLogger.Info($"{usage} Settings loaded successfully ");
                 
             }
             catch (Exception ex)

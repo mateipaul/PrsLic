@@ -12,10 +12,14 @@ namespace MvcMusicStore.Utilities.DatabaseUtilities
     using System;
     using System.Collections.Generic;
     
-    public partial class SearchHistory
+    public partial class UrmarireProdus
     {
-        public string Value { get; set; }
-        public string Code { get; set; }
-        public System.Guid SearchID { get; set; }
+        public System.Guid Id { get; set; }
+        public System.Guid Id_Produs { get; set; }
+        public System.Guid Id_Utilizator { get; set; }
+        public string Limita_pret { get; set; }
+    
+        public virtual Produs Produs { get; set; }
+        public virtual Utilizator Utilizator { get; set; }
     }
 }

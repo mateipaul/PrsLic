@@ -26,12 +26,11 @@ namespace ProductBackgroundEngine
         {
             while (true)
             {
-                GenericLogger.Info("Starting Search Utilities...");
                 var model = CrawlSettingsHelper.LoadCrawlSettings("Search");
 
                 SearchUtilitiesStarter.StartSearching(model);
 
-                Thread.Sleep(3000);
+                
 
             }
         }

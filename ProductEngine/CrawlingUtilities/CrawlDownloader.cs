@@ -15,16 +15,14 @@ namespace CrawlingUtilities
     public class CrawlDownloader
     {
         private RetailerConfiguration RetailerConfig;
-        private Manufacturer manufacturer;
         private HtmlDocument doc;
         private HashSet<string> _productUrls;
-        internal List<Product> crawlProducts;
+        internal List<Produs> crawlProducts;
         private string retailerHost;
 
-        public CrawlDownloader(RetailerConfiguration retailerConfiguration,Manufacturer currentManufacturer)
+        public CrawlDownloader(RetailerConfiguration retailerConfiguration)
         {
             RetailerConfig = retailerConfiguration;
-            manufacturer = currentManufacturer;
             Initialize();
         }
 
@@ -32,7 +30,7 @@ namespace CrawlingUtilities
         {
             doc = new HtmlDocument();
             _productUrls = new HashSet<string>();
-            crawlProducts = new List<Product>();
+            crawlProducts = new List<Produs>();
             retailerHost = Regex.Match(RetailerConfig.CrawlingTags.SearchUrlFormat,@"https://www.[a-z]+.[a-z]+([a-z]+)?").Value;
         }
 
@@ -106,11 +104,11 @@ namespace CrawlingUtilities
         private void SearchManufacturer()
         {
 
-            string html = HttpUtils.GetHttpRequestResponse(string.Format(RetailerConfig.CrawlingTags.SearchUrlFormat, manufacturer.Name));
+            string html = HttpUtils.GetHttpRequestResponse(string.Format(RetailerConfig.CrawlingTags.SearchUrlFormat));
 
             if (string.IsNullOrEmpty(html))
             {
-                throw new Exception($"source string can not be null. Occured in SearchManufacturer({manufacturer.Name})");
+                
             }
             doc = HtmlDocumentUtilities.GetHtmlDocument(html);
 
@@ -126,7 +124,7 @@ namespace CrawlingUtilities
 
         }
 
-        private Product ExtractProductFrom(string url)
+        private Produs ExtractProductFrom(string url)
         {
             //CrawlProductParser parser = new CrawlProductParser(url, RetailerConfig);
             //Product tempProd = parser.DownloadProduct();

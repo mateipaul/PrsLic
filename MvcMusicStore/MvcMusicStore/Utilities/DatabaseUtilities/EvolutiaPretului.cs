@@ -12,13 +12,13 @@ namespace MvcMusicStore.Utilities.DatabaseUtilities
     using System;
     using System.Collections.Generic;
     
-    public partial class PriceEvolution
+    public partial class EvolutiaPretului
     {
         public System.Guid Id { get; set; }
-        public string Price { get; set; }
-        public Nullable<System.Guid> ProductID { get; set; }
-        public Nullable<System.DateTime> UpdatedDate { get; set; }
+        public string Pret { get; set; }
+        public Nullable<System.Guid> Id_Produs { get; set; }
+        public Nullable<System.DateTime> Data_Actualizare { get; set; }
     
-        public virtual Product Product { get; set; }
+        public virtual Produs Produs { get; set; }
     }
 }

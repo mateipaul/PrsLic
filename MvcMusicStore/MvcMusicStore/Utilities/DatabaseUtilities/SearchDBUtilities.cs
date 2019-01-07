@@ -10,13 +10,13 @@ namespace MvcMusicStore.Utilities.DatabaseUtilities
 {
     public static class SearchDBUtilities
     {
-        static DbConnectionString dbContext = new DbConnectionString();
+        static DbModelContext dbContext = new DbModelContext();
 
-        public static IEnumerable<Product> SearchProductsInDatabase(string stringToSearch)
+        public static IEnumerable<Produs> SearchProductsInDatabase(string stringToSearch)
         {
             string searchIdiomCode = GetSearchCode(stringToSearch);
 
-            var products = dbContext.Products.Where(product => product.ProductDescriptionCode.Equals(searchIdiomCode)).ToList();
+            var products = dbContext.Produs.Where(product => product.Cod_Denumire_Produs.Equals(searchIdiomCode)).ToList();
 
             if (products.Count < 1)
             {
@@ -33,13 +33,13 @@ namespace MvcMusicStore.Utilities.DatabaseUtilities
         {
             try
             {
-                SearchHistory history = new SearchHistory()
+                IstoricCautari history = new IstoricCautari()
                 {
-                    Code = searchIdiomCode,
-                    Value = stringToSearch,
-                    SearchID = StringToGUID(stringToSearch)
+                    Cod = searchIdiomCode,
+                    Valoare = stringToSearch,
+                    Id_Cautare = StringToGUID(stringToSearch)
                 };
-                dbContext.SearchHistories.Add(history);
+                dbContext.IstoricCautari.Add(history);
                 dbContext.SaveChanges();
             }
             catch { }
@@ -80,13 +80,13 @@ namespace MvcMusicStore.Utilities.DatabaseUtilities
 
         private static void AddSearchPieceInDB(string piece)
         {
-            SearchHistory tempHistory = new SearchHistory
+            IstoricCautari tempHistory = new IstoricCautari
             {
-                SearchID = StringToGUID(piece),
-                Value = piece.Trim(),
-                Code = piece.Trim().GetHashCode().ToString()
+                Id_Cautare = StringToGUID(piece),
+                Valoare = piece.Trim(),
+                Cod = piece.Trim().GetHashCode().ToString()
             };
-            dbContext.SearchHistories.Add(tempHistory);
+            dbContext.IstoricCautari.Add(tempHistory);
             dbContext.SaveChanges();
         }
 
