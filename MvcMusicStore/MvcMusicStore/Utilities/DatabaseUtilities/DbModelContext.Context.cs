@@ -25,6 +25,7 @@ namespace MvcMusicStore.Utilities.DatabaseUtilities
             throw new UnintentionalCodeFirstException();
         }
     
+        public virtual DbSet<AparitieProdus> AparitieProdus { get; set; }
         public virtual DbSet<EvolutiaPretului> EvolutiaPretului { get; set; }
         public virtual DbSet<IstoricCautari> IstoricCautari { get; set; }
         public virtual DbSet<Produs> Produs { get; set; }

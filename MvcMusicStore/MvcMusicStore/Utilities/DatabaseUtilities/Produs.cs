@@ -17,6 +17,7 @@ namespace MvcMusicStore.Utilities.DatabaseUtilities
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2214:DoNotCallOverridableMethodsInConstructors")]
         public Produs()
         {
+            this.AparitieProdus = new HashSet<AparitieProdus>();
             this.EvolutiaPretului = new HashSet<EvolutiaPretului>();
             this.UrmarireProdus = new HashSet<UrmarireProdus>();
         }
@@ -34,6 +35,8 @@ namespace MvcMusicStore.Utilities.DatabaseUtilities
         public string Cod_Denumire_Produs { get; set; }
         public Nullable<bool> Sters { get; set; }
     
+        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
+        public virtual ICollection<AparitieProdus> AparitieProdus { get; set; }
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
         public virtual ICollection<EvolutiaPretului> EvolutiaPretului { get; set; }
         public virtual Vanzator Vanzator { get; set; }

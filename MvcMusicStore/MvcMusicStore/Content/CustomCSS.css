@@ -53,3 +53,12 @@ h3[class="retaler-name"] {
 	max-width: 150px;
 	max-height: 90px;
 }
+#login-wrapper{
+    float: right;
+    max-width : 400px;
+
+}
+#register-wrapper{
+    float: left;
+    max-width : 400px;
+}

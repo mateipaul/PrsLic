@@ -4,13 +4,16 @@
   <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
     <!-- Diagram content (shape and connector positions) -->
     <edmx:Diagrams>
-      <Diagram DiagramId="c221ad945e1e4d6091bb423d528e5a2c" Name="Diagram1">
-        <EntityTypeShape EntityType="DbModel.EvolutiaPretului" Width="1.5" PointX="5.25" PointY="3.875" IsExpanded="true" />
-        <EntityTypeShape EntityType="DbModel.IstoricCautari" Width="1.5" PointX="5.75" PointY="7.125" IsExpanded="true" />
-        <EntityTypeShape EntityType="DbModel.Produs" Width="1.5" PointX="3" PointY="2.875" IsExpanded="true" />
-        <EntityTypeShape EntityType="DbModel.UrmarireProdus" Width="1.5" PointX="5.25" PointY="0.75" IsExpanded="true" />
-        <EntityTypeShape EntityType="DbModel.Utilizator" Width="1.5" PointX="3" PointY="8.125" IsExpanded="true" />
-        <EntityTypeShape EntityType="DbModel.Vanzator" Width="1.5" PointX="0.75" PointY="3.625" IsExpanded="true" />
+      <Diagram DiagramId="93fed9a8fae64bab9f06128358668d63" Name="Diagram1">
+        <EntityTypeShape EntityType="DbModel.AparitieProdus" Width="1.5" PointX="5.25" PointY="4.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="DbModel.EvolutiaPretului" Width="1.5" PointX="5.25" PointY="7.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="DbModel.IstoricCautari" Width="1.5" PointX="3" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="DbModel.Produs" Width="1.5" PointX="3" PointY="3.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="DbModel.UrmarireProdus" Width="1.5" PointX="5.25" PointY="1.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="DbModel.Utilizator" Width="1.5" PointX="3" PointY="9" IsExpanded="true" />
+        <EntityTypeShape EntityType="DbModel.Vanzator" Width="1.5" PointX="0.75" PointY="4.5" IsExpanded="true" />
+        <AssociationConnector Association="DbModel.FK_AparitieProdus_IstoricCautari" ManuallyRouted="false" />
+        <AssociationConnector Association="DbModel.FK_AparitieProdus_Produs" ManuallyRouted="false" />
         <AssociationConnector Association="DbModel.FK_dbo_EvolutiaPretului_dbo_Produs_Id_Produs" ManuallyRouted="false" />
         <AssociationConnector Association="DbModel.FK_dbo_Produs_dbo_Vanzator_Id_Vanzator" ManuallyRouted="false" />
         <AssociationConnector Association="DbModel.FK_dbo_UrmarireProdus_dbo_Produs_Id_Produs" ManuallyRouted="false" />

@@ -5,6 +5,14 @@
     <!-- SSDL content -->
     <edmx:StorageModels>
       <Schema Namespace="DbModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012.Azure" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+        <EntityType Name="AparitieProdus">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="uniqueidentifier" Nullable="false" />
+          <Property Name="Id_Produs" Type="uniqueidentifier" />
+          <Property Name="Id_Cautare" Type="uniqueidentifier" />
+        </EntityType>
         <EntityType Name="EvolutiaPretului">
           <Key>
             <PropertyRef Name="Id" />
@@ -74,6 +82,30 @@
           <Property Name="Delimitator_Zecimala" Type="nvarchar" MaxLength="1" />
           <Property Name="Sters" Type="bit" />
         </EntityType>
+        <Association Name="FK_AparitieProdus_IstoricCautari">
+          <End Role="IstoricCautari" Type="Self.IstoricCautari" Multiplicity="0..1" />
+          <End Role="AparitieProdus" Type="Self.AparitieProdus" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="IstoricCautari">
+              <PropertyRef Name="Id_Cautare" />
+            </Principal>
+            <Dependent Role="AparitieProdus">
+              <PropertyRef Name="Id_Cautare" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_AparitieProdus_Produs">
+          <End Role="Produs" Type="Self.Produs" Multiplicity="0..1" />
+          <End Role="AparitieProdus" Type="Self.AparitieProdus" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Produs">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="AparitieProdus">
+              <PropertyRef Name="Id_Produs" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
         <Association Name="FK_dbo_EvolutiaPretului_dbo_Produs_Id_Produs">
           <End Role="Produs" Type="Self.Produs" Multiplicity="0..1">
             <OnDelete Action="Cascade" />
@@ -125,12 +157,21 @@
           </ReferentialConstraint>
         </Association>
         <EntityContainer Name="DbModelStoreContainer">
+          <EntitySet Name="AparitieProdus" EntityType="Self.AparitieProdus" Schema="dbo" store:Type="Tables" />
           <EntitySet Name="EvolutiaPretului" EntityType="Self.EvolutiaPretului" Schema="dbo" store:Type="Tables" />
           <EntitySet Name="IstoricCautari" EntityType="Self.IstoricCautari" Schema="dbo" store:Type="Tables" />
           <EntitySet Name="Produs" EntityType="Self.Produs" Schema="dbo" store:Type="Tables" />
           <EntitySet Name="UrmarireProdus" EntityType="Self.UrmarireProdus" Schema="dbo" store:Type="Tables" />
           <EntitySet Name="Utilizator" EntityType="Self.Utilizator" Schema="dbo" store:Type="Tables" />
           <EntitySet Name="Vanzator" EntityType="Self.Vanzator" Schema="dbo" store:Type="Tables" />
+          <AssociationSet Name="FK_AparitieProdus_IstoricCautari" Association="Self.FK_AparitieProdus_IstoricCautari">
+            <End Role="IstoricCautari" EntitySet="IstoricCautari" />
+            <End Role="AparitieProdus" EntitySet="AparitieProdus" />
+          </AssociationSet>
+          <AssociationSet Name="FK_AparitieProdus_Produs" Association="Self.FK_AparitieProdus_Produs">
+            <End Role="Produs" EntitySet="Produs" />
+            <End Role="AparitieProdus" EntitySet="AparitieProdus" />
+          </AssociationSet>
           <AssociationSet Name="FK_dbo_EvolutiaPretului_dbo_Produs_Id_Produs" Association="Self.FK_dbo_EvolutiaPretului_dbo_Produs_Id_Produs">
             <End Role="Produs" EntitySet="Produs" />
             <End Role="EvolutiaPretului" EntitySet="EvolutiaPretului" />
@@ -153,6 +194,16 @@
     <!-- CSDL content -->
     <edmx:ConceptualModels>
       <Schema Namespace="DbModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+        <EntityType Name="AparitieProdus">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="Guid" Nullable="false" />
+          <Property Name="Id_Produs" Type="Guid" />
+          <Property Name="Id_Cautare" Type="Guid" />
+          <NavigationProperty Name="IstoricCautari" Relationship="Self.FK_AparitieProdus_IstoricCautari" FromRole="AparitieProdus" ToRole="IstoricCautari" />
+          <NavigationProperty Name="Produs" Relationship="Self.FK_AparitieProdus_Produs" FromRole="AparitieProdus" ToRole="Produs" />
+        </EntityType>
         <EntityType Name="EvolutiaPretului">
           <Key>
             <PropertyRef Name="Id" />
@@ -170,6 +221,7 @@
           <Property Name="Id_Cautare" Type="Guid" Nullable="false" />
           <Property Name="Valoare" Type="String" MaxLength="1000" FixedLength="false" Unicode="true" />
           <Property Name="Cod" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+          <NavigationProperty Name="AparitieProdus" Relationship="Self.FK_AparitieProdus_IstoricCautari" FromRole="IstoricCautari" ToRole="AparitieProdus" />
         </EntityType>
         <EntityType Name="Produs">
           <Key>
@@ -187,6 +239,7 @@
           <Property Name="Data_Creat" Type="DateTime" Precision="0" />
           <Property Name="Cod_Denumire_Produs" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
           <Property Name="Sters" Type="Boolean" />
+          <NavigationProperty Name="AparitieProdus" Relationship="Self.FK_AparitieProdus_Produs" FromRole="Produs" ToRole="AparitieProdus" />
           <NavigationProperty Name="EvolutiaPretului" Relationship="Self.FK_dbo_EvolutiaPretului_dbo_Produs_Id_Produs" FromRole="Produs" ToRole="EvolutiaPretului" />
           <NavigationProperty Name="Vanzator" Relationship="Self.FK_dbo_Produs_dbo_Vanzator_Id_Vanzator" FromRole="Produs" ToRole="Vanzator" />
           <NavigationProperty Name="UrmarireProdus" Relationship="Self.FK_dbo_UrmarireProdus_dbo_Produs_Id_Produs" FromRole="Produs" ToRole="UrmarireProdus" />
@@ -230,6 +283,30 @@
           <Property Name="Sters" Type="Boolean" />
           <NavigationProperty Name="Produs" Relationship="Self.FK_dbo_Produs_dbo_Vanzator_Id_Vanzator" FromRole="Vanzator" ToRole="Produs" />
         </EntityType>
+        <Association Name="FK_AparitieProdus_IstoricCautari">
+          <End Role="IstoricCautari" Type="Self.IstoricCautari" Multiplicity="0..1" />
+          <End Role="AparitieProdus" Type="Self.AparitieProdus" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="IstoricCautari">
+              <PropertyRef Name="Id_Cautare" />
+            </Principal>
+            <Dependent Role="AparitieProdus">
+              <PropertyRef Name="Id_Cautare" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_AparitieProdus_Produs">
+          <End Role="Produs" Type="Self.Produs" Multiplicity="0..1" />
+          <End Role="AparitieProdus" Type="Self.AparitieProdus" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Produs">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="AparitieProdus">
+              <PropertyRef Name="Id_Produs" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
         <Association Name="FK_dbo_EvolutiaPretului_dbo_Produs_Id_Produs">
           <End Role="Produs" Type="Self.Produs" Multiplicity="0..1">
             <OnDelete Action="Cascade" />
@@ -281,12 +358,21 @@
           </ReferentialConstraint>
         </Association>
         <EntityContainer Name="DbModelContext" annotation:LazyLoadingEnabled="true">
+          <EntitySet Name="AparitieProdus" EntityType="Self.AparitieProdus" />
           <EntitySet Name="EvolutiaPretului" EntityType="Self.EvolutiaPretului" />
           <EntitySet Name="IstoricCautari" EntityType="Self.IstoricCautari" />
           <EntitySet Name="Produs" EntityType="Self.Produs" />
           <EntitySet Name="UrmarireProdus" EntityType="Self.UrmarireProdus" />
           <EntitySet Name="Utilizator" EntityType="Self.Utilizator" />
           <EntitySet Name="Vanzator" EntityType="Self.Vanzator" />
+          <AssociationSet Name="FK_AparitieProdus_IstoricCautari" Association="Self.FK_AparitieProdus_IstoricCautari">
+            <End Role="IstoricCautari" EntitySet="IstoricCautari" />
+            <End Role="AparitieProdus" EntitySet="AparitieProdus" />
+          </AssociationSet>
+          <AssociationSet Name="FK_AparitieProdus_Produs" Association="Self.FK_AparitieProdus_Produs">
+            <End Role="Produs" EntitySet="Produs" />
+            <End Role="AparitieProdus" EntitySet="AparitieProdus" />
+          </AssociationSet>
           <AssociationSet Name="FK_dbo_EvolutiaPretului_dbo_Produs_Id_Produs" Association="Self.FK_dbo_EvolutiaPretului_dbo_Produs_Id_Produs">
             <End Role="Produs" EntitySet="Produs" />
             <End Role="EvolutiaPretului" EntitySet="EvolutiaPretului" />
@@ -310,6 +396,15 @@
     <edmx:Mappings>
       <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
         <EntityContainerMapping StorageEntityContainer="DbModelStoreContainer" CdmEntityContainer="DbModelContext">
+          <EntitySetMapping Name="AparitieProdus">
+            <EntityTypeMapping TypeName="DbModel.AparitieProdus">
+              <MappingFragment StoreEntitySet="AparitieProdus">
+                <ScalarProperty Name="Id" ColumnName="Id" />
+                <ScalarProperty Name="Id_Produs" ColumnName="Id_Produs" />
+                <ScalarProperty Name="Id_Cautare" ColumnName="Id_Cautare" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
           <EntitySetMapping Name="EvolutiaPretului">
             <EntityTypeMapping TypeName="DbModel.EvolutiaPretului">
               <MappingFragment StoreEntitySet="EvolutiaPretului">

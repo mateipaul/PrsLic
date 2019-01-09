@@ -138,6 +138,7 @@
   <ItemGroup>
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="Controllers\HomeController.cs" />
+    <Compile Include="Controllers\LoginController.cs" />
     <Compile Include="Controllers\MyProductsController.cs" />
     <Compile Include="Controllers\ProductSearchController.cs" />
     <Compile Include="Utilities\AzureUtilities\QueueUtilities.cs" />
@@ -197,6 +198,7 @@
     <Content Include="Utilities\DatabaseUtilities\DbModelContext.edmx.diagram">
       <DependentUpon>DbModelContext.edmx</DependentUpon>
     </Content>
+    <Content Include="Views\Login\LoginHome.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
