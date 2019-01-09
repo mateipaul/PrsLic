@@ -50,25 +50,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="AparitieProdus.cs" />
     <Compile Include="DbModelContext.cs" />
     <Compile Include="EvolutiaPretului.cs" />
     <Compile Include="IstoricCautari.cs" />
-    <Compile Include="Migrations\201901071224110_FirstMigration.cs" />
-    <Compile Include="Migrations\201901071224110_FirstMigration.Designer.cs">
-      <DependentUpon>201901071224110_FirstMigration.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\201901071311555_test-migration-error-fix.cs" />
-    <Compile Include="Migrations\201901071311555_test-migration-error-fix.Designer.cs">
-      <DependentUpon>201901071311555_test-migration-error-fix.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\201901071322341_added-admin-seed.cs" />
-    <Compile Include="Migrations\201901071322341_added-admin-seed.Designer.cs">
-      <DependentUpon>201901071322341_added-admin-seed.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Produs.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="RetailerCrawlProductCollection.cs" />
     <Compile Include="UrmarireProdus.cs" />
     <Compile Include="Utilizator.cs" />
     <Compile Include="Vanzator.cs" />
@@ -89,17 +76,6 @@
       <Project>{117E7D0A-621A-4F92-9F71-74FA64144AC9}</Project>
       <Name>MiscUtilities</Name>
     </ProjectReference>
-  </ItemGroup>
-  <ItemGroup>
-    <EmbeddedResource Include="Migrations\201901071224110_FirstMigration.resx">
-      <DependentUpon>201901071224110_FirstMigration.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\201901071311555_test-migration-error-fix.resx">
-      <DependentUpon>201901071311555_test-migration-error-fix.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\201901071322341_added-admin-seed.resx">
-      <DependentUpon>201901071322341_added-admin-seed.cs</DependentUpon>
-    </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

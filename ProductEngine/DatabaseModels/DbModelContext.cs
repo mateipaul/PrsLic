@@ -12,15 +12,21 @@ namespace DatabaseModels
         {
         }
 
+        public virtual DbSet<AparitieProdus> AparitieProdus { get; set; }
         public virtual DbSet<EvolutiaPretului> EvolutiaPretului { get; set; }
         public virtual DbSet<IstoricCautari> IstoricCautari { get; set; }
         public virtual DbSet<Produs> Produs { get; set; }
+        public virtual DbSet<UrmarireProdus> UrmarireProdus { get; set; }
         public virtual DbSet<Utilizator> Utilizator { get; set; }
         public virtual DbSet<Vanzator> Vanzator { get; set; }
-        public virtual DbSet<UrmarireProdus> UrmarireProdus { get; set; }
 
         protected override void OnModelCreating(DbModelBuilder modelBuilder)
         {
+            modelBuilder.Entity<Produs>()
+                .HasMany(e => e.AparitieProdus)
+                .WithOptional(e => e.Produs)
+                .HasForeignKey(e => e.Id_Produs);
+
             modelBuilder.Entity<Produs>()
                 .HasMany(e => e.EvolutiaPretului)
                 .WithOptional(e => e.Produs)

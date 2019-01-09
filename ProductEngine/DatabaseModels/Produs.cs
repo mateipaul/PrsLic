@@ -11,6 +11,7 @@ namespace DatabaseModels
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2214:DoNotCallOverridableMethodsInConstructors")]
         public Produs()
         {
+            AparitieProdus = new HashSet<AparitieProdus>();
             EvolutiaPretului = new HashSet<EvolutiaPretului>();
             UrmarireProdus = new HashSet<UrmarireProdus>();
         }
@@ -33,8 +34,6 @@ namespace DatabaseModels
         [StringLength(250)]
         public string Url_Imagine { get; set; }
 
-        public bool? Sters { get; set; }
-
         public Guid? Id_Vanzator { get; set; }
 
         [StringLength(50)]
@@ -48,6 +47,11 @@ namespace DatabaseModels
 
         [StringLength(100)]
         public string Cod_Denumire_Produs { get; set; }
+
+        public bool? Sters { get; set; }
+
+        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
+        public virtual ICollection<AparitieProdus> AparitieProdus { get; set; }
 
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
         public virtual ICollection<EvolutiaPretului> EvolutiaPretului { get; set; }
