@@ -12,25 +12,36 @@ namespace DatabaseModels
     {
         public string RetailerName { get; set; }
         private Guid RetailerID;
-        private DbModelContext dbContext;
+        private Vanzator retailer;
 
         public RetailerCrawlProductCollection(string retailerName)
         {
-            dbContext = new DbModelContext();
             GetRetailerID(retailerName);
+            GetRetailer(RetailerID);
+        }
 
+        private void GetRetailer(Guid retailerID)
+        {
+            using (DbModelContext dbContext = new DbModelContext())
+            {
+                if (retailerID != new Guid())
+                    retailer = dbContext.Vanzator.Where(ret => ret.Id.Equals(RetailerID)).FirstOrDefault();
+            }
         }
 
         private void GetRetailerID(string retailerName)
         {
-            RetailerID = dbContext.Vanzator.Where(m => m.Nume.Equals(retailerName, StringComparison.InvariantCultureIgnoreCase)).Select(m => m.Id).FirstOrDefault();
+            using (DbModelContext dbContext = new DbModelContext())
+            {
+                RetailerID = dbContext.Vanzator.Where(m => m.Nume.Equals(retailerName, StringComparison.InvariantCultureIgnoreCase)).Select(m => m.Id).FirstOrDefault();
+            }
         }
 
         public void AddProduct(Produs prd)
         {
             prd.Id_Vanzator = RetailerID;
             prd.Cod_Denumire_Produs = GetDescriptionCode(prd.Denumire);
-            prd.Id = GetProductID(prd.Url);
+            prd.Id = StringToGuid(prd.Url);
             prd.Sters = false;
             prd.EvolutiaPretului.Add(GetNewPriceForEvolution(prd));
             prd.Data_Creat = DateTime.UtcNow;
@@ -47,7 +58,7 @@ namespace DatabaseModels
             return evol;
         }
 
-        private Guid GetProductID(string url)
+        private Guid StringToGuid(string url)
         {
             MD5 md5Hasher = MD5.Create();
             byte[] data = md5Hasher.ComputeHash(Encoding.Default.GetBytes(url));
@@ -72,27 +83,61 @@ namespace DatabaseModels
 
         }
 
-        public void SaveProducts()
+        public void SaveProducts(string givenMessage)
         {
-
-            foreach (var item in this)
+            using (DbModelContext dbContext = new DbModelContext())
             {
-                try
+                string searchCode = GetSearchCode(givenMessage);
+                foreach (var item in this)
                 {
-                    if (dbContext.Produs.Any(prd => prd.Id.Equals(item.Id)))
-                        dbContext.EvolutiaPretului.Add(item.EvolutiaPretului.First());
-                    else
+                    try
                     {
-                        dbContext.Produs.Add(item);
+                        if (dbContext.Produs.Any(prd => prd.Id.Equals(item.Id)))
+                            dbContext.EvolutiaPretului.Add(item.EvolutiaPretului.First());
+                        else
+                        {
+                            dbContext.Produs.Add(item);
+                        }
+
+
+
+                        dbContext.AparitieProdus.Add(new AparitieProdus
+                        {
+                            Id = Guid.NewGuid()
+                                                                         ,
+                            Id_Cautare = StringToGuid(givenMessage)
+                                                                         ,
+                            Id_Produs = item.Id
+                        });
+
+
+                        dbContext.SaveChanges();
                     }
-                    dbContext.SaveChanges();
-                }
-                catch (Exception ex)
-                {
-                    GenericLogger.Error($"Batch failed to insert {ex.Message} \n {ex.InnerException.InnerException.Message}");
+                    catch (Exception ex)
+                    {
+                        GenericLogger.Error($"Batch failed to insert {ex.Message} \n {ex.InnerException.InnerException.Message}");
+                    }
                 }
             }
         }
+        private static string GetSearchCode(string stringToSearch)
+        {
+            var pieces = stringToSearch.Trim().ToUpper().Split(' ');
+            int completeSearchCode = 1;
+            foreach (var piece in pieces)
+            {
+                try
+                {
+                    completeSearchCode = completeSearchCode ^ piece.GetHashCode();
+                }
+                catch (Exception ex)
+                { }
+            }
+
+            return completeSearchCode.ToString();
+
+        }
+
     }
 }
 

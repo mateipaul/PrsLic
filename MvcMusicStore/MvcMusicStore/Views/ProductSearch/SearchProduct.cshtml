@@ -12,19 +12,24 @@
     {
         <div class="product">
             <div class="product-title">
-                <h3>@item.Pret</h3>
+                <h4>@item.Denumire</h4>
                 <span class="image-wrapper">
-                    <img src="http://www.austria.ro/blog/wp-content/themes/Ciola/library/images/thumbnail-600x350.png" alt="Alternate Text" class="image" />
+                    <img src="@item.Url_Imagine" alt="Alternate Text" class="image" />
                 </span>
             </div>
             <div class="product-details">
                 <div class="price">
-                    @item.Pret
+                    <h3>@item.Pret</h3>
                 </div>
                 <br />
                 <span class="price-evolution">
-                    <img src="@Url.Action("LineChart", "MyProducts", new {productID = item.Id})" alt="Chart" />
+                    <img src="@Url.Action("LineChart", "ProductSearch", new {productID = item.Id})" alt="Chart" />
                 </span>
+            </div>
+            <div class="retailer-details">
+                <div class="retailer-name">
+                    @*<h3>@item.Vanzator.Nume</h3>*@
+                </div>
             </div>
         </div>
 

@@ -37,7 +37,7 @@ namespace SearchUtilities
 
             ExtractProducts(htmlDocument);
 
-            products.SaveProducts();
+            products.SaveProducts(givenMessage);
         }
 
         private static void ExtractProducts(HtmlDocument htmlDocument)

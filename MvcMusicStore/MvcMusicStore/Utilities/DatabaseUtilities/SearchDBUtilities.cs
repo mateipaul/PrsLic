@@ -4,45 +4,92 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Security.Cryptography;
 using System.Text;
+using System.Threading;
 using System.Web;
 
 namespace MvcMusicStore.Utilities.DatabaseUtilities
 {
     public static class SearchDBUtilities
     {
-        static DbModelContext dbContext = new DbModelContext();
+        
+
+        public static IEnumerable<Produs> NewSearchProductsInDatabase(string stringToSearch)
+        {
+            var products = new List<Produs>();
+            using (DbModelContext dbContext = new DbModelContext())
+            {
+
+
+
+                string searchIdiomCode = GetSearchCode(stringToSearch);
+
+                products = (from appear in dbContext.AparitieProdus
+                                join search in dbContext.IstoricCautari on appear.Id_Cautare equals search.Id_Cautare
+                                join product in dbContext.Produs on appear.Id_Produs equals product.Id
+                                where search.Cod == searchIdiomCode
+                                select product).ToList();
+
+
+                if (products.Count <= 1)
+                {
+                    InsertIdiomInDatabase(stringToSearch);
+                    InsertCompleteIdiomInDatabase(stringToSearch, searchIdiomCode);
+                    QueueUtilities.InsertIdiomInQueue(stringToSearch);
+
+                }
+            }
+            return products;
+        }
 
         public static IEnumerable<Produs> SearchProductsInDatabase(string stringToSearch)
         {
-            string searchIdiomCode = GetSearchCode(stringToSearch);
+            var products = new List<Produs>();
 
-            var products = dbContext.Produs.Where(product => product.Cod_Denumire_Produs.Equals(searchIdiomCode)).ToList();
-
-            if (products.Count < 1)
+            using (DbModelContext dbContext = new DbModelContext())
             {
-                InsertIdiomInDatabase(stringToSearch);
-                InsertCompleteIdiomInDatabase(stringToSearch, searchIdiomCode);
-                QueueUtilities.InsertIdiomInQueue(stringToSearch);
+                string searchIdiomCode = GetSearchCode(stringToSearch);
 
+                int attempts = 0;
+                while (true)
+                {
+
+
+                    products = (from appear in dbContext.AparitieProdus
+                                join search in dbContext.IstoricCautari on appear.Id_Cautare equals search.Id_Cautare
+                                join product in dbContext.Produs on appear.Id_Produs equals product.Id
+                                where search.Cod == searchIdiomCode
+                                select product).ToList();
+                    if (products.Count >= 1 || attempts > 30)
+                    {
+
+                        break;
+                    }
+                    Thread.Sleep(1000);
+                    attempts++;
+
+                } 
             }
-            
             return products;
+
         }
 
         private static void InsertCompleteIdiomInDatabase(string stringToSearch, string searchIdiomCode)
         {
-            try
+            using (DbModelContext dbContext = new DbModelContext())
             {
-                IstoricCautari history = new IstoricCautari()
+                try
                 {
-                    Cod = searchIdiomCode,
-                    Valoare = stringToSearch,
-                    Id_Cautare = StringToGUID(stringToSearch)
-                };
-                dbContext.IstoricCautari.Add(history);
-                dbContext.SaveChanges();
+                    IstoricCautari history = new IstoricCautari()
+                    {
+                        Cod = searchIdiomCode,
+                        Valoare = stringToSearch,
+                        Id_Cautare = StringToGUID(stringToSearch)
+                    };
+                    dbContext.IstoricCautari.Add(history);
+                    dbContext.SaveChanges();
+                }
+                catch { } 
             }
-            catch { }
         }
 
         private static string GetSearchCode(string stringToSearch)
@@ -80,14 +127,17 @@ namespace MvcMusicStore.Utilities.DatabaseUtilities
 
         private static void AddSearchPieceInDB(string piece)
         {
-            IstoricCautari tempHistory = new IstoricCautari
+            using (DbModelContext dbContext = new DbModelContext())
             {
-                Id_Cautare = StringToGUID(piece),
-                Valoare = piece.Trim(),
-                Cod = piece.Trim().GetHashCode().ToString()
-            };
-            dbContext.IstoricCautari.Add(tempHistory);
-            dbContext.SaveChanges();
+                IstoricCautari tempHistory = new IstoricCautari
+                {
+                    Id_Cautare = StringToGUID(piece),
+                    Valoare = piece.Trim(),
+                    Cod = piece.Trim().GetHashCode().ToString()
+                };
+                dbContext.IstoricCautari.Add(tempHistory);
+                dbContext.SaveChanges(); 
+            }
         }
 
         static Guid StringToGUID(string value)
