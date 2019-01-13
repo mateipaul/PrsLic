@@ -27,6 +27,7 @@ namespace MvcMusicStore.Utilities.DatabaseUtilities
         public string Numar_Telefon { get; set; }
         public string Porecla { get; set; }
         public string Rol { get; set; }
+        public string CheieParola { get; set; }
     
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
         public virtual ICollection<UrmarireProdus> UrmarireProdus { get; set; }

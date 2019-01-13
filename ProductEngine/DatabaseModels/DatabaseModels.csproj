@@ -37,6 +37,9 @@
     <Reference Include="EntityFramework.SqlServer, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
       <HintPath>..\packages\EntityFramework.6.2.0\lib\net45\EntityFramework.SqlServer.dll</HintPath>
     </Reference>
+    <Reference Include="SimpleCrypto, Version=26.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\SimpleCrypto.0.3.30.26\lib\SimpleCrypto.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.ComponentModel.DataAnnotations" />
     <Reference Include="System.Core" />
@@ -57,6 +60,14 @@
     <Compile Include="Migrations\201901101304460_iiia.cs" />
     <Compile Include="Migrations\201901101304460_iiia.Designer.cs">
       <DependentUpon>201901101304460_iiia.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201901131505236_added-passwords_salt-cheie_parola-to-utilizator.cs" />
+    <Compile Include="Migrations\201901131505236_added-passwords_salt-cheie_parola-to-utilizator.Designer.cs">
+      <DependentUpon>201901131505236_added-passwords_salt-cheie_parola-to-utilizator.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201901131601390_user-test.cs" />
+    <Compile Include="Migrations\201901131601390_user-test.Designer.cs">
+      <DependentUpon>201901131601390_user-test.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Produs.cs" />
@@ -86,6 +97,12 @@
   <ItemGroup>
     <EmbeddedResource Include="Migrations\201901101304460_iiia.resx">
       <DependentUpon>201901101304460_iiia.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201901131505236_added-passwords_salt-cheie_parola-to-utilizator.resx">
+      <DependentUpon>201901131505236_added-passwords_salt-cheie_parola-to-utilizator.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201901131601390_user-test.resx">
+      <DependentUpon>201901131601390_user-test.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

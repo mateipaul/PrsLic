@@ -1,0 +1,47 @@
+﻿@model MvcMusicStore.Utilities.ClassModels.UserModel
+@{
+    ViewBag.Title = "Register";
+}
+
+<h2>Inregistrare</h2>
+
+@using (Html.BeginForm())
+{
+    @Html.ValidationSummary("true", "Datele introduse nu sunt corecte");
+    <div>
+        @Html.LabelFor(m => m.Nume_Utilizator)
+    </div>
+    <div>
+        @Html.TextBoxFor(m => m.Nume_Utilizator)
+    </div>
+
+    <div>
+        @Html.LabelFor(m => m.Email)
+        @Html.ValidationMessageFor(m=>m.Email)
+    </div>
+    <div>
+        @Html.TextBoxFor(m => m.Email)
+    </div>
+
+    <div>
+        @Html.LabelFor(m => m.Numar_Telefon)
+    </div>
+    <div>
+        @Html.TextBoxFor(m => m.Numar_Telefon)
+    </div>
+
+    <div>
+        @Html.LabelFor(m => m.Parola)
+    </div>
+    <div>
+        @Html.PasswordFor(m => m.Parola)
+    </div>
+
+    <div>
+        @Html.LabelFor(m => m.Porecla)
+    </div>
+    <div>
+        @Html.TextBoxFor(m => m.Porecla)
+    </div>
+    <input type="submit" value="Inregistraza-te"/>
+}

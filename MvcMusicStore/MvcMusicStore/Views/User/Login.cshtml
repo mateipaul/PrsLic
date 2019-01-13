@@ -1,0 +1,31 @@
+﻿@model MvcMusicStore.Utilities.ClassModels.UserModel
+
+
+@{
+    ViewBag.Title = "Login";
+}
+
+<h2>Autentificare</h2>
+
+@using (Html.BeginForm())
+{
+    @Html.ValidationSummary(true, "Autentificare esuata, verificati datele introduse");
+    <div>
+        <fieldset>            
+            <div>@Html.LabelFor(m => Model.Email)</div>
+            <div>
+                @Html.TextBoxFor(m => Model.Email)
+            @Html.ValidationMessageFor(u => u.Email)
+            </div>
+
+            <div>@Html.LabelFor(m => Model.Parola)</div>
+            <div>
+                @Html.PasswordFor(m => Model.Parola)
+            </div>
+            
+            <input type="submit" value="Log In"/>
+
+        </fieldset>
+    </div>
+
+}

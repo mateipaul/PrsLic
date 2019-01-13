@@ -70,6 +70,7 @@
           <Property Name="Numar_Telefon" Type="nvarchar" MaxLength="14" />
           <Property Name="Porecla" Type="nvarchar" MaxLength="100" />
           <Property Name="Rol" Type="nvarchar" MaxLength="10" />
+          <Property Name="CheieParola" Type="nvarchar" MaxLength="200" />
         </EntityType>
         <EntityType Name="Vanzator">
           <Key>
@@ -82,7 +83,7 @@
           <Property Name="Delimitator_Zecimala" Type="nvarchar" MaxLength="1" />
           <Property Name="Sters" Type="bit" />
         </EntityType>
-        <Association Name="FK_AparitieProdus_IstoricCautari">
+        <Association Name="FK_dbo_AparitieProdus_dbo_IstoricCautari_Id_Cautare">
           <End Role="IstoricCautari" Type="Self.IstoricCautari" Multiplicity="0..1" />
           <End Role="AparitieProdus" Type="Self.AparitieProdus" Multiplicity="*" />
           <ReferentialConstraint>
@@ -94,7 +95,7 @@
             </Dependent>
           </ReferentialConstraint>
         </Association>
-        <Association Name="FK_AparitieProdus_Produs">
+        <Association Name="FK_dbo_AparitieProdus_dbo_Produs_Id_Produs">
           <End Role="Produs" Type="Self.Produs" Multiplicity="0..1" />
           <End Role="AparitieProdus" Type="Self.AparitieProdus" Multiplicity="*" />
           <ReferentialConstraint>
@@ -164,11 +165,11 @@
           <EntitySet Name="UrmarireProdus" EntityType="Self.UrmarireProdus" Schema="dbo" store:Type="Tables" />
           <EntitySet Name="Utilizator" EntityType="Self.Utilizator" Schema="dbo" store:Type="Tables" />
           <EntitySet Name="Vanzator" EntityType="Self.Vanzator" Schema="dbo" store:Type="Tables" />
-          <AssociationSet Name="FK_AparitieProdus_IstoricCautari" Association="Self.FK_AparitieProdus_IstoricCautari">
+          <AssociationSet Name="FK_dbo_AparitieProdus_dbo_IstoricCautari_Id_Cautare" Association="Self.FK_dbo_AparitieProdus_dbo_IstoricCautari_Id_Cautare">
             <End Role="IstoricCautari" EntitySet="IstoricCautari" />
             <End Role="AparitieProdus" EntitySet="AparitieProdus" />
           </AssociationSet>
-          <AssociationSet Name="FK_AparitieProdus_Produs" Association="Self.FK_AparitieProdus_Produs">
+          <AssociationSet Name="FK_dbo_AparitieProdus_dbo_Produs_Id_Produs" Association="Self.FK_dbo_AparitieProdus_dbo_Produs_Id_Produs">
             <End Role="Produs" EntitySet="Produs" />
             <End Role="AparitieProdus" EntitySet="AparitieProdus" />
           </AssociationSet>
@@ -201,8 +202,8 @@
           <Property Name="Id" Type="Guid" Nullable="false" />
           <Property Name="Id_Produs" Type="Guid" />
           <Property Name="Id_Cautare" Type="Guid" />
-          <NavigationProperty Name="IstoricCautari" Relationship="Self.FK_AparitieProdus_IstoricCautari" FromRole="AparitieProdus" ToRole="IstoricCautari" />
-          <NavigationProperty Name="Produs" Relationship="Self.FK_AparitieProdus_Produs" FromRole="AparitieProdus" ToRole="Produs" />
+          <NavigationProperty Name="IstoricCautari" Relationship="Self.FK_dbo_AparitieProdus_dbo_IstoricCautari_Id_Cautare" FromRole="AparitieProdus" ToRole="IstoricCautari" />
+          <NavigationProperty Name="Produs" Relationship="Self.FK_dbo_AparitieProdus_dbo_Produs_Id_Produs" FromRole="AparitieProdus" ToRole="Produs" />
         </EntityType>
         <EntityType Name="EvolutiaPretului">
           <Key>
@@ -221,7 +222,7 @@
           <Property Name="Id_Cautare" Type="Guid" Nullable="false" />
           <Property Name="Valoare" Type="String" MaxLength="1000" FixedLength="false" Unicode="true" />
           <Property Name="Cod" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
-          <NavigationProperty Name="AparitieProdus" Relationship="Self.FK_AparitieProdus_IstoricCautari" FromRole="IstoricCautari" ToRole="AparitieProdus" />
+          <NavigationProperty Name="AparitieProdus" Relationship="Self.FK_dbo_AparitieProdus_dbo_IstoricCautari_Id_Cautare" FromRole="IstoricCautari" ToRole="AparitieProdus" />
         </EntityType>
         <EntityType Name="Produs">
           <Key>
@@ -239,7 +240,7 @@
           <Property Name="Data_Creat" Type="DateTime" Precision="0" />
           <Property Name="Cod_Denumire_Produs" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
           <Property Name="Sters" Type="Boolean" />
-          <NavigationProperty Name="AparitieProdus" Relationship="Self.FK_AparitieProdus_Produs" FromRole="Produs" ToRole="AparitieProdus" />
+          <NavigationProperty Name="AparitieProdus" Relationship="Self.FK_dbo_AparitieProdus_dbo_Produs_Id_Produs" FromRole="Produs" ToRole="AparitieProdus" />
           <NavigationProperty Name="EvolutiaPretului" Relationship="Self.FK_dbo_EvolutiaPretului_dbo_Produs_Id_Produs" FromRole="Produs" ToRole="EvolutiaPretului" />
           <NavigationProperty Name="Vanzator" Relationship="Self.FK_dbo_Produs_dbo_Vanzator_Id_Vanzator" FromRole="Produs" ToRole="Vanzator" />
           <NavigationProperty Name="UrmarireProdus" Relationship="Self.FK_dbo_UrmarireProdus_dbo_Produs_Id_Produs" FromRole="Produs" ToRole="UrmarireProdus" />
@@ -269,6 +270,7 @@
           <Property Name="Numar_Telefon" Type="String" MaxLength="14" FixedLength="false" Unicode="true" />
           <Property Name="Porecla" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
           <Property Name="Rol" Type="String" MaxLength="10" FixedLength="false" Unicode="true" />
+          <Property Name="CheieParola" Type="String" MaxLength="200" FixedLength="false" Unicode="true" />
           <NavigationProperty Name="UrmarireProdus" Relationship="Self.FK_dbo_UrmarireProdus_dbo_Utilizator_Id_Utilizator" FromRole="Utilizator" ToRole="UrmarireProdus" />
         </EntityType>
         <EntityType Name="Vanzator">
@@ -283,7 +285,7 @@
           <Property Name="Sters" Type="Boolean" />
           <NavigationProperty Name="Produs" Relationship="Self.FK_dbo_Produs_dbo_Vanzator_Id_Vanzator" FromRole="Vanzator" ToRole="Produs" />
         </EntityType>
-        <Association Name="FK_AparitieProdus_IstoricCautari">
+        <Association Name="FK_dbo_AparitieProdus_dbo_IstoricCautari_Id_Cautare">
           <End Role="IstoricCautari" Type="Self.IstoricCautari" Multiplicity="0..1" />
           <End Role="AparitieProdus" Type="Self.AparitieProdus" Multiplicity="*" />
           <ReferentialConstraint>
@@ -295,7 +297,7 @@
             </Dependent>
           </ReferentialConstraint>
         </Association>
-        <Association Name="FK_AparitieProdus_Produs">
+        <Association Name="FK_dbo_AparitieProdus_dbo_Produs_Id_Produs">
           <End Role="Produs" Type="Self.Produs" Multiplicity="0..1" />
           <End Role="AparitieProdus" Type="Self.AparitieProdus" Multiplicity="*" />
           <ReferentialConstraint>
@@ -365,11 +367,11 @@
           <EntitySet Name="UrmarireProdus" EntityType="Self.UrmarireProdus" />
           <EntitySet Name="Utilizator" EntityType="Self.Utilizator" />
           <EntitySet Name="Vanzator" EntityType="Self.Vanzator" />
-          <AssociationSet Name="FK_AparitieProdus_IstoricCautari" Association="Self.FK_AparitieProdus_IstoricCautari">
+          <AssociationSet Name="FK_dbo_AparitieProdus_dbo_IstoricCautari_Id_Cautare" Association="Self.FK_dbo_AparitieProdus_dbo_IstoricCautari_Id_Cautare">
             <End Role="IstoricCautari" EntitySet="IstoricCautari" />
             <End Role="AparitieProdus" EntitySet="AparitieProdus" />
           </AssociationSet>
-          <AssociationSet Name="FK_AparitieProdus_Produs" Association="Self.FK_AparitieProdus_Produs">
+          <AssociationSet Name="FK_dbo_AparitieProdus_dbo_Produs_Id_Produs" Association="Self.FK_dbo_AparitieProdus_dbo_Produs_Id_Produs">
             <End Role="Produs" EntitySet="Produs" />
             <End Role="AparitieProdus" EntitySet="AparitieProdus" />
           </AssociationSet>
@@ -462,6 +464,7 @@
                 <ScalarProperty Name="Numar_Telefon" ColumnName="Numar_Telefon" />
                 <ScalarProperty Name="Porecla" ColumnName="Porecla" />
                 <ScalarProperty Name="Rol" ColumnName="Rol" />
+                <ScalarProperty Name="CheieParola" ColumnName="CheieParola" />
               </MappingFragment>
             </EntityTypeMapping>
           </EntitySetMapping>

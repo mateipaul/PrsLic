@@ -59,6 +59,9 @@
     <Reference Include="Newtonsoft.Json, Version=10.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
       <HintPath>..\packages\Newtonsoft.Json.10.0.2\lib\net45\Newtonsoft.Json.dll</HintPath>
     </Reference>
+    <Reference Include="SimpleCrypto, Version=26.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\SimpleCrypto.0.3.30.26\lib\SimpleCrypto.dll</HintPath>
+    </Reference>
     <Reference Include="System.Runtime.Serialization" />
     <Reference Include="System.Security" />
     <Reference Include="System.Web.DynamicData" />
@@ -137,10 +140,11 @@
   <ItemGroup>
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="Controllers\HomeController.cs" />
-    <Compile Include="Controllers\LoginController.cs" />
+    <Compile Include="Controllers\UserController.cs" />
     <Compile Include="Controllers\MyProductsController.cs" />
     <Compile Include="Controllers\ProductSearchController.cs" />
     <Compile Include="Utilities\AzureUtilities\QueueUtilities.cs" />
+    <Compile Include="Utilities\ClassModels\UserModel.cs" />
     <Compile Include="Utilities\DatabaseUtilities\AparitieProdus.cs">
       <DependentUpon>DbModelContext.tt</DependentUpon>
     </Compile>
@@ -176,6 +180,7 @@
     <Compile Include="Utilities\DatabaseUtilities\UrmarireProdus.cs">
       <DependentUpon>DbModelContext.tt</DependentUpon>
     </Compile>
+    <Compile Include="Utilities\DatabaseUtilities\UserDbUtilities.cs" />
     <Compile Include="Utilities\DatabaseUtilities\Utilizator.cs">
       <DependentUpon>DbModelContext.tt</DependentUpon>
     </Compile>
@@ -193,7 +198,10 @@
     <Content Include="Views\Shared\_Layout.cshtml" />
     <Content Include="Scripts\jquery-1.10.2.min.map" />
     <Content Include="Views\ProductSearch\SearchProduct.cshtml" />
-    <Content Include="Views\Login\LoginHome.cshtml" />
+    <Content Include="Views\User\Index.cshtml" />
+    <Content Include="Views\User\Login.cshtml" />
+    <Content Include="Views\User\Register.cshtml" />
+    <Content Include="Views\User\Logout.cshtml" />
     <EntityDeploy Include="Utilities\DatabaseUtilities\DbModelContext.edmx">
       <Generator>EntityModelCodeGenerator</Generator>
       <LastGenOutput>DbModelContext.Designer.cs</LastGenOutput>

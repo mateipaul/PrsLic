@@ -10,6 +10,7 @@
 	<script src="~/Scripts/modernizr-2.6.2.js"></script>
 </head>
 <body>
+    
 	<div class="navbar navbar-inverse navbar-fixed-top">
 		<div class="container">
             <div class="navbar-header">
@@ -18,10 +19,25 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                @Html.ActionLink("Home", "Index", "Home", new { area = "" }, new { @class = "navbar-brand" })
-                @Html.ActionLink("My Products", "MyProducts", "MyProducts", new { area = "" }, new { @class = "navbar-brand" });
-                @Html.ActionLink("Seach Product", "ProductSearch", "ProductSearch", new { area = "" }, new { @class = "navbar-brand" });
-                @Html.ActionLink("Login", "LoginHome", "Login", new { area = "" }, new { @class = "navbar-brand" });
+                <div>
+                    @Html.ActionLink("Acasa", "Index", "Home", new { area = "" }, new { @class = "navbar-brand" })
+
+                    @if (Request.IsAuthenticated)
+                    {
+                        @Html.ActionLink("Produsele Mele", "MyProducts", "MyProducts", new { area = "" }, new { @class = "navbar-brand" });
+                        @Html.ActionLink("Cautare Produse", "ProductSearch", "ProductSearch", new { area = "" }, new { @class = "navbar-brand" });
+                        @Html.ActionLink("Delogeaza-te", "Logout", "User", new { area = "" }, new { @class = "navbar-brand" });
+                        <strong>@Html.Encode(User.Identity.Name)</strong>
+
+                    }
+                    else
+                    {
+
+                        @Html.ActionLink("Inregistrare", "Register", "User", new { area = "" }, new { @class = "navbar-brand" });
+                        @Html.ActionLink("Autentificare", "Login", "User", new { area = "" }, new { @class = "navbar-brand" });
+                    }
+
+                </div>
 
 
             </div>
@@ -36,17 +52,11 @@
 		<hr />
 		<footer>
 			
-			<ul class="dropdown-menu">
-				<li><a href="#">Action</a></li>
-				<li><a href="#">Another action</a></li>
-				<li><a href="#">Something else here</a></li>
-				<li role="separator" class="divider"></li>
-				<li><a href="#">Separated link</a></li>
-			</ul>
+			
 		</footer>
 	</div>
 
 	<script src="~/Scripts/jquery-1.10.2.min.js"></script>
 	<script src="~/Scripts/bootstrap.min.js"></script>
 </body>
-</html>
+</html> 
