@@ -39,6 +39,7 @@ namespace MvcMusicStore.Utilities.DatabaseUtilities
             {
                 tempProds = (from products in dbContext.Produs
                              join followedProducts in dbContext.UrmarireProdus on products.Id equals followedProducts.Id_Produs
+                             where followedProducts.Id_Utilizator == userId
                              select products).ToList();
             }
             return tempProds;
