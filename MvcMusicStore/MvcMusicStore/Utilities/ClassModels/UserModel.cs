@@ -8,6 +8,8 @@ namespace MvcMusicStore.Utilities.ClassModels
 {
     public class UserModel
     {
+        public Guid id { get; set; }
+
         [Display(Name ="Nume Utilizator :")]
         public string Nume_Utilizator { get; set; }
 

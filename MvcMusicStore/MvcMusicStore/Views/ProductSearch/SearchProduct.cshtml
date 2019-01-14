@@ -6,33 +6,39 @@
 }
 
 
-<div id="products-wrapper">
+ <div id="products-wrapper">
 
-    @foreach (var item in Model)
-    {
-        <div class="product">
-            <div class="product-title">
-                <h4>@item.Denumire</h4>
-                <span class="image-wrapper">
-                    <img src="@item.Url_Imagine" alt="Alternate Text" class="image" />
-                </span>
-            </div>
-            <div class="product-details">
-                <div class="price">
-                    <h3>@item.Pret</h3>
-                </div>
-                <br />
-                <span class="price-evolution">
-                    <img src="@Url.Action("LineChart", "ProductSearch", new {productID = item.Id})" alt="Chart" />
-                </span>
-            </div>
-            <div class="retailer-details">
-                <div class="retailer-name">
-                    @*<h3>@item.Vanzator.Nume</h3>*@
-                </div>
-            </div>
-        </div>
+     @foreach (var item in Model)
+     {
+     <div class="product" id="product-@item.Id" style="height:500px;">
+         <div class="product-details" style="max-width:40%">
+             <div class="product-title" >@item.Denumire</div>
+             <div class="product-image">
+                 <img src="@item.Url_Imagine" />
+             </div>
+             <div class="product-price">@string.Format("{0} lei", item.Pret)</div>
+         </div>
+         <div class="price-evolution" >
+             <span class="price-evolution">
+                 <img src="@Url.Action("LineChart", "ProductSearch", new {productID = item.Id})" alt="Chart" style="max-width:30%"/>
+             </span>
+         </div>
+     </div>
+     <div class="retailer">
+         <div class="retailer-name">
+            @* <h4>@item.Vanzator.Nume</h4>*@
+         </div>
+         
+         @using (Html.BeginForm("FollowProduct", "ProductSearch",new { @productId = item.Id}, FormMethod.Post))
+         {
+             <input type="submit" value="Urmareste Produs"/>
+         }
+     </div>
 
-    }
-</div>
+
+
+
+     }
+ </div>
+
 

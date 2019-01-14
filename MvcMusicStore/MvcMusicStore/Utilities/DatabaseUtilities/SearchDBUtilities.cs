@@ -26,6 +26,7 @@ namespace MvcMusicStore.Utilities.DatabaseUtilities
                 products = (from appear in dbContext.AparitieProdus
                                 join search in dbContext.IstoricCautari on appear.Id_Cautare equals search.Id_Cautare
                                 join product in dbContext.Produs on appear.Id_Produs equals product.Id
+                                join retailer in dbContext.Vanzator on product.Id_Vanzator equals retailer.Id
                                 where search.Cod == searchIdiomCode
                                 select product).ToList();
 
@@ -39,6 +40,15 @@ namespace MvcMusicStore.Utilities.DatabaseUtilities
                 }
             }
             return products;
+        }
+
+        internal static Produs GetProductOnId(Guid productId)
+        {
+            using (var dbContext = new DbModelContext())
+            {
+                var prod = dbContext.Produs.Where(m => m.Id.Equals(productId)).FirstOrDefault();
+                return prod;
+            }
         }
 
         public static IEnumerable<Produs> SearchProductsInDatabase(string stringToSearch)
@@ -57,6 +67,7 @@ namespace MvcMusicStore.Utilities.DatabaseUtilities
                     products = (from appear in dbContext.AparitieProdus
                                 join search in dbContext.IstoricCautari on appear.Id_Cautare equals search.Id_Cautare
                                 join product in dbContext.Produs on appear.Id_Produs equals product.Id
+                                join retailer in dbContext.Vanzator on product.Id_Vanzator equals retailer.Id
                                 where search.Cod == searchIdiomCode
                                 select product).ToList();
                     if (products.Count >= 1 || attempts > 30)
@@ -146,6 +157,8 @@ namespace MvcMusicStore.Utilities.DatabaseUtilities
             byte[] data = md5Hasher.ComputeHash(Encoding.Default.GetBytes(value));
             return new Guid(data);
         }
+
+        
 
 
     }

@@ -1,0 +1,31 @@
+﻿@model MvcMusicStore.Utilities.DatabaseUtilities.Produs
+
+
+@{
+    ViewBag.Title = "FollowProduct";
+}
+
+<h2>FollowProduct</h2>
+@using (Html.BeginForm("SetAllert","ProductSearch",FormMethod.Get))
+{
+    <div class="product" id="product-@Model.Id" style="height:500px;">
+        <div class="product-details" style="max-width:40%">
+            <div class="product-title">@Model.Denumire</div>
+            <div class="product-image">
+                <img src="@Model.Url_Imagine" />
+            </div>
+            <div class="product-price">@string.Format("{0} lei", Model.Pret)</div>
+        </div>
+        <div class="price-evolution">
+            <span class="price-evolution">
+                <img src="@Url.Action("LineChart", "ProductSearch", new { productID = Model.Id })" alt="Chart" style="max-width:30%" />
+            </span>
+        </div>
+        <div>
+            <input type="text" name="price" id="allert-price" />
+            <input type="text" name="productId" id="allertProductId" value="@Model.Id" hidden />
+
+            <input type="submit" value="Seteaza Alerta" />
+        </div>
+    </div>
+}

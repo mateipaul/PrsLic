@@ -1,12 +1,15 @@
 ﻿
+using MvcMusicStore.Utilities;
 using MvcMusicStore.Utilities.DatabaseUtilities;
 using System;
 using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
+using System.Security.Principal;
 using System.Web;
 using System.Web.Helpers;
 using System.Web.Mvc;
+using System.Web.Security;
 
 namespace MvcMusicStore.Controllers
 {
@@ -28,6 +31,25 @@ namespace MvcMusicStore.Controllers
             return View(products);
         }
 
+        [HttpPost]
+        public ActionResult FollowProduct(Guid productId)
+        {
+           
+            Produs product = SearchDBUtilities.GetProductOnId(productId);
+
+            return View(product);
+        }
+
+        [HttpGet]
+        public ActionResult SetAllert(string price,Guid productId)
+        {
+            Guid userId = CookieUtilities.GetUserIdFromCookie(Request);
+
+            ProductFollowUtilities.AddProductAllert(productId,userId,price);
+
+            return RedirectToAction("MyProducts", "MyProducts");
+        }
+
         private IEnumerable<Produs> TryGetProducts(string v)
         {
             return SearchDBUtilities.SearchProductsInDatabase(v);
@@ -44,11 +66,10 @@ namespace MvcMusicStore.Controllers
                 xValues.AddRange((from priceEvolution in dbContext.EvolutiaPretului where priceEvolution.Id_Produs == new Guid(productId) orderby priceEvolution.Data_Actualizare descending select priceEvolution.Data_Actualizare).Take(10).ToList());
                 yValues.AddRange((from priceEvolution in dbContext.EvolutiaPretului where priceEvolution.Id_Produs == new Guid(productId) orderby priceEvolution.Data_Actualizare descending select priceEvolution.Pret).Take(10).ToList());
 
-                new Chart(width: 300, height: 200, theme: ChartTheme.Blue).
+                new Chart(width: 200, height: 100, theme: ChartTheme.Blue).
                     AddTitle("Evolutia Pretului").
                     AddSeries(null, chartType: "Line", xValue: xValues, yValues: yValues).
                     Write("bmp");
-
             }
             return null;
         }

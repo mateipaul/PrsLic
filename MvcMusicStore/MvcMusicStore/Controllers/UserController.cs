@@ -4,6 +4,7 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Web;
+using System.Web.Configuration;
 using System.Web.Mvc;
 using System.Web.Security;
 
@@ -28,9 +29,25 @@ namespace MvcMusicStore.Controllers
         {
             if (ModelState.IsValid)
             {
-                if(IsValid(user.Email, user.Parola))
+                if(IsValid(ref user))
                 {
-                    FormsAuthentication.SetAuthCookie(user.Email, false);
+                    string userData = string.Join("|",user.id, user.Email);
+
+                    FormsAuthenticationTicket ticket = new FormsAuthenticationTicket(
+                      1,                                     
+                      user.Email,                            
+                      DateTime.Now,                          
+                      DateTime.Now.AddMinutes(10),           
+                      false,                          
+                      userData,                              
+                      FormsAuthentication.FormsCookiePath);  
+                    string encryptedTicket = FormsAuthentication.Encrypt(ticket);
+                    HttpCookie cookie = new HttpCookie(FormsAuthentication.FormsCookieName, encryptedTicket);
+                    cookie.HttpOnly = true;
+                    Response.Cookies.Add(cookie);
+
+                    //Response.Redirect(FormsAuthentication.GetRedirectUrl(user.Email, false));
+                    
 
                     return RedirectToAction("Index", "Home");
                 }
@@ -61,22 +78,23 @@ namespace MvcMusicStore.Controllers
         public ActionResult Logout()
         {
             FormsAuthentication.SignOut();
-            return RedirectToAction("Index", "Home");
+            return RedirectToAction("Index","Home");
         }
 
-        private bool IsValid(string email,string password)
+        private bool IsValid(ref UserModel userModel)
         {
             var crypto = new SimpleCrypto.PBKDF2();
             
             var isValid = false;
 
-            var user = UserDbUtilities.GetUser(email);
+            var user = UserDbUtilities.GetUser(userModel.Email);
 
             if (user != null)
             {
-                if(user.Parola == crypto.Compute(password, user.CheieParola))
+                if(user.Parola == crypto.Compute(userModel.Parola, user.CheieParola))
                 {
                     isValid = true;
+                    userModel.id = user.Id;
                 }
             }
 

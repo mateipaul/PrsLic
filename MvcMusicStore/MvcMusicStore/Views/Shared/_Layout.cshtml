@@ -1,13 +1,14 @@
 ﻿<!DOCTYPE html>
 <html>
 <head>
-	<meta charset="utf-8" />
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>@ViewBag.Title</title>
-	<link href="~/Content/Site.css" rel="stylesheet" type="text/css" />
-	<link href="~/Content/bootstrap.min.css" rel="stylesheet" type="text/css" />
 
-	<script src="~/Scripts/modernizr-2.6.2.js"></script>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>@ViewBag.Title</title>
+    <link href="~/Content/Site.css" rel="stylesheet" type="text/css" />
+    <link href="~/Content/bootstrap.min.css" rel="stylesheet" type="text/css" />
+
+    <script src="~/Scripts/modernizr-2.6.2.js"></script>
 </head>
 <body>
     
@@ -27,7 +28,7 @@
                         @Html.ActionLink("Produsele Mele", "MyProducts", "MyProducts", new { area = "" }, new { @class = "navbar-brand" });
                         @Html.ActionLink("Cautare Produse", "ProductSearch", "ProductSearch", new { area = "" }, new { @class = "navbar-brand" });
                         @Html.ActionLink("Delogeaza-te", "Logout", "User", new { area = "" }, new { @class = "navbar-brand" });
-                        <strong>@Html.Encode(User.Identity.Name)</strong>
+                        <strong style="color:white">@Html.Encode(User.Identity.Name)</strong>
 
                     }
                     else

@@ -145,6 +145,7 @@
     <Compile Include="Controllers\ProductSearchController.cs" />
     <Compile Include="Utilities\AzureUtilities\QueueUtilities.cs" />
     <Compile Include="Utilities\ClassModels\UserModel.cs" />
+    <Compile Include="Utilities\CookieUtilities.cs" />
     <Compile Include="Utilities\DatabaseUtilities\AparitieProdus.cs">
       <DependentUpon>DbModelContext.tt</DependentUpon>
     </Compile>
@@ -169,6 +170,7 @@
     <Compile Include="Utilities\DatabaseUtilities\IstoricCautari.cs">
       <DependentUpon>DbModelContext.tt</DependentUpon>
     </Compile>
+    <Compile Include="Utilities\DatabaseUtilities\ProductFollowUtilities.cs" />
     <Compile Include="Utilities\DatabaseUtilities\Produs.cs">
       <DependentUpon>DbModelContext.tt</DependentUpon>
     </Compile>
@@ -209,6 +211,7 @@
     <Content Include="Utilities\DatabaseUtilities\DbModelContext.edmx.diagram">
       <DependentUpon>DbModelContext.edmx</DependentUpon>
     </Content>
+    <Content Include="Views\ProductSearch\FollowProduct.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
