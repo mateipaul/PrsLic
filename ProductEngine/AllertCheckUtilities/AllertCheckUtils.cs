@@ -51,6 +51,8 @@ namespace AllertCheckUtilities
                 body.Append("\n");
                 body.Append("Te anuntam ca produsul pe care tu il urmaresti a ajuns la un pret foarte bun");
                 body.Append("\n");
+                body.Append(information.Produs.Denumire);
+                body.Append("\n");
                 body.Append($"{information.Produs.Url_Imagine}");
                 body.Append("\n");
                 body.Append(information.Produs.Pret);
