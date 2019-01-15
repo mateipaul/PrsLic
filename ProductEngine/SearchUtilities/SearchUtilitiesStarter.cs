@@ -23,7 +23,7 @@ namespace SearchUtilities
             }
             else
             {
-                GenericLogger.Info("Queue Has NO items to be searched");
+                //GenericLogger.Info("Queue Has NO items to be searched");
             }
         }
 

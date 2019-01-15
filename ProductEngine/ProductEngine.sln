@@ -21,6 +21,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CrawlingUtilities", "Crawli
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SearchUtilities", "SearchUtilities\SearchUtilities.csproj", "{1A2878BD-6975-4864-9145-A8290CF254C8}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AllertCheckUtilities", "AllertCheckUtilities\AllertCheckUtilities.csproj", "{07614B58-5E4D-4C43-A9F7-109A9CECC628}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -55,6 +57,10 @@ Global
 		{1A2878BD-6975-4864-9145-A8290CF254C8}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{1A2878BD-6975-4864-9145-A8290CF254C8}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{1A2878BD-6975-4864-9145-A8290CF254C8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{07614B58-5E4D-4C43-A9F7-109A9CECC628}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{07614B58-5E4D-4C43-A9F7-109A9CECC628}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{07614B58-5E4D-4C43-A9F7-109A9CECC628}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{07614B58-5E4D-4C43-A9F7-109A9CECC628}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -66,6 +72,7 @@ Global
 		{12FC29D1-B1C2-46B2-8695-F1E50DA34DBB} = {F34669DA-86D3-4D87-8B9D-839877A0BBAD}
 		{22CE7430-0B2D-4C27-82A4-EE8DDBB269E1} = {576ACF08-2837-44B5-84EE-57D91ECCE75E}
 		{1A2878BD-6975-4864-9145-A8290CF254C8} = {576ACF08-2837-44B5-84EE-57D91ECCE75E}
+		{07614B58-5E4D-4C43-A9F7-109A9CECC628} = {576ACF08-2837-44B5-84EE-57D91ECCE75E}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {C0B26CFB-FBA1-4957-918C-39512C8DCB7A}

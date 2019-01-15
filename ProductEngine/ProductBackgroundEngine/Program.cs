@@ -1,7 +1,9 @@
-﻿using CrawlingUtilities;
+﻿using AllertCheckUtilities;
+using CrawlingUtilities;
 using Logger;
 using MiscUtilities;
 using SearchUtilities;
+using System;
 using System.Threading;
 using System.Threading.Tasks;
 
@@ -14,12 +16,25 @@ namespace ProductBackgroundEngine
         {
 
             Parallel.Invoke(
-                 () => StartSearchUtilities(),
-                 () => StartMainCrawl()
+                 //() => StartSearchUtilities(),
+                 //() => StartMainCrawl(),
+                 () => StartAllertCheck()
                );
 
             
 
+        }
+
+        private static void StartAllertCheck()
+        {
+            while (true)
+            {
+                Thread.Sleep(2 * 1000);
+                AllertCheckUtils utils = new AllertCheckUtils();
+                utils.StartAllertCheck();
+
+                Thread.Sleep(4 * 3600 * 1000);
+            }
         }
 
         private static void StartSearchUtilities()
