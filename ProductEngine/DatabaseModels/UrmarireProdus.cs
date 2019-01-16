@@ -22,8 +22,7 @@ namespace DatabaseModels
 
         [Key]
         [Column(Order = 3)]
-        [StringLength(50)]
-        public string Limita_pret { get; set; }
+        public decimal Limita_pret { get; set; }
 
         public virtual Produs Produs { get; set; }
 

@@ -25,7 +25,7 @@ namespace MvcMusicStore.Utilities.DatabaseUtilities
         public System.Guid Id { get; set; }
         public string Url { get; set; }
         public string Denumire { get; set; }
-        public string Pret { get; set; }
+        public decimal Pret { get; set; }
         public string Stock { get; set; }
         public string Url_Imagine { get; set; }
         public Nullable<System.Guid> Id_Vanzator { get; set; }

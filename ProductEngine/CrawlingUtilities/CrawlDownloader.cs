@@ -31,7 +31,7 @@ namespace CrawlingUtilities
             doc = new HtmlDocument();
             _productUrls = new HashSet<string>();
             crawlProducts = new List<Produs>();
-            retailerHost = Regex.Match(RetailerConfig.CrawlingTags.SearchUrlFormat,@"https://www.[a-z]+.[a-z]+([a-z]+)?").Value;
+            retailerHost = Regex.Match(RetailerConfig.CrawlingTags.SearchUrlFormatDefault,@"https://www.[a-z]+.[a-z]+([a-z]+)?").Value;
         }
 
        
@@ -104,11 +104,11 @@ namespace CrawlingUtilities
         private void SearchManufacturer()
         {
 
-            string html = HttpUtils.GetHttpRequestResponse(string.Format(RetailerConfig.CrawlingTags.SearchUrlFormat));
+            string html = HttpUtils.GetHttpRequestResponse(string.Format(RetailerConfig.CrawlingTags.SearchUrlFormatDefault));
 
             if (string.IsNullOrEmpty(html))
             {
-                
+
             }
             doc = HtmlDocumentUtilities.GetHtmlDocument(html);
 

@@ -25,8 +25,8 @@ namespace DatabaseModels
         [StringLength(250)]
         public string Denumire { get; set; }
 
-        [StringLength(50)]
-        public string Pret { get; set; }
+        
+        public decimal Pret { get; set; }
 
         [StringLength(50)]
         public string Stock { get; set; }

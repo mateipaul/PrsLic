@@ -22,11 +22,11 @@ namespace MvcMusicStore.Controllers
 
        
 
-        public ActionResult SearchProduct(string search)
+        public ActionResult SearchProduct(string search,string opt_radio)
         {
-            var products = SearchDBUtilities.NewSearchProductsInDatabase(search.Replace(",",string.Empty).ToUpperInvariant());
+            var products = SearchDBUtilities.NewSearchProductsInDatabase(search.Replace(",",string.Empty).ToUpperInvariant(),opt_radio);
 
-            products = TryGetProducts(search.Replace(",", string.Empty).ToUpperInvariant());
+            products = TryGetProducts(search.Replace(",", string.Empty).ToUpperInvariant(),opt_radio);
 
             return View(products);
         }
@@ -50,9 +50,9 @@ namespace MvcMusicStore.Controllers
             return RedirectToAction("MyProducts", "MyProducts");
         }
 
-        private IEnumerable<Produs> TryGetProducts(string v)
+        private IEnumerable<Produs> TryGetProducts(string v,string opt)
         {
-            return SearchDBUtilities.SearchProductsInDatabase(v);
+            return SearchDBUtilities.SearchProductsInDatabase(v,opt);
         }
 
         public ActionResult LineChart(string productId)
@@ -66,7 +66,7 @@ namespace MvcMusicStore.Controllers
                 xValues.AddRange((from priceEvolution in dbContext.EvolutiaPretului where priceEvolution.Id_Produs == new Guid(productId) orderby priceEvolution.Data_Actualizare descending select priceEvolution.Data_Actualizare).Take(10).ToList());
                 yValues.AddRange((from priceEvolution in dbContext.EvolutiaPretului where priceEvolution.Id_Produs == new Guid(productId) orderby priceEvolution.Data_Actualizare descending select priceEvolution.Pret).Take(10).ToList());
 
-                new Chart(width: 200, height: 100, theme: ChartTheme.Blue).
+                new Chart(width: 200, height: 180, theme: ChartTheme.Blue).
                     AddTitle("Evolutia Pretului").
                     AddSeries(null, chartType: "Line", xValue: xValues, yValues: yValues).
                     Write("bmp");

@@ -2,50 +2,62 @@
 
 @using (Html.BeginForm("SearchProduct", "ProductSearch", FormMethod.Get))
 {
+
     @Html.TextBox("search")<input type="submit" name="submit" value="Search" />
+    <lable>Filtru cautare :</lable>
+    <label>@Html.RadioButton("opt_radio", "relevance") RELEVANTA</label>
+    <label>@Html.RadioButton("opt_radio", "price-asc") PRET CRESCATOR</label>
+    <label>@Html.RadioButton("opt_radio", "price-desc") PRET DRESCATOR</label>
+
+
+
 }
 
 
- <div id="products-wrapper container">
+    <div id="products-wrapper container">
+        
 
-     @foreach (var item in Model)
-     {
-     <div class="product row" id="product-@item.Id">
-         <div class="col-lg-5">
-             <div class="product-details">
-                 <h4 class="product-title">@item.Denumire</h4>
-                 <div class="product-image">
-                     <img src="@item.Url_Imagine" />
-                 </div>
-             </div>
-         </div>
-         <div class="col-lg-4">
-             <div class="price-evolution">
-                 <span class="price-evolution">
-                     <img style="width: 80%;" src="@Url.Action("LineChart", "ProductSearch", new {productID = item.Id})" alt="Chart" />
-                 </span>
-             </div>
-             <h3 class="product-price w-100" style="text-align: center;">@string.Format("{0} lei", item.Pret)</h3>
-         </div> 
-         <div class="col-lg-3 pull-right">
-             <div class="retailer">
-                 <div class="retailer-name">
-                     @* <h4>@item.Vanzator.Nume</h4>*@
-                 </div>
+        @foreach (var item in Model)
+        {
+            <div class="product row" id="product-@item.Id">
+                <div class="col-lg-5">
+                    <div class="product-details">
+                        <h4 class="product-title">@item.Denumire</h4>
+                        <div class="product-image">
+                            <img src="@item.Url_Imagine" />
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="price-evolution">
+                        <span class="price-evolution">
+                            <img style="width: 80%;" src="@Url.Action("LineChart", "ProductSearch", new {productID = item.Id})" alt="Chart" />
+                        </span>
+                    </div>
+                    <h3 class="product-price w-100" style="text-align: center;">@string.Format("{0} lei", item.Pret)</h3>
+                </div>
+                <div class="col-lg-3 pull-right">
+                    <div class="retailer">
+                        <div class="retailer-name">
+                            <h4>@item.Vanzator.Nume</h4>
+                        </div>
+                        <div class="retailer-image">
+                            <img src="@string.Format("https://prslicstorage.blob.core.windows.net/logos/{0}.png",item.Vanzator.Nume)" />
+                        </div>
 
-                 @using (Html.BeginForm("FollowProduct", "ProductSearch", new { @productId = item.Id }, FormMethod.Post))
-                 {
-                     <input class="btn btn-info" type="submit" value="Urmareste Produs" />
-                 }
-             </div>
-         </div>
-     </div>
-  
+                        @using (Html.BeginForm("FollowProduct", "ProductSearch", new { @productId = item.Id }, FormMethod.Post))
+                        {
+                            <input class="btn btn-info" type="submit" value="Urmareste Produs" />
+                        }
+                    </div>
+                </div>
+            </div>
 
 
 
 
-     }
- </div>
+
+        }
+    </div>
 
 

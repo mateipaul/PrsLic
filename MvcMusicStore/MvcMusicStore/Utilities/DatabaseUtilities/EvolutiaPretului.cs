@@ -15,7 +15,7 @@ namespace MvcMusicStore.Utilities.DatabaseUtilities
     public partial class EvolutiaPretului
     {
         public System.Guid Id { get; set; }
-        public string Pret { get; set; }
+        public decimal Pret { get; set; }
         public Nullable<System.Guid> Id_Produs { get; set; }
         public Nullable<System.DateTime> Data_Actualizare { get; set; }
     

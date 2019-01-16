@@ -11,8 +11,7 @@ namespace DatabaseModels
     {
         public Guid Id { get; set; }
 
-        [StringLength(50)]
-        public string Pret { get; set; }
+        public decimal Pret { get; set; }
 
         public Guid? Id_Produs { get; set; }
 

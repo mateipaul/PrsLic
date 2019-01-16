@@ -21,12 +21,32 @@ namespace SearchUtilities
 
         internal static void StartMessageCrawling(CloudQueueMessage message, RetailerConfiguration retailer)
         {
-            url = string.Format(retailer.CrawlingTags.SearchUrlFormat, message.AsString.ToLowerInvariant().Replace(" ","+"));
-            givenMessage = message.AsString;
+            url = GetSearchUrl(message, retailer);
+            givenMessage = message.AsString.Split('|').FirstOrDefault();
             retConfig = retailer;
             products = new RetailerCrawlProductCollection(retailer.RetailerName);
 
             NavigateLink();
+        }
+
+        private static string GetSearchUrl(CloudQueueMessage message, RetailerConfiguration retailer)
+        {
+            string searchIdiom = message.AsString.Split('|').FirstOrDefault();
+            string searchType = message.AsString.Split('|').LastOrDefault();
+
+            switch (searchType)
+            {
+                case "price-asc":
+                    {
+                        return string.Format(retailer.CrawlingTags.SearchUrlFormatPriceAsc, searchIdiom.ToLowerInvariant().Replace(" ", "+"));
+                    }
+                case "price-desc":
+                    {
+                        return string.Format(retailer.CrawlingTags.SearchUrlFormatPriceDesc, searchIdiom.ToLowerInvariant().Replace(" ", "+"));
+                    }
+                default:
+                    return string.Format(retailer.CrawlingTags.SearchUrlFormatDefault, searchIdiom.ToLowerInvariant().Replace(" ", "+"));
+            }
         }
 
         private static void NavigateLink()

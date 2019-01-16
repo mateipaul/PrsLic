@@ -1,0 +1,20 @@
+2019-01-17 00:04:04.3045|INFO|GenericLogger|Update process finished starting again in 12 hours
+2019-01-17 00:05:16.0387|INFO|GenericLogger|Starting CrawlUtilities
+2019-01-17 00:05:29.5918|INFO|GenericLogger|Update process finished starting again in 12 hours
+2019-01-17 00:07:54.9908|INFO|GenericLogger|Starting CrawlUtilities
+2019-01-17 00:10:58.5199|INFO|GenericLogger|Starting CrawlUtilities
+2019-01-17 00:11:23.5236|INFO|GenericLogger|Starting CrawlUtilities
+2019-01-17 00:12:51.0315|FATAL|GenericLogger|Error occured The ObjectContext instance has been disposed and can no longer be used for operations that require a connection. 
+ Exception popped when trying to extract product information for  
+    at System.Data.Entity.Core.Objects.ObjectContext.get_Connection()
+   at System.Data.Entity.Core.Objects.ObjectQuery`1.GetResults(Nullable`1 forMergeOption)
+   at System.Data.Entity.Core.Objects.ObjectQuery`1.Execute(MergeOption mergeOption)
+   at System.Data.Entity.Core.Objects.DataClasses.EntityCollection`1.Load(List`1 collection, MergeOption mergeOption)
+   at System.Data.Entity.Core.Objects.DataClasses.EntityCollection`1.Load(MergeOption mergeOption)
+   at System.Data.Entity.Core.Objects.DataClasses.RelatedEnd.DeferredLoad()
+   at System.Data.Entity.Core.Objects.Internal.LazyLoadBehavior.LoadProperty[TItem](TItem propertyValue, String relationshipName, String targetRoleName, Boolean mustBeNull, Object wrapperObject)
+   at System.Data.Entity.Core.Objects.Internal.LazyLoadBehavior.<>c__DisplayClass7`2.<GetInterceptorDelegate>b__1(TProxy proxy, TItem item)
+   at System.Data.Entity.DynamicProxies.Produs_C18C50D320D51BEA86C7E09A9441B2197308027A6F53CADE487E6260A2E5CF69.get_EvolutiaPretului()
+   at CrawlingUtilities.CrawlProductParser.ExtractNeededInformation(Produs& product)
+   at CrawlingUtilities.CrawlProductParser.DownloadProduct(Produs& product)
+2019-01-17 00:14:53.5551|INFO|GenericLogger|Starting CrawlUtilities

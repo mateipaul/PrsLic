@@ -10,7 +10,7 @@ namespace MiscUtilities
 {
     public static class EmailHelper
     {
-        private static object syncObject;
+        private static object syncObject = new object();
         public static void SendEmail(string destination, string subject, string body)
         {
             lock (syncObject)
@@ -22,13 +22,17 @@ namespace MiscUtilities
 
                 try
                 {
-                    using (SmtpClient smtpClient = new SmtpClient())
+
+
+                    using (SmtpClient smtpClient = new SmtpClient("smtp.gmail.com"))
                     {
-                        smtpClient.Host = @"smtp.gmail.com";
                         smtpClient.DeliveryMethod = SmtpDeliveryMethod.Network;
                         smtpClient.Port = 587;
                         smtpClient.EnableSsl = true;
-                        smtpClient.Credentials = new NetworkCredential(@"notifications.prs.lic@gmail.com", @"1234qwerQWER!");
+                        smtpClient.UseDefaultCredentials = false;
+                        smtpClient.Credentials = new NetworkCredential(@"notifications.prs.lic@gmail.com", "EBXmw63Sh7w6eUh");
+                        //smtpClient.Credentials = new NetworkCredential(@"matei.paul94@gmail.com", "SerpentLiquid1994");
+
 
                         using (MailMessage mail = new MailMessage())
                         {
@@ -37,7 +41,7 @@ namespace MiscUtilities
                             mail.To.Add(destination);
                             mail.Subject = subject;
                             mail.Body = body;
-                            mail.IsBodyHtml = false;
+                            mail.IsBodyHtml = true;
 
                             smtpClient.Send(mail);
                         }

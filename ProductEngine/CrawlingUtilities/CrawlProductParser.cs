@@ -39,7 +39,7 @@ namespace CrawlingUtilities
         private void ExtractNeededInformation(ref Produs product)
         {
             product.Denumire = (HtmlDocumentUtilities.ExtractNodeValue(_document, RetailerConfig.CrawlingTags.ProductName, m => m.InnerText.Trim().Replace(",",string.Empty)));
-            product.Pret = (HtmlDocumentUtilities.ExtractNodeValue(_document, RetailerConfig.CrawlingTags.ProductPrice, m => Regex.Match(m.InnerText.Replace("&#46;", string.Empty), @"\d+.\d+(.\d+)?").Value.Trim()));
+            product.Pret = Decimal.Parse((HtmlDocumentUtilities.ExtractNodeValue(_document, RetailerConfig.CrawlingTags.ProductPrice, m => Regex.Match(m.InnerText.Replace("&#46;", string.Empty), @"\d+.\d+(.\d+)?").Value.Trim())));
             product.Stock = (HtmlDocumentUtilities.ExtractNodeValue(_document, RetailerConfig.CrawlingTags.ProductStock, m => string.IsNullOrEmpty(m.InnerText)?"OutOfStock":"InStock"));
             product.Url_Imagine = (HtmlDocumentUtilities.ExtractNodeValue(_document, RetailerConfig.CrawlingTags.ProductImage, m => m.GetAttributeValue("src",string.Empty)));
 
@@ -48,6 +48,7 @@ namespace CrawlingUtilities
             priceEvolution.Pret = product.Pret;
             priceEvolution.Id_Produs = product.Id;
             priceEvolution.Data_Actualizare = DateTime.UtcNow;
+            priceEvolution.Produs = product;
 
             product.EvolutiaPretului.Add(priceEvolution);
         }

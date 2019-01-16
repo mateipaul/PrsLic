@@ -69,6 +69,10 @@
     <Compile Include="Migrations\201901131601390_user-test.Designer.cs">
       <DependentUpon>201901131601390_user-test.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201901162134299_changed-price-from-string-to-decima.cs" />
+    <Compile Include="Migrations\201901162134299_changed-price-from-string-to-decima.Designer.cs">
+      <DependentUpon>201901162134299_changed-price-from-string-to-decima.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Produs.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -103,6 +107,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\201901131601390_user-test.resx">
       <DependentUpon>201901131601390_user-test.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201901162134299_changed-price-from-string-to-decima.resx">
+      <DependentUpon>201901162134299_changed-price-from-string-to-decima.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

@@ -10,7 +10,10 @@ namespace UtilitiesModels
 
     public class CrawlingTags
     {
-        public string SearchUrlFormat { get; set; }
+        public string SearchUrlFormatDefault { get; set; }
+        public string SearchUrlFormatPriceAsc { get; set; }
+        public string SearchUrlFormatPriceDesc { get; set; }
+
         public string ProductCellTag { get; set; }
         public string UrlTag { get; set; }
         public string NextProductPageTag { get; set; }

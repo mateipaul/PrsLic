@@ -29,8 +29,8 @@ namespace AllertCheckUtilities
 
         private void CheckForEmail(UrmarireProdus information)
         {
-            double followPrice = double.Parse(information.Limita_pret);
-            double currentPrice = double.Parse(information.Produs.Pret);
+            decimal followPrice = information.Limita_pret;
+            decimal currentPrice = information.Produs.Pret;
 
             if (followPrice <= currentPrice)
             {
@@ -44,20 +44,19 @@ namespace AllertCheckUtilities
 
         private string GenerateBodyFromInfo(UrmarireProdus information)
         {
-            var body = new StringBuilder($"Buna Ziua {information.Utilizator.Nume_Utilizator}");
+            var body = new StringBuilder($"<h2>Buna Ziua <strong>{information.Utilizator.Nume_Utilizator}</strong></h2>");
 
             try
             {
                 body.Append("\n");
-                body.Append("Te anuntam ca produsul pe care tu il urmaresti a ajuns la un pret foarte bun");
+                body.Append("<h2>Te anuntam ca produsul pe care tu il urmaresti a ajuns la un pret foarte bun</h2>");
                 body.Append("\n");
-                body.Append(information.Produs.Denumire);
+                body.Append($"<a href =\"{ information.Produs.Url}\"><h2>{ information.Produs.Denumire}</h2></a>");
                 body.Append("\n");
-                body.Append($"{information.Produs.Url_Imagine}");
+                body.Append($"<img src=\"{information.Produs.Url_Imagine}\"></img>");
                 body.Append("\n");
-                body.Append(information.Produs.Pret);
+                body.Append($"<h1>{information.Produs.Pret} lei</h1>");
                 body.Append("\n");
-                body.Append(information.Produs.Url);
             }
             catch (Exception ex)
             {

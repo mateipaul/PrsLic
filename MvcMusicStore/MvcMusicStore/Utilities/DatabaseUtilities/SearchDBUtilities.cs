@@ -1,6 +1,7 @@
 ﻿using MvcMusicStore.Utilities.AzureUtilities;
 using System;
 using System.Collections.Generic;
+using System.Data.Entity;
 using System.Linq;
 using System.Security.Cryptography;
 using System.Text;
@@ -13,7 +14,7 @@ namespace MvcMusicStore.Utilities.DatabaseUtilities
     {
         
 
-        public static IEnumerable<Produs> NewSearchProductsInDatabase(string stringToSearch)
+        public static IEnumerable<Produs> NewSearchProductsInDatabase(string stringToSearch, string order)
         {
             var products = new List<Produs>();
             using (DbModelContext dbContext = new DbModelContext())
@@ -28,17 +29,35 @@ namespace MvcMusicStore.Utilities.DatabaseUtilities
                                 join product in dbContext.Produs on appear.Id_Produs equals product.Id
                                 join retailer in dbContext.Vanzator on product.Id_Vanzator equals retailer.Id
                                 where search.Cod == searchIdiomCode
-                                select product).ToList();
+                                select product).Include(p=>p.Vanzator).ToList();
 
 
                 if (products.Count <= 1)
                 {
                     InsertIdiomInDatabase(stringToSearch);
                     InsertCompleteIdiomInDatabase(stringToSearch, searchIdiomCode);
-                    QueueUtilities.InsertIdiomInQueue(stringToSearch);
+                    QueueUtilities.InsertIdiomInQueue($"{stringToSearch}|{order}");
 
                 }
             }
+
+            switch (order)
+            {
+                case "price-asc":
+                    {
+                        products = products.OrderBy(m => m.Pret).ToList();
+                        break;
+
+                    }
+                case "price-desc":
+                    {
+                        products = products.OrderByDescending(m => m.Pret).ToList();
+                        break;
+                    }
+                default:
+                    break;
+            }
+
             return products;
         }
 
@@ -51,7 +70,7 @@ namespace MvcMusicStore.Utilities.DatabaseUtilities
             }
         }
 
-        public static IEnumerable<Produs> SearchProductsInDatabase(string stringToSearch)
+        public static IEnumerable<Produs> SearchProductsInDatabase(string stringToSearch,string order)
         {
             var products = new List<Produs>();
 
@@ -69,7 +88,7 @@ namespace MvcMusicStore.Utilities.DatabaseUtilities
                                 join product in dbContext.Produs on appear.Id_Produs equals product.Id
                                 join retailer in dbContext.Vanzator on product.Id_Vanzator equals retailer.Id
                                 where search.Cod == searchIdiomCode
-                                select product).ToList();
+                                select product).Include(p=>p.Vanzator).ToList();
                     if (products.Count >= 1 || attempts > 30)
                     {
 
@@ -79,6 +98,22 @@ namespace MvcMusicStore.Utilities.DatabaseUtilities
                     attempts++;
 
                 } 
+            }
+            switch (order)
+            {
+                case "price-asc":
+                    {
+                        products = products.OrderBy(m => m.Pret).ToList();
+                        break;
+
+                    }
+                case "price-desc":
+                    {
+                        products = products.OrderByDescending(m => m.Pret).ToList();
+                        break;
+                    }
+                default:
+                    break;
             }
             return products;
 

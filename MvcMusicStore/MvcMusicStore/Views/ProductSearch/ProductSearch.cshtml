@@ -1,8 +1,18 @@
 ﻿
 
-<h2>Index</h2>
+<h2>Cauta produse</h2>
 
 @using (Html.BeginForm("SearchProduct", "ProductSearch", FormMethod.Get))
 {
+
     @Html.TextBox("search")<input type="submit" name="submit" value="Search" />
+
+    <lable>Filtru cautare :</lable>
+    <label>@Html.RadioButton("opt_radio", "relevance") RELEVANTA</label>
+    <label>@Html.RadioButton("opt_radio", "price-asc") PRET CRESCATOR</label>
+    <label>@Html.RadioButton("opt_radio", "price-desc") PRET DRESCATOR</label>
+
+
+
+
 }

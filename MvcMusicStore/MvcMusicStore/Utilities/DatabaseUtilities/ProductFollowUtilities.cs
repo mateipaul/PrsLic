@@ -18,7 +18,7 @@ namespace MvcMusicStore.Utilities.DatabaseUtilities
                     tempAlert.Id = Guid.NewGuid();
                     tempAlert.Id_Produs = producId;
                     tempAlert.Id_Utilizator = UserId;
-                    tempAlert.Limita_pret = price;
+                    tempAlert.Limita_pret = decimal.Parse(price);
 
                     dbContext.UrmarireProdus.Add(tempAlert);
                     dbContext.SaveChanges();
