@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Data.Entity;
 using System.Linq;
 using System.Web;
 
@@ -40,7 +41,7 @@ namespace MvcMusicStore.Utilities.DatabaseUtilities
                 tempProds = (from products in dbContext.Produs
                              join followedProducts in dbContext.UrmarireProdus on products.Id equals followedProducts.Id_Produs
                              where followedProducts.Id_Utilizator == userId
-                             select products).ToList();
+                             select products).Include(p=>p.Vanzator).ToList();
             }
             return tempProds;
         }

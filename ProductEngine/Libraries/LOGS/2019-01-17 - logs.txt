@@ -18,3 +18,31 @@
    at CrawlingUtilities.CrawlProductParser.ExtractNeededInformation(Produs& product)
    at CrawlingUtilities.CrawlProductParser.DownloadProduct(Produs& product)
 2019-01-17 00:14:53.5551|INFO|GenericLogger|Starting CrawlUtilities
+2019-01-17 00:35:57.2272|INFO|GenericLogger|Starting CrawlUtilities
+2019-01-17 00:36:12.3573|INFO|GenericLogger|Starting CrawlUtilities
+2019-01-17 00:36:34.9563|INFO|GenericLogger|Update process finished starting again in 12 hours
+2019-01-17 00:37:58.4271|FATAL|GenericLogger|Error occured The process cannot access the file 'D:\projects\licenta\PrsLic\ProductEngine\Libraries\BlobFiles\Search\CrawlingTags.json' because it is being used by another process. 
+ Exception The process cannot access the file 'D:\projects\licenta\PrsLic\ProductEngine\Libraries\BlobFiles\Search\CrawlingTags.json' because it is being used by another process. popped when trying to get Blob : CrawlingTags.json from container : crawlsettings 
+    at System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
+   at System.IO.FileStream.Init(String path, FileMode mode, FileAccess access, Int32 rights, Boolean useRights, FileShare share, Int32 bufferSize, FileOptions options, SECURITY_ATTRIBUTES secAttrs, String msgPath, Boolean bFromProxy, Boolean useLongPath, Boolean checkHost)
+   at System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access, FileShare share)
+   at Microsoft.WindowsAzure.Storage.Blob.CloudBlob.DownloadToFile(String path, FileMode mode, AccessCondition accessCondition, BlobRequestOptions options, OperationContext operationContext) in c:\Program Files (x86)\Jenkins\workspace\release_dotnet_master\Lib\ClassLibraryCommon\Blob\CloudBlob.cs:line 612
+   at MiscUtilities.AzureBlobUtils.DownloadBlob(String fileName, String container, String usage) in D:\projects\licenta\PrsLic\ProductEngine\MiscUtilities\AzureBlobUtils.cs:line 44
+2019-01-17 00:38:21.6776|FATAL|GenericLogger|Error occured The process cannot access the file 'D:\projects\licenta\PrsLic\ProductEngine\Libraries\BlobFiles\Search\CrawlingTags.json' because it is being used by another process. 
+ Exception The process cannot access the file 'D:\projects\licenta\PrsLic\ProductEngine\Libraries\BlobFiles\Search\CrawlingTags.json' because it is being used by another process. popped when trying to get Blob : CrawlingTags.json from container : crawlsettings 
+    at System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
+   at System.IO.FileStream.Init(String path, FileMode mode, FileAccess access, Int32 rights, Boolean useRights, FileShare share, Int32 bufferSize, FileOptions options, SECURITY_ATTRIBUTES secAttrs, String msgPath, Boolean bFromProxy, Boolean useLongPath, Boolean checkHost)
+   at System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access, FileShare share)
+   at Microsoft.WindowsAzure.Storage.Blob.CloudBlob.DownloadToFile(String path, FileMode mode, AccessCondition accessCondition, BlobRequestOptions options, OperationContext operationContext) in c:\Program Files (x86)\Jenkins\workspace\release_dotnet_master\Lib\ClassLibraryCommon\Blob\CloudBlob.cs:line 612
+   at MiscUtilities.AzureBlobUtils.DownloadBlob(String fileName, String container, String usage) in D:\projects\licenta\PrsLic\ProductEngine\MiscUtilities\AzureBlobUtils.cs:line 44
+2019-01-17 00:38:31.2152|FATAL|GenericLogger|Error occured The process cannot access the file 'D:\projects\licenta\PrsLic\ProductEngine\Libraries\BlobFiles\Search\CrawlingTags.json' because it is being used by another process. 
+ Exception The process cannot access the file 'D:\projects\licenta\PrsLic\ProductEngine\Libraries\BlobFiles\Search\CrawlingTags.json' because it is being used by another process. popped when trying to get Blob : CrawlingTags.json from container : crawlsettings 
+    at System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
+   at System.IO.FileStream.Init(String path, FileMode mode, FileAccess access, Int32 rights, Boolean useRights, FileShare share, Int32 bufferSize, FileOptions options, SECURITY_ATTRIBUTES secAttrs, String msgPath, Boolean bFromProxy, Boolean useLongPath, Boolean checkHost)
+   at System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access, FileShare share)
+   at Microsoft.WindowsAzure.Storage.Blob.CloudBlob.DownloadToFile(String path, FileMode mode, AccessCondition accessCondition, BlobRequestOptions options, OperationContext operationContext) in c:\Program Files (x86)\Jenkins\workspace\release_dotnet_master\Lib\ClassLibraryCommon\Blob\CloudBlob.cs:line 612
+   at MiscUtilities.AzureBlobUtils.DownloadBlob(String fileName, String container, String usage) in D:\projects\licenta\PrsLic\ProductEngine\MiscUtilities\AzureBlobUtils.cs:line 44
+2019-01-17 00:40:44.7996|INFO|GenericLogger|Starting CrawlUtilities
+2019-01-17 00:41:06.5623|INFO|GenericLogger|Update process finished starting again in 12 hours
+2019-01-17 00:41:28.6766|INFO|GenericLogger|Starting CrawlUtilities
+2019-01-17 00:42:03.6426|INFO|GenericLogger|Update process finished starting again in 12 hours

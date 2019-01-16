@@ -23,17 +23,18 @@ namespace CrawlingUtilities
 
         public void StartCrawling()
         {
-            Initialize();
+            using (var dbContext = new DbModelContext())
+            {
+                Initialize(dbContext);
 
-            ParseProducts();
-
+                ParseProducts(dbContext);
+            }
 
         }
 
-        private void Initialize()
+        private void Initialize(DbModelContext dbContext)
         {
-            using (var dbContext = new DbModelContext())
-            {
+          
                 retailerId = dbContext.Vanzator.Where(m => m.Nume.Equals(RetailerConfig.RetailerName)).Select(m => m.Id).FirstOrDefault();
 
                 products = new RetailerCrawlProductCollection(RetailerConfig.RetailerName);
@@ -47,14 +48,13 @@ namespace CrawlingUtilities
 
 
                 products.AddRange(prods);
-            }
+            
         }
 
-        private void ParseProducts()
+        private void ParseProducts(DbModelContext dbContext)
         {
             int counter = 0;
-            using (var dbContext = new DbModelContext())
-            {
+            
                 do
                 {
                     CrawlProductParser parser = new CrawlProductParser(RetailerConfig);
@@ -75,7 +75,7 @@ namespace CrawlingUtilities
                         }
                     }
                 } while (counter < products.Count);
-            }
+            
         }
     }
 }
