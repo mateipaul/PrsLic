@@ -16,8 +16,8 @@ namespace ProductBackgroundEngine
         {
 
             Parallel.Invoke(
-                 () => StartSearchUtilities(),
-                 () => StartMainCrawl()//,
+                 () => StartSearchUtilities()//,
+                 //() => StartMainCrawl()//,
                  //() => StartAllertCheck()
                );
 

@@ -15,6 +15,7 @@ namespace MvcMusicStore.Controllers
 {
     public class ProductSearchController : Controller
     {
+        private static List<Produs> prods = new List<Produs>();
         public ActionResult ProductSearch()
         {
             return View();
@@ -27,6 +28,8 @@ namespace MvcMusicStore.Controllers
             var products = SearchDBUtilities.NewSearchProductsInDatabase(search.Replace(",",string.Empty).ToUpperInvariant(),opt_radio);
 
             products = TryGetProducts(search.Replace(",", string.Empty).ToUpperInvariant(),opt_radio);
+
+            prods = products.ToList();
 
             return View(products);
         }
@@ -72,6 +75,38 @@ namespace MvcMusicStore.Controllers
                     Write("bmp");
             }
             return null;
+        }
+
+        [HttpPost]
+        public ActionResult OrderProducts(string sort_opt)
+        {
+            
+            switch (sort_opt)
+            {
+                case "price-asc":
+                    {
+                        prods = prods.OrderBy(p => p.Pret).ToList();
+                        break;
+                    }
+                case "price-desc":
+                    {
+                        prods = prods.OrderByDescending(p => p.Pret).ToList();
+                        break;
+                    }
+                case "retailer-asc":
+                    {
+                        prods = prods.OrderBy(p => p.Vanzator.Nume).ToList();
+                        break;
+                    }
+                case "retailer-desc":
+                    {
+                        prods = prods.OrderByDescending(p => p.Vanzator.Nume).ToList();
+                        break;
+                    }
+                default:
+                    break;
+            }
+            return View(prods);
         }
     }
 }

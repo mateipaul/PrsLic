@@ -1,21 +1,34 @@
 {
-	"Retailers":[
-		{
-			"RetailerName":"Cel",
-			"CrawlingTags":
-				{
-					"SearchUrlFormatDefault":"http://www.cel.ro/cauta/{0}/",
-					"SearchUrlFormatPriceAsc":"http://www.cel.ro/cauta/{0}/0c-1",
-					"SearchUrlFormatPriceDesc":"http://www.cel.ro/cauta/{0}/0i-1",
-					"NextProductPageTag":"//div[@class='pageresults']/span[@class='selectat']/following-sibling::a",
-					"ProductCellTag":"//div[contains(@class,'productListing-tot')]",
-					"UrlTag":"//h4[@class='productTitle']/a",
-					
-					"ProductName":"//h2[@itemprop='name']",
-					"ProductPrice":"//span[@itemprop='price']",
-					"ProductStock":"//button[contains(@class,'btn-buy')]",
-					"ProductImage":"//div[@class='bigImage']/a/img"
-				}
-		}
-	]
+    "Retailers": [
+        {
+            "CrawlingTags": {
+                "NextProductPageTag": "//div[@class='pageresults']/span[@class='selectat']/following-sibling::a",
+                "ProductCellTag": "//div[contains(@class,'productListing-tot')]",
+                "ProductImage": "//div[@class='bigImage']/a/img",
+                "ProductName": "//h2[@itemprop='name']",
+                "ProductPrice": "//span[@itemprop='price']",
+                "ProductStock": "//button[contains(@class,'btn-buy')]",
+                "SearchUrlFormatDefault": "http://www.cel.ro/cauta/{0}/",
+                "SearchUrlFormatPriceAsc": "http://www.cel.ro/cauta/{0}/0c-1",
+                "SearchUrlFormatPriceDesc": "http://www.cel.ro/cauta/{0}/0i-1",
+                "UrlTag": "//h4[@class='productTitle']/a"
+            },
+            "RetailerName": "Cel"
+        },
+        {
+            "CrawlingTags": {
+                "NextProductPageTag": "//div[@class='pageresults']/span[@class='selectat']/following-sibling::a",
+                "ProductCellTag": "//div[@class='Product-nameHeading']",
+                "ProductImage": "//img[@class='Product-photo']",
+                "ProductName": "//h2[@class='Product-nameHeading']/a",
+                "ProductPrice": "//div[@class='Price-current']",
+                "ProductStock": "//div[itemprop='availability']",
+                "SearchUrlFormatDefault": "https://mediagalaxy.ro/cauta/?q={0}",
+                "SearchUrlFormatPriceAsc": "https://mediagalaxy.ro/cauta/filtru/order/price/dir/asc/?q={0}",
+                "SearchUrlFormatPriceDesc": "https://mediagalaxy.ro/cauta/filtru/order/price/dir/desc/?q={0}",
+                "UrlTag": "//h2[@class='Product-nameHeading']/a"
+            },
+            "RetailerName": "MediaGalaxy"
+        }
+    ]
 }

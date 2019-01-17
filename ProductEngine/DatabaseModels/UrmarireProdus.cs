@@ -24,8 +24,15 @@ namespace DatabaseModels
         [Column(Order = 3)]
         public decimal Limita_pret { get; set; }
 
+        public bool UtilizatorNotificat { get; set; }
+
+        [Column(TypeName = "smalldatetime")]
+        public DateTime? DataNotificarii { get; set; }
+
         public virtual Produs Produs { get; set; }
 
         public virtual Utilizator Utilizator { get; set; }
+
+
     }
 }

@@ -212,6 +212,7 @@
     <Content Include="Utilities\DatabaseUtilities\DbModelContext.edmx.diagram">
       <DependentUpon>DbModelContext.edmx</DependentUpon>
     </Content>
+    <Content Include="Views\ProductSearch\OrderProducts.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>

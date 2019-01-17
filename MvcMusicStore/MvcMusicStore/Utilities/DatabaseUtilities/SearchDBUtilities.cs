@@ -32,13 +32,13 @@ namespace MvcMusicStore.Utilities.DatabaseUtilities
                                 select product).Include(p=>p.Vanzator).ToList();
 
 
-                if (products.Count <= 1)
-                {
+                //if (products.Count <= 1)
+                //{
                     InsertIdiomInDatabase(stringToSearch);
                     InsertCompleteIdiomInDatabase(stringToSearch, searchIdiomCode);
                     QueueUtilities.InsertIdiomInQueue($"{stringToSearch}|{order}");
 
-                }
+                //}
             }
 
             switch (order)
@@ -108,6 +108,16 @@ namespace MvcMusicStore.Utilities.DatabaseUtilities
 
                     }
                 case "price-desc":
+                    {
+                        products = products.OrderByDescending(m => m.Pret).ToList();
+                        break;
+                    }
+                case "retailer-asc":
+                    {
+                        products = products.OrderBy(m => m.Pret).ToList();
+                        break;
+                    }
+                case "retailer-desc":
                     {
                         products = products.OrderByDescending(m => m.Pret).ToList();
                         break;
