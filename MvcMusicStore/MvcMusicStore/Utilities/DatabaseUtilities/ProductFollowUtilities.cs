@@ -20,6 +20,9 @@ namespace MvcMusicStore.Utilities.DatabaseUtilities
                     tempAlert.Id_Produs = producId;
                     tempAlert.Id_Utilizator = UserId;
                     tempAlert.Limita_pret = decimal.Parse(price);
+                    tempAlert.Invalid = false;
+                    tempAlert.UtilizatorNotificat = false;
+                    tempAlert.DataNotificarii = DateTime.UtcNow;
 
                     dbContext.UrmarireProdus.Add(tempAlert);
                     dbContext.SaveChanges();
@@ -41,9 +44,30 @@ namespace MvcMusicStore.Utilities.DatabaseUtilities
                 tempProds = (from products in dbContext.Produs
                              join followedProducts in dbContext.UrmarireProdus on products.Id equals followedProducts.Id_Produs
                              where followedProducts.Id_Utilizator == userId
+                             where followedProducts.Invalid == false
                              select products).Include(p=>p.Vanzator).ToList();
             }
             return tempProds;
+        }
+
+        internal static void RemoveProductAlert(Guid userId, Guid productId)
+        {
+            try
+            {
+                using (var dbContext = new DbModelContext())
+                {
+                    var item = dbContext.UrmarireProdus.Where(m => m.Id_Produs.Equals(productId) && m.Id_Utilizator.Equals(userId)).FirstOrDefault();
+
+                    item.Invalid = true;
+
+                    dbContext.SaveChanges();
+                }
+            }
+            catch (Exception ex)
+            {
+
+                
+            }
         }
     }
 }

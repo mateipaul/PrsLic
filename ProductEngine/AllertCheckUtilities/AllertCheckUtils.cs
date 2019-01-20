@@ -13,31 +13,73 @@ namespace AllertCheckUtilities
     {
         public void StartAllertCheck()
         {
-            var followInformation = GetFollowedInformation();
+            try
+            {
 
-            CheckFollowedInformation(followInformation);
+                using (var dbModel = new DbModelContext())
+                {
+                    var followInformation = GetFollowedInformation(dbModel);
+
+                    CheckFollowedInformation(ref followInformation);
+
+                    dbModel.SaveChanges();
+                }
+
+            }
+            catch (Exception ex)
+            {
+
+            }
 
         }
 
-        private void CheckFollowedInformation(List<UrmarireProdus> followInformation)
+        private void CheckFollowedInformation( ref List<UrmarireProdus> followInformation)
         {
             foreach (var information in followInformation)
             {
-                CheckForEmail(information);
+                try
+                {
+                    decimal followPrice = information.Limita_pret;
+                    decimal currentPrice = information.Produs.Pret;
+
+                    if (followPrice <= currentPrice)
+                    {
+                        if ((!information.UtilizatorNotificat) || (information.UtilizatorNotificat && information.DataNotificarii.Value.ToShortDateString().Equals(DateTime.UtcNow.AddDays(-2).ToShortDateString())))
+                        {
+
+                            EmailHelper.SendEmail(destination: information.Utilizator.Email,
+                                subject: $"Alerta Pret pentru produs {information.Produs.Denumire.Substring(0, 50)}...",
+                                body: GenerateBodyFromInfo(information));
+                            
+                            information.UtilizatorNotificat = true;
+                            information.DataNotificarii = DateTime.UtcNow;
+                        }
+
+                    }
+                }
+                catch (Exception ex)
+                {
+                }
             }
         }
 
-        private void CheckForEmail(UrmarireProdus information)
+        private void CheckForEmail(ref UrmarireProdus information)
         {
             decimal followPrice = information.Limita_pret;
             decimal currentPrice = information.Produs.Pret;
 
             if (followPrice <= currentPrice)
             {
-                EmailHelper.SendEmail(destination: information.Utilizator.Email,
-                    subject: $"Alerta Pret pentru produs {information.Produs.Denumire.Substring(0, 50)}...",
-                    body: GenerateBodyFromInfo(information));
+                if ((!information.UtilizatorNotificat) ||(information.UtilizatorNotificat && information.DataNotificarii.Value.Equals(DateTime.UtcNow.AddDays(-1))))
+                {
 
+                    EmailHelper.SendEmail(destination: information.Utilizator.Email,
+                        subject: $"Alerta Pret pentru produs {information.Produs.Denumire.Substring(0, 50)}...",
+                        body: GenerateBodyFromInfo(information));
+
+                    information.UtilizatorNotificat = true;
+                    information.DataNotificarii = DateTime.UtcNow;
+                }
                 
             }
         }
@@ -67,17 +109,17 @@ namespace AllertCheckUtilities
 
         }
 
-        private List<UrmarireProdus> GetFollowedInformation()
+        private List<UrmarireProdus> GetFollowedInformation(DbModelContext dbContext)
         {
             var information = new List<UrmarireProdus>();
-            using (DbModelContext dbContext =  new DbModelContext())
-            {
+            
                  information = (from info in dbContext.UrmarireProdus
                                   join user in dbContext.Utilizator on info.Id_Utilizator equals user.Id
                                   join prodct in dbContext.Produs on info.Id_Produs equals prodct.Id
-                                 select info).Include(p => p.Utilizator).Include(p => p.Produs).ToList();
-                
-            }
+                                  where info.Invalid == false
+                                 select info ).Include(p => p.Utilizator).Include(p => p.Produs).ToList();
+
+
             return information;
         }
     }

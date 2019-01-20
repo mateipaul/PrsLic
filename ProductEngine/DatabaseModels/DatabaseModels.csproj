@@ -77,6 +77,10 @@
     <Compile Include="Migrations\201901171553511_notification-utilities-isNotifiedFlag-dateNotification.Designer.cs">
       <DependentUpon>201901171553511_notification-utilities-isNotifiedFlag-dateNotification.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201901201012064_invalid-flag-for-product-follow.cs" />
+    <Compile Include="Migrations\201901201012064_invalid-flag-for-product-follow.Designer.cs">
+      <DependentUpon>201901201012064_invalid-flag-for-product-follow.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Produs.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -117,6 +121,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\201901171553511_notification-utilities-isNotifiedFlag-dateNotification.resx">
       <DependentUpon>201901171553511_notification-utilities-isNotifiedFlag-dateNotification.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201901201012064_invalid-flag-for-product-follow.resx">
+      <DependentUpon>201901201012064_invalid-flag-for-product-follow.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

@@ -18,6 +18,9 @@ namespace MvcMusicStore.Utilities.DatabaseUtilities
         public System.Guid Id_Produs { get; set; }
         public System.Guid Id_Utilizator { get; set; }
         public decimal Limita_pret { get; set; }
+        public bool UtilizatorNotificat { get; set; }
+        public Nullable<System.DateTime> DataNotificarii { get; set; }
+        public bool Invalid { get; set; }
     
         public virtual Produs Produs { get; set; }
         public virtual Utilizator Utilizator { get; set; }

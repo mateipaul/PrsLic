@@ -1,0 +1,12 @@
+2019-01-20 12:17:57.7509|INFO|GenericLogger|Started searching for message ASUS TUF FX504GE|relevance
+2019-01-20 12:19:30.5211|INFO|GenericLogger|Started searching for message ASUS TUF FX504GE|relevance
+2019-01-20 12:20:23.2476|INFO|GenericLogger|Started searching for message LAPTOP ASUS|relevance
+2019-01-20 12:20:50.7083|INFO|GenericLogger|Started searching for message LAPTOP ASUS|relevance
+2019-01-20 12:24:17.6859|FATAL|GenericLogger|Error occured The process cannot access the file 'D:\projects\licenta\PrsLic\ProductEngine\Libraries\BlobFiles\Search\CrawlingTags.json' because it is being used by another process. 
+ Exception The process cannot access the file 'D:\projects\licenta\PrsLic\ProductEngine\Libraries\BlobFiles\Search\CrawlingTags.json' because it is being used by another process. popped when trying to get Blob : CrawlingTags.json from container : crawlsettings 
+    at System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
+   at System.IO.FileStream.Init(String path, FileMode mode, FileAccess access, Int32 rights, Boolean useRights, FileShare share, Int32 bufferSize, FileOptions options, SECURITY_ATTRIBUTES secAttrs, String msgPath, Boolean bFromProxy, Boolean useLongPath, Boolean checkHost)
+   at System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access, FileShare share)
+   at Microsoft.WindowsAzure.Storage.Blob.CloudBlob.DownloadToFile(String path, FileMode mode, AccessCondition accessCondition, BlobRequestOptions options, OperationContext operationContext) in c:\Program Files (x86)\Jenkins\workspace\release_dotnet_master\Lib\ClassLibraryCommon\Blob\CloudBlob.cs:line 612
+   at MiscUtilities.AzureBlobUtils.DownloadBlob(String fileName, String container, String usage) in D:\projects\licenta\PrsLic\ProductEngine\MiscUtilities\AzureBlobUtils.cs:line 44
+2019-01-20 21:38:20.9377|INFO|GenericLogger|Started searching for message ASUS TUF FX504GE|relevance

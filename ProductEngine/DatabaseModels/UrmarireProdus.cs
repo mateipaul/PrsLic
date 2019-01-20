@@ -26,6 +26,8 @@ namespace DatabaseModels
 
         public bool UtilizatorNotificat { get; set; }
 
+        public bool Invalid { get; set; }
+
         [Column(TypeName = "smalldatetime")]
         public DateTime? DataNotificarii { get; set; }
 

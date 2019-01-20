@@ -58,6 +58,9 @@
           <Property Name="Id_Produs" Type="uniqueidentifier" Nullable="false" />
           <Property Name="Id_Utilizator" Type="uniqueidentifier" Nullable="false" />
           <Property Name="Limita_pret" Type="decimal" Precision="18" Scale="2" Nullable="false" />
+          <Property Name="UtilizatorNotificat" Type="bit" Nullable="false" />
+          <Property Name="DataNotificarii" Type="smalldatetime" />
+          <Property Name="Invalid" Type="bit" Nullable="false" />
         </EntityType>
         <EntityType Name="Utilizator">
           <Key>
@@ -256,6 +259,9 @@
           <Property Name="Id_Produs" Type="Guid" Nullable="false" />
           <Property Name="Id_Utilizator" Type="Guid" Nullable="false" />
           <Property Name="Limita_pret" Type="Decimal" Precision="18" Scale="2" Nullable="false" />
+          <Property Name="UtilizatorNotificat" Type="Boolean" Nullable="false" />
+          <Property Name="DataNotificarii" Type="DateTime" Precision="0" />
+          <Property Name="Invalid" Type="Boolean" Nullable="false" />
           <NavigationProperty Name="Produs" Relationship="Self.FK_dbo_UrmarireProdus_dbo_Produs_Id_Produs" FromRole="UrmarireProdus" ToRole="Produs" />
           <NavigationProperty Name="Utilizator" Relationship="Self.FK_dbo_UrmarireProdus_dbo_Utilizator_Id_Utilizator" FromRole="UrmarireProdus" ToRole="Utilizator" />
         </EntityType>
@@ -451,6 +457,9 @@
                 <ScalarProperty Name="Id_Produs" ColumnName="Id_Produs" />
                 <ScalarProperty Name="Id_Utilizator" ColumnName="Id_Utilizator" />
                 <ScalarProperty Name="Limita_pret" ColumnName="Limita_pret" />
+                <ScalarProperty Name="UtilizatorNotificat" ColumnName="UtilizatorNotificat" />
+                <ScalarProperty Name="DataNotificarii" ColumnName="DataNotificarii" />
+                <ScalarProperty Name="Invalid" ColumnName="Invalid" />
               </MappingFragment>
             </EntityTypeMapping>
           </EntitySetMapping>

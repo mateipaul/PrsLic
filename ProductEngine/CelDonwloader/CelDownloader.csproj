@@ -4,11 +4,11 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{1A2878BD-6975-4864-9145-A8290CF254C8}</ProjectGuid>
+    <ProjectGuid>{F5B6A36F-4B24-462C-BDE0-028FDC53867D}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>SearchUtilities</RootNamespace>
-    <AssemblyName>SearchUtilities</AssemblyName>
+    <RootNamespace>CelDownloader</RootNamespace>
+    <AssemblyName>CelDownloader</AssemblyName>
     <TargetFrameworkVersion>v4.5.1</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
   </PropertyGroup>
@@ -31,7 +31,10 @@
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="HtmlAgilityPack, Version=1.8.0.0, Culture=neutral, PublicKeyToken=bd319b19eaf3b43a" />
-    <Reference Include="Microsoft.WindowsAzure.Storage, Version=9.3.1.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35" />
+    <Reference Include="Microsoft.WindowsAzure.Storage, Version=9.3.1.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Libraries\Microsoft.WindowsAzure.Storage.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="System.Xml.Linq" />
@@ -42,15 +45,13 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="SearchMessageCrawler.cs" />
-    <Compile Include="SearchProductParser.cs" />
-    <Compile Include="SearchUtilitiesStarter.cs" />
+    <Compile Include="CelDownloader.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\CelDonwloader\CelDownloader.csproj">
-      <Project>{F5B6A36F-4B24-462C-BDE0-028FDC53867D}</Project>
-      <Name>CelDownloader</Name>
+    <ProjectReference Include="..\CelParser\CelParser.csproj">
+      <Project>{F93ACC41-44C2-4528-B387-58AD345ABF19}</Project>
+      <Name>CelParser</Name>
     </ProjectReference>
     <ProjectReference Include="..\DatabaseModels\DatabaseModels.csproj">
       <Project>{010D9C41-5B64-4861-B909-E42855976E9E}</Project>
@@ -63,10 +64,6 @@
     <ProjectReference Include="..\Logger\Logger.csproj">
       <Project>{B59B462B-E0FC-4617-A2C2-420D56DA6409}</Project>
       <Name>Logger</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\MediaGalaxyDownloader\MediaGalaxyDownloader.csproj">
-      <Project>{0F42B995-BC46-4776-8048-1C8F85A885C8}</Project>
-      <Name>MediaGalaxyDownloader</Name>
     </ProjectReference>
     <ProjectReference Include="..\MiscUtilities\MiscUtilities.csproj">
       <Project>{117E7D0A-621A-4F92-9F71-74FA64144AC9}</Project>

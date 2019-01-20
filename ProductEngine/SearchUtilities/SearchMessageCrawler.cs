@@ -3,9 +3,12 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using CelDonwloader;
 using DatabaseModels;
 using HtmlAgilityPack;
+using Interfaces;
 using Logger;
+using MediaGalaxyDownloader;
 using Microsoft.WindowsAzure.Storage.Queue;
 using MiscUtilities;
 using UtilitiesModels;
@@ -15,77 +18,65 @@ namespace SearchUtilities
     public static class SearchMessageCrawler
     {
         private static string url;
+        private static CloudQueueMessage queueMessage;
         private static string givenMessage;
         private static RetailerConfiguration retConfig;
         private static RetailerCrawlProductCollection products;
+        private static IDownloader downloader;
 
         internal static void StartMessageCrawling(CloudQueueMessage message, RetailerConfiguration retailer)
         {
-            url = GetSearchUrl(message, retailer);
+            queueMessage = message;
             givenMessage = message.AsString.Split('|').FirstOrDefault();
             retConfig = retailer;
             products = new RetailerCrawlProductCollection(retailer.RetailerName);
 
-            NavigateLink();
+            downloader = GenerateDownloader(retailer);
+
+            DownloadProducts(downloader, retailer);
         }
 
-        private static string GetSearchUrl(CloudQueueMessage message, RetailerConfiguration retailer)
-        {
-            string searchIdiom = message.AsString.Split('|').FirstOrDefault();
-            string searchType = message.AsString.Split('|').LastOrDefault();
-
-            switch (searchType)
-            {
-                case "price-asc":
-                    {
-                        return string.Format(retailer.CrawlingTags.SearchUrlFormatPriceAsc, searchIdiom.ToLowerInvariant().Replace(" ", "+"));
-                    }
-                case "price-desc":
-                    {
-                        return string.Format(retailer.CrawlingTags.SearchUrlFormatPriceDesc, searchIdiom.ToLowerInvariant().Replace(" ", "+"));
-                    }
-                default:
-                    return string.Format(retailer.CrawlingTags.SearchUrlFormatDefault, searchIdiom.ToLowerInvariant().Replace(" ", "+"));
-            }
-        }
-
-        private static void NavigateLink()
-        {
-            string htmlSting = HttpUtils.GetWebRequestResponse(url);
-
-            var htmlDocument = HtmlDocumentUtilities.GetHtmlDocument(htmlSting);
-
-            ExtractProducts(htmlDocument);
-
-            products.SaveProducts(givenMessage);
-        }
-
-        private static void ExtractProducts(HtmlDocument htmlDocument)
+        private static void DownloadProducts(IDownloader downloader,RetailerConfiguration retailer)
         {
             try
             {
-                var productUrls = htmlDocument.DocumentNode.SelectNodes(retConfig.CrawlingTags.UrlTag)
-                    .Select(m => m.GetAttributeValue("href", string.Empty)).ToList();
-
-                if (productUrls.Count < 1)
-                {
-                    GenericLogger.Info($"No products were found for {givenMessage}");
-                    return;
-                }
-                ExtractProductInformation(productUrls);
+                downloader.GetProducts(queueMessage);
             }
             catch (Exception ex)
             {
+
+                
             }
         }
 
-        private static void ExtractProductInformation(List<string> productUrls)
+        private static IDownloader GenerateDownloader(RetailerConfiguration retailer)
         {
-            foreach (var url in productUrls)
+            try
             {
-                SearchProductParser parser = new SearchProductParser(url, givenMessage,retConfig);
-                products.AddProduct(parser.GetProduct());
+                switch (retailer.RetailerName)
+                {
+                    case "Cel":
+                        {
+                            return new CelDownloader(retailer);
+                        }
+                    case "MediaGalaxy":
+                        {
+                            return new MediaGalaxyDownloader.MediaGalaxyDownloader(retailer);
+                        }
+
+                    default:
+                        {
+                            return null;
+                        }
+                }
+            }
+            catch (Exception ex)
+            {
+                GenericLogger.Error($"could not create downloader for {retailer.RetailerName}");
+                return null;
             }
         }
+
+       
     }
 }

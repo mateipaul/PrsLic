@@ -36,9 +36,9 @@
                         <img src="@string.Format("https://prslicstorage.blob.core.windows.net/logos/{0}.png",item.Vanzator.Nume)" />
                     </div>
 
-                    @using (Html.BeginForm("FollowProduct", "ProductSearch", new { @productId = item.Id }, FormMethod.Post))
+                    @using (Html.BeginForm("RemoveAlert", "MyProducts", new { @productId = item.Id }))
                     {
-                        <input class="btn btn-info" type="submit" value="Urmareste Produs" />
+                        <input class="btn btn-info" type="submit" value="Sterge Alerta" />
                     }
                 </div>
             </div>

@@ -52,5 +52,14 @@ namespace MvcMusicStore.Controllers
 
             return products;
         }
+
+        public ActionResult RemoveAlert(Guid productId)
+        {
+            var userId = CookieUtilities.GetUserIdFromCookie(Request);
+
+            ProductFollowUtilities.RemoveProductAlert(userId, productId);
+
+            return RedirectToAction("MyProducts", "MyProducts");
+        }
     }
 }
