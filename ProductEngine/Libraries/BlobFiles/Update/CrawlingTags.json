@@ -23,9 +23,9 @@
                 "ProductName": "//h2[@class='Product-nameHeading']/a",
                 "ProductPrice": "//div[@class='Price-current']",
                 "ProductStock": "//div[itemprop='availability']",
-                "SearchUrlFormatDefault": "https://mediagalaxy.ro/cauta/?q={0}",
-                "SearchUrlFormatPriceAsc": "https://mediagalaxy.ro/cauta/filtru/order/price/dir/asc/?q={0}",
-                "SearchUrlFormatPriceDesc": "https://mediagalaxy.ro/cauta/filtru/order/price/dir/desc/?q={0}",
+                "SearchUrlFormatDefault": "https://cerberus.mediagalaxy.ro/catalog/search/{0}",
+                "SearchUrlFormatPriceAsc": "https://cerberus.mediagalaxy.ro/catalog/search/{0}?sort=price&dir=asc",
+                "SearchUrlFormatPriceDesc": "https://cerberus.mediagalaxy.ro/catalog/search/{0}?sort=price&dir=desc",
                 "UrlTag": "//h2[@class='Product-nameHeading']/a"
             },
             "RetailerName": "MediaGalaxy"

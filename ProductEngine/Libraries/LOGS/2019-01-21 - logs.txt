@@ -1,0 +1,13 @@
+2019-01-21 18:29:40.4953|INFO|GenericLogger|Starting CrawlUtilities
+2019-01-21 18:30:23.4906|INFO|GenericLogger|Update process finished starting again in 12 hours
+2019-01-21 18:30:23.8907|FATAL|GenericLogger|Error occured The process cannot access the file 'D:\Matei\PrsLic\ProductEngine\Libraries\BlobFiles\Search\CrawlingTags.json' because it is being used by another process. 
+ Exception The process cannot access the file 'D:\Matei\PrsLic\ProductEngine\Libraries\BlobFiles\Search\CrawlingTags.json' because it is being used by another process. popped when trying to get Blob : CrawlingTags.json from container : crawlsettings 
+    at System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
+   at System.IO.FileStream.Init(String path, FileMode mode, FileAccess access, Int32 rights, Boolean useRights, FileShare share, Int32 bufferSize, FileOptions options, SECURITY_ATTRIBUTES secAttrs, String msgPath, Boolean bFromProxy, Boolean useLongPath, Boolean checkHost)
+   at System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access, FileShare share)
+   at Microsoft.WindowsAzure.Storage.Blob.CloudBlob.DownloadToFile(String path, FileMode mode, AccessCondition accessCondition, BlobRequestOptions options, OperationContext operationContext) in c:\Program Files (x86)\Jenkins\workspace\release_dotnet_master\Lib\ClassLibraryCommon\Blob\CloudBlob.cs:line 612
+   at MiscUtilities.AzureBlobUtils.DownloadBlob(String fileName, String container, String usage)
+2019-01-21 18:31:01.2861|INFO|GenericLogger|Started searching for message VIVOBOOK MAX X541NA INTEL CELERON APOLLO LAKE N335|relevance
+2019-01-21 18:33:20.5246|INFO|GenericLogger|Starting CrawlUtilities
+2019-01-21 18:33:26.3102|INFO|GenericLogger|Started searching for message VIVOBOOK MAX X541NA INTEL CELERON APOLLO LAKE N335|relevance
+2019-01-21 18:49:27.7099|INFO|GenericLogger|Started searching for message LAPTOP ASUS|relevance
