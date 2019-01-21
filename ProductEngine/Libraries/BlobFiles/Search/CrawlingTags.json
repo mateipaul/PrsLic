@@ -18,17 +18,17 @@
         {
             "CrawlingTags": {
                 "NextProductPageTag": "//div[@class='pageresults']/span[@class='selectat']/following-sibling::a",
-                "ProductCellTag": "//div[@class='Product-nameHeading']",
-                "ProductImage": "//img[@class='Product-photo']",
-                "ProductName": "//h2[@class='Product-nameHeading']/a",
-                "ProductPrice": "//div[@class='Price-current']",
-                "ProductStock": "//div[itemprop='availability']",
+                "ProductCellTag": "//div[@class='product-box']",
+                "ProductImage": "//img[@itemprop='image'][1]",
+                "ProductName": "//h1[@class='p-name']",
+                "ProductPrice": "//meta[@itemprop='price']",
+                "ProductStock": "//link[@itemprop='availability']",
                 "SearchUrlFormatDefault": "https://www.pcgarage.ro/cauta/{0}",
-                "SearchUrlFormatPriceAsc": "https://cerberus.mediagalaxy.ro/catalog/search/{0}?sort=price&dir=asc",
-                "SearchUrlFormatPriceDesc": "https://cerberus.mediagalaxy.ro/catalog/search/{0}?sort=price&dir=desc",
-                "UrlTag": "//h2[@class='Product-nameHeading']/a"
+                "SearchUrlFormatPriceAsc": "https://www.pcgarage.ro/cauta/{0}",
+                "SearchUrlFormatPriceDesc": "https://www.pcgarage.ro/cauta/{0}",
+                "UrlTag": "//div[@class='pb-name']/a"
             },
-            "RetailerName": "MediaGalaxy"
+            "RetailerName": "PcGarage"
         }
     ]
 }

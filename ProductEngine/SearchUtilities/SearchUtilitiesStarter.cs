@@ -32,7 +32,7 @@ namespace SearchUtilities
             GenericLogger.Info($"Started searching for message {message.AsString}");
 
             Parallel.ForEach(model.Retailers
-                            , new ParallelOptions() { MaxDegreeOfParallelism = 1 }
+                            , new ParallelOptions() { MaxDegreeOfParallelism = 2 }
                             , retailer => SearchMessageCrawler.StartMessageCrawling(message,retailer)
                             );
         }

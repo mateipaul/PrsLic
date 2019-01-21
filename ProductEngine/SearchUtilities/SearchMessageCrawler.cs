@@ -59,7 +59,7 @@ namespace SearchUtilities
                         {
                             return new CelDownloader(retailer);
                         }
-                    case "MediaGalaxy":
+                    case "PcGarage":
                         {
                             return new MediaGalaxyDownloader.PcGarageDownloader(retailer);
                         }

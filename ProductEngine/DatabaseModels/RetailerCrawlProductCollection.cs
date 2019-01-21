@@ -93,7 +93,7 @@ namespace DatabaseModels
                     try
                     {
                         if (dbContext.Produs.Any(prd => prd.Id.Equals(item.Id)))
-                            dbContext.EvolutiaPretului.Add(item.EvolutiaPretului.First());
+                            dbContext.EvolutiaPretului.Add(item.EvolutiaPretului.OrderByDescending(m=>m.Data_Actualizare).First());
                         else
                         {
                             dbContext.Produs.Add(item);

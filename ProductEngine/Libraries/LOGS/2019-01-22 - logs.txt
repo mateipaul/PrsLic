@@ -1,0 +1,423 @@
+2019-01-22 00:00:25.8517|INFO|GenericLogger|Started searching for message LAPTOP GAMING ASUS TUF FX504GE|relevance
+2019-01-22 00:02:04.1596|INFO|GenericLogger|Started searching for message ASUS TUF FX504GE|relevance
+2019-01-22 00:05:18.1598|INFO|GenericLogger|Started searching for message ASUS TUF FX504GE|relevance
+2019-01-22 00:05:24.1680|INFO|GenericLogger|Started searching for message ASUS TUF FX504GE|relevance
+2019-01-22 00:08:08.0430|INFO|GenericLogger|Started searching for message ASUS TUF FX504GE|relevance
+2019-01-22 00:08:52.8617|INFO|GenericLogger|Started searching for message ASUS TUF FX504GE|relevance
+2019-01-22 00:10:57.4449|INFO|GenericLogger|Started searching for message ASUS TUF FX504GE|relevance
+2019-01-22 00:12:54.9977|INFO|GenericLogger|Started searching for message ASUS TUF FX504GE|relevance
+2019-01-22 00:15:55.9432|INFO|GenericLogger|Starting CrawlUtilities
+2019-01-22 00:16:01.4266|INFO|GenericLogger|Started searching for message ASUS TUF FX504GE|relevance
+2019-01-22 00:16:32.3360|FATAL|GenericLogger|Error occured Input string was not in a correct format. 
+ Exception popped when trying to extract product information for  
+    at System.Number.StringToNumber(String str, NumberStyles options, NumberBuffer& number, NumberFormatInfo info, Boolean parseDecimal)
+   at System.Number.ParseDecimal(String value, NumberStyles options, NumberFormatInfo numfmt)
+   at System.Decimal.Parse(String s)
+   at CrawlingUtilities.CrawlProductParser.ExtractNeededInformation(Produs& product) in D:\projects\licenta\PrsLic\ProductEngine\CrawlingUtilities\CrawlProductParser.cs:line 42
+   at CrawlingUtilities.CrawlProductParser.DownloadProduct(Produs& product) in D:\projects\licenta\PrsLic\ProductEngine\CrawlingUtilities\CrawlProductParser.cs:line 28
+2019-01-22 00:16:32.8510|FATAL|GenericLogger|Error occured Input string was not in a correct format. 
+ Exception popped when trying to extract product information for  
+    at System.Number.StringToNumber(String str, NumberStyles options, NumberBuffer& number, NumberFormatInfo info, Boolean parseDecimal)
+   at System.Number.ParseDecimal(String value, NumberStyles options, NumberFormatInfo numfmt)
+   at System.Decimal.Parse(String s)
+   at CrawlingUtilities.CrawlProductParser.ExtractNeededInformation(Produs& product) in D:\projects\licenta\PrsLic\ProductEngine\CrawlingUtilities\CrawlProductParser.cs:line 42
+   at CrawlingUtilities.CrawlProductParser.DownloadProduct(Produs& product) in D:\projects\licenta\PrsLic\ProductEngine\CrawlingUtilities\CrawlProductParser.cs:line 28
+2019-01-22 00:16:33.4161|FATAL|GenericLogger|Error occured Input string was not in a correct format. 
+ Exception popped when trying to extract product information for  
+    at System.Number.StringToNumber(String str, NumberStyles options, NumberBuffer& number, NumberFormatInfo info, Boolean parseDecimal)
+   at System.Number.ParseDecimal(String value, NumberStyles options, NumberFormatInfo numfmt)
+   at System.Decimal.Parse(String s)
+   at CrawlingUtilities.CrawlProductParser.ExtractNeededInformation(Produs& product) in D:\projects\licenta\PrsLic\ProductEngine\CrawlingUtilities\CrawlProductParser.cs:line 42
+   at CrawlingUtilities.CrawlProductParser.DownloadProduct(Produs& product) in D:\projects\licenta\PrsLic\ProductEngine\CrawlingUtilities\CrawlProductParser.cs:line 28
+2019-01-22 00:16:33.9104|FATAL|GenericLogger|Error occured Input string was not in a correct format. 
+ Exception popped when trying to extract product information for  
+    at System.Number.StringToNumber(String str, NumberStyles options, NumberBuffer& number, NumberFormatInfo info, Boolean parseDecimal)
+   at System.Number.ParseDecimal(String value, NumberStyles options, NumberFormatInfo numfmt)
+   at System.Decimal.Parse(String s)
+   at CrawlingUtilities.CrawlProductParser.ExtractNeededInformation(Produs& product) in D:\projects\licenta\PrsLic\ProductEngine\CrawlingUtilities\CrawlProductParser.cs:line 42
+   at CrawlingUtilities.CrawlProductParser.DownloadProduct(Produs& product) in D:\projects\licenta\PrsLic\ProductEngine\CrawlingUtilities\CrawlProductParser.cs:line 28
+2019-01-22 00:16:34.5435|FATAL|GenericLogger|Error occured Input string was not in a correct format. 
+ Exception popped when trying to extract product information for  
+    at System.Number.StringToNumber(String str, NumberStyles options, NumberBuffer& number, NumberFormatInfo info, Boolean parseDecimal)
+   at System.Number.ParseDecimal(String value, NumberStyles options, NumberFormatInfo numfmt)
+   at System.Decimal.Parse(String s)
+   at CrawlingUtilities.CrawlProductParser.ExtractNeededInformation(Produs& product) in D:\projects\licenta\PrsLic\ProductEngine\CrawlingUtilities\CrawlProductParser.cs:line 42
+   at CrawlingUtilities.CrawlProductParser.DownloadProduct(Produs& product) in D:\projects\licenta\PrsLic\ProductEngine\CrawlingUtilities\CrawlProductParser.cs:line 28
+2019-01-22 00:16:35.2272|FATAL|GenericLogger|Error occured Input string was not in a correct format. 
+ Exception popped when trying to extract product information for  
+    at System.Number.StringToNumber(String str, NumberStyles options, NumberBuffer& number, NumberFormatInfo info, Boolean parseDecimal)
+   at System.Number.ParseDecimal(String value, NumberStyles options, NumberFormatInfo numfmt)
+   at System.Decimal.Parse(String s)
+   at CrawlingUtilities.CrawlProductParser.ExtractNeededInformation(Produs& product) in D:\projects\licenta\PrsLic\ProductEngine\CrawlingUtilities\CrawlProductParser.cs:line 42
+   at CrawlingUtilities.CrawlProductParser.DownloadProduct(Produs& product) in D:\projects\licenta\PrsLic\ProductEngine\CrawlingUtilities\CrawlProductParser.cs:line 28
+2019-01-22 00:16:35.7251|FATAL|GenericLogger|Error occured Input string was not in a correct format. 
+ Exception popped when trying to extract product information for  
+    at System.Number.StringToNumber(String str, NumberStyles options, NumberBuffer& number, NumberFormatInfo info, Boolean parseDecimal)
+   at System.Number.ParseDecimal(String value, NumberStyles options, NumberFormatInfo numfmt)
+   at System.Decimal.Parse(String s)
+   at CrawlingUtilities.CrawlProductParser.ExtractNeededInformation(Produs& product) in D:\projects\licenta\PrsLic\ProductEngine\CrawlingUtilities\CrawlProductParser.cs:line 42
+   at CrawlingUtilities.CrawlProductParser.DownloadProduct(Produs& product) in D:\projects\licenta\PrsLic\ProductEngine\CrawlingUtilities\CrawlProductParser.cs:line 28
+2019-01-22 00:16:36.3248|FATAL|GenericLogger|Error occured Input string was not in a correct format. 
+ Exception popped when trying to extract product information for  
+    at System.Number.StringToNumber(String str, NumberStyles options, NumberBuffer& number, NumberFormatInfo info, Boolean parseDecimal)
+   at System.Number.ParseDecimal(String value, NumberStyles options, NumberFormatInfo numfmt)
+   at System.Decimal.Parse(String s)
+   at CrawlingUtilities.CrawlProductParser.ExtractNeededInformation(Produs& product) in D:\projects\licenta\PrsLic\ProductEngine\CrawlingUtilities\CrawlProductParser.cs:line 42
+   at CrawlingUtilities.CrawlProductParser.DownloadProduct(Produs& product) in D:\projects\licenta\PrsLic\ProductEngine\CrawlingUtilities\CrawlProductParser.cs:line 28
+2019-01-22 00:16:36.8412|FATAL|GenericLogger|Error occured Input string was not in a correct format. 
+ Exception popped when trying to extract product information for  
+    at System.Number.StringToNumber(String str, NumberStyles options, NumberBuffer& number, NumberFormatInfo info, Boolean parseDecimal)
+   at System.Number.ParseDecimal(String value, NumberStyles options, NumberFormatInfo numfmt)
+   at System.Decimal.Parse(String s)
+   at CrawlingUtilities.CrawlProductParser.ExtractNeededInformation(Produs& product) in D:\projects\licenta\PrsLic\ProductEngine\CrawlingUtilities\CrawlProductParser.cs:line 42
+   at CrawlingUtilities.CrawlProductParser.DownloadProduct(Produs& product) in D:\projects\licenta\PrsLic\ProductEngine\CrawlingUtilities\CrawlProductParser.cs:line 28
+2019-01-22 00:16:37.5242|FATAL|GenericLogger|Error occured Input string was not in a correct format. 
+ Exception popped when trying to extract product information for  
+    at System.Number.StringToNumber(String str, NumberStyles options, NumberBuffer& number, NumberFormatInfo info, Boolean parseDecimal)
+   at System.Number.ParseDecimal(String value, NumberStyles options, NumberFormatInfo numfmt)
+   at System.Decimal.Parse(String s)
+   at CrawlingUtilities.CrawlProductParser.ExtractNeededInformation(Produs& product) in D:\projects\licenta\PrsLic\ProductEngine\CrawlingUtilities\CrawlProductParser.cs:line 42
+   at CrawlingUtilities.CrawlProductParser.DownloadProduct(Produs& product) in D:\projects\licenta\PrsLic\ProductEngine\CrawlingUtilities\CrawlProductParser.cs:line 28
+2019-01-22 00:16:38.0389|FATAL|GenericLogger|Error occured Input string was not in a correct format. 
+ Exception popped when trying to extract product information for  
+    at System.Number.StringToNumber(String str, NumberStyles options, NumberBuffer& number, NumberFormatInfo info, Boolean parseDecimal)
+   at System.Number.ParseDecimal(String value, NumberStyles options, NumberFormatInfo numfmt)
+   at System.Decimal.Parse(String s)
+   at CrawlingUtilities.CrawlProductParser.ExtractNeededInformation(Produs& product) in D:\projects\licenta\PrsLic\ProductEngine\CrawlingUtilities\CrawlProductParser.cs:line 42
+   at CrawlingUtilities.CrawlProductParser.DownloadProduct(Produs& product) in D:\projects\licenta\PrsLic\ProductEngine\CrawlingUtilities\CrawlProductParser.cs:line 28
+2019-01-22 00:16:38.6653|FATAL|GenericLogger|Error occured Input string was not in a correct format. 
+ Exception popped when trying to extract product information for  
+    at System.Number.StringToNumber(String str, NumberStyles options, NumberBuffer& number, NumberFormatInfo info, Boolean parseDecimal)
+   at System.Number.ParseDecimal(String value, NumberStyles options, NumberFormatInfo numfmt)
+   at System.Decimal.Parse(String s)
+   at CrawlingUtilities.CrawlProductParser.ExtractNeededInformation(Produs& product) in D:\projects\licenta\PrsLic\ProductEngine\CrawlingUtilities\CrawlProductParser.cs:line 42
+   at CrawlingUtilities.CrawlProductParser.DownloadProduct(Produs& product) in D:\projects\licenta\PrsLic\ProductEngine\CrawlingUtilities\CrawlProductParser.cs:line 28
+2019-01-22 00:16:39.2726|FATAL|GenericLogger|Error occured Input string was not in a correct format. 
+ Exception popped when trying to extract product information for  
+    at System.Number.StringToNumber(String str, NumberStyles options, NumberBuffer& number, NumberFormatInfo info, Boolean parseDecimal)
+   at System.Number.ParseDecimal(String value, NumberStyles options, NumberFormatInfo numfmt)
+   at System.Decimal.Parse(String s)
+   at CrawlingUtilities.CrawlProductParser.ExtractNeededInformation(Produs& product) in D:\projects\licenta\PrsLic\ProductEngine\CrawlingUtilities\CrawlProductParser.cs:line 42
+   at CrawlingUtilities.CrawlProductParser.DownloadProduct(Produs& product) in D:\projects\licenta\PrsLic\ProductEngine\CrawlingUtilities\CrawlProductParser.cs:line 28
+2019-01-22 00:16:39.9141|FATAL|GenericLogger|Error occured Input string was not in a correct format. 
+ Exception popped when trying to extract product information for  
+    at System.Number.StringToNumber(String str, NumberStyles options, NumberBuffer& number, NumberFormatInfo info, Boolean parseDecimal)
+   at System.Number.ParseDecimal(String value, NumberStyles options, NumberFormatInfo numfmt)
+   at System.Decimal.Parse(String s)
+   at CrawlingUtilities.CrawlProductParser.ExtractNeededInformation(Produs& product) in D:\projects\licenta\PrsLic\ProductEngine\CrawlingUtilities\CrawlProductParser.cs:line 42
+   at CrawlingUtilities.CrawlProductParser.DownloadProduct(Produs& product) in D:\projects\licenta\PrsLic\ProductEngine\CrawlingUtilities\CrawlProductParser.cs:line 28
+2019-01-22 00:16:40.5312|FATAL|GenericLogger|Error occured Input string was not in a correct format. 
+ Exception popped when trying to extract product information for  
+    at System.Number.StringToNumber(String str, NumberStyles options, NumberBuffer& number, NumberFormatInfo info, Boolean parseDecimal)
+   at System.Number.ParseDecimal(String value, NumberStyles options, NumberFormatInfo numfmt)
+   at System.Decimal.Parse(String s)
+   at CrawlingUtilities.CrawlProductParser.ExtractNeededInformation(Produs& product) in D:\projects\licenta\PrsLic\ProductEngine\CrawlingUtilities\CrawlProductParser.cs:line 42
+   at CrawlingUtilities.CrawlProductParser.DownloadProduct(Produs& product) in D:\projects\licenta\PrsLic\ProductEngine\CrawlingUtilities\CrawlProductParser.cs:line 28
+2019-01-22 00:16:41.2097|FATAL|GenericLogger|Error occured Input string was not in a correct format. 
+ Exception popped when trying to extract product information for  
+    at System.Number.StringToNumber(String str, NumberStyles options, NumberBuffer& number, NumberFormatInfo info, Boolean parseDecimal)
+   at System.Number.ParseDecimal(String value, NumberStyles options, NumberFormatInfo numfmt)
+   at System.Decimal.Parse(String s)
+   at CrawlingUtilities.CrawlProductParser.ExtractNeededInformation(Produs& product) in D:\projects\licenta\PrsLic\ProductEngine\CrawlingUtilities\CrawlProductParser.cs:line 42
+   at CrawlingUtilities.CrawlProductParser.DownloadProduct(Produs& product) in D:\projects\licenta\PrsLic\ProductEngine\CrawlingUtilities\CrawlProductParser.cs:line 28
+2019-01-22 00:16:41.8399|FATAL|GenericLogger|Error occured Input string was not in a correct format. 
+ Exception popped when trying to extract product information for  
+    at System.Number.StringToNumber(String str, NumberStyles options, NumberBuffer& number, NumberFormatInfo info, Boolean parseDecimal)
+   at System.Number.ParseDecimal(String value, NumberStyles options, NumberFormatInfo numfmt)
+   at System.Decimal.Parse(String s)
+   at CrawlingUtilities.CrawlProductParser.ExtractNeededInformation(Produs& product) in D:\projects\licenta\PrsLic\ProductEngine\CrawlingUtilities\CrawlProductParser.cs:line 42
+   at CrawlingUtilities.CrawlProductParser.DownloadProduct(Produs& product) in D:\projects\licenta\PrsLic\ProductEngine\CrawlingUtilities\CrawlProductParser.cs:line 28
+2019-01-22 00:16:42.4913|FATAL|GenericLogger|Error occured Input string was not in a correct format. 
+ Exception popped when trying to extract product information for  
+    at System.Number.StringToNumber(String str, NumberStyles options, NumberBuffer& number, NumberFormatInfo info, Boolean parseDecimal)
+   at System.Number.ParseDecimal(String value, NumberStyles options, NumberFormatInfo numfmt)
+   at System.Decimal.Parse(String s)
+   at CrawlingUtilities.CrawlProductParser.ExtractNeededInformation(Produs& product) in D:\projects\licenta\PrsLic\ProductEngine\CrawlingUtilities\CrawlProductParser.cs:line 42
+   at CrawlingUtilities.CrawlProductParser.DownloadProduct(Produs& product) in D:\projects\licenta\PrsLic\ProductEngine\CrawlingUtilities\CrawlProductParser.cs:line 28
+2019-01-22 00:16:43.1167|FATAL|GenericLogger|Error occured Input string was not in a correct format. 
+ Exception popped when trying to extract product information for  
+    at System.Number.StringToNumber(String str, NumberStyles options, NumberBuffer& number, NumberFormatInfo info, Boolean parseDecimal)
+   at System.Number.ParseDecimal(String value, NumberStyles options, NumberFormatInfo numfmt)
+   at System.Decimal.Parse(String s)
+   at CrawlingUtilities.CrawlProductParser.ExtractNeededInformation(Produs& product) in D:\projects\licenta\PrsLic\ProductEngine\CrawlingUtilities\CrawlProductParser.cs:line 42
+   at CrawlingUtilities.CrawlProductParser.DownloadProduct(Produs& product) in D:\projects\licenta\PrsLic\ProductEngine\CrawlingUtilities\CrawlProductParser.cs:line 28
+2019-01-22 00:16:43.7554|FATAL|GenericLogger|Error occured Input string was not in a correct format. 
+ Exception popped when trying to extract product information for  
+    at System.Number.StringToNumber(String str, NumberStyles options, NumberBuffer& number, NumberFormatInfo info, Boolean parseDecimal)
+   at System.Number.ParseDecimal(String value, NumberStyles options, NumberFormatInfo numfmt)
+   at System.Decimal.Parse(String s)
+   at CrawlingUtilities.CrawlProductParser.ExtractNeededInformation(Produs& product) in D:\projects\licenta\PrsLic\ProductEngine\CrawlingUtilities\CrawlProductParser.cs:line 42
+   at CrawlingUtilities.CrawlProductParser.DownloadProduct(Produs& product) in D:\projects\licenta\PrsLic\ProductEngine\CrawlingUtilities\CrawlProductParser.cs:line 28
+2019-01-22 00:16:44.3858|FATAL|GenericLogger|Error occured Input string was not in a correct format. 
+ Exception popped when trying to extract product information for  
+    at System.Number.StringToNumber(String str, NumberStyles options, NumberBuffer& number, NumberFormatInfo info, Boolean parseDecimal)
+   at System.Number.ParseDecimal(String value, NumberStyles options, NumberFormatInfo numfmt)
+   at System.Decimal.Parse(String s)
+   at CrawlingUtilities.CrawlProductParser.ExtractNeededInformation(Produs& product) in D:\projects\licenta\PrsLic\ProductEngine\CrawlingUtilities\CrawlProductParser.cs:line 42
+   at CrawlingUtilities.CrawlProductParser.DownloadProduct(Produs& product) in D:\projects\licenta\PrsLic\ProductEngine\CrawlingUtilities\CrawlProductParser.cs:line 28
+2019-01-22 00:16:45.0291|FATAL|GenericLogger|Error occured Input string was not in a correct format. 
+ Exception popped when trying to extract product information for  
+    at System.Number.StringToNumber(String str, NumberStyles options, NumberBuffer& number, NumberFormatInfo info, Boolean parseDecimal)
+   at System.Number.ParseDecimal(String value, NumberStyles options, NumberFormatInfo numfmt)
+   at System.Decimal.Parse(String s)
+   at CrawlingUtilities.CrawlProductParser.ExtractNeededInformation(Produs& product) in D:\projects\licenta\PrsLic\ProductEngine\CrawlingUtilities\CrawlProductParser.cs:line 42
+   at CrawlingUtilities.CrawlProductParser.DownloadProduct(Produs& product) in D:\projects\licenta\PrsLic\ProductEngine\CrawlingUtilities\CrawlProductParser.cs:line 28
+2019-01-22 00:16:45.5499|FATAL|GenericLogger|Error occured Input string was not in a correct format. 
+ Exception popped when trying to extract product information for  
+    at System.Number.StringToNumber(String str, NumberStyles options, NumberBuffer& number, NumberFormatInfo info, Boolean parseDecimal)
+   at System.Number.ParseDecimal(String value, NumberStyles options, NumberFormatInfo numfmt)
+   at System.Decimal.Parse(String s)
+   at CrawlingUtilities.CrawlProductParser.ExtractNeededInformation(Produs& product) in D:\projects\licenta\PrsLic\ProductEngine\CrawlingUtilities\CrawlProductParser.cs:line 42
+   at CrawlingUtilities.CrawlProductParser.DownloadProduct(Produs& product) in D:\projects\licenta\PrsLic\ProductEngine\CrawlingUtilities\CrawlProductParser.cs:line 28
+2019-01-22 00:16:46.1995|FATAL|GenericLogger|Error occured Input string was not in a correct format. 
+ Exception popped when trying to extract product information for  
+    at System.Number.StringToNumber(String str, NumberStyles options, NumberBuffer& number, NumberFormatInfo info, Boolean parseDecimal)
+   at System.Number.ParseDecimal(String value, NumberStyles options, NumberFormatInfo numfmt)
+   at System.Decimal.Parse(String s)
+   at CrawlingUtilities.CrawlProductParser.ExtractNeededInformation(Produs& product) in D:\projects\licenta\PrsLic\ProductEngine\CrawlingUtilities\CrawlProductParser.cs:line 42
+   at CrawlingUtilities.CrawlProductParser.DownloadProduct(Produs& product) in D:\projects\licenta\PrsLic\ProductEngine\CrawlingUtilities\CrawlProductParser.cs:line 28
+2019-01-22 00:16:46.2075|INFO|GenericLogger|Update process finished starting again in 12 hours
+2019-01-22 00:16:48.0034|INFO|GenericLogger|Started searching for message ASUS TUF FX504GE|relevance
+2019-01-22 00:18:38.1971|INFO|GenericLogger|Starting CrawlUtilities
+2019-01-22 00:18:47.7004|INFO|GenericLogger|Started searching for message ASUS TUF FX504GE|relevance
+2019-01-22 00:19:18.3668|FATAL|GenericLogger|Error occured Input string was not in a correct format. 
+ Exception popped when trying to extract product information for  
+    at System.Number.StringToNumber(String str, NumberStyles options, NumberBuffer& number, NumberFormatInfo info, Boolean parseDecimal)
+   at System.Number.ParseDecimal(String value, NumberStyles options, NumberFormatInfo numfmt)
+   at System.Decimal.Parse(String s)
+   at CrawlingUtilities.CrawlProductParser.ExtractNeededInformation(Produs& product) in D:\projects\licenta\PrsLic\ProductEngine\CrawlingUtilities\CrawlProductParser.cs:line 42
+   at CrawlingUtilities.CrawlProductParser.DownloadProduct(Produs& product) in D:\projects\licenta\PrsLic\ProductEngine\CrawlingUtilities\CrawlProductParser.cs:line 28
+2019-01-22 00:19:18.8410|FATAL|GenericLogger|Error occured Input string was not in a correct format. 
+ Exception popped when trying to extract product information for  
+    at System.Number.StringToNumber(String str, NumberStyles options, NumberBuffer& number, NumberFormatInfo info, Boolean parseDecimal)
+   at System.Number.ParseDecimal(String value, NumberStyles options, NumberFormatInfo numfmt)
+   at System.Decimal.Parse(String s)
+   at CrawlingUtilities.CrawlProductParser.ExtractNeededInformation(Produs& product) in D:\projects\licenta\PrsLic\ProductEngine\CrawlingUtilities\CrawlProductParser.cs:line 42
+   at CrawlingUtilities.CrawlProductParser.DownloadProduct(Produs& product) in D:\projects\licenta\PrsLic\ProductEngine\CrawlingUtilities\CrawlProductParser.cs:line 28
+2019-01-22 00:19:19.4987|FATAL|GenericLogger|Error occured Input string was not in a correct format. 
+ Exception popped when trying to extract product information for  
+    at System.Number.StringToNumber(String str, NumberStyles options, NumberBuffer& number, NumberFormatInfo info, Boolean parseDecimal)
+   at System.Number.ParseDecimal(String value, NumberStyles options, NumberFormatInfo numfmt)
+   at System.Decimal.Parse(String s)
+   at CrawlingUtilities.CrawlProductParser.ExtractNeededInformation(Produs& product) in D:\projects\licenta\PrsLic\ProductEngine\CrawlingUtilities\CrawlProductParser.cs:line 42
+   at CrawlingUtilities.CrawlProductParser.DownloadProduct(Produs& product) in D:\projects\licenta\PrsLic\ProductEngine\CrawlingUtilities\CrawlProductParser.cs:line 28
+2019-01-22 00:19:20.1047|FATAL|GenericLogger|Error occured Input string was not in a correct format. 
+ Exception popped when trying to extract product information for  
+    at System.Number.StringToNumber(String str, NumberStyles options, NumberBuffer& number, NumberFormatInfo info, Boolean parseDecimal)
+   at System.Number.ParseDecimal(String value, NumberStyles options, NumberFormatInfo numfmt)
+   at System.Decimal.Parse(String s)
+   at CrawlingUtilities.CrawlProductParser.ExtractNeededInformation(Produs& product) in D:\projects\licenta\PrsLic\ProductEngine\CrawlingUtilities\CrawlProductParser.cs:line 42
+   at CrawlingUtilities.CrawlProductParser.DownloadProduct(Produs& product) in D:\projects\licenta\PrsLic\ProductEngine\CrawlingUtilities\CrawlProductParser.cs:line 28
+2019-01-22 00:19:20.7192|FATAL|GenericLogger|Error occured Input string was not in a correct format. 
+ Exception popped when trying to extract product information for  
+    at System.Number.StringToNumber(String str, NumberStyles options, NumberBuffer& number, NumberFormatInfo info, Boolean parseDecimal)
+   at System.Number.ParseDecimal(String value, NumberStyles options, NumberFormatInfo numfmt)
+   at System.Decimal.Parse(String s)
+   at CrawlingUtilities.CrawlProductParser.ExtractNeededInformation(Produs& product) in D:\projects\licenta\PrsLic\ProductEngine\CrawlingUtilities\CrawlProductParser.cs:line 42
+   at CrawlingUtilities.CrawlProductParser.DownloadProduct(Produs& product) in D:\projects\licenta\PrsLic\ProductEngine\CrawlingUtilities\CrawlProductParser.cs:line 28
+2019-01-22 00:19:21.4354|FATAL|GenericLogger|Error occured Input string was not in a correct format. 
+ Exception popped when trying to extract product information for  
+    at System.Number.StringToNumber(String str, NumberStyles options, NumberBuffer& number, NumberFormatInfo info, Boolean parseDecimal)
+   at System.Number.ParseDecimal(String value, NumberStyles options, NumberFormatInfo numfmt)
+   at System.Decimal.Parse(String s)
+   at CrawlingUtilities.CrawlProductParser.ExtractNeededInformation(Produs& product) in D:\projects\licenta\PrsLic\ProductEngine\CrawlingUtilities\CrawlProductParser.cs:line 42
+   at CrawlingUtilities.CrawlProductParser.DownloadProduct(Produs& product) in D:\projects\licenta\PrsLic\ProductEngine\CrawlingUtilities\CrawlProductParser.cs:line 28
+2019-01-22 00:19:21.9256|FATAL|GenericLogger|Error occured Input string was not in a correct format. 
+ Exception popped when trying to extract product information for  
+    at System.Number.StringToNumber(String str, NumberStyles options, NumberBuffer& number, NumberFormatInfo info, Boolean parseDecimal)
+   at System.Number.ParseDecimal(String value, NumberStyles options, NumberFormatInfo numfmt)
+   at System.Decimal.Parse(String s)
+   at CrawlingUtilities.CrawlProductParser.ExtractNeededInformation(Produs& product) in D:\projects\licenta\PrsLic\ProductEngine\CrawlingUtilities\CrawlProductParser.cs:line 42
+   at CrawlingUtilities.CrawlProductParser.DownloadProduct(Produs& product) in D:\projects\licenta\PrsLic\ProductEngine\CrawlingUtilities\CrawlProductParser.cs:line 28
+2019-01-22 00:19:22.4080|FATAL|GenericLogger|Error occured Input string was not in a correct format. 
+ Exception popped when trying to extract product information for  
+    at System.Number.StringToNumber(String str, NumberStyles options, NumberBuffer& number, NumberFormatInfo info, Boolean parseDecimal)
+   at System.Number.ParseDecimal(String value, NumberStyles options, NumberFormatInfo numfmt)
+   at System.Decimal.Parse(String s)
+   at CrawlingUtilities.CrawlProductParser.ExtractNeededInformation(Produs& product) in D:\projects\licenta\PrsLic\ProductEngine\CrawlingUtilities\CrawlProductParser.cs:line 42
+   at CrawlingUtilities.CrawlProductParser.DownloadProduct(Produs& product) in D:\projects\licenta\PrsLic\ProductEngine\CrawlingUtilities\CrawlProductParser.cs:line 28
+2019-01-22 00:19:22.9047|FATAL|GenericLogger|Error occured Input string was not in a correct format. 
+ Exception popped when trying to extract product information for  
+    at System.Number.StringToNumber(String str, NumberStyles options, NumberBuffer& number, NumberFormatInfo info, Boolean parseDecimal)
+   at System.Number.ParseDecimal(String value, NumberStyles options, NumberFormatInfo numfmt)
+   at System.Decimal.Parse(String s)
+   at CrawlingUtilities.CrawlProductParser.ExtractNeededInformation(Produs& product) in D:\projects\licenta\PrsLic\ProductEngine\CrawlingUtilities\CrawlProductParser.cs:line 42
+   at CrawlingUtilities.CrawlProductParser.DownloadProduct(Produs& product) in D:\projects\licenta\PrsLic\ProductEngine\CrawlingUtilities\CrawlProductParser.cs:line 28
+2019-01-22 00:19:23.5470|FATAL|GenericLogger|Error occured Input string was not in a correct format. 
+ Exception popped when trying to extract product information for  
+    at System.Number.StringToNumber(String str, NumberStyles options, NumberBuffer& number, NumberFormatInfo info, Boolean parseDecimal)
+   at System.Number.ParseDecimal(String value, NumberStyles options, NumberFormatInfo numfmt)
+   at System.Decimal.Parse(String s)
+   at CrawlingUtilities.CrawlProductParser.ExtractNeededInformation(Produs& product) in D:\projects\licenta\PrsLic\ProductEngine\CrawlingUtilities\CrawlProductParser.cs:line 42
+   at CrawlingUtilities.CrawlProductParser.DownloadProduct(Produs& product) in D:\projects\licenta\PrsLic\ProductEngine\CrawlingUtilities\CrawlProductParser.cs:line 28
+2019-01-22 00:19:24.1950|FATAL|GenericLogger|Error occured Input string was not in a correct format. 
+ Exception popped when trying to extract product information for  
+    at System.Number.StringToNumber(String str, NumberStyles options, NumberBuffer& number, NumberFormatInfo info, Boolean parseDecimal)
+   at System.Number.ParseDecimal(String value, NumberStyles options, NumberFormatInfo numfmt)
+   at System.Decimal.Parse(String s)
+   at CrawlingUtilities.CrawlProductParser.ExtractNeededInformation(Produs& product) in D:\projects\licenta\PrsLic\ProductEngine\CrawlingUtilities\CrawlProductParser.cs:line 42
+   at CrawlingUtilities.CrawlProductParser.DownloadProduct(Produs& product) in D:\projects\licenta\PrsLic\ProductEngine\CrawlingUtilities\CrawlProductParser.cs:line 28
+2019-01-22 00:19:24.6897|FATAL|GenericLogger|Error occured Input string was not in a correct format. 
+ Exception popped when trying to extract product information for  
+    at System.Number.StringToNumber(String str, NumberStyles options, NumberBuffer& number, NumberFormatInfo info, Boolean parseDecimal)
+   at System.Number.ParseDecimal(String value, NumberStyles options, NumberFormatInfo numfmt)
+   at System.Decimal.Parse(String s)
+   at CrawlingUtilities.CrawlProductParser.ExtractNeededInformation(Produs& product) in D:\projects\licenta\PrsLic\ProductEngine\CrawlingUtilities\CrawlProductParser.cs:line 42
+   at CrawlingUtilities.CrawlProductParser.DownloadProduct(Produs& product) in D:\projects\licenta\PrsLic\ProductEngine\CrawlingUtilities\CrawlProductParser.cs:line 28
+2019-01-22 00:19:25.1990|FATAL|GenericLogger|Error occured Input string was not in a correct format. 
+ Exception popped when trying to extract product information for  
+    at System.Number.StringToNumber(String str, NumberStyles options, NumberBuffer& number, NumberFormatInfo info, Boolean parseDecimal)
+   at System.Number.ParseDecimal(String value, NumberStyles options, NumberFormatInfo numfmt)
+   at System.Decimal.Parse(String s)
+   at CrawlingUtilities.CrawlProductParser.ExtractNeededInformation(Produs& product) in D:\projects\licenta\PrsLic\ProductEngine\CrawlingUtilities\CrawlProductParser.cs:line 42
+   at CrawlingUtilities.CrawlProductParser.DownloadProduct(Produs& product) in D:\projects\licenta\PrsLic\ProductEngine\CrawlingUtilities\CrawlProductParser.cs:line 28
+2019-01-22 00:19:25.6898|FATAL|GenericLogger|Error occured Input string was not in a correct format. 
+ Exception popped when trying to extract product information for  
+    at System.Number.StringToNumber(String str, NumberStyles options, NumberBuffer& number, NumberFormatInfo info, Boolean parseDecimal)
+   at System.Number.ParseDecimal(String value, NumberStyles options, NumberFormatInfo numfmt)
+   at System.Decimal.Parse(String s)
+   at CrawlingUtilities.CrawlProductParser.ExtractNeededInformation(Produs& product) in D:\projects\licenta\PrsLic\ProductEngine\CrawlingUtilities\CrawlProductParser.cs:line 42
+   at CrawlingUtilities.CrawlProductParser.DownloadProduct(Produs& product) in D:\projects\licenta\PrsLic\ProductEngine\CrawlingUtilities\CrawlProductParser.cs:line 28
+2019-01-22 00:19:26.3114|FATAL|GenericLogger|Error occured Input string was not in a correct format. 
+ Exception popped when trying to extract product information for  
+    at System.Number.StringToNumber(String str, NumberStyles options, NumberBuffer& number, NumberFormatInfo info, Boolean parseDecimal)
+   at System.Number.ParseDecimal(String value, NumberStyles options, NumberFormatInfo numfmt)
+   at System.Decimal.Parse(String s)
+   at CrawlingUtilities.CrawlProductParser.ExtractNeededInformation(Produs& product) in D:\projects\licenta\PrsLic\ProductEngine\CrawlingUtilities\CrawlProductParser.cs:line 42
+   at CrawlingUtilities.CrawlProductParser.DownloadProduct(Produs& product) in D:\projects\licenta\PrsLic\ProductEngine\CrawlingUtilities\CrawlProductParser.cs:line 28
+2019-01-22 00:19:26.9301|FATAL|GenericLogger|Error occured Input string was not in a correct format. 
+ Exception popped when trying to extract product information for  
+    at System.Number.StringToNumber(String str, NumberStyles options, NumberBuffer& number, NumberFormatInfo info, Boolean parseDecimal)
+   at System.Number.ParseDecimal(String value, NumberStyles options, NumberFormatInfo numfmt)
+   at System.Decimal.Parse(String s)
+   at CrawlingUtilities.CrawlProductParser.ExtractNeededInformation(Produs& product) in D:\projects\licenta\PrsLic\ProductEngine\CrawlingUtilities\CrawlProductParser.cs:line 42
+   at CrawlingUtilities.CrawlProductParser.DownloadProduct(Produs& product) in D:\projects\licenta\PrsLic\ProductEngine\CrawlingUtilities\CrawlProductParser.cs:line 28
+2019-01-22 00:19:27.5491|FATAL|GenericLogger|Error occured Input string was not in a correct format. 
+ Exception popped when trying to extract product information for  
+    at System.Number.StringToNumber(String str, NumberStyles options, NumberBuffer& number, NumberFormatInfo info, Boolean parseDecimal)
+   at System.Number.ParseDecimal(String value, NumberStyles options, NumberFormatInfo numfmt)
+   at System.Decimal.Parse(String s)
+   at CrawlingUtilities.CrawlProductParser.ExtractNeededInformation(Produs& product) in D:\projects\licenta\PrsLic\ProductEngine\CrawlingUtilities\CrawlProductParser.cs:line 42
+   at CrawlingUtilities.CrawlProductParser.DownloadProduct(Produs& product) in D:\projects\licenta\PrsLic\ProductEngine\CrawlingUtilities\CrawlProductParser.cs:line 28
+2019-01-22 00:19:28.1097|FATAL|GenericLogger|Error occured Input string was not in a correct format. 
+ Exception popped when trying to extract product information for  
+    at System.Number.StringToNumber(String str, NumberStyles options, NumberBuffer& number, NumberFormatInfo info, Boolean parseDecimal)
+   at System.Number.ParseDecimal(String value, NumberStyles options, NumberFormatInfo numfmt)
+   at System.Decimal.Parse(String s)
+   at CrawlingUtilities.CrawlProductParser.ExtractNeededInformation(Produs& product) in D:\projects\licenta\PrsLic\ProductEngine\CrawlingUtilities\CrawlProductParser.cs:line 42
+   at CrawlingUtilities.CrawlProductParser.DownloadProduct(Produs& product) in D:\projects\licenta\PrsLic\ProductEngine\CrawlingUtilities\CrawlProductParser.cs:line 28
+2019-01-22 00:19:28.7195|FATAL|GenericLogger|Error occured Input string was not in a correct format. 
+ Exception popped when trying to extract product information for  
+    at System.Number.StringToNumber(String str, NumberStyles options, NumberBuffer& number, NumberFormatInfo info, Boolean parseDecimal)
+   at System.Number.ParseDecimal(String value, NumberStyles options, NumberFormatInfo numfmt)
+   at System.Decimal.Parse(String s)
+   at CrawlingUtilities.CrawlProductParser.ExtractNeededInformation(Produs& product) in D:\projects\licenta\PrsLic\ProductEngine\CrawlingUtilities\CrawlProductParser.cs:line 42
+   at CrawlingUtilities.CrawlProductParser.DownloadProduct(Produs& product) in D:\projects\licenta\PrsLic\ProductEngine\CrawlingUtilities\CrawlProductParser.cs:line 28
+2019-01-22 00:19:29.3460|FATAL|GenericLogger|Error occured Input string was not in a correct format. 
+ Exception popped when trying to extract product information for  
+    at System.Number.StringToNumber(String str, NumberStyles options, NumberBuffer& number, NumberFormatInfo info, Boolean parseDecimal)
+   at System.Number.ParseDecimal(String value, NumberStyles options, NumberFormatInfo numfmt)
+   at System.Decimal.Parse(String s)
+   at CrawlingUtilities.CrawlProductParser.ExtractNeededInformation(Produs& product) in D:\projects\licenta\PrsLic\ProductEngine\CrawlingUtilities\CrawlProductParser.cs:line 42
+   at CrawlingUtilities.CrawlProductParser.DownloadProduct(Produs& product) in D:\projects\licenta\PrsLic\ProductEngine\CrawlingUtilities\CrawlProductParser.cs:line 28
+2019-01-22 00:19:30.0463|FATAL|GenericLogger|Error occured Input string was not in a correct format. 
+ Exception popped when trying to extract product information for  
+    at System.Number.StringToNumber(String str, NumberStyles options, NumberBuffer& number, NumberFormatInfo info, Boolean parseDecimal)
+   at System.Number.ParseDecimal(String value, NumberStyles options, NumberFormatInfo numfmt)
+   at System.Decimal.Parse(String s)
+   at CrawlingUtilities.CrawlProductParser.ExtractNeededInformation(Produs& product) in D:\projects\licenta\PrsLic\ProductEngine\CrawlingUtilities\CrawlProductParser.cs:line 42
+   at CrawlingUtilities.CrawlProductParser.DownloadProduct(Produs& product) in D:\projects\licenta\PrsLic\ProductEngine\CrawlingUtilities\CrawlProductParser.cs:line 28
+2019-01-22 00:19:30.5425|FATAL|GenericLogger|Error occured Input string was not in a correct format. 
+ Exception popped when trying to extract product information for  
+    at System.Number.StringToNumber(String str, NumberStyles options, NumberBuffer& number, NumberFormatInfo info, Boolean parseDecimal)
+   at System.Number.ParseDecimal(String value, NumberStyles options, NumberFormatInfo numfmt)
+   at System.Decimal.Parse(String s)
+   at CrawlingUtilities.CrawlProductParser.ExtractNeededInformation(Produs& product) in D:\projects\licenta\PrsLic\ProductEngine\CrawlingUtilities\CrawlProductParser.cs:line 42
+   at CrawlingUtilities.CrawlProductParser.DownloadProduct(Produs& product) in D:\projects\licenta\PrsLic\ProductEngine\CrawlingUtilities\CrawlProductParser.cs:line 28
+2019-01-22 00:19:31.0579|FATAL|GenericLogger|Error occured Input string was not in a correct format. 
+ Exception popped when trying to extract product information for  
+    at System.Number.StringToNumber(String str, NumberStyles options, NumberBuffer& number, NumberFormatInfo info, Boolean parseDecimal)
+   at System.Number.ParseDecimal(String value, NumberStyles options, NumberFormatInfo numfmt)
+   at System.Decimal.Parse(String s)
+   at CrawlingUtilities.CrawlProductParser.ExtractNeededInformation(Produs& product) in D:\projects\licenta\PrsLic\ProductEngine\CrawlingUtilities\CrawlProductParser.cs:line 42
+   at CrawlingUtilities.CrawlProductParser.DownloadProduct(Produs& product) in D:\projects\licenta\PrsLic\ProductEngine\CrawlingUtilities\CrawlProductParser.cs:line 28
+2019-01-22 00:19:31.6770|FATAL|GenericLogger|Error occured Input string was not in a correct format. 
+ Exception popped when trying to extract product information for  
+    at System.Number.StringToNumber(String str, NumberStyles options, NumberBuffer& number, NumberFormatInfo info, Boolean parseDecimal)
+   at System.Number.ParseDecimal(String value, NumberStyles options, NumberFormatInfo numfmt)
+   at System.Decimal.Parse(String s)
+   at CrawlingUtilities.CrawlProductParser.ExtractNeededInformation(Produs& product) in D:\projects\licenta\PrsLic\ProductEngine\CrawlingUtilities\CrawlProductParser.cs:line 42
+   at CrawlingUtilities.CrawlProductParser.DownloadProduct(Produs& product) in D:\projects\licenta\PrsLic\ProductEngine\CrawlingUtilities\CrawlProductParser.cs:line 28
+2019-01-22 00:19:32.1907|FATAL|GenericLogger|Error occured Input string was not in a correct format. 
+ Exception popped when trying to extract product information for  
+    at System.Number.StringToNumber(String str, NumberStyles options, NumberBuffer& number, NumberFormatInfo info, Boolean parseDecimal)
+   at System.Number.ParseDecimal(String value, NumberStyles options, NumberFormatInfo numfmt)
+   at System.Decimal.Parse(String s)
+   at CrawlingUtilities.CrawlProductParser.ExtractNeededInformation(Produs& product) in D:\projects\licenta\PrsLic\ProductEngine\CrawlingUtilities\CrawlProductParser.cs:line 42
+   at CrawlingUtilities.CrawlProductParser.DownloadProduct(Produs& product) in D:\projects\licenta\PrsLic\ProductEngine\CrawlingUtilities\CrawlProductParser.cs:line 28
+2019-01-22 00:19:32.9205|FATAL|GenericLogger|Error occured Input string was not in a correct format. 
+ Exception popped when trying to extract product information for  
+    at System.Number.StringToNumber(String str, NumberStyles options, NumberBuffer& number, NumberFormatInfo info, Boolean parseDecimal)
+   at System.Number.ParseDecimal(String value, NumberStyles options, NumberFormatInfo numfmt)
+   at System.Decimal.Parse(String s)
+   at CrawlingUtilities.CrawlProductParser.ExtractNeededInformation(Produs& product) in D:\projects\licenta\PrsLic\ProductEngine\CrawlingUtilities\CrawlProductParser.cs:line 42
+   at CrawlingUtilities.CrawlProductParser.DownloadProduct(Produs& product) in D:\projects\licenta\PrsLic\ProductEngine\CrawlingUtilities\CrawlProductParser.cs:line 28
+2019-01-22 00:19:33.5782|FATAL|GenericLogger|Error occured Input string was not in a correct format. 
+ Exception popped when trying to extract product information for  
+    at System.Number.StringToNumber(String str, NumberStyles options, NumberBuffer& number, NumberFormatInfo info, Boolean parseDecimal)
+   at System.Number.ParseDecimal(String value, NumberStyles options, NumberFormatInfo numfmt)
+   at System.Decimal.Parse(String s)
+   at CrawlingUtilities.CrawlProductParser.ExtractNeededInformation(Produs& product) in D:\projects\licenta\PrsLic\ProductEngine\CrawlingUtilities\CrawlProductParser.cs:line 42
+   at CrawlingUtilities.CrawlProductParser.DownloadProduct(Produs& product) in D:\projects\licenta\PrsLic\ProductEngine\CrawlingUtilities\CrawlProductParser.cs:line 28
+2019-01-22 00:19:34.2813|FATAL|GenericLogger|Error occured Input string was not in a correct format. 
+ Exception popped when trying to extract product information for  
+    at System.Number.StringToNumber(String str, NumberStyles options, NumberBuffer& number, NumberFormatInfo info, Boolean parseDecimal)
+   at System.Number.ParseDecimal(String value, NumberStyles options, NumberFormatInfo numfmt)
+   at System.Decimal.Parse(String s)
+   at CrawlingUtilities.CrawlProductParser.ExtractNeededInformation(Produs& product) in D:\projects\licenta\PrsLic\ProductEngine\CrawlingUtilities\CrawlProductParser.cs:line 42
+   at CrawlingUtilities.CrawlProductParser.DownloadProduct(Produs& product) in D:\projects\licenta\PrsLic\ProductEngine\CrawlingUtilities\CrawlProductParser.cs:line 28
+2019-01-22 00:19:34.7440|FATAL|GenericLogger|Error occured Input string was not in a correct format. 
+ Exception popped when trying to extract product information for  
+    at System.Number.StringToNumber(String str, NumberStyles options, NumberBuffer& number, NumberFormatInfo info, Boolean parseDecimal)
+   at System.Number.ParseDecimal(String value, NumberStyles options, NumberFormatInfo numfmt)
+   at System.Decimal.Parse(String s)
+   at CrawlingUtilities.CrawlProductParser.ExtractNeededInformation(Produs& product) in D:\projects\licenta\PrsLic\ProductEngine\CrawlingUtilities\CrawlProductParser.cs:line 42
+   at CrawlingUtilities.CrawlProductParser.DownloadProduct(Produs& product) in D:\projects\licenta\PrsLic\ProductEngine\CrawlingUtilities\CrawlProductParser.cs:line 28
+2019-01-22 00:19:35.4310|FATAL|GenericLogger|Error occured Input string was not in a correct format. 
+ Exception popped when trying to extract product information for  
+    at System.Number.StringToNumber(String str, NumberStyles options, NumberBuffer& number, NumberFormatInfo info, Boolean parseDecimal)
+   at System.Number.ParseDecimal(String value, NumberStyles options, NumberFormatInfo numfmt)
+   at System.Decimal.Parse(String s)
+   at CrawlingUtilities.CrawlProductParser.ExtractNeededInformation(Produs& product) in D:\projects\licenta\PrsLic\ProductEngine\CrawlingUtilities\CrawlProductParser.cs:line 42
+   at CrawlingUtilities.CrawlProductParser.DownloadProduct(Produs& product) in D:\projects\licenta\PrsLic\ProductEngine\CrawlingUtilities\CrawlProductParser.cs:line 28
+2019-01-22 00:19:36.1227|FATAL|GenericLogger|Error occured Input string was not in a correct format. 
+ Exception popped when trying to extract product information for  
+    at System.Number.StringToNumber(String str, NumberStyles options, NumberBuffer& number, NumberFormatInfo info, Boolean parseDecimal)
+   at System.Number.ParseDecimal(String value, NumberStyles options, NumberFormatInfo numfmt)
+   at System.Decimal.Parse(String s)
+   at CrawlingUtilities.CrawlProductParser.ExtractNeededInformation(Produs& product) in D:\projects\licenta\PrsLic\ProductEngine\CrawlingUtilities\CrawlProductParser.cs:line 42
+   at CrawlingUtilities.CrawlProductParser.DownloadProduct(Produs& product) in D:\projects\licenta\PrsLic\ProductEngine\CrawlingUtilities\CrawlProductParser.cs:line 28
+2019-01-22 00:19:36.7691|FATAL|GenericLogger|Error occured Input string was not in a correct format. 
+ Exception popped when trying to extract product information for  
+    at System.Number.StringToNumber(String str, NumberStyles options, NumberBuffer& number, NumberFormatInfo info, Boolean parseDecimal)
+   at System.Number.ParseDecimal(String value, NumberStyles options, NumberFormatInfo numfmt)
+   at System.Decimal.Parse(String s)
+   at CrawlingUtilities.CrawlProductParser.ExtractNeededInformation(Produs& product) in D:\projects\licenta\PrsLic\ProductEngine\CrawlingUtilities\CrawlProductParser.cs:line 42
+   at CrawlingUtilities.CrawlProductParser.DownloadProduct(Produs& product) in D:\projects\licenta\PrsLic\ProductEngine\CrawlingUtilities\CrawlProductParser.cs:line 28
+2019-01-22 00:19:36.7691|INFO|GenericLogger|Update process finished starting again in 12 hours
+2019-01-22 00:20:00.9874|INFO|GenericLogger|Started searching for message ASUS GEFORCE ROG STRIX RTX 2080TI |relevance
+2019-01-22 00:20:58.5704|INFO|GenericLogger|Started searching for message ASUS GEFORCE ROG STRIX RTX 2080TI |relevance
+2019-01-22 00:28:14.2763|INFO|GenericLogger|Started searching for message LAPTOP ASUS|relevance
+2019-01-22 00:32:49.5210|INFO|GenericLogger|Started searching for message ASUS TUF FX504GE|relevance
+2019-01-22 00:34:54.5120|INFO|GenericLogger|Started searching for message ASUS TUF FX504GE|relevance
+2019-01-22 00:36:37.3506|INFO|GenericLogger|Started searching for message ASUS TUF FX504GE|relevance
+2019-01-22 00:37:42.9644|INFO|GenericLogger|Started searching for message ASUS TUF FX504GE|relevance
+2019-01-22 00:39:14.3659|INFO|GenericLogger|Started searching for message ASUS TUF FX504GE|relevance
+2019-01-22 00:42:45.4120|INFO|GenericLogger|Started searching for message ASUS TUF FX504GE|relevance
+2019-01-22 00:44:13.3549|FATAL|GenericLogger|Error occured The process cannot access the file 'D:\projects\licenta\PrsLic\ProductEngine\Libraries\BlobFiles\Search\CrawlingTags.json' because it is being used by another process. 
+ Exception The process cannot access the file 'D:\projects\licenta\PrsLic\ProductEngine\Libraries\BlobFiles\Search\CrawlingTags.json' because it is being used by another process. popped when trying to get Blob : CrawlingTags.json from container : crawlsettings 
+    at System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
+   at System.IO.FileStream.Init(String path, FileMode mode, FileAccess access, Int32 rights, Boolean useRights, FileShare share, Int32 bufferSize, FileOptions options, SECURITY_ATTRIBUTES secAttrs, String msgPath, Boolean bFromProxy, Boolean useLongPath, Boolean checkHost)
+   at System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access, FileShare share)
+   at Microsoft.WindowsAzure.Storage.Blob.CloudBlob.DownloadToFile(String path, FileMode mode, AccessCondition accessCondition, BlobRequestOptions options, OperationContext operationContext) in c:\Program Files (x86)\Jenkins\workspace\release_dotnet_master\Lib\ClassLibraryCommon\Blob\CloudBlob.cs:line 612
+   at MiscUtilities.AzureBlobUtils.DownloadBlob(String fileName, String container, String usage) in D:\projects\licenta\PrsLic\ProductEngine\MiscUtilities\AzureBlobUtils.cs:line 44
