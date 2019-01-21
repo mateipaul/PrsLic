@@ -11,3 +11,16 @@
 2019-01-21 18:33:20.5246|INFO|GenericLogger|Starting CrawlUtilities
 2019-01-21 18:33:26.3102|INFO|GenericLogger|Started searching for message VIVOBOOK MAX X541NA INTEL CELERON APOLLO LAKE N335|relevance
 2019-01-21 18:49:27.7099|INFO|GenericLogger|Started searching for message LAPTOP ASUS|relevance
+2019-01-21 21:17:11.7077|INFO|GenericLogger|Starting CrawlUtilities
+2019-01-21 21:17:41.4898|INFO|GenericLogger|Started searching for message LAPTOP ACES|relevance
+2019-01-21 21:18:16.0058|INFO|GenericLogger|Started searching for message LAPTOP ACER|relevance
+2019-01-21 21:27:32.0040|INFO|GenericLogger|Starting CrawlUtilities
+2019-01-21 21:28:10.2147|INFO|GenericLogger|Started searching for message LAPTOP ACER S|relevance
+2019-01-21 21:28:58.7080|INFO|GenericLogger|Starting CrawlUtilities
+2019-01-21 21:29:06.3799|INFO|GenericLogger|Started searching for message LAPTOP ACER S|relevance
+2019-01-21 21:31:14.3961|FATAL|GenericLogger|Error occured One or more errors occurred. 
+ Generic exception Popped in GetHttpRequestResponse(string url) 
+    at System.Threading.Tasks.Task.ThrowIfExceptional(Boolean includeTaskCanceledExceptions)
+   at System.Threading.Tasks.Task`1.GetResultCore(Boolean waitCompletionNotification)
+   at System.Threading.Tasks.Task`1.get_Result()
+   at MiscUtilities.HttpUtils.GetHttpRequestResponse(String url) in D:\projects\licenta\PrsLic\ProductEngine\MiscUtilities\HttpUtils.cs:line 24

@@ -64,9 +64,9 @@
       <Project>{B59B462B-E0FC-4617-A2C2-420D56DA6409}</Project>
       <Name>Logger</Name>
     </ProjectReference>
-    <ProjectReference Include="..\MediaGalaxyDownloader\MediaGalaxyDownloader.csproj">
+    <ProjectReference Include="..\MediaGalaxyDownloader\PcGarageDownloader.csproj">
       <Project>{0F42B995-BC46-4776-8048-1C8F85A885C8}</Project>
-      <Name>MediaGalaxyDownloader</Name>
+      <Name>PcGarageDownloader</Name>
     </ProjectReference>
     <ProjectReference Include="..\MiscUtilities\MiscUtilities.csproj">
       <Project>{117E7D0A-621A-4F92-9F71-74FA64144AC9}</Project>

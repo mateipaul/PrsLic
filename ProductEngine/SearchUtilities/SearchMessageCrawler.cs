@@ -61,7 +61,7 @@ namespace SearchUtilities
                         }
                     case "MediaGalaxy":
                         {
-                            return new MediaGalaxyDownloader.MediaGalaxyDownloader(retailer);
+                            return new MediaGalaxyDownloader.PcGarageDownloader(retailer);
                         }
 
                     default:

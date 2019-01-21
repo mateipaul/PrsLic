@@ -31,7 +31,7 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Downloaders", "Downloaders"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CelDownloader", "CelDonwloader\CelDownloader.csproj", "{F5B6A36F-4B24-462C-BDE0-028FDC53867D}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MediaGalaxyDownloader", "MediaGalaxyDownloader\MediaGalaxyDownloader.csproj", "{0F42B995-BC46-4776-8048-1C8F85A885C8}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PcGarageDownloader", "MediaGalaxyDownloader\PcGarageDownloader.csproj", "{0F42B995-BC46-4776-8048-1C8F85A885C8}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Parsers", "Parsers", "{534F570A-EE89-4691-96ED-E4794ECAC7B4}"
 EndProject
