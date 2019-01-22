@@ -24,12 +24,12 @@ namespace MvcMusicStore.Utilities.DatabaseUtilities
 
                 string searchIdiomCode = GetSearchCode(stringToSearch);
 
-                products = (from appear in dbContext.AparitieProdus
-                                join search in dbContext.IstoricCautari on appear.Id_Cautare equals search.Id_Cautare
-                                join product in dbContext.Produs on appear.Id_Produs equals product.Id
-                                join retailer in dbContext.Vanzator on product.Id_Vanzator equals retailer.Id
-                                where search.Cod == searchIdiomCode
-                                select product).Include(p=>p.Vanzator).ToList();
+                //products = (from appear in dbContext.AparitieProdus
+                //                join search in dbContext.IstoricCautari on appear.Id_Cautare equals search.Id_Cautare
+                //                join product in dbContext.Produs on appear.Id_Produs equals product.Id
+                //                join retailer in dbContext.Vanzator on product.Id_Vanzator equals retailer.Id
+                //                where search.Cod == searchIdiomCode
+                //                select product).Include(p=>p.Vanzator).ToList();
 
 
                 //if (products.Count <= 1)

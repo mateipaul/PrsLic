@@ -103,11 +103,10 @@ namespace DatabaseModels
 
                         dbContext.AparitieProdus.Add(new AparitieProdus
                         {
-                            Id = Guid.NewGuid()
-                                                                         ,
                             Id_Cautare = StringToGuid(givenMessage)
                                                                          ,
-                            Id_Produs = item.Id
+                            Id_Produs = item.Id,
+                            Id = StringToGuid($"{StringToGuid(givenMessage).ToString()}{item.Id.ToString()})")
                         });
 
 
