@@ -1,5 +1,8 @@
-﻿using DatabaseModels;
+﻿using CelParser;
+using DatabaseModels;
+using Interfaces;
 using Logger;
+using PcGarageParser;
 using System;
 using System.Collections.Generic;
 using System.Data.Entity;
@@ -14,6 +17,7 @@ namespace CrawlingUtilities
         private RetailerConfiguration RetailerConfig;
         private Guid retailerId;
         private RetailerCrawlProductCollection products;
+        private IParseProduct parser;
 
         public CrawlManager(RetailerConfiguration retailer)
         {
@@ -34,21 +38,50 @@ namespace CrawlingUtilities
 
         private void Initialize(DbModelContext dbContext)
         {
-          
-                retailerId = dbContext.Vanzator.Where(m => m.Nume.Equals(RetailerConfig.RetailerName)).Select(m => m.Id).FirstOrDefault();
+            GetProductsFromDB(dbContext);
 
-                products = new RetailerCrawlProductCollection(RetailerConfig.RetailerName);
-
-                var prods = (from prod in dbContext.Produs
-                             join evol in dbContext.EvolutiaPretului on prod.Id equals evol.Id_Produs
-                             join retailer in dbContext.Vanzator on prod.Id_Vanzator equals retailer.Id
-                             where retailer.Id.Equals(retailerId)
-                             select prod).Include(p => p.EvolutiaPretului).ToList();
-
-
-
-                products.AddRange(prods);
+            GetParser();
             
+        }
+
+        private void GetParser()
+        {
+            switch (RetailerConfig.RetailerName)
+            {
+
+                case "Cel":
+                    {
+                        parser = new CelProductParser(RetailerConfig);
+                        break;
+                    }
+                case "PcGarage":
+                    {
+                        parser = new PcGarageProductParser(RetailerConfig);
+                        break;
+                    }
+
+                default:
+                    break;
+            }
+
+        }
+
+        private void GetProductsFromDB(DbModelContext dbContext)
+        {
+
+            retailerId = dbContext.Vanzator.Where(m => m.Nume.Equals(RetailerConfig.RetailerName)).Select(m => m.Id).FirstOrDefault();
+
+            products = new RetailerCrawlProductCollection(RetailerConfig.RetailerName);
+
+            var prods = (from prod in dbContext.Produs
+                         join evol in dbContext.EvolutiaPretului on prod.Id equals evol.Id_Produs
+                         join retailer in dbContext.Vanzator on prod.Id_Vanzator equals retailer.Id
+                         where retailer.Id.Equals(retailerId)
+                         select prod).Include(p => p.EvolutiaPretului).ToList();
+
+
+
+            products.AddRange(prods);
         }
 
         private void ParseProducts(DbModelContext dbContext)
@@ -57,12 +90,12 @@ namespace CrawlingUtilities
             
                 do
                 {
-                    CrawlProductParser parser = new CrawlProductParser(RetailerConfig);
+                   
 
                     if (products.Count > 0)
                     {
                         var currentProduct = products[counter];
-                        parser.DownloadProduct(ref currentProduct);
+                        parser.GetProduct(ref currentProduct);
                         counter++;
 
                         try

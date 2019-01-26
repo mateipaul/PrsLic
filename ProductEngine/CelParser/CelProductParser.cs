@@ -1,5 +1,6 @@
 ﻿using DatabaseModels;
 using HtmlAgilityPack;
+using Interfaces;
 using MiscUtilities;
 using System;
 using System.Collections.Generic;
@@ -11,7 +12,7 @@ using UtilitiesModels;
 
 namespace CelParser
 {
-    public class CelProductParser
+    public class CelProductParser:IParseProduct
     {
 
         private string url;
@@ -19,18 +20,22 @@ namespace CelParser
         private RetailerConfiguration retailer;
         private HtmlDocument doc;
 
+        private RetailerConfiguration updateProductConfiguration;
+        private HtmlDocument updateDocument;
+
         public CelProductParser(string url, string givenMessage, RetailerConfiguration retailer)
         {
             this.url = url;
             this.givenMessage = givenMessage;
             this.retailer = retailer;
-            GetProductDocument();
+            doc = GetProductDocument(url);
         }
 
-        private void GetProductDocument()
+        private HtmlDocument GetProductDocument(string url)
         {
             string html = HttpUtils.GetWebRequestResponse(url);
             doc = HtmlDocumentUtilities.GetHtmlDocument(html);
+            return doc;
         }
 
         public Produs GetProduct()
@@ -46,6 +51,35 @@ namespace CelParser
             return prd;
         }
 
+       
 
+        public CelProductParser(RetailerConfiguration retailer)
+        {
+            updateProductConfiguration = retailer;
+        }
+
+        public void GetProduct(ref Produs product)
+        {
+            updateDocument = GetProductDocument(product.Url);
+
+            ExtractNeededInformation(ref product, updateDocument);
+        }
+
+        private void ExtractNeededInformation(ref Produs product,HtmlDocument _document)
+        {
+            product.Denumire = (HtmlDocumentUtilities.ExtractNodeValue(_document, updateProductConfiguration.CrawlingTags.ProductName, m => m.InnerText.Trim().Replace(",", string.Empty)));
+            product.Pret = Decimal.Parse((HtmlDocumentUtilities.ExtractNodeValue(_document, updateProductConfiguration.CrawlingTags.ProductPrice, m => Regex.Match(m.InnerText.Replace("&#46;", string.Empty), @"\d+.\d+(.\d+)?").Value.Trim())));
+            product.Stock = (HtmlDocumentUtilities.ExtractNodeValue(_document, updateProductConfiguration.CrawlingTags.ProductStock, m => string.IsNullOrEmpty(m.InnerText) ? "OutOfStock" : "InStock"));
+            product.Url_Imagine = (HtmlDocumentUtilities.ExtractNodeValue(_document, updateProductConfiguration.CrawlingTags.ProductImage, m => m.GetAttributeValue("src", string.Empty)));
+
+            EvolutiaPretului priceEvolution = new EvolutiaPretului();
+            priceEvolution.Id = Guid.NewGuid();
+            priceEvolution.Pret = product.Pret;
+            priceEvolution.Id_Produs = product.Id;
+            priceEvolution.Data_Actualizare = DateTime.UtcNow;
+            priceEvolution.Produs = product;
+
+            product.EvolutiaPretului.Add(priceEvolution);
+        }
     }
 }
