@@ -12,16 +12,11 @@ namespace DatabaseModels
         [Column(Order = 0)]
         public Guid Id { get; set; }
 
-        [Key]
-        [Column(Order = 1)]
+
         public Guid Id_Produs { get; set; }
 
-        [Key]
-        [Column(Order = 2)]
         public Guid Id_Utilizator { get; set; }
 
-        [Key]
-        [Column(Order = 3)]
         public decimal Limita_pret { get; set; }
 
         public bool UtilizatorNotificat { get; set; }
