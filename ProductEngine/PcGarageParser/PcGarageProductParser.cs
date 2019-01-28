@@ -67,10 +67,10 @@ namespace PcGarageParser
 
         private void ExtractNeededInformation(ref Produs product)
         {
-            product.Denumire = (HtmlDocumentUtilities.ExtractNodeValue(_document, updateConfiguration.CrawlingTags.ProductName, m => m.InnerText.Trim().Replace(",", string.Empty)));
-            product.Pret = Decimal.Parse((HtmlDocumentUtilities.ExtractNodeValue(_document, updateConfiguration.CrawlingTags.ProductPrice, m => Regex.Match(m.InnerText.Replace("&#46;", string.Empty), @"\d+.\d+(.\d+)?").Value.Trim())));
-            product.Stock = (HtmlDocumentUtilities.ExtractNodeValue(_document, updateConfiguration.CrawlingTags.ProductStock, m => string.IsNullOrEmpty(m.InnerText) ? "OutOfStock" : "InStock"));
-            product.Url_Imagine = (HtmlDocumentUtilities.ExtractNodeValue(_document, updateConfiguration.CrawlingTags.ProductImage, m => m.GetAttributeValue("src", string.Empty)));
+            product.Denumire = HtmlDocumentUtilities.ExtractNodeValue(_document, updateConfiguration.CrawlingTags.ProductName, m => m.InnerText.Replace(",", string.Empty));
+            product.Url_Imagine = HtmlDocumentUtilities.ExtractNodeValue(_document, updateConfiguration.CrawlingTags.ProductImage, m => m.GetAttributeValue("src", string.Empty));
+            product.Pret = decimal.Parse((HtmlDocumentUtilities.ExtractNodeValue(_document, updateConfiguration.CrawlingTags.ProductPrice, m => Regex.Match(m.GetAttributeValue("content", string.Empty), @"\d+.\d{2}").Value.Trim())));
+            product.Stock = (HtmlDocumentUtilities.ExtractNodeValue(_document, updateConfiguration.CrawlingTags.ProductStock, m => !m.GetAttributeValue("href", string.Empty).Contains("InStock") ? "OutOfStock" : "InStock"));
 
             EvolutiaPretului priceEvolution = new EvolutiaPretului();
             priceEvolution.Id = Guid.NewGuid();

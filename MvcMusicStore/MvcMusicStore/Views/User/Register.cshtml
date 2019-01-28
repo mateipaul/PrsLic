@@ -7,7 +7,7 @@
 
 @using (Html.BeginForm())
 {
-    @Html.ValidationSummary("true", "Datele introduse nu sunt corecte");
+    @Html.ValidationSummary("", "Datele introduse nu sunt corecte");
     <div>
         @Html.LabelFor(m => m.Nume_Utilizator)
     </div>
@@ -35,13 +35,6 @@
     </div>
     <div>
         @Html.PasswordFor(m => m.Parola)
-    </div>
-
-    <div>
-        @Html.LabelFor(m => m.Porecla)
-    </div>
-    <div>
-        @Html.TextBoxFor(m => m.Porecla)
     </div>
     <input type="submit" value="Inregistraza-te"/>
 }

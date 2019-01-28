@@ -25,9 +25,9 @@ namespace MvcMusicStore.Controllers
 
         public ActionResult SearchProduct(string search,string opt_radio)
         {
-            var products = SearchDBUtilities.NewSearchProductsInDatabase(search.Replace(",",string.Empty).ToUpperInvariant(),opt_radio);
+            SearchDBUtilities.NewSearchProductsInDatabase(search.Replace(",",string.Empty).ToUpperInvariant(),opt_radio);
 
-            products = TryGetProducts(search.Replace(",", string.Empty).ToUpperInvariant(),opt_radio);
+            var products = TryGetProducts(search.Replace(",", string.Empty).ToUpperInvariant(),opt_radio);
 
             prods = products.ToList();
 
@@ -66,10 +66,12 @@ namespace MvcMusicStore.Controllers
                 ArrayList xValues = new ArrayList();
                 ArrayList yValues = new ArrayList();
 
-                xValues.AddRange((from priceEvolution in dbContext.EvolutiaPretului where priceEvolution.Id_Produs == new Guid(productId) orderby priceEvolution.Data_Actualizare descending select priceEvolution.Data_Actualizare).Take(10).ToList());
-                yValues.AddRange((from priceEvolution in dbContext.EvolutiaPretului where priceEvolution.Id_Produs == new Guid(productId) orderby priceEvolution.Data_Actualizare descending select priceEvolution.Pret).Take(10).ToList());
+                xValues.AddRange((from priceEvolution in dbContext.EvolutiaPretului where priceEvolution.Id_Produs == new Guid(productId)
+                                  orderby priceEvolution.Data_Actualizare descending select priceEvolution.Data_Actualizare).Take(10).ToList());
+                yValues.AddRange((from priceEvolution in dbContext.EvolutiaPretului where priceEvolution.Id_Produs == new Guid(productId)
+                                  orderby priceEvolution.Data_Actualizare descending select priceEvolution.Pret).Take(10).ToList());
 
-                new Chart(width: 200, height: 180, theme: ChartTheme.Blue).
+                new Chart(width: 200, height: 180, theme: ChartTheme.Vanilla).
                     AddTitle("Evolutia Pretului").
                     AddSeries(null, chartType: "Line", xValue: xValues, yValues: yValues).
                     Write("bmp");

@@ -3,8 +3,7 @@
 @{
     ViewBag.Title = "My Products";
 }
-<h3>My products</h3>
-</br>
+
 <div id="products-wrapper container">
 
 
@@ -13,7 +12,7 @@
         <div class="product row" id="product-@item.Id">
             <div class="col-lg-5">
                 <div class="product-details">
-                    <h4 class="product-title">@item.Denumire</h4>
+                    <h4 class="product-title">@WebUtility.HtmlDecode(item.Denumire)</h4>
                     <div class="product-image">
                         <img src="@item.Url_Imagine" />
                     </div>

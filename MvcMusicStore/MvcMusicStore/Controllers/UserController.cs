@@ -46,9 +46,6 @@ namespace MvcMusicStore.Controllers
                     cookie.HttpOnly = true;
                     Response.Cookies.Add(cookie);
 
-                    //Response.Redirect(FormsAuthentication.GetRedirectUrl(user.Email, false));
-                    
-
                     return RedirectToAction("Index", "Home");
                 }
                 else{
