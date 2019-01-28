@@ -4,7 +4,7 @@
   <edmx:Runtime>
     <!-- SSDL content -->
     <edmx:StorageModels>
-      <Schema Namespace="Model.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012.Azure" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+      <Schema Namespace="DbModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012.Azure" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
         <EntityType Name="AparitieProdus">
           <Key>
             <PropertyRef Name="Id" />
@@ -50,9 +50,6 @@
         <EntityType Name="UrmarireProdus">
           <Key>
             <PropertyRef Name="Id" />
-            <PropertyRef Name="Id_Produs" />
-            <PropertyRef Name="Id_Utilizator" />
-            <PropertyRef Name="Limita_pret" />
           </Key>
           <Property Name="Id" Type="uniqueidentifier" Nullable="false" />
           <Property Name="Id_Produs" Type="uniqueidentifier" Nullable="false" />
@@ -160,7 +157,7 @@
             </Dependent>
           </ReferentialConstraint>
         </Association>
-        <EntityContainer Name="ModelStoreContainer">
+        <EntityContainer Name="DbModelStoreContainer">
           <EntitySet Name="AparitieProdus" EntityType="Self.AparitieProdus" Schema="dbo" store:Type="Tables" />
           <EntitySet Name="EvolutiaPretului" EntityType="Self.EvolutiaPretului" Schema="dbo" store:Type="Tables" />
           <EntitySet Name="IstoricCautari" EntityType="Self.IstoricCautari" Schema="dbo" store:Type="Tables" />
@@ -197,7 +194,7 @@
     </edmx:StorageModels>
     <!-- CSDL content -->
     <edmx:ConceptualModels>
-      <Schema Namespace="Model" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+      <Schema Namespace="DbModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
         <EntityType Name="AparitieProdus">
           <Key>
             <PropertyRef Name="Id" />
@@ -251,9 +248,6 @@
         <EntityType Name="UrmarireProdus">
           <Key>
             <PropertyRef Name="Id" />
-            <PropertyRef Name="Id_Produs" />
-            <PropertyRef Name="Id_Utilizator" />
-            <PropertyRef Name="Limita_pret" />
           </Key>
           <Property Name="Id" Type="Guid" Nullable="false" />
           <Property Name="Id_Produs" Type="Guid" Nullable="false" />
@@ -403,9 +397,9 @@
     <!-- C-S mapping content -->
     <edmx:Mappings>
       <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
-        <EntityContainerMapping StorageEntityContainer="ModelStoreContainer" CdmEntityContainer="DbModelContext">
+        <EntityContainerMapping StorageEntityContainer="DbModelStoreContainer" CdmEntityContainer="DbModelContext">
           <EntitySetMapping Name="AparitieProdus">
-            <EntityTypeMapping TypeName="Model.AparitieProdus">
+            <EntityTypeMapping TypeName="DbModel.AparitieProdus">
               <MappingFragment StoreEntitySet="AparitieProdus">
                 <ScalarProperty Name="Id" ColumnName="Id" />
                 <ScalarProperty Name="Id_Produs" ColumnName="Id_Produs" />
@@ -414,7 +408,7 @@
             </EntityTypeMapping>
           </EntitySetMapping>
           <EntitySetMapping Name="EvolutiaPretului">
-            <EntityTypeMapping TypeName="Model.EvolutiaPretului">
+            <EntityTypeMapping TypeName="DbModel.EvolutiaPretului">
               <MappingFragment StoreEntitySet="EvolutiaPretului">
                 <ScalarProperty Name="Id" ColumnName="Id" />
                 <ScalarProperty Name="Pret" ColumnName="Pret" />
@@ -424,7 +418,7 @@
             </EntityTypeMapping>
           </EntitySetMapping>
           <EntitySetMapping Name="IstoricCautari">
-            <EntityTypeMapping TypeName="Model.IstoricCautari">
+            <EntityTypeMapping TypeName="DbModel.IstoricCautari">
               <MappingFragment StoreEntitySet="IstoricCautari">
                 <ScalarProperty Name="Id_Cautare" ColumnName="Id_Cautare" />
                 <ScalarProperty Name="Valoare" ColumnName="Valoare" />
@@ -433,7 +427,7 @@
             </EntityTypeMapping>
           </EntitySetMapping>
           <EntitySetMapping Name="Produs">
-            <EntityTypeMapping TypeName="Model.Produs">
+            <EntityTypeMapping TypeName="DbModel.Produs">
               <MappingFragment StoreEntitySet="Produs">
                 <ScalarProperty Name="Id" ColumnName="Id" />
                 <ScalarProperty Name="Url" ColumnName="Url" />
@@ -451,7 +445,7 @@
             </EntityTypeMapping>
           </EntitySetMapping>
           <EntitySetMapping Name="UrmarireProdus">
-            <EntityTypeMapping TypeName="Model.UrmarireProdus">
+            <EntityTypeMapping TypeName="DbModel.UrmarireProdus">
               <MappingFragment StoreEntitySet="UrmarireProdus">
                 <ScalarProperty Name="Id" ColumnName="Id" />
                 <ScalarProperty Name="Id_Produs" ColumnName="Id_Produs" />
@@ -464,7 +458,7 @@
             </EntityTypeMapping>
           </EntitySetMapping>
           <EntitySetMapping Name="Utilizator">
-            <EntityTypeMapping TypeName="Model.Utilizator">
+            <EntityTypeMapping TypeName="DbModel.Utilizator">
               <MappingFragment StoreEntitySet="Utilizator">
                 <ScalarProperty Name="Id" ColumnName="Id" />
                 <ScalarProperty Name="Nume_Utilizator" ColumnName="Nume_Utilizator" />
@@ -478,7 +472,7 @@
             </EntityTypeMapping>
           </EntitySetMapping>
           <EntitySetMapping Name="Vanzator">
-            <EntityTypeMapping TypeName="Model.Vanzator">
+            <EntityTypeMapping TypeName="DbModel.Vanzator">
               <MappingFragment StoreEntitySet="Vanzator">
                 <ScalarProperty Name="Id" ColumnName="Id" />
                 <ScalarProperty Name="Nume" ColumnName="Nume" />
