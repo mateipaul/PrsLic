@@ -31,7 +31,6 @@ namespace MiscUtilities
                         smtpClient.EnableSsl = true;
                         smtpClient.UseDefaultCredentials = false;
                         smtpClient.Credentials = new NetworkCredential(@"notifications.prs.lic@gmail.com", "EBXmw63Sh7w6eUh");
-                        //smtpClient.Credentials = new NetworkCredential(@"matei.paul94@gmail.com", "SerpentLiquid1994");
 
 
                         using (MailMessage mail = new MailMessage())

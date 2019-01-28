@@ -44,7 +44,10 @@ namespace AllertCheckUtilities
 
                     if (followPrice <= currentPrice)
                     {
-                        if ((!information.UtilizatorNotificat) || (information.UtilizatorNotificat && information.DataNotificarii.Value.ToShortDateString().Equals(DateTime.UtcNow.AddDays(-2).ToShortDateString())))
+                        if ((!information.UtilizatorNotificat) ||
+                            (information.UtilizatorNotificat && 
+                            information.DataNotificarii.Value.ToShortDateString()
+                                        .Equals(DateTime.UtcNow.AddDays(-2).ToShortDateString())))
                         {
 
                             EmailHelper.SendEmail(destination: information.Utilizator.Email,
@@ -63,26 +66,7 @@ namespace AllertCheckUtilities
             }
         }
 
-        private void CheckForEmail(ref UrmarireProdus information)
-        {
-            decimal followPrice = information.Limita_pret;
-            decimal currentPrice = information.Produs.Pret;
-
-            if (followPrice <= currentPrice)
-            {
-                if ((!information.UtilizatorNotificat) ||(information.UtilizatorNotificat && information.DataNotificarii.Value.Equals(DateTime.UtcNow.AddDays(-1))))
-                {
-
-                    EmailHelper.SendEmail(destination: information.Utilizator.Email,
-                        subject: $"Alerta Pret pentru produs {information.Produs.Denumire.Substring(0, 50)}...",
-                        body: GenerateBodyFromInfo(information));
-
-                    information.UtilizatorNotificat = true;
-                    information.DataNotificarii = DateTime.UtcNow;
-                }
-                
-            }
-        }
+       
 
         private string GenerateBodyFromInfo(UrmarireProdus information)
         {

@@ -7,6 +7,7 @@ using System;
 using System.Collections.Generic;
 using System.Data.Entity;
 using System.Linq;
+using System.Threading;
 using System.Threading.Tasks;
 using UtilitiesModels;
 
@@ -43,6 +44,8 @@ namespace CrawlingUtilities
             GetParser();
             
         }
+
+        
 
         private void GetParser()
         {
@@ -90,7 +93,7 @@ namespace CrawlingUtilities
             
                 do
                 {
-                   
+                Thread.Sleep(3 * 1000);
 
                     if (products.Count > 0)
                     {
